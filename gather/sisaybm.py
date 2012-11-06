@@ -27,7 +27,7 @@ def fetchurl_2(urlstr):
 	#print f.status
 	print f.url
 
-def getHEAD(urlstr):
+def getHEAD_length(urlstr):
 	urlfields = urlparse.urlparse(urlstr)
 	host = urlfields[1]
 	path = "".join(urlfields[2:])
@@ -38,7 +38,9 @@ def getHEAD(urlstr):
 	conn.request("HEAD", path)
 	r2 = conn.getresponse()
 	#print r2.getheaders()
-	print r2.getheader('location')
+	#print r2.getheader('location')
+	flds = r2.getheader('content-length').split(',')
+	return int(flds[0])
 
 
 def get_text(htmltree):
@@ -54,6 +56,7 @@ def get_text(htmltree):
 
 
 def saveLink(soup, tagname, out, pref=''):
+	out.write("\n======\n")
 	urllist=[]
 	for link in soup(tagname):
 		#print link
@@ -82,7 +85,7 @@ def saveLink(soup, tagname, out, pref=''):
 
 def getsize(uri):
     file = urllib.urlopen(uri)
-    print file.headers
+    #print file.headers
     size = file.headers.get("content-length")
     file.close()
     flds = size.split(',')
@@ -124,9 +127,16 @@ if __name__ == "__main__":
 		raise
 		sys.exit(0)
 
-	print urllist
+	#print urllist
 
 	for u in urllist:
-		html = fetchurl_1(u)
+		full_url = urlparse.urljoin(sys.argv[1], u)
+		print full_url
+		html = fetchurl_1(full_url)
 		soup = BeautifulSoup.BeautifulSoup(html, fromEncoding="euc-kr")
-		saveLink(soup, 'a', out, pref='http://upload.ybmbooks.com/action/loadFile.asp')
+		urllist2 = saveLink(soup, 'a', out, pref='http://upload.ybmbooks.com/action/loadFile.asp')
+		for u2 in urllist2:
+			full_url2 = urlparse.urljoin(full_url, u2)
+			size = getsize(full_url2)	
+			#size = getHEAD_length(full_url2)	
+			print size, " --- ", u2
