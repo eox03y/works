@@ -16,9 +16,12 @@ urllib.URLopener.version = (
 def fetchurl_1(urlstr, debug=0):
 	fp = urllib.urlopen(urlstr)
 	html = fp.read()
+	charset = fp.headers.getparam('charset')
+	if charset==None:
+		charset = 'euc-kr'
 	if debug: print fp.headers
 	if debug: print len(html)
-	return html
+	return html, charset
 
 def fetchurl_2(urlstr):
 	request = urllib2.Request(urlstr)
@@ -108,8 +111,11 @@ if __name__ == "__main__":
 		print "usage: url outfile"
 		sys.exit(0)
 
-	html = fetchurl_1(sys.argv[1])
-	soup = BeautifulSoup.BeautifulSoup(html, fromEncoding="euc-kr")
+	html,charset = fetchurl_1(sys.argv[1], debug=1)
+	print "===", charset
+	sys.exit(0)
+
+	soup = BeautifulSoup.BeautifulSoup(html, fromEncoding=charset)
 
 	#for i in dir(soup):
 	#	print i
@@ -132,8 +138,8 @@ if __name__ == "__main__":
 	for u in urllist:
 		full_url = urlparse.urljoin(sys.argv[1], u)
 		print full_url
-		html = fetchurl_1(full_url)
-		soup = BeautifulSoup.BeautifulSoup(html, fromEncoding="euc-kr")
+		html,charset = fetchurl_1(full_url)
+		soup = BeautifulSoup.BeautifulSoup(html, fromEncoding=charset)
 		urllist2 = saveLink(soup, 'a', out, pref='http://upload.ybmbooks.com/action/loadFile.asp')
 		for u2 in urllist2:
 			full_url2 = urlparse.urljoin(full_url, u2)
