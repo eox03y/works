@@ -22,17 +22,18 @@ class DictWithCnt(dict):
 		self.prn(mincnt)
 	
 
+###
 class DictWithUniq(dict):
-"Dict that provides the uniqueness of key."
+	""" Dict that provides the uniqueness of key."""
 	def add(self, key, val=None):
-	"return True only when the key is new and inserted"
+		"""return True only when the key is new and inserted"""
 		if self.get(key)==None:
 			self[key] = val
 			return True
 		else:
 			return False
 	def load(self, fname):
-	"load keys from the given file"
+		"load keys from the given file"
 		try:
 			fd = open(fname)
 		except:
@@ -48,7 +49,7 @@ class DictWithUniq(dict):
 		
 
 	def save(self, fname):
-	"overwrite keys to the given file"
+		"overwrite keys to the given file"
 		try:
 			fd = open(fname, "w")
 		except:
@@ -61,77 +62,113 @@ class DictWithUniq(dict):
 		fd.close()
 
 
+###
 import urllib
 import urlparse
-import urllib2
 import BeautifulSoup
-
 
 urllib.URLopener.version = (	
 		'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.8) '	
 		'Gecko/20050609 Firefox/1.0.4')
 
-def fetchurl_1(urlstr, debug=0):
+###
+def fetchUrl(urlstr, debug=0):
+	""" return HTML string and charset """
 	fp = urllib.urlopen(urlstr)
 	html = fp.read()
+	charset = fp.headers.getparam('charset')
+	if charset==None: charset = 'euc-kr'
 	if debug: print fp.headers
 	if debug: print len(html)
-	return html
-
-def get_text(htmltree):
-	text = ""
-	for item in htmltree:
-
-		#print item, item.__class__.__name__
-		if item.__class__.__name__ == "Tag":
-			text += get_text(item)
-		else:
-			text += item
-	return text
+	return html, charset
 
 
-def saveLink(soup, tagname, out, pref=''):
-	out.write("\n======\n")
-	urllist=[]
-	for link in soup(tagname):
-		#print link
-		urladdr = link['href']
-		if len(pref) > 0 and not urladdr.startswith(pref):
-			continue
-
-		urllist.append(urladdr)
-		try:
-			out.write(link['href'])
-			out.write('\t')
-		except:
-			continue
-
-		#print link.contents
-		try:
-			link_name = get_text(link.contents)
-			link_name = link_name.strip()
-			#print link_name
-			out.write(link_name)
-		except:
-			pass
-		out.write('\n')
-	return urllist
-##
-
-def getsize(uri):
-"Get content lengh of the given url"
-	#print getsize("https://www.djangoproject.com/m/img/site/hdr_logo.gif")
-	#print getsize("http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=www\upfile\DataRoom\&pVal=CB5AA1BFA8F25E4DDEEC994AEAC770EE2637191B6A6ED7019A664BFB6DA7FA5739AEFF417DFF6199B21522D5C57BF25A8C15E56490A5BF7C437A9F96EE02678219C4B66DD958C1FA32CA023C9ABA6A42")
-	# 10965
-
+###
+def sizeUrl(uri):
+	""" return 'content-length' of a give URL """
 	file = urllib.urlopen(uri)
 	#print file.headers
-	size = file.headers.get("content-length")
+	try:
+		size = file.headers.get("content-length")
+	except:
+		return 0
 	file.close()
 	flds = size.split(',')
 	return int(flds[0])
 
 
+###
+import logging
+
+class webCrawl:
+	def __init__(self):
+		self.rootUrl = None
+		self.visitUrlPrefix = None
+		self.actionUrlPrefix = None
+		self.toVisit = []
+		self.visited = DictWithUniq()
+		self.pauseSec = 0.1
+		self.visitSave = None
+		pass
+	def load(self, fname):
+		self.visitSave = fname
+		cnt = self.visited.load(fname)
+		print "%d loaded from %s" % (cnt, fname)
+
+	def start(self, url, vprefix=None, aprefix=None, pause=0.1):
+		self.rootUrl = url
+		self.visitUrlPrefix = vprefix
+		self.actionUrlPrefix = aprefix
+		self.pauseSec = pause
+		self._add_to_visit(self.rootUrl)
+		self._do_crawl()
+
+	
+	def _add_to_visit(self, new_url):
+		""" add a new url into "to visiti Queue" if prefix of the url match.
+		    return 1 if added
+		"""
+		if self.visitUrlPrefix!=None and (not new_url.startswith(self.visitUrlPrefix)): 
+			return 0
+		self.toVisit.append(new_url)
+		return 1
+
+	
+	def _do_action(self, act_url):
+		if self.actionUrlPrefix!=None and (not act_url.startswith(self.actionUrlPrefix)): 
+			return 0
+		logging.info("ACT %s " % (act_url))
+		
+	def _do_visit(self, curr_url):
+		""" read a url and extract links from HTML """
+		html, charset = fetchUrl(curr_url)
+		soup = BeautifulSoup.BeautifulSoup(html, fromEncoding=charset)
+
+		logging.info("VISIT %s [%d]bytes char-set=%s" % (curr_url, len(html), charset))
+		cnt_children = 0
+		for link in soup('a'):
+			try:
+				child_addr = link['href']
+			except:
+				continue
+			full_url = urlparse.urljoin(curr_url, child_addr)
+
+			cnt_children += self._add_to_visit(full_url)
+			
+			self._do_action(full_url)
+		logging.info("CHILDREN %d" % cnt_children)
+	
+	def _do_crawl(self):
+		while len(self.toVisit) > 0:
+			current = self.toVisit.pop(0)
+			# check if the url was visited before
+			if current in self.visited: continue	
+			self.visited.add(current)
+
+			self._do_visit(current)
+
+		#
+		self.visited.save(self.visitSave)
 
 
 
@@ -145,41 +182,13 @@ if __name__ == "__main__":
 		print "usage: url outfile"
 		sys.exit(0)
 
-	html = fetchurl_1(sys.argv[1])
-	soup = BeautifulSoup.BeautifulSoup(html, fromEncoding="euc-kr")
+	logging.basicConfig(filename="webcrwal.log", level=logging.INFO)
 
-	#for i in dir(soup):
-	#	print i
+	crawler = webCrawl()
+	crawler.load("aaa.txt")
+	crawler.start(sys.argv[1],
+		 vprefix='http://www.ybmbooks.com/reader/reader.asp',
+		 aprefix='http://upload.ybmbooks.com/action/loadFile.asp')
 
-	#print "HEAD:", soup.head
-
-
-	try:
-		outfile = sys.argv[2]
-		#out = codecs.open(outfile, encoding='euc-kr', mode='w+')
-		out = open(outfile, mode='w+')
-		urllist = saveLink(soup, 'a', out, pref='/reader/reader_read.asp')
-	except:
-		print "write fail:", outfile
-		raise
-		sys.exit(0)
-
-	#print urllist
-
-	for u in urllist:
-		full_url = urlparse.urljoin(sys.argv[1], u)
-		print full_url
-		html = fetchurl_1(full_url)
-		soup = BeautifulSoup.BeautifulSoup(html, fromEncoding="euc-kr")
-		urllist2 = saveLink(soup, 'a', out, pref='http://upload.ybmbooks.com/action/loadFile.asp')
-		for u2 in urllist2:
-			full_url2 = urlparse.urljoin(full_url, u2)
-			size = getsize(full_url2)	
-			#size = getHEAD_length(full_url2)	
-			print size, " --- ", u2
-
-if __name__=="__main__":
-	if len(sys.argv) < 3:
-		print "usage: filename field_list(comma-separated) delimiter(default=space)"
-		sys.exit()
+	
 
