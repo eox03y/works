@@ -1,5 +1,7 @@
 
 ======
+/reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=54&id=1591&search=&searchValue=&page=1&seq=2107	Phonics LAB 2
+/reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=54&id=1590&search=&searchValue=&page=1&seq=2106	Phonics LAB 1
 /reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=29&id=1589&search=&searchValue=&page=1&seq=2105	
 /reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=30&id=1588&search=&searchValue=&page=1&seq=2103	New English 900 Vol.3
 /reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=29&id=1587&search=&searchValue=&page=1&seq=2092	
@@ -8,8 +10,12 @@
 /reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=30&id=1584&search=&searchValue=&page=1&seq=2086	New English 900 Vol.1
 /reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=162&id=1583&search=&searchValue=&page=1&seq=2087	Jump Up TOEIC Speaking Intermediate &#40;2nd Edition&#41;
 /reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=30&id=1582&search=&searchValue=&page=1&seq=2081	
-/reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=67&id=1581&search=&searchValue=&page=1&seq=2080	
-/reader/reader_read.asp?kind_sub=&step_1=&step_2=&category_1=70&id=1580&search=&searchValue=&page=1&seq=2078	
+
+======
+http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=www\upfile\DataRoom\&pVal=6B573E5536C8E86C8A810669E68C4BFAC0EB96403DC725A7BB0ED8220D4E29E69329C0518849782AC843FF2AFDE3DAE166357F977EBA3B5041EEEDB3AEC7CE5BCA3931AD5340FA14EDFCAA5888349B8ECCB761740239D71FC895A336E84E424D	Phonics LAB Book 2 MP3.zip
+
+======
+http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=www\upfile\DataRoom\&pVal=6B573E5536C8E86C8A810669E68C4BFAC0EB96403DC725A7BB0ED8220D4E29E66AD1AE6116F140E270EB86305F1EE96D66357F977EBA3B5041EEEDB3AEC7CE5BCA3931AD5340FA14EDFCAA5888349B8EB1A0BFF3D53C222163359B5E0729D8E4	Phonics LAB Book 1 MP3.zip
 
 ======
 http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=www\upfile\DataRoom\&pVal=88B632CDDCB812E4EDF8A95905FD37F948258EEC20FD604CE016D49B388C394CCBB8DAB134FF70708AC30900D18935BCC7A1F1D0FE577DB626EC053B7A29B97CBAF0773DAB87E42D7E6D8C3F56E1ED10	Main Book Folder.zip
@@ -47,9 +53,3 @@ http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=
 
 ======
 http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=www\upfile\DataRoom\&pVal=5C113DDC61C36403451730EF7761C3AC0EB7E0F732D725AFE20CC0B927A7595DDF40AE9038FB8C062547D2309D7B5E9F9D3BB47262AE4EF8E7D1481117A331028D4D60518C2F46DF258EEA0A8F78E971A39ACAEE321BD256C460DBD82376E19E63EDDE44768DCFF021674315A79AC17560671BECE5D68D1AD677634F56F857738D90BEAB12B5689E73EC92D7C3D0B9759233F1D89577E846880019545DE03BD97CDB02ECADC3D8DED09ACA13AA5D343C15D9F68DA233A2EE2AADBE6A53460273	From Morning to Night Intensive Training for English Communication.zip
-
-======
-http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=www\upfile\DataRoom\&pVal=C1D307FF802564E29408C59110911CC67E7D17ABFE5B1EB7EB3534C26BB024EE380D0A1E2D5B924EA4E06036234EAE7DA630D577EB09DA078DC98BF918EE8BF1C3F434C33E2388E395216CEAE890944E8EB7EEC57AC4DF9D856F1E4B3FBF9A46210EE5C65EDC14102859A4576FD8CEDDA842A65A2E26986D7D6E61BFFA20DCD3	SuperSpeed Japanese STEP 4 Conversation.zip
-
-======
-http://upload.ybmbooks.com/action/loadFile.asp?dType=pub&siteCode=WW_BOK&subDir=www\upfile\DataRoom\&pVal=15793B9C52DA6FCDFF79609B608BBDA0A584152685C6074736EC88175471B5796A29C58E7A12779EBC90243F2E8CCC9B9233F1D89577E846880019545DE03BD9419F52095CB23A60FE9E330DE18967ACF2987F8D9DE92257A39A917CFC8CA9AF	All Pass JLPT N4,5.zip

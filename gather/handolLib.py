@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from operator import itemgetter
+import shutil
 
 ###
 class DictWithCnt(dict):
@@ -96,8 +97,25 @@ def sizeUrl(uri):
 	flds = size.split(',')
 	return int(flds[0])
 
+###
+def getLinkName(htmltree):
+	""" Using BeautifulSoup
+	<a href="/user/add?"> go get it </a>  
+	---> go get it
+	"""
+
+	text = ""
+	for item in htmltree:
+
+		#print item, item.__class__.__name__
+		if item.__class__.__name__ == "Tag":
+			text += getLinkName(item)
+		else:
+			text += item
+	return text.strip()
 
 ###
+import time
 import logging
 
 class webCrawl:
@@ -109,16 +127,19 @@ class webCrawl:
 		self.visited = DictWithUniq()
 		self.pauseSec = 0.1
 		self.visitSave = None
-		pass
+
 	def load(self, fname):
 		self.visitSave = fname
 		cnt = self.visited.load(fname)
 		print "%d loaded from %s" % (cnt, fname)
+		logging.info("%d loaded from %s" % (cnt, fname))
 
-	def start(self, url, vprefix=None, aprefix=None, pause=0.1):
+	def start(self, url, hfile="harvest.dat", vprefix=None, aprefix=None, pause=0.1):
+		logging.info("START vprefix[%s] aprefix[%s]" % (vprefix, aprefix))
 		self.rootUrl = url
 		self.visitUrlPrefix = vprefix
 		self.actionUrlPrefix = aprefix
+		self.harvestFile = hfile
 		self.pauseSec = pause
 		self._add_to_visit(self.rootUrl)
 		self._do_crawl()
@@ -130,17 +151,33 @@ class webCrawl:
 		"""
 		if self.visitUrlPrefix!=None and (not new_url.startswith(self.visitUrlPrefix)): 
 			return 0
+		# check if the url was visited before
+		if new_url in self.visited: 
+			return 0
+
+		#else
 		self.toVisit.append(new_url)
 		return 1
 
 	
-	def _do_action(self, act_url):
+	def _do_action(self, act_url, link_name):
+		print act_url
 		if self.actionUrlPrefix!=None and (not act_url.startswith(self.actionUrlPrefix)): 
 			return 0
-		logging.info("ACT %s " % (act_url))
+		logging.info("ACT %s [%s]" % (act_url, link_name))
+		size = sizeUrl(act_url)	
+		line = "%s [%d] [%s]\n" % (act_url, size, link_name)
+		#print line
+		fd = open(self.harvestFile, "a")
+		fd.write(line)
+		fd.close()
+		
+		self.visited.add(act_url)
+		return 1
 		
 	def _do_visit(self, curr_url):
 		""" read a url and extract links from HTML """
+		time.sleep(self.pauseSec)
 		html, charset = fetchUrl(curr_url)
 		soup = BeautifulSoup.BeautifulSoup(html, fromEncoding=charset)
 
@@ -155,21 +192,25 @@ class webCrawl:
 
 			cnt_children += self._add_to_visit(full_url)
 			
-			self._do_action(full_url)
-		logging.info("CHILDREN %d" % cnt_children)
+			link_name = getLinkName(link.contents)
+			self._do_action(full_url, link_name)
+		logging.info("CHILDREN %d added for visit" % cnt_children)
 	
 	def _do_crawl(self):
 		while len(self.toVisit) > 0:
 			current = self.toVisit.pop(0)
 			# check if the url was visited before
 			if current in self.visited: continue	
+			self._do_visit(current)
+			# mark as 'visited' after finishing visit
 			self.visited.add(current)
 
-			self._do_visit(current)
-
 		#
+		try:
+			shutil.copyfile(self.visitSave, self.visitSave + ".org")
+		except:
+			pass
 		self.visited.save(self.visitSave)
-
 
 
 ###
@@ -182,13 +223,14 @@ if __name__ == "__main__":
 		print "usage: url outfile"
 		sys.exit(0)
 
-	logging.basicConfig(filename="webcrwal.log", level=logging.INFO)
+	logging.basicConfig(filename="webcrwal.log", level=logging.INFO,
+		format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 	crawler = webCrawl()
-	crawler.load("aaa.txt")
+	crawler.load("visited.dat")
 	crawler.start(sys.argv[1],
-		 vprefix='http://www.ybmbooks.com/reader/reader.asp',
-		 aprefix='http://upload.ybmbooks.com/action/loadFile.asp')
+		 vprefix='http://www.ybmbooks.com/reader/reader',
+		 aprefix='http://upload.ybmbooks.com/action/loadFile')
 
 	
 
