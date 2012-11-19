@@ -43,7 +43,7 @@ class DictWithUniq(dict):
 		cnt = 0
 		for line in fd:
 			flds = line.split()
-			if self.add(flds[0]):
+			if len(flds) > 0 and self.add(flds[0]):
 				cnt += 1
 		fd.close()
 		return cnt
