@@ -122,24 +122,29 @@ class webCrawl:
 	def __init__(self):
 		self.rootUrl = None
 		self.visitUrlPrefix = None
-		self.actionUrlPrefix = None
 		self.toVisit = []
 		self.visited = DictWithUniq()
 		self.pauseSec = 0.1
 		self.visitSave = None
+		self.actionList = []
 
 	def load(self, fname):
+		""" load the list of visited URL from a given file """
 		self.visitSave = fname
 		cnt = self.visited.load(fname)
 		print "%d loaded from %s" % (cnt, fname)
 		logging.info("%d loaded from %s" % (cnt, fname))
 
-	def start(self, url, hfile="harvest.dat", vprefix=None, aprefix=None, pause=0.1):
-		logging.info("START vprefix[%s] aprefix[%s]" % (vprefix, aprefix))
+	def add_action(self, prefix, func):
+		""" add a function for a prefix 
+		   the function's parameters are (url, link_name)"""
+		logging.info("ADD prefix for action [%s] " % (prefix))
+		self.actionList.append( (prefix, func) )
+
+	def start(self, url, vprefix=None, pause=0.1):
+		logging.info("START vprefix[%s] " % (vprefix))
 		self.rootUrl = url
 		self.visitUrlPrefix = vprefix
-		self.actionUrlPrefix = aprefix
-		self.harvestFile = hfile
 		self.pauseSec = pause
 		self._add_to_visit(self.rootUrl)
 		self._do_crawl()
@@ -161,19 +166,15 @@ class webCrawl:
 
 	
 	def _do_action(self, act_url, link_name):
-		print act_url
-		if self.actionUrlPrefix!=None and (not act_url.startswith(self.actionUrlPrefix)): 
-			return 0
-		logging.info("ACT %s [%s]" % (act_url, link_name))
-		size = sizeUrl(act_url)	
-		line = "%s [%d] [%s]\n" % (act_url, size, link_name)
-		#print line
-		fd = open(self.harvestFile, "a")
-		fd.write(line)
-		fd.close()
-		
-		self.visited.add(act_url)
-		return 1
+		for act in self.actionList:
+			prefix=act[0]
+			func=act[1]
+			if act_url.startswith(prefix): 
+				logging.info("ACT %s [%s]" % (act_url, link_name))
+				func(act_url, link_name)
+				self.visited.add(act_url)
+				return
+
 		
 	def _do_visit(self, curr_url):
 		""" read a url and extract links from HTML """
@@ -218,6 +219,19 @@ class webCrawl:
 import sys
 import codecs
 
+def save_mp3_info(act_url, link_name):
+	print act_url
+	size = sizeUrl(act_url)	
+	line = "%s [%d] [%s]\n" % (act_url, size, link_name)
+	#print line
+	fd = open("ybm_mp3.dat", "a")
+	# TODO: handle euc-kr, utf-8
+	try:
+		fd.write(line)
+	except:
+		pass
+	fd.close()
+	
 if __name__ == "__main__":
 	if len(sys.argv) < 3:
 		print "usage: url outfile"
@@ -228,9 +242,10 @@ if __name__ == "__main__":
 
 	crawler = webCrawl()
 	crawler.load("visited.dat")
+	crawler.add_action( 'http://upload.ybmbooks.com/action/loadFile', save_mp3_info )
 	crawler.start(sys.argv[1],
-		 vprefix='http://www.ybmbooks.com/reader/reader',
-		 aprefix='http://upload.ybmbooks.com/action/loadFile')
+		 vprefix='http://www.ybmbooks.com/reader/reader')
+	
 
 	
 
