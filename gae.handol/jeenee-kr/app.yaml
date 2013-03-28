@@ -1,5 +1,5 @@
 application: jeenee-kr
-version: 1
+version: 2
 runtime: python27
 api_version: 1
 threadsafe: no
@@ -12,6 +12,6 @@ handlers:
   static_dir: examples
 
 - url: /.*
-  script: guestbook6_templates.py
+  script: main.py
 
 
