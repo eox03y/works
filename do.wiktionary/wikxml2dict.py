@@ -8,16 +8,56 @@ writer = anyReader.anyWriter(sys.argv[2], 'ascii')
 import xml.sax
 import xml.sax.handler
 
+import re
+
+srch_wik_head1 = re.compile(r'(=+)([^=]+)=+')
+srch_wik_head2 = re.compile(r'====([^=]+)====')
+srch_wik_head3 = re.compile(r'=====([^=]+)=====')
+
+skip_title_prefixes = [
+    'User:',
+    'User ',
+    'Wiktionary:'
+]
+
+skip_head_names = [
+    'Etymology',
+    'Translations',
+    'Wiktionary:'
+]
+
+def wiki2dict(titleContent, textContent)
+    '''
+    parse text of 'text element' in 'wiktionary xml file'.
+    '''
+    for pf in skip_title_prefixes:
+        if titleContent.startswith(pf): 
+            return None
+
+    isSkip = False
+    for line in textContent.splitlines():
+        if isSkip: continue
+        m = srch_wik_head2.search(line)
+        if m:
+            print "##RE", m.group(0), m.group(1)
+            if m.group(1) in skip_head_names:
+                isSkip =  True
+            else:
+                isSkip =  False
+        if not isSkip:
+            print line
 
 class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
     def error(self, exception):
+        print exception.getMessage()
         print exception
 
     def fatalError(self, exception):
+        print exception.getMessage()
         print exception
 
     def warning(self, exception):
-        print exception
+        print exception.getMessage()
 
 class WikXmlHandler(xml.sax.handler.ContentHandler):
     def __init__ (self):
@@ -42,8 +82,9 @@ class WikXmlHandler(xml.sax.handler.ContentHandler):
             self.isPageElement= False
             print "###TITLE"
             print self.titleContent 
-            print "###TEXT"
-            print self.textContent 
+            #print "###TEXT"
+            #print self.textContent
+            wiki2dict(self.titleContent, self.textContent)
             self.titleContent = ""
             self.textContent = ""
         elif name == 'title':
