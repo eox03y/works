@@ -294,7 +294,8 @@ class WikiHandler(ContentHandler):
                 continue
 
             # Determine the section of the document we are in
-            if l.startswith("'''" + self.titleContent + "'''"):
+            #if l.startswith("'''" + self.titleContent + "'''"):
+            if l.startswith("==English=="):    
                 inWord.setName(self.titleContent)
                 # Get rid of the word, we don't want it in the definition
                 l = re.sub(r"'''.*'''[ ]*(.*)", r"\1", l)
