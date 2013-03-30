@@ -22,6 +22,8 @@ def anyReader(fname, encoding='utf-8'):
 		return fp
 	else:
 		reader = codecs.getreader(encoding)
+		if fname == '-':
+			sys.stdin = reader(fp)
 		return reader(fp)
 
 def anyWriter(fname, encoding='utf-8'):
@@ -42,4 +44,6 @@ def anyWriter(fname, encoding='utf-8'):
 		return fp
 	else:
 		writer = codecs.getwriter(encoding)
+		if fname == '-':
+			sys.stdout = writer(fp)
 		return writer(fp)

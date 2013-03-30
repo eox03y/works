@@ -444,8 +444,10 @@ class WikiHandler(ContentHandler):
         return inWord
 
 # Set UTF-8 stdout in case of the user piping our output
-reload(sys)
-sys.setdefaultencoding('utf-8')
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
+import codecs
+sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
 usage = "usage: %prog [options] wiktionary_dump.xml word_list.txt"
 parser = OptionParser(usage=usage)
@@ -492,7 +494,7 @@ parse(wikiFile, WikiHandler(words, 'en', _wiktio, options.verbose), WikiErrorHan
 
 debug = options.debug
 
-_wiktio.dump2htmlSite("abcd.html")
+_wiktio.dump2html("abcd.html")
 '''
 if options.site:
     _wiktio.dump2htmlSite(options.output)
