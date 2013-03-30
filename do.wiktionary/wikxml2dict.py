@@ -16,8 +16,9 @@ srch_wik_head3 = re.compile(r'=====([^=]+)=====')
 
 skip_title_prefixes = [
     'User:',
-    'User ',
+    'User talk:',
     'Wiktionary:'
+    'Wiktionary talk:'
 ]
 
 skip_head_names = [
@@ -26,21 +27,31 @@ skip_head_names = [
     'Wiktionary:'
 ]
 
-def wiki2dict(titleContent, textContent)
+def check_if_skip_head(headname):
+    for h in skip_head_names:
+        if headname.startswith(h): 
+            return True
+    return False
+
+def wiki2dict(titleContent, textContent):
     '''
     parse text of 'text element' in 'wiktionary xml file'.
     '''
     for pf in skip_title_prefixes:
-        if titleContent.startswith(pf): 
+        if titleContent.startswith(pf):
+            print "##SKIP", titleContent
             return None
-
+    print "###TITLE", titleContent
     isSkip = False
     for line in textContent.splitlines():
         if isSkip: continue
-        m = srch_wik_head2.search(line)
+        m = srch_wik_head1.search(line)
         if m:
-            print "##RE", m.group(0), m.group(1)
-            if m.group(1) in skip_head_names:
+            #print "##RE", m.group(1), m.group(2)
+            if m.group(1) == '==' and m.group(2) != 'English':
+                print "##SKIP", m.group(2)
+                isSkip =  True
+            elif check_if_skip_head(m.group(2)):
                 isSkip =  True
             else:
                 isSkip =  False
@@ -80,8 +91,8 @@ class WikXmlHandler(xml.sax.handler.ContentHandler):
     def endElement(self, name):
         if name == 'page':
             self.isPageElement= False
-            print "###TITLE"
-            print self.titleContent 
+            #print "###TITLE"
+            #print self.titleContent 
             #print "###TEXT"
             #print self.textContent
             wiki2dict(self.titleContent, self.textContent)
