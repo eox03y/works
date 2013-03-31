@@ -42,7 +42,9 @@ def wiki2dict(titleContent, textContent):
             return None
     print "###TITLE", titleContent
     isSkip = False
+    headname = ''
     for line in textContent.splitlines():
+	skip_thisline = False
         m = srch_wik_head1.search(line)
         # head line
         if m:
@@ -59,8 +61,10 @@ def wiki2dict(titleContent, textContent):
                 isSkip =  False
         # content lines in wiki
         else:
-
-        if not isSkip:
+            if headname=='Pronunciation':
+               if line.find('* {{audio|') == -1:
+                   skip_thisline = True				 
+        if not isSkip and not skip_thisline:
             print line
 
 class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
