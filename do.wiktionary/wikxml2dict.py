@@ -10,21 +10,20 @@ import xml.sax.handler
 
 import re
 
-srch_wik_head1 = re.compile(r'(=+)([^=]+)=+')
-srch_wik_head2 = re.compile(r'====([^=]+)====')
-srch_wik_head3 = re.compile(r'=====([^=]+)=====')
-
+srch_wik_head1 = re.compile(r'^\s*(=+)([^=]+)=+\s*$')
+        
 skip_title_prefixes = [
     'User:',
     'User talk:',
-    'Wiktionary:'
+    'Wiktionary:',
     'Wiktionary talk:'
 ]
 
 skip_head_names = [
     'Etymology',
     'Translations',
-    'Wiktionary:'
+    'Wiktionary:',
+    'Anagrams'
 ]
 
 def check_if_skip_head(headname):
@@ -39,22 +38,28 @@ def wiki2dict(titleContent, textContent):
     '''
     for pf in skip_title_prefixes:
         if titleContent.startswith(pf):
-            print "##SKIP", titleContent
+            print "##SKIP TITLE", titleContent
             return None
     print "###TITLE", titleContent
     isSkip = False
     for line in textContent.splitlines():
-        if isSkip: continue
         m = srch_wik_head1.search(line)
+        # head line
         if m:
             #print "##RE", m.group(1), m.group(2)
             if m.group(1) == '==' and m.group(2) != 'English':
-                print "##SKIP", m.group(2)
+                print "##SKIP HEAD", m.group(2)
                 isSkip =  True
             elif check_if_skip_head(m.group(2)):
+                print "##SKIP HEAD", m.group(2)
                 isSkip =  True
             else:
+                headname = m.group(2)
+                print "##TURNON HEAD", m.group(2)
                 isSkip =  False
+        # content lines in wiki
+        else:
+
         if not isSkip:
             print line
 

@@ -1,0 +1,1983 @@
+##SKIP TITLE Wiktionary:Welcome, newcomers
+##SKIP TITLE Wiktionary:GNU Free Documentation License
+##SKIP TITLE Wiktionary:Text of the GNU Free Documentation License
+##SKIP TITLE User:Sjc
+##SKIP TITLE Wiktionary:What Wiktionary is not
+##SKIP TITLE User:Eloquence
+##SKIP TITLE User:Merphant
+##SKIP TITLE User talk:Merphant
+###TITLE dictionary
+##TURNON HEAD English
+==English==
+{{wikipedia|dab=Dictionary (disambiguation)|Dictionary}}
+[[Image:Latin dictionary.jpg|thumb|250px|A multi-volume Latin dictionary in the [[w:University Library of Graz|University Library of Graz]].]]
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|UK}} {{IPA|/ˈdɪkʃən(ə)ɹi/}}, {{X-SAMPA|/"dIkS@n(@)ri/}}
+* {{a|North America}} {{enPR|dĭk'shə-nĕr-ē}}, {{IPA|/ˈdɪkʃənɛɹi/}}, {{X-SAMPA|/"dIkS@nEri/}}
+* {{audio|en-us-dictionary.ogg|Audio (US)}}
+* {{audio|en-uk-dictionary.ogg|Audio (UK)}}
+
+##TURNON HEAD Noun
+===Noun===
+{{en-noun|dictionaries}}
+
+# A [[reference work]] with a list of [[word]]s from one or more languages, normally ordered [[alphabetical]]ly and explaining each word's meaning and sometimes containing information on its etymology, usage, translations{{,}} and other data.
+# {{label|computing}} An [[associative array]], a data structure where each value is referenced by a particular key, analogous to words and definitions in a physical dictionary.
+
+* {{seeCites}}
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* [[wordbook]]
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* [[encyclopedic dictionary]]
+* [[explanatory dictionary]]
+* [[fictionary]]
+* [[pedagogical dictionary]]
+* [[Pictionary]]
+* [[subdictionary]]
+* [[translating dictionary]]
+* [[translationary]]
+
+##TURNON HEAD See also
+====See also====
+* [[lexicon]]
+* [[encyclopedia]]
+* [[vocabulary]]
+
+##SKIP HEAD Translations
+##SKIP HEAD Anagrams
+##TURNON HEAD Verb
+===Verb===
+{{en-verb|dictionar|i|ed}}
+
+# {{label|transitive}} To look up in a dictionary
+# {{label|transitive}} To add to a dictionary
+# {{label|intransitive}} To appear in a dictionary
+
+[[Category:en:Reference works]]
+
+[[ar:dictionary]]
+[[az:dictionary]]
+[[zh-min-nan:dictionary]]
+[[bg:dictionary]]
+[[bs:dictionary]]
+[[br:dictionary]]
+[[ca:dictionary]]
+[[cs:dictionary]]
+[[cy:dictionary]]
+[[da:dictionary]]
+[[de:dictionary]]
+[[dv:dictionary]]
+[[et:dictionary]]
+[[el:dictionary]]
+[[es:dictionary]]
+[[eo:dictionary]]
+[[eu:dictionary]]
+[[fa:dictionary]]
+[[fr:dictionary]]
+[[fy:dictionary]]
+[[gl:dictionary]]
+[[ko:dictionary]]
+[[hy:dictionary]]
+[[hi:dictionary]]
+[[io:dictionary]]
+[[id:dictionary]]
+[[is:dictionary]]
+[[it:dictionary]]
+[[kn:dictionary]]
+[[ka:dictionary]]
+[[kk:dictionary]]
+[[sw:dictionary]]
+[[ku:dictionary]]
+[[lo:dictionary]]
+[[lv:dictionary]]
+[[lb:dictionary]]
+[[lt:dictionary]]
+[[li:dictionary]]
+[[hu:dictionary]]
+[[mk:dictionary]]
+[[mg:dictionary]]
+[[ml:dictionary]]
+[[ms:dictionary]]
+[[my:dictionary]]
+[[nl:dictionary]]
+[[ja:dictionary]]
+[[no:dictionary]]
+[[oc:dictionary]]
+[[km:dictionary]]
+[[tpi:dictionary]]
+[[pl:dictionary]]
+[[pt:dictionary]]
+[[ro:dictionary]]
+[[ru:dictionary]]
+[[sq:dictionary]]
+[[simple:dictionary]]
+[[sl:dictionary]]
+[[so:dictionary]]
+[[sr:dictionary]]
+[[su:dictionary]]
+[[fi:dictionary]]
+[[sv:dictionary]]
+[[tl:dictionary]]
+[[ta:dictionary]]
+[[te:dictionary]]
+[[th:dictionary]]
+[[tg:dictionary]]
+[[tr:dictionary]]
+[[uk:dictionary]]
+[[ur:dictionary]]
+[[vi:dictionary]]
+[[zh:dictionary]]
+##SKIP TITLE Wiktionary talk:Text of the GNU Free Documentation License
+###TITLE free
+{{also|-free}}
+##TURNON HEAD English
+==English==
+
+{{wikipedia|dab=free}}
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/fɹiː/}}, {{X-SAMPA|/fri:/}}
+* {{audio|en-us-free.ogg|Audio (US)}}
+* {{audio|En-uk-free.ogg|Audio (UK)}}
+* {{rhymes|iː}}
+
+[[File:Free Beer.jpg|thumb|A sign advertising '''free''' beer (obtainable without payment).]]
+[[File:Buy one, get one free ^ - geograph.org.uk - 153952.jpg|thumb|A "buy one get one '''free'''" sign at a flower stand (obtainable without additional payment).]]
+[[File:Berkeley Farms Fat-Free Half & Half.jpg|thumb|This food product is labelled "fat '''free'''", meaning it contains no fat.]]
+
+##TURNON HEAD Adjective
+===Adjective===
+{{en-adj|freer|freest}}
+
+# Not [[imprisoned]] or [[enslaved]].
+#: ''a '''free''' man''
+# Obtainable without any [[payment]].
+#: ''The government provides '''free''' health care.''
+# {{by extension|chiefly|advertising slang}} Obtainable without additional payment, as a bonus given when paying for something else.
+#: ''Buy a TV to get a '''free''' DVD player!''
+# [[unconstrained|Unconstrained]].
+#: ''He was given '''free''' rein to do whatever he wanted'' <!--"rein", not "reign"-->
+# {{mathematics}} Unconstrained by [[relator]]s.
+#: ''The '''free''' group on three generators''
+# {{mathematics|logic}} Unconstrained by [[quantifier]]s.
+#: z'' is the '''free''' variable in "<math>\forall x\exists y:xy=z</math>".''
+# Unobstructed, without [[blockage]]s.
+#: ''The drain was '''free'''.''
+# Not in use
+#: ''You can sit on this chair; it's '''free'''.''
+# Without [[obligation]]s.
+#: '''''free''' time''
+# {{software}} With very few [[limitation]] on distribution or improvement.
+#: ''OpenOffice is [[free software|'''free''' software]].''
+# Without; not containing (what is specified).
+#: ''We had a wholesome, filling meal, '''free''' of meat.''
+#: ''I would like to live '''free''' from care in the mountains.''
+# {{programming}} Of [[identifier]]s, not [[bound]].
+# {{botany|mycology}} Not [[attached]]; [[loose]].
+#: ''In this group of mushrooms, the gills are '''free'''.''
+#* {{RQ:Schuster Hepaticae V|7}}
+#*: Furthermore, the '''free''' anterior margin of the lobule is arched toward the lobe and is often involute{{...}}
+# {{of a|morpheme}} That can be used by itself, [[unattached]] to another [[morpheme]].
+# {{software}} Intended for [[release]], as opposed to a [[checked]] version.
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{sense|obtainable without payment}} [[free of charge]], [[gratis]]
+* {{sense|unconstrained}} [[unconstrained]], [[unfettered]], [[unhindered]]
+* {{sense|unobstructed}} [[clear]], [[unobstructed]]
+* {{sense|software: with very few limitations on distribution or improvement}} [[libre]]
+* {{sense|without}} [[without]]
+* {{sense|programming: not bound}} [[unbound]]
+
+##TURNON HEAD Antonyms
+====Antonyms====
+* {{sense|not imprisoned or enslaved}} [[bound]], [[enslaved]], [[imprisoned]]
+* {{sense|unconstrained}} [[constrained]], [[restricted]]
+* {{sense|logic: unconstrained by quantifiers}} [[bound]]
+* {{sense|unobstructed}} [[blocked]], [[obstructed]]
+* {{sense|of identifiers, not bound}} [[bound]]
+* {{sense|software: with very few limitations on distribution or improvement}} [[proprietary|proprietary software]]
+
+##TURNON HEAD Derived terms
+====Derived terms====
+{{rel-top3|Terms derived from ''free''}}
+* [[-free]]
+* [[free Abelian group]]<!--UK spelling-->, [[free abelian group]]<!--US spelling-->
+* [[free algebra]]
+* [[free as a bird]]
+* [[freeball]]
+* [[freebooter]]
+* [[free fall]]
+* [[free group]]
+* [[freelance]]
+* [[freeloader]]
+* [[free lunch]]
+{{rel-mid3}}
+* [[freely]]
+* [[free market]]
+* [[free marketeer]]
+* [[Freemason]]
+* [[free module]]
+* [[free object]]
+* [[free of charge]]
+* [[free rein]]<!--Note: this is the only correct spelling of this expression-->
+* [[free ride]]
+* [[free rider]]
+* [[free semigroup]]
+{{rel-mid3}}
+* [[free spirit]]
+* [[free-thinker]]
+* [[free time]]
+* [[free variable]]
+* [[free vote]]
+* [[freeware]]
+* [[freeway]]
+* [[freewheel]]
+* [[free will]]
+* [[unfree]]
+{{rel-bottom}}
+
+##TURNON HEAD Related terms
+====Related terms====
+* [[freedom]]<!--from Old English-->
+* [[friend]]
+
+##SKIP HEAD Translations
+##TURNON HEAD Adverb
+===Adverb===
+{{en-adv}}
+
+# Without needing to [[pay]].
+#: ''I got this bike '''free'''.''
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{sense|informal, without needing to pay}} [[for free]], [[for nothing]]
+
+##SKIP HEAD Translations
+##TURNON HEAD Verb
+===Verb===
+{{en-verb|free|d}}
+
+# {{transitive}} To make free; set at [[liberty]]; [[release]]; rid of that which confines, limits, embarrasses, or oppresses.
+
+##TURNON HEAD Hyponyms
+====Hyponyms====
+* [[emancipate]]
+* [[liberate]]
+* [[manumit]]
+* [[release]]
+* [[unchain]]
+* [[unfetter]]
+
+##SKIP HEAD Translations
+##TURNON HEAD Noun
+===Noun===
+{{en-noun}}
+
+# {{Australian rules football|Gaelic football}} Abbreviation of [[free kick]].
+#* '''2006''', [http://footballlegends.org/daryn_cresswell.htm]:
+#*: Whether deserved or not, the '''free''' gave Cresswell the chance to cover himself in glory with a shot on goal after the siren. <!-- a typical, but not especially notable usage here, feel '''free''' (pun intended) to replace with a better one -->
+# [[free transfer]]
+#* {{quote-news
+|year=2011
+|date=September 21
+|author=Sam Lyon
+|title=Man City 2 - 0 Birmingham
+|work=BBC Sport
+|url=http://news.bbc.co.uk/sport2/hi/football/14910208.stm
+|page=
+|passage=Hargreaves, who left Manchester United on a '''free''' during the summer, drilled a 22-yard beauty to open the scoring.}}
+# {{hurling}} The usual means of restarting play after a foul is committed, where the non-offending team restarts from where the foul was committed.
+
+##SKIP HEAD Translations
+##TURNON HEAD Usage notes
+====Usage notes====
+* {{rank/test|351|en-gut}}
+
+##SKIP HEAD Anagrams
+###TITLE thesaurus
+{{selfref|For the Wiktionary thesaurus, see [[Wiktionary:Wikisaurus]]}}
+{{also|Thesaurus|thésaurus}}
+##TURNON HEAD English
+==English==
+{{wikipedia}}
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/θɪˈsɔːɹəs/}}, {{X-SAMPA|/TI"sO:r@s/}}
+* {{rhymes|ɔːɹəs}}
+
+##TURNON HEAD Noun
+===Noun===
+{{en-noun|thesauri|pl2=thesauruses}}
+
+# A [[publication]], usually in the form of a [[book]], that provides [[synonym]]s (and sometimes [[antonym]]s) for the [[word]]s of a given [[language]].
+#: ''"Roget" is the leading brand name for a print English '''thesaurus''''' that lists words under general concepts rather than just close synonyms.
+# {{archaic}} A [[dictionary]] or [[encyclopedia]].
+# {{information science}} A hierarchy of subject headings—canonic titles of themes and topics, the titles serving as search keys.
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* [[synonymicon]]
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* [[thesaural]]
+
+##SKIP HEAD Translations
+##TURNON HEAD See also
+====See also====
+* [[ontology]]
+* [[Wiktionary:Wikisaurus|Wiktionary's thesaurus (Wikisaurus)]]
+* [[Appendix:Roget's thesaurus classification]]
+
+##TURNON HEAD External links
+===External links===
+* {{R:Webster 1913}}
+* {{R:Century 1911}}
+* ''Roget's Thesaurus can be found at:'' http://www.bartleby.com/thesauri
+
+[[Category:en:Reference works]]
+
+----
+
+##SKIP HEAD Latin
+##TURNON HEAD Alternative forms
+===Alternative forms===
+* [[thensaurus]]
+
+##SKIP HEAD Etymology
+##TURNON HEAD Noun
+===Noun===
+{{la-noun|thēsaurus|thesauri|thēsaurī|m|second}}
+
+# [[treasure]], [[hoard]]
+#* {{RQ:Vulgate|Daniel|1|2}}
+#*: {{...}} et vasa intulit in domum '''thesauri''' dei sui
+#*:: "{{...}} and he brought the vessels into the '''treasure''' house of his god."
+# a [[dear]] [[friend]], [[loved one]]
+# a [[vault]] for treasure
+# [[chest]], [[strongbox]]
+# [[repository]], [[collection]]
+
+##TURNON HEAD Inflection
+====Inflection====
+{{la-decl-2nd|thesaur|thēsaur}}
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* [[thesaurarius|thēsaurārius]]
+* [[thesaurensis|thēsaurensis]]
+* [[thesaurizator|thēsaurizātor]]
+* [[thesaurizo|thēsaurizō]]
+
+[[cs:thesaurus]]
+[[cy:thesaurus]]
+[[de:thesaurus]]
+[[et:thesaurus]]
+[[el:thesaurus]]
+[[es:thesaurus]]
+[[fr:thesaurus]]
+[[ko:thesaurus]]
+[[io:thesaurus]]
+[[it:thesaurus]]
+[[kn:thesaurus]]
+[[kk:thesaurus]]
+[[hu:thesaurus]]
+[[mg:thesaurus]]
+[[ml:thesaurus]]
+[[my:thesaurus]]
+[[nl:thesaurus]]
+[[no:thesaurus]]
+[[pl:thesaurus]]
+[[pt:thesaurus]]
+[[ru:thesaurus]]
+[[simple:thesaurus]]
+[[fi:thesaurus]]
+[[sv:thesaurus]]
+[[ta:thesaurus]]
+[[tr:thesaurus]]
+[[vi:thesaurus]]
+[[zh:thesaurus]]
+##SKIP TITLE User:Maveric149
+##SKIP TITLE Wiktionary:Language considerations
+##SKIP TITLE User:Tobin Richard
+###TITLE encyclopedia
+{{also|encyclopaedia}}
+##TURNON HEAD English
+==English==
+{{wikipedia}}
+[[Image:PWN Encyclopedia.jpg|thumb|right|The National Scientific Publishers encyclopedia (Polish)]]
+
+##TURNON HEAD Alternative forms
+===Alternative forms===
+* {{qualifier|chiefly British}} [[encyclopaedia]]
+* {{qualifier|obsolete}} [[encyclopædia]]
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|Canada}} {{IPA|/ənˌsəɪ.kləˈpi.diə/}}
+* {{a|UK|US}} {{IPA|/ɪnˌsaɪ.kləˈpi(ː).diə/}}
+* {{audio|en-ca-synth-encyclopedia.ogg|CA synth}}
+* {{audio|en-us-encyclopedia.ogg|Audio (US)}}
+* {{rhymes|iːdiə}}
+
+##TURNON HEAD Noun
+===Noun===
+{{en-noun|s|pl2=encyclopediae|pl3=encyclopediæ}}
+
+# A [[comprehensive]] [[reference work]] (often spanning several printed volumes) with in-depth articles (usually arranged in alphabetical order, or sometimes arranged by category) on a range of [[subjects]], sometimes general, sometimes limited to a particular field.
+#: ''I only use the library for the '''encyclopedia''', as we’ve got most other books here.''
+#: ''His life's work was a four-volume ''encyclopedia'' of aviation topics.''
+
+##TURNON HEAD Usage notes
+====Usage notes====
+The spelling ''encyclopedia'' is standard in American English, preferred in Canadian English, accepted in Australian and International English, and also very common in British English. It is more common than ''encyclopaedia'', for example, in UK newspapers on Google News in 2009 by a 7:3 margin.
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* [[-pedia]]
+
+##TURNON HEAD Related terms
+====Related terms====
+{{rel-top}}
+* [[encyclopedical]]
+* [[encyclopedic]]
+* [[encyclopedic fiction]]
+{{rel-mid}}
+* [[encyclopedist]]
+* [[encyclopedic dictionary]]
+{{rel-bottom}}
+
+##TURNON HEAD See also
+====See also====
+* [[dictionary]]
+
+##SKIP HEAD Translations
+###TITLE portmanteau
+##TURNON HEAD English
+==English==
+{{was wotd|2007|March|8}}
+{{wikipedia}}
+
+##TURNON HEAD Alternative forms
+===Alternative forms===
+* {{sense|travelling case}} [[portmantua]]
+
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|RP}} {{IPA|/pɔːtˈmæn.təʊ/}}, {{X-SAMPA|/pO:t"m{nt@U/}}
+* {{a|US}} {{enPR|pôrtmă'ntō}}, {{IPA|/pɔrtˈmæntoʊ/}}, {{X-SAMPA|/pOrt"m{ntou/}}; {{enPR|pô'rtmăntōʹ}}, {{IPA|/ˌpɔrtmænˈtoʊ/}}, {{X-SAMPA|/%pOrtm{n"tou/}}
+* {{audio|en-us-portmanteau-1.ogg|Audio 1 (US)}}
+* {{audio|en-us-portmanteau-2.ogg|Audio 2 (US)}}
+
+##SKIP HEAD Etymology 1
+##TURNON HEAD Noun
+====Noun====
+{{en-noun|pl2=portmanteaux}}
+
+# A large [[travel]]ling [[case]] usually made of [[leather]], and opening into two equal sections.
+#* '''1667''', Charles Croke, ''Fortune's Uncertainty'':
+#*: Rodolphus therefore finding such an earnest Invitation, embrac'd it with thanks, and with his Servant and '''Portmanteau''', went to Don Juan's; where they first found good Stabling for their Horses, and afterwards as good Provision for themselves.
+# {{Australia|dated}} A school bag; often shortened to ''port'' or ''school port''
+
+##SKIP HEAD Translations
+##SKIP HEAD Etymology 2
+##TURNON HEAD Noun
+====Noun====
+{{en-noun|pl2=portmanteaux}}
+
+# {{linguistics}} A [[portmanteau word]].
+#* '''1872''', Lewis Carroll, ''[[s:Through The Looking Glass (And What Alice Found There)|Through The Looking Glass]]'' ([[s:Through the Looking Glass (And What Alice Found There)/Chapter VI|Chapter VI. Humpty Dumpty]]), the first usage in this sense:
+#*: Well, “[[slithy]]” means “[[lithe]] and [[slimy]].” “Lithe” is the same as “active”. You see it’s like a '''[[portmanteau]]'''–there are two meanings packed up into one word.
+
+##TURNON HEAD Synonyms
+=====Synonyms=====
+* {{sense|portmanteau word}} [[blend]], [[frankenword]], [[portmanteau word]]
+
+##SKIP HEAD Translations
+##TURNON HEAD Adjective
+====Adjective====
+{{en-adj|-}}
+
+# {{context|used only before a noun|of a word, story, etc.}} Made by combining two (or more) words, stories, etc., in the manner of a linguistic portmanteau.
+#* '''2002''', Nicholas Lezard, ''Spooky tales by the master and friends'' in ''The Guardian'' (London) (December 14, 2002) page 30:
+#*: The overall narrator of this '''portmanteau''' story - for Dickens co-wrote it with five collaborators on his weekly periodical, ''All the Year Round'' - expresses deep, rational scepticism about the whole business of haunting.
+#* '''2002''', Nick Bradshaw, ''One day in September'' in ''Time Out'' (December 11, 2002) Page 71:
+#*: We're so bombarded with images, it's a struggle to preserve our imaginations.' In response, he's turned to cinema, commissioning 11 film-makers to contribute to a '''portmanteau''' film, entitled '11'09"01' and composed of short films each running 11 minutes, nine seconds and one frame.
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* [[portmanteau film]]
+* [[portmanteau word]]
+
+##TURNON HEAD See also
+===See also===
+* [[:Category:English blends|List of portmanteau words defined in Wiktionary]]
+* [[w:Portmanteau|Wikipedia article on portmanteaus (cases and words)]]
+
+[[Category:en:Lewis Carroll]]
+
+[[cs:portmanteau]]
+[[fr:portmanteau]]
+[[ko:portmanteau]]
+[[io:portmanteau]]
+[[kn:portmanteau]]
+[[ml:portmanteau]]
+[[my:portmanteau]]
+[[nl:portmanteau]]
+[[ja:portmanteau]]
+[[no:portmanteau]]
+[[pl:portmanteau]]
+[[ru:portmanteau]]
+[[simple:portmanteau]]
+[[fi:portmanteau]]
+[[sv:portmanteau]]
+[[tl:portmanteau]]
+[[ta:portmanteau]]
+[[te:portmanteau]]
+[[vi:portmanteau]]
+[[zh:portmanteau]]
+##SKIP TITLE User:Oliver Pereira
+##SKIP TITLE User:Brion VIBBER
+###TITLE encyclopaedia
+{{also|encyclopædia}}
+##TURNON HEAD English
+==English==
+
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{audio|en-us-encyclopaedia.ogg|Audio (US)}}
+* {{rhymes|iːdiə}}
+
+##TURNON HEAD Noun
+===Noun===
+{{en-noun|pl=encyclopaedias|pl2=encyclopaediae}}
+
+# {{label|chiefly|UK}} {{alternative spelling of|encyclopedia}}
+
+##SKIP HEAD Translations
+###TITLE frei
+{{also|Frei|-frei|freí}}
+##SKIP HEAD German
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|lang=de|/fʁaɪ̯/}}
+
+##TURNON HEAD Adjective
+===Adjective===
+{{de-adj|freier|freisten}}
+
+# [[free]]
+# [[released]], [[unimprisoned]], [[unenslaved]]
+#: ''[[w:Stadtluft macht frei|Stadtluft macht '''frei''']].''
+#:: ''City air makes one '''free'''.'' (German [[serfs]] who escaped to and lived in cities for a certain period of time were legally freed.)
+# [[unblocked]]
+# [[liberal]]
+# [[free of charge]], [[gratis]]
+# [[unlimited]], [[unconstrained]]
+# [[licentious]], [[unrestrained]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* (''unbound''): [[ungebunden]]
+* (''unconstrained''): [[ungezwungen]]
+* (''liberal''): [[liberal#German|liberal]], [[freiheitlich]]
+* (''free of charge''): [[kostenlos]]
+
+##TURNON HEAD Antonyms
+====Antonyms====
+* {{l|de|unfrei}}
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* [[befreien]], [[Befreiung]]
+* [[bleifrei]]
+* [[Freiheit]]
+* [[freimütig]]
+* [[Freizeit]]
+
+##TURNON HEAD Declension
+====Declension====
+{{de-decl-adj|frei|freier|freist}}
+
+----
+
+##SKIP HEAD Scots
+##TURNON HEAD Adjective
+===Adjective===
+{{sco-adj|freier|freiist}}
+
+# {{South Scots|archaic|lang=sco}} [[free]]
+
+[[af:frei]]
+[[ar:frei]]
+[[cs:frei]]
+[[de:frei]]
+[[et:frei]]
+[[el:frei]]
+[[eo:frei]]
+[[fr:frei]]
+[[ko:frei]]
+[[io:frei]]
+[[it:frei]]
+[[ku:frei]]
+[[lt:frei]]
+[[hu:frei]]
+[[mg:frei]]
+[[mi:frei]]
+[[nl:frei]]
+[[no:frei]]
+[[pl:frei]]
+[[pt:frei]]
+[[fi:frei]]
+[[sv:frei]]
+[[tr:frei]]
+[[zh:frei]]
+###TITLE cat
+{{also|Cat|CAT|cât|.cat|Appendix:ISO 639-3 language codes}}
+##TURNON HEAD English
+==English==
+{{wikipedia}}
+[[Image:Cat03.jpg|thumb|A domestic cat (1)]]
+
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|UK}} {{IPA|/kæt/|[kʰæt]}}
+* {{a|US}} {{IPA|/kæt/|[kʰæʔ(t̚)]}}
+* {{audio|en-us-cat.ogg|Audio (US)}}
+* {{audio|en-us-inlandnorth-cat.ogg|Audio (US-Inland North)}}
+* {{rhymes|æt}}
+
+##SKIP HEAD Etymology 1
+##TURNON HEAD Noun
+====Noun====
+{{en-noun}}
+
+# A domesticated [[subspecies]], ''[[Felis silvestris catus]]'', of [[feline]] animal, commonly kept as a house [[pet]]. {{defdate|from 8th c.}}
+# Any similar animal of the family [[Felidae]], which includes [[lion]]s, [[tiger]]s, bobcats, etc.
+# A [[catfish]].
+#* '''1913''', [[w:Willa Cather|Willa Cather]], ''[[s:O Pioneers!|O Pioneers!]]'', [[s:O Pioneers!/The Wild Land, II|chapter 2]]
+#*: She missed the fish diet of her own country, and twice every summer she sent the boys to the river, twenty miles to the southward, to fish for channel '''cat'''.
+# {{offensive}} A spiteful or angry [[woman]]. {{defdate|from earlier 13th c.}}
+# An enthusiast or player of [[jazz]].
+# {{slang}} A person (usually male).
+# {{nautical}} A strong tackle used to hoist an anchor to the [[cathead]] of a ship.
+# {{nautical}} Contraction of [[cat-o'-nine-tails]].
+#: ''No room to swing a '''cat'''.''
+# {{slang}} Any of a variety of earth-moving [[machine]]s. (from their manufacturer [[w:Caterpillar Inc.|Caterpillar Inc.]])
+# {{archaic}} A sturdy merchant sailing vessel {{qualifier|now only in "[[catboat]]"}}.
+# {{archaic|uncountable}} The game of "[[trap and ball]]" (also called "cat and dog").
+# {{archaic|uncountable}} The trap of the game of "trap and ball".
+# {{slang}} [[prostitute|Prostitute]]. {{defdate|from at least early 15th c.}}
+# {{slang|vulgar|African American Vernacular English}} A [[vagina]]; female external genitalia
+#* '''1969''', Iceberg Slim, ''Pimp: The Story of My Life'' (Holloway House Publishing):
+#*: "What the hell, so this broad's got a prematurely-gray '''cat'''."''
+#* '''2005''', Carolyn Chambers Sanders, ''Sins & Secrets'' (Hachette Digital):
+#*: ''As she came up, she tried to put her '''cat''' in his face for some licking.''
+#* '''2007''', Franklin White, ''Money for Good'' (Simon and Schuster), page 64:
+#*: ''I had a notion to walk over to her, rip her apron off, sling her housecoat open and put my finger inside her '''cat''' to see if she was wet or freshly fucked because the dream I had earlier was beginning to really annoy me.''
+
+##TURNON HEAD Synonyms
+=====Synonyms=====
+* {{sense|any member of the [[suborder]] (sometimes [[superfamily]]) [[Feliformia]] or {{taxlink|Feloidea|suborder}}}} [[feliform]] ("[[cat-like]]" [[carnivoran]]), [[feloid]] (compare [[Caniformia]], ''{{taxlink|Canoidea|superfamily}}'')
+* {{sense|any member of the [[family]] [[Felidae]]}} [[felid]]
+* {{sense|any member of the [[subfamily]] [[Felinae]], genera ''[[Puma]]'', ''[[Acinonyx]]'', ''[[Lynx]]'', ''[[Leopardus]]'', and ''[[Felis]]'')}} [[feline cat]], a [[feline]]
+* {{sense|any member of the subfamily [[Pantherinae]], genera ''[[Panthera]], [[Uncia]]'' and ''[[Neofelis]]''}} [[pantherine cat]], a [[pantherine]]
+* {{sense|technically, all members of the genus ''Panthera''}} [[panther]] (i.e. [[tiger]], [[lion]], [[jaguar]], [[leopard]]), {{qualifier|narrow sense}} [[panther]] (i.e. [[black panther]])
+* {{sense|any member of the [[extinct]] subfamily ''{{taxlink|Machairodontinae|subfamily}}'', genera {{taxlink|Smilodon|genus|nomul=1}}, {{taxlink|Homotherium|genus}}, {{taxlink|Miomachairodus|genus}}, etc.}} ''{{taxlink|Smilodontini|tribe}}'', ''{{taxlink|Machairodontini|tribe}}'' ''({{taxlink|Homotherini|tribe}}''), ''{{taxlink|Metailurini|tribe}}'', "[[saber-toothed cat]]" ([[saber-tooth]])
+* {{sense|domestic species}} [[housecat]], [[puss]], [[pussy]], [[malkin]], [[kitten]], [[kitty]], [[pussy-cat]], [[mouser]], [[tomcat]], [[grimalkin]]
+* {{sense|man}} [[bloke]] {{qualifier|UK}}, [[chap]] {{qualifier|British}}, [[cove]] {{qualifier|UK}}, [[dude]], [[fellow]], [[fella]], [[guy]]
+* {{sense|spiteful woman}} [[bitch]]
+* See also [[Wikisaurus:cat]]
+* See also [[Wikisaurus:man]]
+
+##TURNON HEAD Derived terms
+=====Derived terms=====
+<!--Move definitions to separate pages-->
+{{rel-top|Terms derived from ''cat'' in the above senses}}
+* [[a cat may look at a king]]
+* [[all cats are grey in the dark]], [[all cats are grey by night]]
+* [[alley cat]]
+* [[African golden cat]]
+* [[Andean cat]]
+* [[Asiatic golden cat]]
+* [[bay cat]]
+* [[black-footed cat]]
+* [[bobcat]]
+* [[barn cat]]
+* [[Burmese cat]], [[Burmese]]
+* [[cat and mouse]]
+* [[cat box]]
+* [[cat food]]
+* [[cat that ate the canary]], [[cat that swallowed the canary]]
+* [[cat in the meal-tub]]
+* [[cat in the sack]]
+* [[catbird]]
+* [[cat-block]]
+* [[cat-burglar]]
+* [[catcall]]
+* [[cat-eyed]]
+* [[caterwaul]]
+* [[catfish]]
+* [[cat-flap]]
+* [[cat-footed]]
+* [[cat got someone's tongue]], [[cat got your tongue|cat got your tongue?]]
+* [[catgut]]
+* [[cat-harpin]]
+* [[cathead]], [[cat-head]]
+* [[cat-house]]
+* [[cat-ice]]
+* [[catkin]]
+* [[cat-lap]]
+* [[cat-lick]]
+* [[catlike]]
+* [[catling]]
+* [[catloaf]]
+* [[catly]]
+* [[catmint]]
+* [[cat-nap]]/[[cat nap]]
+* [[catnip]]
+* [[cat-o'-nine-tails]]
+* [[cat person]]
+* [[cat's cradle]]
+* [[cat's eye]]
+* [[cat's meat]]
+* [[cat's meow]]
+* [[cat's pajamas]], the [[cat's pyjamas]]
+* [[cat's paw]]
+* [[cat scratch fever]]
+* [[cat state]]
+* [[cat's-tail]]
+* [[cat's whisker]]
+* [[cat's whiskers]]<!--excellent, outstanding-->
+{{rel-mid}}
+* [[cattish]]
+<!--derived from "cattish": * [[cattishness]]-->
+* [[cat-trap]]
+* [[catty]]
+* [[Caturday]]
+* [[catwalk]], [[cat-walk]]
+* [[cat-witted]]
+* [[Chinese desert cat]]
+* [[copycat]]
+* [[curiosity killed the cat]]
+* [[domestic cat]]
+* [[fat cat]]
+* [[feral cat]]
+* [[fight like cats and dogs]]<!-- ~ To fight vigorously without weapons, often used about children (''The children fought like'' '''''cats and dogs''''' ''over who would get the biggest piece of cake.'')-->
+* [[fishing cat]]
+* [[flat-headed cat]]
+* [[Geoffroy's cat]]
+* [[housecat]]
+<!--inflection of "rain cats and dogs": * [[it's raining cats and dogs]]-->
+* [[it would make a cat laugh]]
+* [[jungle cat]]
+* [[lead a cat-and-dog life]]
+* [[leopard cat]]
+* [[let the cat out of the bag]]<!-- ~ To divulge a piece of hitherto hidden information (''It would have been a real surprise party, but Mary let the cat out of the bag.'')-->
+* [[like a cat in a strange garret]]
+* [[like a cat on hot bricks]]
+* [[like a cat on a hot tin roof]]
+* [[like herding cats]]
+* [[like the cat that got the cream]]
+* [[little spotted cat]]
+* [[lolcat]]
+* [[Maine Coon cat]], [[Maine Coon]]
+* [[Manx cat]], [[Manx]]
+* [[marbled cat]]
+* [[native cat]]
+<!--* [[nine lives of a cat]]-->
+* [[not enough room to swing a cat]]
+* [[Pallas cat]]
+* [[pampas cat]]
+* [[Persian cat]], [[Persian]]
+* [[rain cats and dogs]]
+* [[reduced cat]]
+* [[Russian Blue cat]], [[Russian Blue]]
+* [[rusty-spotted cat]]
+* [[sand cat]]
+<!--phrases beginning "the cat's ..." are listed above, beginning with "cat's..."-->
+* [[scaredy-cat]]
+* [[Schrödinger's cat]]
+* [[Siamese cat]], [[Siamese]]
+* [[spokescat]]
+* [[tabby cat]], [[tabby]]
+* [[there's more than one way to skin a cat]], [[there is more than one way to skin a cat]]
+* [[tom cat]], [[tomcat]]
+* [[wait for the cat to jump]]
+* [[wildcat]], [[wild cat]]
+* [[when the cat's away the mice will play]]
+{{rel-bottom}}
+
+##SKIP HEAD Translations
+##TURNON HEAD See also
+=====See also=====
+* [[Burmese]]
+* [[feline]]
+* [[kitten]], [[kitty]]
+* [[Manx]]
+* [[Maine Coon]]
+* [[meow]]
+* [[mog]], [[moggie]], [[moggy]]
+* [[miaow]]
+* [[nine lives]]
+* [[Persian]]
+* [[Russian Blue]]
+* [[Schrödinger’s cat]]
+* [[Siamese]]
+* [[tabby]]
+
+##TURNON HEAD Verb
+====Verb====
+{{en-verb|cat|t|ed}}
+
+# {{nautical}} To [[hoist]] (the [[anchor]]) by its [[ring]] so that it hangs at the [[cathead]].
+# {{nautical}} To flog with a [[cat-o'-nine-tails]].
+# {{slang}} To [[vomit]] something.
+
+##SKIP HEAD Translations
+##SKIP HEAD Etymology 2
+##TURNON HEAD Noun
+====Noun====
+{{en-noun}}
+
+# A [[catamaran]].
+
+##SKIP HEAD Etymology 3
+##TURNON HEAD Noun
+====Noun====
+{{en-noun}}
+
+# {{computing}} A ‘catenate’ program and command in [[Unix]] that reads one or more files and directs their content to an output device.
+
+##TURNON HEAD Verb
+====Verb====
+{{en-verb|cat|t|ed}}
+
+# {{transitive|computing}} To [[apply]] the '''cat''' [[command]] to (one or more files).
+# {{computing|_|slang}} To [[dump]] large amounts of data on (an unprepared target) usually with no intention of browsing it carefully.
+
+##SKIP HEAD Etymology 4
+##TURNON HEAD Adjective
+====Adjective====
+{{en-adj|-}}
+
+# {{Ireland|informal}} [[terrible]], [[disastrous]].
+#: ''The weather was '''cat''', so they returned home early.''
+
+##TURNON HEAD Usage notes
+=====Usage notes=====
+This usage is common in speech but rarely appears in writing.
+
+##SKIP HEAD Etymology 5
+##TURNON HEAD Noun
+====Noun====
+{{en-noun|-}}
+
+# {{non-gloss definition|A street name of the drug [[methcathinone]].}}
+
+##SKIP HEAD Etymology 6
+##TURNON HEAD Noun
+====Noun====
+{{en-noun}}
+
+# {{military|naval}} A [[catapult]].
+#: ''a carrier's bow '''cats'''''
+
+##TURNON HEAD References
+===References===
+<references/>
+
+##SKIP HEAD Anagrams
+##SKIP HEAD Guernésiais
+##SKIP HEAD Etymology
+##TURNON HEAD Noun
+===Noun===
+{{roa-grn-noun|m|f=catte}}
+
+# [[#English|cat]]
+#* '''c. 1830''', {{w|George Métivier}}, ‘Lamentations de Damaris’:
+#*: Où'est donc qu'j'iron, mé et mes puches / Ma '''catte''', et l'reste de l'écu?
+#* '''2006''', Peggy Collenette, ‘D'la gâche de Guernési’, ''P'tites Lures Guernésiaises'', Cromwell Press 2006, p. 20:
+#*: Ils d'visirent pour enne haeure, mais la Louise était pas chagrinaïe au tour sa pâte, pasqué a savait que le '''cat''' était à gardaïr la pâte caoude. (''They talked for an hour, but Louise was not worried about her dough, because she knew that the '''cat''' was keeping the dough warm.'')
+
+[[Category:roa-grn:Vertebrates]]
+
+----
+
+##SKIP HEAD Indonesian
+##SKIP HEAD Etymology
+##TURNON HEAD Noun
+===Noun===
+{{head|id|noun}}
+
+# [[paint]] {{gloss|substance}}
+
+[[Category:id:Liquids]]
+
+----
+
+##SKIP HEAD Irish
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|Munster}} {{IPA|lang=ga|[kɑt̪ˠ]}}
+* {{a|Connacht|Ulster}} {{IPA|lang=ga|[kat̪ˠ]}}
+
+##TURNON HEAD Noun
+===Noun===
+{{ga-noun|cait|cait|g=m}}
+
+# [[#English|cat]] {{qualifier|domestic feline; member of the Felidae}}
+
+##TURNON HEAD Declension
+====Declension====
+{{ga-decl-m1|c|at|ait}}
+
+##TURNON HEAD Derived terms
+====Derived terms====
+{{der-top}}
+* {{l/ga|caitín}}
+* {{l/ga|catach}}
+* {{l/ga|catachas}}
+* {{l/ga|cat crainn}}
+{{der-mid}}
+* {{l/ga|cat mara}}
+* {{l/ga|catsúil}}
+* {{l/ga|catúil}}
+* {{l/ga|fearchat}}
+{{der-bottom}}
+
+##TURNON HEAD Mutation
+===Mutation===
+{{ga mut cons|c|at}}
+
+##TURNON HEAD References
+===References===
+* {{R:Dinneen|cat}}
+
+[[Category:ga:Cats]]
+[[Category:ga:Felids]]
+
+----
+
+##SKIP HEAD Jèrriais
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/ka/|lang=roa-jer}}
+
+##TURNON HEAD Noun
+===Noun===
+{{roa-jer-noun|m}}
+
+# [[#English|cat]]
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* {{l|roa-jer|catchiéthe}}
+
+[[Category:roa-jer:Mammals]]
+
+----
+
+##SKIP HEAD Lojban
+##TURNON HEAD Rafsi
+===Rafsi===
+{{jbo-rafsi}}
+
+# {{rafsi of|cartu}}
+
+----
+
+##SKIP HEAD Malay
+##SKIP HEAD Etymology
+##TURNON HEAD Alternative forms
+===Alternative forms===
+* {{l|ms|چت|sc=Arab}}
+
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/t͡ʃat/|lang=ms}}
+* {{rhymes|t͡ʃat|at|lang=ms}}
+
+##TURNON HEAD Noun
+===Noun===
+{{head|ms|noun|Jawi spelling|'''{{l|ms|چت|sc=Arab}}'''}}
+
+# [[paint]] {{gloss|substance}}
+
+[[Category:ms:Liquids]]
+
+----
+
+##SKIP HEAD Romanian
+##SKIP HEAD Etymology
+##TURNON HEAD Noun
+===Noun===
+{{ro-noun|n|cate}}
+
+# [[floor]] ([[storey]])
+
+##TURNON HEAD Declension
+====Declension====
+{{ro-noun-n|pl=cate}}
+
+----
+
+##SKIP HEAD Scottish Gaelic
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/kaʰt̪/|lang=gd}}
+
+##TURNON HEAD Noun
+===Noun===
+{{gd-noun|g=m|gen=cait|pl=cait}}
+
+# [[#English|cat]] {{gloss|animal}}
+
+##TURNON HEAD Derived terms
+====Derived terms====
+* {{l/gd|clòimh-chat}}
+
+[[Category:gd:Cats]]
+[[Category:gd:Mammals]]
+
+[[ar:cat]]
+[[az:cat]]
+[[bn:cat]]
+[[zh-min-nan:cat]]
+[[bg:cat]]
+[[bs:cat]]
+[[br:cat]]
+[[ca:cat]]
+[[cs:cat]]
+[[cy:cat]]
+[[da:cat]]
+[[de:cat]]
+[[et:cat]]
+[[el:cat]]
+[[es:cat]]
+[[eo:cat]]
+[[eu:cat]]
+[[fa:cat]]
+[[fr:cat]]
+[[fy:cat]]
+[[ga:cat]]
+[[gv:cat]]
+[[gd:cat]]
+[[gl:cat]]
+[[ko:cat]]
+[[hy:cat]]
+[[hi:cat]]
+[[hr:cat]]
+[[io:cat]]
+[[id:cat]]
+[[zu:cat]]
+[[is:cat]]
+[[it:cat]]
+[[jv:cat]]
+[[kn:cat]]
+[[ka:cat]]
+[[kk:cat]]
+[[sw:cat]]
+[[ku:cat]]
+[[lo:cat]]
+[[la:cat]]
+[[lv:cat]]
+[[lb:cat]]
+[[lt:cat]]
+[[li:cat]]
+[[hu:cat]]
+[[mk:cat]]
+[[mg:cat]]
+[[ml:cat]]
+[[mr:cat]]
+[[ms:cat]]
+[[my:cat]]
+[[nah:cat]]
+[[fj:cat]]
+[[nl:cat]]
+[[ja:cat]]
+[[no:cat]]
+[[oc:cat]]
+[[km:cat]]
+[[pl:cat]]
+[[pt:cat]]
+[[ro:cat]]
+[[ru:cat]]
+[[sm:cat]]
+[[sa:cat]]
+[[sq:cat]]
+[[si:cat]]
+[[simple:cat]]
+[[sr:cat]]
+[[fi:cat]]
+[[sv:cat]]
+[[ta:cat]]
+[[tt:cat]]
+[[te:cat]]
+[[th:cat]]
+[[tg:cat]]
+[[chr:cat]]
+[[tr:cat]]
+[[uk:cat]]
+[[ug:cat]]
+[[vi:cat]]
+[[wa:cat]]
+[[zh:cat]]
+##SKIP TITLE User:Patrick
+###TITLE Talk:frei
+This is an attempt of a non-english entry. Any comments?
+
+:Shouldn't we have German text since this is a German word? I'm confused on how the multilingual thing will work. --[[User:Maveric149|Maveric149]]
+
+No, not german text this is the English wiktionary it should be in English.  Describing usage of the german word, complications of translation etc.
+
+:Oh. That makes sense. Thanks. --mav
+
+----
+
+##SKIP HEAD Layout
+##SKIP HEAD  From Old-English.... 
+##SKIP HEAD  frei is also a portuguese word 
+###TITLE woordenboek
+##SKIP HEAD Dutch
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{audio|Nl-woordenboek.ogg|audio}}
+* {{IPA|/ˈwoːrdə(n)buk/|[ˈwʊːrdə(m)buk]|lang=nl}}
+* {{hyphenation|woor|den|boek}}
+
+##TURNON HEAD Noun
+===Noun===
+{{nl-noun|n|woordenboeken|woordenboekje}}
+
+# [[dictionary]]
+
+[[af:woordenboek]]
+[[zh-min-nan:woordenboek]]
+[[bs:woordenboek]]
+[[ca:woordenboek]]
+[[cy:woordenboek]]
+[[da:woordenboek]]
+[[el:woordenboek]]
+[[eu:woordenboek]]
+[[fr:woordenboek]]
+[[fy:woordenboek]]
+[[id:woordenboek]]
+[[it:woordenboek]]
+[[sw:woordenboek]]
+[[lo:woordenboek]]
+[[lb:woordenboek]]
+[[lt:woordenboek]]
+[[li:woordenboek]]
+[[hu:woordenboek]]
+[[mg:woordenboek]]
+[[nl:woordenboek]]
+[[oc:woordenboek]]
+[[pl:woordenboek]]
+[[pt:woordenboek]]
+[[ro:woordenboek]]
+[[ru:woordenboek]]
+[[fi:woordenboek]]
+[[sv:woordenboek]]
+[[tr:woordenboek]]
+[[vi:woordenboek]]
+##SKIP TITLE User:Ed Poor
+###TITLE gratis
+{{also|grátis}}
+##TURNON HEAD English
+==English==
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|UK}} {{IPA|/ˈɡɹɑː.tɪs/}} {{X-SAMPA|/"grA:.tIs/}}
+
+##TURNON HEAD Adverb
+===Adverb===
+{{en-adv|-}}
+
+# [[free]], without [[charge]]
+
+##SKIP HEAD Translations
+##TURNON HEAD Adjective
+===Adjective===
+{{en-adj|-}}
+
+# [[free]], without [[charge]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* [[free as in beer]] {{qualifier|used in the free software movement to distinguish from ''[[libre]]'', "[[free as in speech]]"}}
+
+##TURNON HEAD Related terms
+====Related terms====
+* [[gratuity]]
+* [[gratuitous]]
+
+##SKIP HEAD Translations
+##TURNON HEAD See also
+====See also====
+* [[libre]]
+
+[[Category:en:Economics]]
+
+----
+
+##SKIP HEAD Afrikaans
+##TURNON HEAD Adverb
+===Adverb===
+{{head|af|adverb}}
+
+# [[free]], without [[charge]]
+
+----
+
+##SKIP HEAD Catalan
+##TURNON HEAD Verb
+===Verb===
+{{head|ca|verb form}}
+
+# {{ca-verb form of|p=2|n=sg|t=pres|m=sub|gratar}}
+
+----
+
+##SKIP HEAD Danish
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/ɡraːtis/|[ˈɡ̊ʁɑːd̥is]|lang=da}}
+
+##TURNON HEAD Adjective
+===Adjective===
+{{head|da|adjective|indeclinable}}
+
+# {{l|en|gratis}}, [[free]] {{gloss|obtainable without payment}}
+# {{qualifier|adverbial}} {{l|en|gratis}}, [[free]] {{gloss|without needing to pay}}
+
+----
+
+##SKIP HEAD Dutch
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|Netherlands}} {{IPA|/ˈɣraːtɪs/|lang=nl}}
+* {{a|Belgium}} {{IPA|/ˈʝraːtɪs/|lang=nl}}
+* {{audio|Nl-gratis.ogg|audio}}
+
+##TURNON HEAD Adjective
+===Adjective===
+{{nl-adj|-}}
+
+# [[free]], without [[charge]]
+
+##TURNON HEAD Declension
+====Declension====
+{{nl-decl-adj|gratis|-}}
+
+----
+
+##SKIP HEAD German
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/ˈgʁaːtɪs/|lang=de}}
+
+##TURNON HEAD Adverb
+===Adverb===
+{{de-adv}}
+
+# [[free]], without [[charge]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{l|de|umsonst}}
+* {{l|de|kostenlos}}
+* {{l|de|kostenfrei}}
+
+----
+
+##SKIP HEAD Italian
+##SKIP HEAD Etymology
+##TURNON HEAD Adverb
+===Adverb===
+{{head|it|adverb}}
+
+# [[gratis#English|gratis]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* [[gratuitamente]]
+
+##TURNON HEAD Adjective
+===Adjective===
+{{head|it|adjective}} {{inv}}
+
+# [[free]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* [[gratuito]]
+
+##SKIP HEAD Anagrams
+##SKIP HEAD Latin
+##TURNON HEAD Adverb
+===Adverb===
+{{la-adv|gratis|grātīs|-}}
+
+# out of favor or kindness, without recompense or compensation, [[gratuitously]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* [[gratuito#Latin|grātuītō]]
+
+##TURNON HEAD Related terms
+====Related terms====
+{{top3}}
+* [[grate#Latin|grātē]]
+* [[grates#Latin|grātēs]]
+* [[gratia|grātia]]
+* [[gratificatio|grātificātiō]]
+{{mid3}}
+* [[gratificor|grātificor]]
+* [[gratiis|grātiīs]]
+* [[gratiosus|grātiōsus]]
+* [[grator|grātor]]
+{{mid3}}
+* [[gratuitus|grātuītus]]
+* [[gratulatio|grātulātiō]]
+* [[gratulor|grātulor]]
+* [[gratus|grātus]]
+{{bottom}}
+
+##TURNON HEAD Descendants
+====Descendants====
+{{top2}}
+* Catalan: [[#Catalan|gratis]]
+* English: [[#English|gratis]]
+* French: [[#French|gratis]]
+* German: [[#German|gratis]]
+{{mid2}}
+* Italian: [[#Italian|gratis]]
+* Portuguese: [[grátis]]
+* Romanian: [[#Romanian|gratis]]
+* Spanish: [[#Spanish|gratis]]
+{{bottom}}
+
+##TURNON HEAD References
+===References===
+* Charlton T. Lewis ('''1891''') ''An Elementary Latin Dictionary'', 1st edition. (Oxford University Press)
+
+----
+
+##SKIP HEAD Norwegian
+##TURNON HEAD Adjective
+===Adjective===
+{{head|no|adjective}}
+
+# [[free]] (obtainable without payment)
+
+----
+
+##SKIP HEAD Romanian
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|[ˈɡra.tis]|lang=ro}}
+
+##TURNON HEAD Adverb
+===Adverb===
+{{ro-adv}}
+
+# [[free of charge]], [[for free]]
+
+----
+
+##SKIP HEAD Spanish
+##SKIP HEAD Etymology
+##TURNON HEAD Adjective
+===Adjective===
+{{es-adj|pl=gratis}}
+
+# [[free]], without [[charge]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{l|es|gratuito}}
+
+##TURNON HEAD Adverb
+===Adverb===
+{{es-adv}}
+
+# [[free]], without [[charge]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{l|es|gratuitamente}}
+
+----
+
+##SKIP HEAD Swedish
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{audio|Sv-gratis.ogg|audio}}
+
+##TURNON HEAD Adverb
+===Adverb===
+{{sv-adv|-}}
+
+# [[free]], without [[charge]]
+
+##TURNON HEAD Adjective
+===Adjective===
+{{head|sv|adjective|not inflected, not comparable}}
+
+# [[free]], without [[charge]]
+
+##SKIP HEAD Anagrams
+###TITLE umsonst
+##SKIP HEAD German
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/ʊmˈzɔnst/|lang=de}}
+
+##TURNON HEAD Adverb
+===Adverb===
+{{head|de|adverb}}
+
+# [[free]] of charge, [[gratis]]
+# having done something [[without]] [[success]]
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{sense|free of charge, gratis}} {{l|de|gratis}}
+* {{sense|free of charge, gratis}} {{l|de|kostenlos}}
+* {{sense|free of charge, gratis}} {{l|de|kostenfrei}}
+* {{sense|without success}} {{l|de|erfolglos}}
+
+[[de:umsonst]]
+[[fr:umsonst]]
+[[io:umsonst]]
+[[ku:umsonst]]
+[[hu:umsonst]]
+[[mg:umsonst]]
+[[pl:umsonst]]
+[[ru:umsonst]]
+[[sv:umsonst]]
+[[zh:umsonst]]
+###TITLE gratuit
+##SKIP HEAD Dutch
+##TURNON HEAD Alternative forms
+===Alternative forms===
+* [[gratuite]]
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/ɡʁatwi/|lang=nl}}, {{X-SAMPA|/gRatwi/|lang=nl}}
+
+##TURNON HEAD Adjective
+===Adjective===
+{{nl-adj|-}}
+
+# [[gratuitous]], not obliged to
+
+----
+
+##SKIP HEAD French
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/ɡʁatɥi/|lang=fr}}, {{X-SAMPA|/gRatHi/|lang=fr}}
+* {{audio|Fr-Paris--gratuit.ogg|Audio (Paris)}}
+
+##TURNON HEAD Adjective
+===Adjective===
+{{fr-adj}}
+
+# [[free]] of [[charge]]
+# [[gratuitous]], for no [[reason]]
+#: ''méchanceté gratuite''
+
+##SKIP HEAD Anagrams
+##SKIP TITLE Wiktionary:Public domain sources
+###TITLE word
+{{also|Word}}
+##TURNON HEAD English
+==English==
+
+{{wikipedia|dab=word (disambiguation)|word}}
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{a|UK}} {{IPA|/wɜː(ɹ)d/}}
+* {{a|US}} {{enPR|wûrd}}, {{IPA|/wɝd/}}, {{X-SAMPA|/w3`d/}}
+* {{audio|en-us-word.ogg|Audio (US)}}
+* {{rhymes|ɜː(ɹ)d}}
+
+##TURNON HEAD Noun
+===Noun===
+{{en-noun}}
+
+# The fact or action of [[speaking]], as opposed to [[writing|writing]] or to [[action]]. {{defdate|from 9th c.}}
+#* '''1811''', Jane Austen, ''Sense and Sensibility'':
+#*: she believed them still so very much attached to each other, that they could not be too sedulously divided in '''word''' and deed on every occasion.
+#* '''2004''', Richard Williams, ''The Guardian'', 8 Sep 2004:
+#*: As they fell apart against Austria, England badly needed someone capable of leading by '''word''' and example.
+# {{context|now|_|rare|except in phrases}} Something which has been said; a [[comment]], [[utterance]]; [[speech]]. {{defdate|from 10th c.}}
+#* '''1499''', {{w|John Skelton}}, ''The Bowge of Court'':
+#*: Among all other was wrytten in her trone / In golde letters, this '''worde''', whiche I dyde rede: / ''Garder le fortune que est mauelz et bone''.
+#* '''1611''', ''Bible'', Authorized Version, Matthew XXVI.75:
+#*: And Peter remembered the '''word''' of Jesus, which said unto him, Before the cock crow, thou shalt deny me thrice.
+#* '''1945''', Sebastian Haffner, ''The Observer'', 1 Apr 1945:
+#*: "The Kaiser laid down his arms at a quarter to twelve. In me, however, they have an opponent who ceases fighting only at five minutes past twelve," said Hitler some time ago. He has never spoken a truer '''word'''.
+#* '''2011''', {{w|David Bellos}}, ''Is That a Fish in Your Ear?'', Penguin 2012, p. 126:
+#*: Despite appearances to the contrary [...] dragomans stuck rigidly to their brief, which was not to translate the Sultan's words, but his '''word'''.
+# A [[distinct]]  [[unit ]] of language (sounds in speech or written letters) with a particular [[meaning]], composed of one or more [[morpheme]]s, and also of one or more [[phoneme]]s that [[determine]] its sound [[pattern]]. {{defdate|from 10th c.}}
+#* {{RQ:Shakespeare Hamlet}}, II.ii
+#*: Polonius: What do you read, my lord?
+#*: Hamlet: '''Words''', '''words''', '''words'''.
+# A distinct unit of language which is approved by some [[authority]].
+#* '''1896''', [[w:Israel Zangwill|Israel Zangwill]], ''Without Prejudice'', p21
+#*: “Ain’t! How often am I to tell you ain’t ain’t a '''word'''?”
+#* '''1999''', Linda Greenlaw, ''The Hungry Ocean'', Hyperion, p11
+#*: ''Fisherwoman'' isn’t even a '''word'''. It’s not in the dictionary.
+# [[news|News]]; [[tidings]]. {{defdate|from 10th c.}}
+#: ''Have you had any '''word''' from John yet?''
+#* {{RQ:Orwell Animal Farm|1}}
+#*: '''Word''' had gone round during the day that old Major, the prize Middle White boar, had had a strange dream on the previous night and wished to communicate it to the other animals.
+# An [[order]]; a [[request]] or [[instruction]]. {{defdate|from 10th c.}}
+#: ''He sent '''word''' that we should strike camp before winter.''
+# A [[promise]]; an [[oath]] or [[guarantee]]. {{defdate|from 10th c.}}
+#: ''I give you my '''word''' that I will be there on time.''
+# {{theology|sometimes '''[[Word]]'''}} [[Christ]]. {{defdate|from 8th c.}}
+#* '''1526''', William Tyndale, trans. ''Bible'', John I:
+#*: And that '''worde''' was made flesshe, and dwelt amonge vs, and we sawe the glory off yt, as the glory off the only begotten sonne off the father, which '''worde''' was full of grace, and verite.
+# {{theology|sometimes '''[[Word]]'''}} Communication from [[god]]; the [[message]] of the Christian [[gospel]]; the [[bible|Bible]]. {{defdate|from 10th c.}}
+#: ''Her parents had lived in Botswana, spreading the '''word''' among the tribespeople.''
+# A brief [[discussion]] or [[conversation]]. {{defdate|from 15th c.}}
+#: ''Can I have a '''word''' with you?''
+# {{in the plural}} Angry [[debate]] or conversation; [[argument]]. {{defdate|from 15th c.}}
+#: ''There had been '''words''' between him and the secretary about the outcome of the meeting.''
+# Any [[sequence]] of [[letters]] or characters considered as a [[discrete]] [[entity]]. {{defdate|from 19th c.}}
+# {{telegraphy}} A unit of [[text]] equivalent to five [[character]]s and one [[space]]. {{defdate|from 19th c.}}
+# {{computing}} A fixed-size group of [[bit]]s handled as a unit by a machine. On many [[16-bit]] machines a word is 16 bits or two [[byte]]s. {{defdate|from 20th c.}}
+# {{computer science}} A [[finite]] [[string]] which is [[not]] a [[command]] or [[operator]].
+# {{group theory}} A [[group]] [[element]], expressed as a [[product]] of group elements.
+# Different symbols, written or spoken, arranged together in a unique sequence that approximates a thought in a person's mind.
+
+##TURNON HEAD Usage notes
+====Usage notes====
+* {{sense|distinct unit of language}} In English and other space-delimited languages, it is customary to treat "word" as referring to any sequence of characters delimited by spaces. However, this is not applicable to languages such as [[Chinese]] and [[Japanese]], which are normally written without spaces, or to languages such as [[Vietnamese]], which are written with a space between each [[syllable]].
+
+{{wikipedia|word (computing)}}
+* {{sense|computing}} The size (length) of a word, while being fixed in a particular machine or processor family design, can be different in different designs, for many reasons. See [[Wikipedia:Word_(computing)]] for a full [[explanation]].
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{sense|distinct unit of language}} [[vocable]]
+* {{sense|something promised}} [[promise]]
+* {{sense|God}} [[God]], [[logos|Logos]]
+* {{sense|Bible}} [[word of God]], [[Bible]]
+* See also [[Wikisaurus:word]]
+
+##SKIP HEAD Translations
+##TURNON HEAD Verb
+===Verb===
+{{en-verb}}
+
+# {{transitive}} To [[say]] or [[write]] (something) using particular words.
+#: ''I’m not sure how to '''word''' this letter to the council.''
+
+##TURNON HEAD Synonyms
+====Synonyms====
+* {{sense|say or write using particular words}} [[express]], [[phrase]], [[put into words]], [[state]]
+
+##SKIP HEAD Translations
+##TURNON HEAD Interjection
+===Interjection===
+{{en-interj}}
+
+# {{slang|AAVE}} [[truth]], to tell or speak the truth; the shortened form of the statement, "My word is my bond," an expression eventually shortened to "Word is bond," before it finally got cut to just "Word," which is its most commonly used form.
+#* "Yo, that movie was epic!" / "'''Word'''?" ("You speak the truth?") / "'''Word'''." ("I speak the truth.")
+# {{slang|emphatic|stereotypically|AAVE}} An abbreviated form of {{term|word up}}; a statement of the acknowledgment of fact with a hint of nonchalant approval.
+#* '''2004''', Shannon Holmes, ''Never Go Home Again: A Novel'', page 218
+#*: "{{...}} Know what I'm sayin'?" / "'''Word'''!" the other man strongly agreed. "Let's do this — "
+#* '''2007''', Gabe Rotter, ''Duck Duck Wally: A Novel'', page 105
+#*: "{{...}} Not bad at all, man. Worth da wait, dawg. '''Word'''." / "You liked it?" I asked dumbly, stoned still, and feeling victorious. / "Yeah, man," said Oral B. "'''Word''' up. {{...}}"
+#* '''2007''', Relentless Aaron ''The Last Kingpin'', page 34
+#*: "{{...}} I mean, I don't blame you... '''Word'''! {{...}}"
+
+##TURNON HEAD Derived terms
+===Derived terms===
+{{rel-top3|Terms derived from the noun or verb ''word''}}
+* [[buzzword]]
+* [[catchword]]
+* [[codeword]]
+* [[content word]]
+* [[crossword]]
+* [[dirty word]]
+* [[dword]]
+* [[empty word]]
+* [[f-word]]
+* [[famous last words]]
+* [[fighting word]] / [[fighting words]]
+* [[foreword]]
+* [[frankenword]]
+* [[function word]]
+* [[hard word]]
+* [[have words]]
+* [[headword]]
+{{rel-mid3}}
+* [[in so many words]]
+* [[keyword]]
+* [[last word]] / [[last words]]
+* [[mince words]]
+* [[n-word]]
+* [[nonce word]]
+* [[oword]]
+* [[password]]
+* [[portmanteau word]]
+* [[qword]]
+* [[reword]]
+* [[stopword]]
+* [[swear word]]
+* [[watchword]]
+* [[word-building]]
+* [[word for word]]
+* [[word game]]
+{{rel-mid3}}
+* [[wordish]]
+* [[wordless]]
+* [[word order]]
+* [[word of god]]
+* [[word of mouth]]
+* [[word processor]]
+* [[wordsmith]]
+* [[word square]]
+* [[word to the wise]]
+* [[word up]]
+* [[word wrap]]
+* [[word-wheeling]]
+* [[wordplay]]
+* [[wordpool]]
+* [[words of one syllable]]
+* [[wordy]]
+{{rel-bottom}}
+
+##TURNON HEAD Quotations
+===Quotations===
+* {{seeCites}}
+
+##TURNON HEAD See also
+===See also===
+* [[allomorph]]
+* [[compound word]]
+* [[grapheme]]
+* [[idiom]]
+* [[lexeme]]
+* [[listeme]]
+* [[morpheme]]
+* [[orthographic]]
+* [[phrase]]
+* [[set phrase]]
+* [[syllable]]
+* [[term]]
+
+##TURNON HEAD Statistics
+===Statistics===
+* {{rank|does|Gutenberg|best|245|word|light|felt|since}}
+
+##SKIP HEAD Anagrams
+##SKIP HEAD Dutch
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{rhymes|ɔrt|lang=nl}}
+* {{audio|Nl-word.ogg|audio}}
+
+##TURNON HEAD Verb
+===Verb===
+{{head|nl}}
+
+# {{nl-verb-form|p=1|n=sg|t=pres|m=ind|worden}}
+# {{nl-verb-form|m=imp|worden}}
+
+----
+
+##SKIP HEAD Old English
+##TURNON HEAD Alternative forms
+===Alternative forms===
+* [[ƿord]]
+
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|lang=ang|/word/}}
+
+##TURNON HEAD Noun
+===Noun===
+{{ang-noun|g=n|pl=word}}
+
+# [[#English|word]]
+# [[speech]], [[utterance]], [[statement]]
+# {{context|grammar}} [[verb]]
+# [[news]], [[information]], [[rumour]]
+# [[command]], [[request]]
+
+[[Category:ang:Grammar]]
+
+----
+
+##SKIP HEAD Old Saxon
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{IPA|/word/|lang=osx}}
+
+##TURNON HEAD Noun
+===Noun===
+{{osx-noun|g=n|pl=word}}
+
+# [[#English|word]]
+
+##TURNON HEAD Declension
+====Declension====
+{{osx-decl-table|head=word|word|word|wordes|worde|word|word|wordō|wordum}}
+
+[[Category:osx:Grammar]]
+
+[[am:word]]
+[[ang:word]]
+[[ar:word]]
+[[bg:word]]
+[[ca:word]]
+[[cs:word]]
+[[cy:word]]
+[[de:word]]
+[[dv:word]]
+[[et:word]]
+[[el:word]]
+[[es:word]]
+[[eo:word]]
+[[eu:word]]
+[[fa:word]]
+[[fr:word]]
+[[gd:word]]
+[[ko:word]]
+[[hy:word]]
+[[hr:word]]
+[[io:word]]
+[[id:word]]
+[[is:word]]
+[[it:word]]
+[[kn:word]]
+[[ka:word]]
+[[kk:word]]
+[[sw:word]]
+[[ku:word]]
+[[ky:word]]
+[[lo:word]]
+[[la:word]]
+[[lv:word]]
+[[lt:word]]
+[[li:word]]
+[[hu:word]]
+[[mg:word]]
+[[ml:word]]
+[[my:word]]
+[[nah:word]]
+[[fj:word]]
+[[nl:word]]
+[[ja:word]]
+[[no:word]]
+[[oc:word]]
+[[pl:word]]
+[[pt:word]]
+[[ro:word]]
+[[ru:word]]
+[[sm:word]]
+[[sq:word]]
+[[si:word]]
+[[simple:word]]
+[[so:word]]
+[[sr:word]]
+[[fi:word]]
+[[sv:word]]
+[[ta:word]]
+[[te:word]]
+[[th:word]]
+[[tg:word]]
+[[tr:word]]
+[[uk:word]]
+[[vi:word]]
+[[wa:word]]
+[[zh:word]]
+###TITLE livre
+##TURNON HEAD English
+==English==
+{{wikipedia|dab=livre}}
+##SKIP HEAD Etymology
+##TURNON HEAD Noun
+===Noun===
+{{en-noun}}
+
+# {{historical}} A unit of [[currency]] formerly used in France, divided into 20 [[sol]]s or [[sou]]s.
+#* '''1992''', {{w|Hilary Mantel}}, ''A Place of Greater Safety'', Harper Perennial 2007, p. 115:
+#*: They like to see them awarded comfortable pensions. Is it 700,000 '''livres''' a year to the Polignac family?
+#*'''2002''', {{w|Colin Jones (historian)|Colin Jones}}, ''The Great Nation'', Penguin 2003, p. 30:
+#*:He never, it should be noted, totally renounced his inheritance: a critic of the court round, he benefited to the tune of a cool two million '''livres''' a year from royal largesse [...].
+
+##SKIP HEAD Anagrams
+##SKIP HEAD French
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{audio|Fr-un livre-fr-ouest.ogg|audio (un livre)}}
+* {{IPA|lang=fr|/livʁ/}}, {{X-SAMPA|lang=fr|/livR/}}
+
+##SKIP HEAD Etymology 1
+##TURNON HEAD Noun
+====Noun====
+{{fr-noun|m}}
+
+# [[book]]
+
+##TURNON HEAD Related terms
+=====Related terms=====
+* [[librairie]] {{f}}
+
+##SKIP HEAD Etymology 2
+##TURNON HEAD Noun
+====Noun====
+{{fr-noun|f}}
+
+# [[pound]] (''unit of weight'')
+# [[pound]] (''unit of currency'')
+
+##TURNON HEAD See also
+=====See also=====
+* {{sense|currency}} [[franc]], [[sou]], [[chelin]]
+
+##SKIP HEAD Etymology 3
+##TURNON HEAD Verb
+====Verb====
+{{fr-verb-form}}
+
+# {{conjugation of|livrer||1|s|pres|ind|lang=fr}}
+# {{conjugation of|livrer||3|s|pres|ind|lang=fr}}
+# {{conjugation of|livrer||1|s|pres|sub|lang=fr}}
+# {{conjugation of|livrer||3|s|pres|sub|lang=fr}}
+# {{conjugation of|livrer||2|s|imp|lang=fr}}
+
+[[Category:French verb forms]]
+[[Category:fr:Currency]]
+
+----
+
+##SKIP HEAD Jèrriais
+##SKIP HEAD Etymology 1
+##TURNON HEAD Noun
+====Noun====
+{{fr-noun|m}}
+
+# [[book]]
+
+##TURNON HEAD Derived terms
+=====Derived terms=====
+* {{l|roa-jer|livre d'exèrcice|gloss=exercise book}}
+* {{l|roa-jer|livre d'priéthes|gloss=prayer book}}
+
+##SKIP HEAD Etymology 2
+##TURNON HEAD Noun
+====Noun====
+{{roa-jer-noun|f}}
+
+# {{qualifier|unit of measure}} [[pound]]
+
+[[Category:roa-jer:Units of measure]]
+
+----
+
+##SKIP HEAD Portuguese
+##SKIP HEAD Etymology
+##TURNON HEAD Pronunciation
+===Pronunciation===
+* {{audio|Pt-livre.ogg|Audio}}
+
+##TURNON HEAD Adjective
+===Adjective===
+{{head|pt|adjective}}
+
+# [[free]]
+# [[unoccupied]]
+# [[clear]], [[open]]
+
+[[af:livre]]
+[[ar:livre]]
+[[az:livre]]
+[[zh-min-nan:livre]]
+[[cs:livre]]
+[[cy:livre]]
+[[da:livre]]
+[[de:livre]]
+[[et:livre]]
+[[el:livre]]
+[[es:livre]]
+[[eo:livre]]
+[[eu:livre]]
+[[fa:livre]]
+[[fr:livre]]
+[[gl:livre]]
+[[ko:livre]]
+[[hy:livre]]
+[[hr:livre]]
+[[io:livre]]
+[[id:livre]]
+[[iu:livre]]
+[[it:livre]]
+[[kn:livre]]
+[[ku:livre]]
+[[lt:livre]]
+[[li:livre]]
+[[hu:livre]]
+[[mk:livre]]
+[[mg:livre]]
+[[fj:livre]]
+[[nl:livre]]
+[[ja:livre]]
+[[no:livre]]
+[[nn:livre]]
+[[oc:livre]]
+[[km:livre]]
+[[pl:livre]]
+[[pt:livre]]
+[[ro:livre]]
+[[ru:livre]]
+[[fi:livre]]
+[[sv:livre]]
+[[ta:livre]]
+[[te:livre]]
+[[th:livre]]
+[[tr:livre]]
+[[uk:livre]]
+[[ur:livre]]
+[[vi:livre]]
+[[wa:livre]]
+[[zh:livre]]
+no element found
+enwiktionary-20130313-pages-meta-current.5000.xml:5001:0: no element found
