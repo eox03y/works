@@ -149,12 +149,24 @@ xmlreader = xml.sax.make_parser()
 #reload(sys)
 #sys.setdefaultencoding('utf-8')
 import codecs
-sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
 xmlreader.setContentHandler(WikXmlHandler())
 xmlreader.setErrorHandler(WikXmlErrorHandler())
-infd = anyReader.anyReader(sys.argv[1])
-xmlreader.parse(infd)
+# xmlreader process 'byte stream' and assume the byte stream is utf-8.
+# so, we don't have to use 'codecs'. actually, we must not decode utf-8
+infd = anyReader.anyReader(sys.argv[1], encoding='utf-8')
+#infd = anyReader.anyReader(sys.argv[1], encoding='ascii')
+sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+# use parse()
+#xmlreader.parse(infd)
+
+# use feed()
+CHUNK = 16*1024
+for chunk in iter(lambda: infd.read(CHUNK), ''):
+	print len(chunk)
+	#xmlreader.feed(chunk)
+	break
+
 
 
 
