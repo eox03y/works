@@ -2,6 +2,8 @@ import codecs
 import sys
 
 import anyReader
+reader = anyReader.anyReader(sys.argv[1], 'ascii')
+writer = anyReader.anyWriter(sys.argv[2], 'ascii')
 
 import xml.sax
 import xml.sax.handler
@@ -13,9 +15,6 @@ srch_wik_category = re.compile(r'^\s*\[\[Category:')
         
 skip_title_prefixes = [
     'User:',
-    'Help:',
-    'Talk:',
-    'Appendix:',
     'User talk:',
     'Wiktionary:',
     'Wiktionary talk:'
@@ -34,15 +33,15 @@ def check_if_skip_head(headname):
             return True
     return False
 
-def wiki2dict(titleContent, textContent, debug=False):
+def wiki2dict(titleContent, textContent):
     '''
     parse text of 'text element' in 'wiktionary xml file'.
     '''
     for pf in skip_title_prefixes:
         if titleContent.startswith(pf):
-            if debug: print "##SKIP TITLE", titleContent
+            print "##SKIP TITLE", titleContent
             return None
-    print "=", titleContent
+    print "###TITLE", titleContent
     isSkip = False
     headname = ''
     headlevel = 0
@@ -56,27 +55,28 @@ def wiki2dict(titleContent, textContent, debug=False):
             headlevel = len(m.group(1))
             headname = m.group(2)
             if headlevel == 2 and headname != 'English':
-                if debug: print "##SKIP NonEnglish", headname
+                print "##SKIP NonEnglish", headname
                 isSkip =  True
                 whySkip = (headlevel, headname)
 
             elif check_if_skip_head(headname):
-                if debug: print "##SKIP HEAD", headname
+                print "##SKIP HEAD", headname
                 isSkip =  True
                 whySkip = (headlevel, headname)
             elif whySkip==None or headlevel <= whySkip[0]:
-                if debug: print "##TURNON HEAD", headname
+                print "##TURNON HEAD", headname
                 isSkip =  False
             else :
                 pass
 	
         # content lines in wiki
         else:
-            if srch_wik_category.search(line):
-                isSkip =  True 
-
-            if headname=='Pronunciation' and line.find('* {{audio|') == -1:
+            if headname=='Pronunciation':
+                if line.find('* {{audio|') == -1:
                     skip_thisline = True				 
+            m2 = srch_wik_category.search(line)
+            if m2:
+                isSkip =  True 
 
             if line[:2]=='[[' and line[2:4] != 'en': 
                 skip_thisline = True
@@ -153,8 +153,7 @@ sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
 xmlreader.setContentHandler(WikXmlHandler())
 xmlreader.setErrorHandler(WikXmlErrorHandler())
-infd = anyReader.anyReader(sys.argv[1])
-xmlreader.parse(infd)
+xmlreader.parse(sys.argv[1])
 
 
 
