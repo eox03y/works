@@ -7,4 +7,7 @@ python gzcat_part.py 20000 /home/search/disk2/wiki_visit_count/wiktionary/enwikt
 
 python wiktio2xml.py enwiktionary-20130313-pages-meta-current.20k.xml a -q > b
 python wikxml2dict.py enwiktionary-20130313-pages-meta-current.20k.xml > i
-python wikxml2dict.py http://dumps.wikimedia.org/enwiktionary/20130313/enwiktionary-20130313-pages-meta-current.xml.bz2 > url.bz2.res
+python wikxml2dict.py http://dumps.wikimedia.org/enwiktionary/20130313/enwiktionary-20130313-image.sql.gz > a
+python wikxml2dict.py http://dumps.wikimedia.org/enwiktionary/20130313/enwiktionary-20130313-imagelinks.sql.gz > b
+python wikxml2dict.py http://dumps.wikimedia.org/enwiktionary/20130313/enwiktionary-20130313-pages-meta-current.xml.bz2 > c
+python wikxml2dict.py http://dumps.wikimedia.org/enwiktionary/20130313/enwiktionary-20130313-pages-articles-multistream-index.txt.bz2 > d

@@ -161,11 +161,12 @@ sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 #xmlreader.parse(infd)
 
 # use feed()
-CHUNK = 16*1024
+CHUNK = 100*1024
 for chunk in iter(lambda: infd.read(CHUNK), ''):
-	print len(chunk)
+	print "UNCOMPRESSED",len(chunk)
+	print chunk.decode('utf-8')
 	#xmlreader.feed(chunk)
-	break
+	#break
 
 
 
