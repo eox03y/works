@@ -11,6 +11,7 @@ import xml.sax.handler
 import re
 
 srch_wik_head1 = re.compile(r'^\s*(=+)([^=]+)=+\s*$')
+srch_wik_category = re.compile(r'^\s*\[\[Category:')
         
 skip_title_prefixes = [
     'User:',
@@ -43,27 +44,43 @@ def wiki2dict(titleContent, textContent):
     print "###TITLE", titleContent
     isSkip = False
     headname = ''
+    headlevel = 0
+    whySkip = None
     for line in textContent.splitlines():
 	skip_thisline = False
         m = srch_wik_head1.search(line)
         # head line
         if m:
             #print "##RE", m.group(1), m.group(2)
-            if m.group(1) == '==' and m.group(2) != 'English':
-                print "##SKIP HEAD", m.group(2)
+            headlevel = len(m.group(1))
+            headname = m.group(2)
+            if headlevel == 2 and headname != 'English':
+                print "##SKIP NonEnglish", headname
                 isSkip =  True
-            elif check_if_skip_head(m.group(2)):
-                print "##SKIP HEAD", m.group(2)
+                whySkip = (headlevel, headname)
+
+            elif check_if_skip_head(headname):
+                print "##SKIP HEAD", headname
                 isSkip =  True
-            else:
-                headname = m.group(2)
-                print "##TURNON HEAD", m.group(2)
+                whySkip = (headlevel, headname)
+            elif whySkip==None or headlevel <= whySkip[0]:
+                print "##TURNON HEAD", headname
                 isSkip =  False
+            else :
+                pass
+	
         # content lines in wiki
         else:
             if headname=='Pronunciation':
-               if line.find('* {{audio|') == -1:
-                   skip_thisline = True				 
+                if line.find('* {{audio|') == -1:
+                    skip_thisline = True				 
+            m2 = srch_wik_category.search(line)
+            if m2:
+                isSkip =  True 
+
+            if line[:2]=='[[' and line[2:4] != 'en': 
+                skip_thisline = True
+
         if not isSkip and not skip_thisline:
             print line
 
