@@ -1,0 +1,41 @@
+##  SRC
+http://dumps.wikimedia.org/other/pagecounts-raw/2013/2013-03/
+http://dumps.wikimedia.org/other/pagecounts-raw/2013/2013-03/pagecounts-20130301-000000.gz
+http://dumps.wikimedia.org/other/pagecounts-raw/2013/2013-03/projectcounts-20130301-000000
+
+
+##
+import os
+for i in range(24):
+        url = "http://dumps.wikimedia.org/other/pagecounts-raw/2013/2013-03/pagecounts-20130301-%02d0000.gz" % (i)
+        print url
+        os.popen("wget %s" % (url))
+
+##
+gzip -dc pagecounts-20130301-000000.gz | head -100000 > pagecounts-20130301-000000.head.100k
+
+gzip -dc  pagecounts-20130301-000000.gz | grep "^en " > pagecounts-20130301-000000.en 
+
+
+##
+import codecs
+import sys
+reader = codecs.getreader("utf-8")
+input = reader(sys.in)
+writer = codecs.getwriter("utf-8")
+output = writer(sys.out)
+for line in input:
+        flds = line.split()
+        if len(flds) != 4: continue
+        if len(flds[1]) > 30: continue
+        if not flds[1][0].isalpha(): continue
+        visit_cnt = int(flds[2])
+        bytes = int(flds[3])
+        if bytes < 1024*2: continue
+        if visit_cnt < 10: continue
+        output.write(u"%s\t%s" % (flds[1], flds[2]))
+
+
+##
+gzip -dc pagecounts-20130301-000000.gz | grep "^en " | python en_filter.py | gzip -cf > pagecounts-20130301-000000.en.gz
+gzip -dc pagecounts-20130301-010000.gz | grep "^en " | python en_filter.py | gzip -cf > pagecounts-20130301-010000.en.gz
