@@ -3,6 +3,7 @@ import codecs
 import urllib2 	
 import zlib
 import bz2
+import io
 
 # see https://code.google.com/p/feedparser/source/browse/feedparser/feedparser.py
 
@@ -25,9 +26,8 @@ class UrlZipReader:
 		if self._url.endswith(".gz"):
 			self.zip = zlib.decompressobj(31)
 		elif self._url.endswith(".bz2"):
-			#self.zip = bz2.BZ2Decompressor()
-			self.fp = bz2.BZ2File(self.fp)
-			self.zip = None
+			self.zip = bz2.BZ2Decompressor()
+			#self.zip = bz2.BZ2File(self.fp)
 		elif self._url.endswith(".zip"):
 			self.zip = zlib.decompressobj(15)
 		else:
@@ -45,9 +45,6 @@ class UrlZipReader:
 		if chunk != '':
 			res = self.zip.decompress(chunk)
 			print "DEFLATE", len(res)
-			if len(res)==0:
-				res = bz2.decompress(chunk)
-				print "DEFLATE", len(res)
 			return res	
 		return ''		
 
@@ -56,8 +53,13 @@ def anyReader(fname, encoding='utf-8'):
 
 	if fname == '-':
 		fp = sys.stdin
-	elif fname.startswith('http://') or fname.startswith('https://'):
-		if fname.endswith(".gz") or fname.endswith(".zip") or fname.endswith(".bz2"):
+	flds = fname.split('.')
+	extName = flds[-1]
+
+	isXml = extName=='xml' or (len(flds) > 2 and flds[-2]=='xml')
+
+	if fname.startswith('http://') or fname.startswith('https://'):
+		if extName=='gz' or extName=='zip' or extName=='bz2':
 			return UrlZipReader(fname) 
 
 		import urllib2 	
@@ -68,19 +70,22 @@ def anyReader(fname, encoding='utf-8'):
 			print e.msg
 			return None
 
-	elif fname.endswith(".gz"):
+	elif extName=='gz':
 		import gzip
 		fp = gzip.open(fname, 'rb')
-	elif fname.endswith(".bz2"):
+	elif extName=='bz2':
 		import bz2
 		fp = bz2.BZ2File(fname, 'rb')
 	else:
 		fp = open(fname, 'rb')
 
 
-	if encoding=='ascii':
+	# for XML file, we do not decode string into unicode because xml.sax handles ByteStream.
+	if encoding=='ascii' or isXml:
+		print "NO CODECS"
 		return fp
 	else:
+		print "CODECS", encoding
 		reader = codecs.getreader(encoding)
 		if fname == '-':
 			sys.stdin = reader(fp)
@@ -107,3 +112,14 @@ def anyWriter(fname, encoding='utf-8'):
 		if fname == '-':
 			sys.stdout = writer(fp)
 		return writer(fp)
+
+if __name__=='__main__':
+	reader = anyReader(sys.argv[1])
+	CHUNK = 100*1024
+	cnt = 0
+	for chunk in iter(lambda: reader.read(CHUNK), ''):
+		print 'READ', len(chunk)
+		cnt += len(chunk)
+
+	print 'SUM', cnt
+

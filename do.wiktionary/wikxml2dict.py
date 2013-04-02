@@ -34,6 +34,25 @@ def check_if_skip_head(headname):
             return True
     return False
 
+def filter_wiki_multi(lines):
+    return re.sub(r"<!--[^>]*-->", "", lines, re.M)
+
+def filter_wiki_line(text):
+	text = re.sub("<b>", " ", text)
+	# Get rid of the word, we don't want it in the definition
+	#text = re.sub(r"'''.*'''[ ]*(.*)", r"\1", text)
+	text = re.sub("'''", "", text)
+	text = re.sub("''", "", text)
+	# Replace standard Wiki tags
+        text = re.sub(r"\[\[^\|]+\|([^\]]+)\]\]", r"\1", text)
+        text = re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)
+        #text = re.sub(r"{{\(\|(.*)}}", r"", text)
+
+
+        # Remove all unrecognized wiki tags
+        #text = re.sub(r"{{[^}]+}}", "", text)
+   	return text
+ 
 def wiki2dict(titleContent, textContent, debug=False):
     '''
     parse text of 'text element' in 'wiktionary xml file'.
@@ -47,6 +66,10 @@ def wiki2dict(titleContent, textContent, debug=False):
     headname = ''
     headlevel = 0
     whySkip = None
+    
+    # remove html comment
+    textContent = filter_wiki_multi(textContent)
+
     for line in textContent.splitlines():
 	skip_thisline = False
         m = srch_wik_head1.search(line)
@@ -69,6 +92,8 @@ def wiki2dict(titleContent, textContent, debug=False):
                 isSkip =  False
             else :
                 pass
+            if not isSkip:
+                print "%s%s" % ('='*(headlevel-1), headname[:3])
 	
         # content lines in wiki
         else:
@@ -81,8 +106,9 @@ def wiki2dict(titleContent, textContent, debug=False):
             if line[:2]=='[[' and line[2:4] != 'en': 
                 skip_thisline = True
 
-        if not isSkip and not skip_thisline:
-            print line
+            if not isSkip and not skip_thisline:
+                line = filter_wiki_line(line)
+                print line
 
 class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
     def error(self, exception):
@@ -163,10 +189,9 @@ sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 # use feed()
 CHUNK = 100*1024
 for chunk in iter(lambda: infd.read(CHUNK), ''):
-	print "UNCOMPRESSED",len(chunk)
-	print chunk.decode('utf-8')
-	#xmlreader.feed(chunk)
-	#break
+	#print "UNCOMPRESSED",len(chunk)
+	#print chunk.decode('utf-8')
+	xmlreader.feed(chunk)
 
 
 
