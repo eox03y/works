@@ -44,7 +44,7 @@ def filter_wiki_line(text):
 	text = re.sub("'''", "", text)
 	text = re.sub("''", "", text)
 	# Replace standard Wiki tags
-        text = re.sub(r"\[\[^\|]+\|([^\]]+)\]\]", r"\1", text)
+        text = re.sub(r"\[\[[^\|]+\|([^\]]+)\]\]", r"\1", text)
         text = re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)
         #text = re.sub(r"{{\(\|(.*)}}", r"", text)
 
