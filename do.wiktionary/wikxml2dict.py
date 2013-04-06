@@ -93,7 +93,8 @@ def wiki2dict(titleContent, textContent, debug=False):
             else :
                 pass
             if not isSkip:
-                print "%s%s" % ('='*(headlevel-1), headname[:3])
+                print "%s%s" % ('='*(headlevel-1), headname)
+                #print "%s%s" % ('='*(headlevel-1), headname[:3])
 	
         # content lines in wiki
         else:
