@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query-continue&gt;</span>
+    <span style="color:blue;">&lt;imageinfo iistart=&quot;2007-10-20T02:29:04Z&quot; /&gt;</span>
+  <span style="color:blue;">&lt;/query-continue&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Image:Albert Einstein Head.jpg&quot; to=&quot;File:Albert Einstein Head.jpg&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page ns=&quot;6&quot; title=&quot;File:Albert Einstein Head.jpg&quot; missing=&quot;&quot; imagerepository=&quot;shared&quot;&gt;</span>
+        <span style="color:blue;">&lt;imageinfo&gt;</span>
+          <span style="color:blue;">&lt;ii thumburl=&quot;<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/200px-Albert_Einstein_Head.jpg">http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/200px-Albert_Einstein_Head.jpg</a>&quot; thumbwidth=&quot;200&quot; thumbheight=&quot;260&quot; url=&quot;<a href="http://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg">http://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg</a>&quot; descriptionurl=&quot;<a href="http://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg">http://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg</a>&quot; /&gt;</span>
+        <span style="color:blue;">&lt;/imageinfo&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1204 in 0.062 secs. -->
