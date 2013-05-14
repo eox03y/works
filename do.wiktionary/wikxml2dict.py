@@ -23,7 +23,7 @@ skip_title_prefixes = [
 
 skip_head_names = [
     'Etymology',
-    'Translations',
+    #'Translations',
     'Wiktionary:',
     'Anagrams'
 ]
@@ -123,6 +123,16 @@ class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
     def warning(self, exception):
         print exception.getMessage()
 
+
+'''
+input: xml file
+do: parse xml file
+output file: simplified wiki format
+
+xml file: <page> <title> ~~~ </title>
+				 <text> ~~~~~~~~~~~~~~~~~ </text> 
+		</page>
+'''
 class WikXmlHandler(xml.sax.handler.ContentHandler):
     def __init__ (self):
         self.isPageElement = False
@@ -162,9 +172,11 @@ class WikXmlHandler(xml.sax.handler.ContentHandler):
         elif self.isTextElement:
             self.textContent += ch
 
+
+def proc_xmlfile(xmlfile):
 ## Ways to construct a XMLReader object
 # simple way: 
-xmlreader = xml.sax.make_parser()
+	xmlreader = xml.sax.make_parser()
 # good way:
 # but, failed:  we have to implement parse()
 # refer: http://docs.python.org/2/library/xml.sax.reader.html#module-xml.sax.xmlreader
@@ -175,32 +187,45 @@ xmlreader = xml.sax.make_parser()
 # Set UTF-8 stdout in case of the user piping our output
 #reload(sys)
 #sys.setdefaultencoding('utf-8')
-import codecs
+	import codecs
 
-xmlreader.setContentHandler(WikXmlHandler())
-xmlreader.setErrorHandler(WikXmlErrorHandler())
+	xmlreader.setContentHandler(WikXmlHandler())
+	xmlreader.setErrorHandler(WikXmlErrorHandler())
 # xmlreader process 'byte stream' and assume the byte stream is utf-8.
 # so, we don't have to use 'codecs'. actually, we must not decode utf-8
-infd = anyReader.anyReader(sys.argv[1], encoding='utf-8')
-#infd = anyReader.anyReader(sys.argv[1], encoding='ascii')
-sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+	infd = anyReader.anyReader(xmlfile, encoding='utf-8')
+#infd = anyReader.anyReader(xmlfile, encoding='ascii')
+	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 # use parse()
 #xmlreader.parse(infd)
 
 # use feed()
-CHUNK = 100*1024
-for chunk in iter(lambda: infd.read(CHUNK), ''):
-	#print "UNCOMPRESSED",len(chunk)
-	#print chunk.decode('utf-8')
-	xmlreader.feed(chunk)
+	CHUNK = 100*1024
+	for chunk in iter(lambda: infd.read(CHUNK), ''):
+		#print "UNCOMPRESSED",len(chunk)
+		#print chunk.decode('utf-8')
+		xmlreader.feed(chunk)
 
 
 
+
+	'''
+	python wik_xml_read.py enwiktionary-20130313-pages-meta-current.5000.xml a
+
+	  File "/usr/lib/python2.7/xml/sax/handler.py", line 38, in fatalError
+		raise exception
+	xml.sax._exceptions.SAXParseException: enwiktionary-20130313-pages-meta-current.5000.xml:5001:0: no element found
+	'''
 
 '''
-python wik_xml_read.py enwiktionary-20130313-pages-meta-current.5000.xml a
-
-  File "/usr/lib/python2.7/xml/sax/handler.py", line 38, in fatalError
-    raise exception
-xml.sax._exceptions.SAXParseException: enwiktionary-20130313-pages-meta-current.5000.xml:5001:0: no element found
 '''
+def proc_wikifile(wikifile):
+	text = open(wikifile).read()
+	wiki2dict('', text)
+
+if __name__=="__main__":
+	infile = sys.argv[1]
+	if infile.find('.xml') != -1:
+		proc_xmlfile(infile)
+	else:
+		proc_wikifile(infile)
