@@ -1,3 +1,4 @@
+#-- coding: utf-8 --
 import codecs
 import sys
 
@@ -22,10 +23,28 @@ skip_title_prefixes = [
 ]
 
 skip_head_names = [
-    'Etymology',
     #'Translations',
+    'Etymology',
+	'Synonyms',
+	'Antonyms',
+	'Hyponyms',
+	'Derived ',
+	'Related ',
+	'References',
+	'Alternative',
+	'Usage notes',
+	'thesaurus',
+	'See also',
+	'External links',
+	'Quotations',
+	'Declension',
     'Wiktionary:',
     'Anagrams'
+]
+
+dont_skip_brkt_names = [
+    'obsolete',
+
 ]
 
 def check_if_skip_head(headname):
@@ -44,15 +63,24 @@ def filter_wiki_line(text):
 	text = re.sub("'''", "", text)
 	text = re.sub("''", "", text)
 	# Replace standard Wiki tags
-        text = re.sub(r"\[\[[^\|]+\|([^\]]+)\]\]", r"\1", text)
-        text = re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)
-        #text = re.sub(r"{{\(\|(.*)}}", r"", text)
+	text = re.sub(r"\[\[[^\|]+\|([^\]]+)\]\]", r"\1", text)
+	text = re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)
+	#text = re.sub(r"{{\(\|(.*)}}", r"", text)
 
 
-        # Remove all unrecognized wiki tags
-        #text = re.sub(r"{{[^}]+}}", "", text)
-   	return text
- 
+	# Remove all unrecognized wiki tags
+	#text = re.sub(r"{{[^}]+}}", "", text)
+	return text
+
+
+def get_audio_filename(line):
+	flds = line.split('|')
+	if len(flds)  > 2:
+		return flds[1]
+	else:
+		return ''
+'''
+'''
 def wiki2dict(titleContent, textContent, debug=False):
     '''
     parse text of 'text element' in 'wiktionary xml file'.
@@ -83,7 +111,7 @@ def wiki2dict(titleContent, textContent, debug=False):
                 isSkip =  True
                 whySkip = (headlevel, headname)
 
-            elif check_if_skip_head(headname):
+            elif headlevel >= 2 and check_if_skip_head(headname):
                 if debug: print "##SKIP HEAD", headname
                 isSkip =  True
                 whySkip = (headlevel, headname)
@@ -101,15 +129,35 @@ def wiki2dict(titleContent, textContent, debug=False):
             if srch_wik_category.search(line):
                 isSkip =  True 
 
-            if headname=='Pronunciation' and line.find('* {{audio|') == -1:
-                    skip_thisline = True				 
+            if headname=='Pronunciation':
+					if line.find('* {{audio|') == -1:
+						'''
+						skip sound notations
+						* {{a|UK}} {{IPA|/ˈdɪkʃən(ə)ɹi/}}, {{X-SAMPA|/"dIkS@n(@)ri/}}
+						* {{a|North America}} {{enPR|dĭk'shə-nĕr-ē}}, {{IPA|/ˈdɪkʃənɛɹi/}}, {{X-SAMPA|/"dIkS@nEri/}}
+						'''
+						skip_thisline = True
+					else:
+						line = get_audio_filename(line)
+
+            if headname.startswith('Etymology'):
+                if line.startswith('* ') == -1:
+                    skip_thisline = True
+                else:
+					pass
 
             if line[:2]=='[[' and line[2:4] != 'en': 
                 skip_thisline = True
 
             if not isSkip and not skip_thisline:
-                line = filter_wiki_line(line)
-                print line
+				# remove wiki tag '[[ ~~~ ]]'
+				line = filter_wiki_line(line)
+				# remove '<ref>~~~</ref>'
+				line = re.sub(r"<ref[^<]+</ref>", "", line, re.M)				 
+				line = re.sub(r"<ref[^/]+/>", "", line, re.M)				 
+				line = line.strip()
+				if len(line) > 2:
+					print line
 
 class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
     def error(self, exception):
