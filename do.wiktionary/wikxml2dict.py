@@ -79,6 +79,35 @@ def get_audio_filename(line):
 		return flds[1]
 	else:
 		return ''
+
+## Translation
+'''
+===Translations
+{{trans-top|shortened or contracted form of a word or phrase}}
+* Arabic: {{t-|ar|اختصار|m|tr=ikhtiSaar}}
+* Armenian: {{t-|hy|հապավում|tr=hapavum|sc=Armn}}
+* Asturian: {{t+|ast|abreviatura|f}}
+* Azeri: {{t-|az|abbreviatura}}
+* Bulgarian: {{t+|bg|абревиатура|f|tr=abreviatúra}}
+* Catalan: {{t+|ca|abreviatura|f}}
+* Chinese:
+*: Mandarin: {{t-|cmn|縮寫|sc=Hani}}, {{t-|cmn|缩写|tr=suōxiě|sc=Hani}}; {{t|cmn|簡寫|sc=Hani}}, {{t|cmn|简写|tr=jiǎnxiě|sc=Hani}}; {{t-|cmn|略語|sc=Hani}}, {{t|cmn|略语|tr=lüèyǔ|sc=Hani}}
+* Cornish: {{t-|kw|berrheans}}
+
+'''
+# "* Arabic: {{t-|ar|اختصار|m|tr=ikhtiSaar}}" --> 'Arabic', 'ar'
+srch_langname = re.compile(r'^\*:? (\w+): \{\{t[\-\+]?\|(\w+)\|')
+langname_twocharcode_map = {} # 'ar':'Arabic', 'cmn':'Mandarin'
+def parse_langname(line):
+	m = srch_langname.search(line)
+	if m and m.group(1) and m.group(2):
+		#print "TRAN", m.group(1), m.group(2)
+		if not langname_twocharcode_map.has_key(m.group(2)):
+			langname_twocharcode_map[m.group(2)] = m.group(1)
+
+def prn_langname_code():
+	for k,v in langname_twocharcode_map.iteritems():
+		print '%3s --> %s' % (k, v) 
 '''
 '''
 def wiki2dict(titleContent, textContent, debug=False):
@@ -140,6 +169,9 @@ def wiki2dict(titleContent, textContent, debug=False):
 				else:
 					line = get_audio_filename(line)
 
+			if headname.startswith('Translation'):
+				parse_langname(line)
+				pass
 
 			if line.startswith('[[Image'):
 				print line
@@ -246,11 +278,14 @@ def proc_xmlfile(xmlfile):
 
 	# use feed()
 	CHUNK = 100*1024
-	for chunk in iter(lambda: infd.read(CHUNK), ''):
-		#print "UNCOMPRESSED",len(chunk)
-		#print chunk.decode('utf-8')
-		xmlreader.feed(chunk)
 
+	try:
+		for chunk in iter(lambda: infd.read(CHUNK), ''):
+			#print "UNCOMPRESSED",len(chunk)
+			#print chunk.decode('utf-8')
+			xmlreader.feed(chunk)
+	except:
+		pass
 
 
 
@@ -266,3 +301,4 @@ if __name__=="__main__":
 		proc_xmlfile(infile)
 	else:
 		proc_wikifile(infile)
+	prn_langname_code()
