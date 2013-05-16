@@ -1,4 +1,4 @@
-#-- coding: utf-8 --
+# -*- coding: utf-8 -*-
 import codecs
 import sys
 
@@ -32,6 +32,8 @@ skip_head_names = [
 	'Related ',
 	'References',
 	'Alternative',
+	'Statistics',
+	'Descendant',
 	'Usage notes',
 	'thesaurus',
 	'See also',
@@ -96,7 +98,7 @@ def get_audio_filename(line):
 
 '''
 # "* Arabic: {{t-|ar|اختصار|m|tr=ikhtiSaar}}" --> 'Arabic', 'ar'
-srch_langname = re.compile(r'^\*:? (\w+): \{\{t[\-\+]?\|(\w+)\|')
+srch_langname = re.compile(r'^\*:? (\w+): \{\{t[^\|]?\|(\w+)\|')
 langname_twocharcode_map = {} # 'ar':'Arabic', 'cmn':'Mandarin'
 def parse_langname(line):
 	m = srch_langname.search(line)
@@ -133,7 +135,6 @@ def wiki2dict(titleContent, textContent, debug=False):
 	textContent = filter_wiki_multi(textContent)
 
 	for line in textContent.splitlines():
-		skip_thisline = False
 		m = srch_wik_head1.search(line)
 		# head line
 		if m:
@@ -160,6 +161,8 @@ def wiki2dict(titleContent, textContent, debug=False):
 	
 		# content lines in wiki
 		else:
+			skip_thisline = False
+			line = line.strip()
 			if srch_wik_category.search(line):
 				isSkip =  True 
 
@@ -176,10 +179,24 @@ def wiki2dict(titleContent, textContent, debug=False):
 
 			if headname.startswith('Translation'):
 				parse_langname(line)
-				pass
+				if line.startswith('* Old'):
+					skip_thisline = True
+				# skip if not the right format
+				'''
+				* Ossetian:
+					*: Digor: {{tø|os|авдисæр|tr=avdisær|sc=Cyrl}}
+					*: Iron: {{tø|os|къуырисæр|tr=k”uyrisær|sc=Cyrl}}
+				* Sami:
+				*: Inari: vuossargâ
+				*: Lule: mánnodahka
+				'''
+				if len(line) and line[-1] != ':' and line.find('{{')==-1:
+					skip_thisline = True
+					pass
 
 			if line.startswith('[[Image'):
 				print line
+				skip_thisline = True
 			elif line[:2]=='[[' and line[2:4] != 'en': 
 				skip_thisline = True
 			
@@ -187,8 +204,8 @@ def wiki2dict(titleContent, textContent, debug=False):
 				# remove wiki tag '[[ ~~~ ]]'
 				line = filter_wiki_line(line)
 				# remove '<ref>~~~</ref>'
-				line = re.sub(r"<ref[^<]+</ref>", "", line, re.M)				 
-				line = re.sub(r"<ref[^/]+/>", "", line, re.M)				 
+				line = re.sub(r"<ref[^<]+</ref>", "", line, re.M)
+				line = re.sub(r"<ref[^/]+/>", "", line, re.M)
 				line = line.strip()
 				if len(line) > 0:
 					print line
@@ -289,8 +306,9 @@ def proc_xmlfile(xmlfile):
 			#print "UNCOMPRESSED",len(chunk)
 			#print chunk.decode('utf-8')
 			xmlreader.feed(chunk)
-	except:
+	except EOFError:
 		pass
+		#raise
 
 
 

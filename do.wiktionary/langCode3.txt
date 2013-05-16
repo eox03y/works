@@ -1,0 +1,300 @@
+ gv --> Manx
+ gu --> Gujarati
+scn --> Sicilian
+rom --> Romani
+szl --> Silesian
+sco --> Scots
+abq --> Abaza
+mnk --> Mandinka
+ ga --> Irish
+ se --> Northern
+tta --> Tutelo
+ gl --> Galician
+lld --> Ladin
+ lg --> Luganda
+bua --> Buryat
+ lb --> Luxembourgish
+tly --> Asalemi
+vep --> Veps
+ la --> Latin
+ ln --> Lingala
+amu --> Amuzgo
+ tt --> Tatar
+ tr --> Turkish
+liv --> Livonian
+wrh --> Wiradhuri
+ li --> Limburgish
+ lv --> Latvian
+ to --> Tongan
+ lt --> Lithuanian,Kyrgyz
+ tk --> Turkmen
+ th --> Thai
+ tg --> Tajik
+lkt --> Lakota
+ te --> Telugu
+sgs --> Samogitian
+rgn --> Romagnol
+haw --> Hawaiian
+ yi --> Yiddish
+wym --> Vilamovian
+ ty --> Tahitian
+lzz --> Laz
+hit --> Hittite
+ceb --> Cebuano
+ yo --> Yoruba
+ de --> German
+xdk --> Dharug
+luo --> Luo
+ da --> Danish
+cho --> Choctaw
+moh --> Mohawk
+dar --> Dargwa
+got --> Gothic
+ dv --> Dhivehi
+bar --> Bavarian
+nov --> Novial
+ppl --> Pipil
+hil --> Hiligaynon
+cjs --> Shor
+moe --> Montagnais
+cmn --> Mandarin
+nay --> Ngarrindjeri
+ qu --> Quechua
+evn --> Evenki
+mwl --> Mirandese
+bxr --> Buryat
+ems --> Alutiiq
+kpy --> Koryak
+shi --> Tashelhit
+bal --> Baluchi
+sux --> Sumerian
+shn --> Shan
+ ps --> Pashto
+ el --> Greek
+ eo --> Esperanto
+pms --> Piedmontese
+ ee --> Ewe
+arz --> Egyptian
+mdf --> Moksha
+kaa --> Karakalpak
+brg --> Baure
+arc --> Syriac,Hebrew,Aramaic
+ uk --> Ukrainian
+ eu --> Basque
+ et --> Estonian
+tet --> Tetum
+ es --> Spanish
+ ru --> Russian
+ rw --> Kinyarwanda
+dlg --> Dolgan
+gvl --> Gulay
+ kl --> Greenlandic
+izh --> Ingrian
+luy --> Luhya
+kut --> Kutenai
+dlm --> Dalmatian
+kis --> Kis
+kum --> Kumyk
+kmr --> Kurmanji
+ rm --> Romansch
+ ro --> Romanian
+bdy --> Bandjalang
+ bn --> Bengali
+esh --> Eshtehardi
+ be --> Belarusian
+ bg --> Bulgarian
+myv --> Erzya
+ ba --> Bashkir
+ wa --> Walloon
+ast --> Asturian
+ wo --> Wolof
+ bm --> Bambara
+ jv --> Javanese
+ bo --> Tibetan
+ bi --> Bislama
+hak --> Hakka
+ br --> Breton
+mer --> Meru
+rup --> Aromanian
+ket --> Ket
+ ss --> Swati
+ ja --> Japanese
+zza --> Zazaki
+cop --> Coptic,Bohairic,Sahidic
+gni --> Gooniyandi
+arn --> Mapudungun
+ oj --> Ojibwe
+ace --> Acehnese
+ilo --> Ilocano
+kjh --> Khakas
+pdt --> Plautdietsch
+ oc --> Occitan
+gld --> Nanai
+ltg --> Latgalian
+krl --> Karelian
+ lo --> Lao
+mvi --> Miyako
+ os --> Digor,Iron,Ossetian
+xmf --> Mingrelian
+udm --> Udmurt
+ xh --> Xhosa
+ ch --> Chamorro
+ co --> Corsican
+kim --> Tofa
+pox --> Polabian
+ ca --> Catalan
+lmo --> Lombard
+ ce --> Chechen
+chm --> Mari
+ cy --> Welsh
+sah --> Yakut
+ cs --> Czech
+ cr --> Cree
+ady --> Adyghe
+ cv --> Chuvash
+ cu --> Cyrillic,Glagolitic
+pim --> Powhatan
+ fj --> Fijian
+ tn --> Tswana
+dng --> Dungan
+ or --> Oriya
+twf --> Taos
+ pt --> Portuguese
+chg --> Chagatai
+ sm --> Samoan
+ext --> Extremaduran
+ tl --> Tagalog
+yij --> Yindjibarndi
+chr --> Cherokee
+ pa --> Punjabi
+xal --> Kalmyk
+ vi --> Vietnamese
+gil --> Gilbertese
+ pl --> Polish
+vec --> Venetian
+agm --> Angaataha
+ hy --> Armenian
+akz --> Alabama
+ iu --> Inuktitut
+egy --> Egyptian
+ hu --> Hungarian
+gan --> Gan
+ hi --> Hindi
+ tw --> Twi
+aqc --> Archi
+gag --> Gagauz
+ ha --> Hausa
+bug --> Buginese
+ he --> Hebrew
+kld --> Gamilaraay
+ mg --> Malagasy
+ pi --> Pali
+aaa --> Ghotuo
+tab --> Tabassaran
+ uz --> Uzbek,Cyrillic
+bqi --> Bakhtiari
+ ml --> Malayalam
+kln --> Kalenjin
+ mn --> Mongolian
+ mi --> Maori
+ mk --> Macedonian
+ ur --> Urdu
+aau --> Abau
+ mt --> Maltese
+ain --> Ainu
+pcd --> Picard
+ ms --> Malay,Rumi,Jawi,Latin,Arabic
+ mr --> Marathi
+lbe --> Lak
+ ug --> Uyghur
+ ta --> Tamil
+ my --> Burmese
+ ki --> Kikuyu
+ ab --> Abkhaz
+ ve --> Venda
+ af --> Afrikaans
+ sw --> Swahili
+ is --> Icelandic
+ av --> Avar
+ am --> Amharic
+ it --> Italian
+ an --> Aragonese
+vot --> Votic
+ ia --> Interlingua
+ as --> Assamese
+ ar --> Arabic,Libyan,Moroccan
+inh --> Ingush
+ su --> Sundanese
+ io --> Ido
+ zu --> Zulu
+ ay --> Aymara
+ az --> Azeri,Cyrillic,Roman
+ ie --> Interlingue
+ id --> Indonesian
+ ig --> Igbo
+sat --> Santali
+pap --> Papiamentu
+kqr --> Kimaragang
+nnt --> Nanticoke
+ nl --> Dutch
+ nn --> Nynorsk
+ no --> Norwegian,Nynorsk
+ na --> Nauruan
+nah --> Nahuatl
+ ne --> Nepali
+lij --> Ligurian
+csb --> Kashubian
+tyv --> Tuvan
+ ny --> Chichewa
+nap --> Neapolitan
+naq --> Nama
+grc --> Ancient
+hop --> Hopi
+agx --> Aghul
+ so --> Somali
+ryu --> Okinawan
+pam --> Kapampangan
+ nv --> Navajo
+kab --> Kabyle
+ fr --> French
+nog --> Nogai
+jbo --> Lojban
+lad --> Ladino,Ladin
+ sv --> Swedish
+yao --> Yao
+ fa --> Persian
+bla --> Blackfoot
+ ff --> Fula
+ fi --> Finnish
+mzn --> Mazanderani
+dak --> Dakota
+fur --> Friulian
+ sa --> Sanskrit
+rhg --> Rohingya
+ fo --> Faroese
+ ks --> Kashmiri
+ ka --> Georgian
+ kg --> Kongo
+xkl --> Bakung
+cpn --> Cherepon
+ckb --> Sorani
+ kk --> Kazakh
+yue --> Cantonese
+ sq --> Albanian
+ ko --> Korean
+ kn --> Kannada
+ km --> Khmer
+ st --> Sotho
+ sk --> Slovak
+ si --> Sinhalese
+ sh --> Cyrillic,Roman
+ kw --> Cornish
+ sn --> Shona
+ ku --> Kurdish,Sorani,Kurmanji
+ sl --> Slovene
+ sc --> Sardinian
+ ky --> Kyrgyz,Kirghiz
+mrc --> Maricopa
+agr --> Aguaruna
+ccc --> Chamicuro
+ sd --> Sindhi
