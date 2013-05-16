@@ -103,11 +103,16 @@ def parse_langname(line):
 	if m and m.group(1) and m.group(2):
 		#print "TRAN", m.group(1), m.group(2)
 		if not langname_twocharcode_map.has_key(m.group(2)):
-			langname_twocharcode_map[m.group(2)] = m.group(1)
+			langname_twocharcode_map[m.group(2)] = [m.group(1)]
+		elif not m.group(1) in langname_twocharcode_map[m.group(2)]:
+			langname_twocharcode_map[m.group(2)].append(m.group(1))
 
 def prn_langname_code():
 	for k,v in langname_twocharcode_map.iteritems():
-		print '%3s --> %s' % (k, v) 
+		if type(v)==list:
+			print '%3s --> %s' % (k, ','.join(v))
+		else:
+			print '%3s --> %s' % (k, v) 
 '''
 '''
 def wiki2dict(titleContent, textContent, debug=False):
