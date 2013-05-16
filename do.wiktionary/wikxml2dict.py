@@ -267,16 +267,16 @@ def proc_xmlfile(xmlfile):
 	#xmlreader = xml.sax.xmlreader.IncrementalParser()
 
 	# Set UTF-8 stdout in case of the user piping our output
-	#reload(sys)
-	#sys.setdefaultencoding('utf-8')
+	reload(sys)
+	sys.setdefaultencoding('utf-8')
 	import codecs
 
 	xmlreader.setContentHandler(WikXmlHandler())
 	xmlreader.setErrorHandler(WikXmlErrorHandler())
 	# xmlreader process 'byte stream' and assume the byte stream is utf-8.
 	# so, we don't have to use 'codecs'. actually, we must not decode utf-8
-	infd = anyReader.anyReader(xmlfile, encoding='utf-8')
-	#infd = anyReader.anyReader(xmlfile, encoding='ascii')
+	#infd = anyReader.anyReader(xmlfile, encoding='utf-8')
+	infd = anyReader.anyReader(xmlfile, encoding='ascii')
 	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 	# use parse()
 	#xmlreader.parse(infd)
