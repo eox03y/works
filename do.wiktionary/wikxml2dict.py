@@ -193,6 +193,8 @@ def wiki2dict(titleContent, textContent, debug=False):
 				if len(line) and line[-1] != ':' and line.find('{{')==-1:
 					skip_thisline = True
 					pass
+				if line.startswith('{{') and not line.startswith('{{trans-top'):
+					skip_thisline = True
 
 			if line.startswith('[[Image'):
 				print line
