@@ -99,15 +99,32 @@ def get_audio_filename(line):
 '''
 # "* Arabic: {{t-|ar|اختصار|m|tr=ikhtiSaar}}" --> 'Arabic', 'ar'
 srch_langname = re.compile(r'^\*:? (\w+): \{\{t[^\|]?\|(\w+)\|')
+# * Chinese:
+# *: Mandarin: {{~~~ 
+srch_langname_multi = re.compile(r'^ (\w+):$')
 langname_twocharcode_map = {} # 'ar':'Arabic', 'cmn':'Mandarin'
 def parse_langname(line):
+	# check multi-language (ex, Chinese)
+	m = srch_langname_multi.search(line)
+	if m:
+		lang = m.group(1)
+		if lang: return "* %s:" % (lang[:4])
+		else: return line
+
+	# normal case
 	m = srch_langname.search(line)
 	if m and m.group(1) and m.group(2):
-		#print "TRAN", m.group(1), m.group(2)
-		if not langname_twocharcode_map.has_key(m.group(2)):
-			langname_twocharcode_map[m.group(2)] = [m.group(1)]
-		elif not m.group(1) in langname_twocharcode_map[m.group(2)]:
-			langname_twocharcode_map[m.group(2)].append(m.group(1))
+		lang = m.group(1)
+		abbr = m.group(2)
+		short = lang[:4]
+		line = line.replace(lang+':', short+':')
+		#print "TRAN", lang, abbr
+		#print line
+		if not langname_twocharcode_map.has_key(abbr):
+			langname_twocharcode_map[abbr] = [lang]
+		elif not lang in langname_twocharcode_map[abbr]:
+			langname_twocharcode_map[abbr].append(lang)
+	return line
 
 def prn_langname_code():
 	for k,v in langname_twocharcode_map.iteritems():
@@ -178,7 +195,7 @@ def wiki2dict(titleContent, textContent, debug=False):
 					line = get_audio_filename(line)
 
 			if headname.startswith('Translation'):
-				parse_langname(line)
+				line = parse_langname(line)
 				if line.startswith('* Old'):
 					skip_thisline = True
 				# skip if not the right format
@@ -193,7 +210,7 @@ def wiki2dict(titleContent, textContent, debug=False):
 				if len(line) and line[-1] != ':' and line.find('{{')==-1:
 					skip_thisline = True
 					pass
-				if line.startswith('{{') and not line.startswith('{{trans-top'):
+				elif line.startswith('{{') and not line.startswith('{{trans-top'):
 					skip_thisline = True
 
 			if line.startswith('[[Image'):
