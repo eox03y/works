@@ -7,6 +7,17 @@
 
 ## Parse & convert wiktionary to simple wiki format
  * time python wikxml2dict.py  enwiktionary-20130415-pages-articles.xml.bz2 enwiktionary-20130415.dict.bz2
+ ** -rw-r--r--  1 daeheehan  staff  387292076 Apr 23 01:44 enwiktionary-20130415-pages-articles.xml.bz2
+ ** -rw-r--r--  1 daeheehan  staff   76336706 May 18 00:09 enwiktionary-20130415.dict.bz2
+ ** real    20m55.033s
+ ** user    19m52.525s
+ ** sys     1m2.170s
+
+ * bunzip2 -c enwiktionary-20130415.dict.bz2 |  egrep "^@" > a
+ * sort a > b
+ ** -rw-r--r--  1 daeheehan  staff  50977146 May 18 00:17 b
+ ** wc -l b --> 3534117
+
  * process XML file
  ** python wikxml2dict.py enwiktionary.500k.xml.bz2 enwiktionary.500k.dict.bz2
  ** python wikxml2dict.py enwiktionary.500k.xml.bz2 enwiktionary.500k.dict.gz
