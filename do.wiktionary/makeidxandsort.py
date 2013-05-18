@@ -16,21 +16,21 @@ def make_index_of_dict(infd):
 	for line in infd:
 		if line[0]=='@':
 			if headword:
-				idxList[headword] = (offset, body)
+				idxList[headword] = [offset, body]
 			body = ''
 			headword = line[2:-1]
 		else:
 			body += line
 		offset += len(line)
-	idxList[headword] = (offset, body)
+	idxList[headword] = [offset, body]
 	infd.close()
 	return idxList
 
 '''
 '''
-def	save_sorted_dict(sortedfd, idxlist)
+def	save_sorted_dict(sortedfd, idxlist):
 	# sort by the order of headword
-	headword_sorted = sorted(idxList.iteritems(), key=lambda x:x[0],  reverse=False)
+	headword_sorted = sorted(idxlist.iteritems(), key=lambda x:x[0],  reverse=False)
 	offset = 0
 	for r in headword_sorted:
 		headline = '@ %s\n' % (r[0])
@@ -48,7 +48,7 @@ def	save_sorted_dict(sortedfd, idxlist)
 def save_index(outfd, idxList):
 	for r in idxList:
 		outfd.write('%X\t%X\t%s\n' % (r[1][0], r[1][1], r[0]))
-	return result
+	outfd.close()
 
 if __name__=="__main__":
 	reload(sys)

@@ -28,6 +28,9 @@
 ## Build index file of dict file
  * python makeidxofdict.py enwiktionary-20130415.dict.bz2 enwiktionary-20130415.index.bz2
  * python makeidxandsort.py enwiktionary-20130415.dict.bz2 enwiktionary-20130415.dict.sorted.bz2 enwiktionary-20130415.index.bz2
+ ** real	0m26.233s
+ ** user	0m25.949s
+ ** sys	0m0.275s
 
 ## image url
 * https://en.wikipedia.org/w/api.php
