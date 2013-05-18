@@ -13,7 +13,7 @@
  ** user    19m52.525s
  ** sys     1m2.170s
 
- * daeheehan$ bunzip2 -c enwiktionary-20130415.dict.bz2 |  egrep "^@" | sort > b
+ * bunzip2 -c enwiktionary-20130415.dict.bz2 |  egrep "^@" | sort > b
  ** bunzip2 -c enwiktionary-20130415.dict.bz2 |  egrep "^@" > a
  ** sort a > b
  ** -rw-r--r--  1 daeheehan  staff  50977146 May 18 00:17 b
@@ -26,7 +26,7 @@
  * 5/13 : process wiki text file
  ** python wikxml2dict.py abdication.wiki  > abdication.dict
 ## Build index file of dict file
-
+ * python makeidxofdict.py enwiktionary-20130415.dict.bz2 enwiktionary-20130415.index.bz2
 
 ## image url
 * https://en.wikipedia.org/w/api.php

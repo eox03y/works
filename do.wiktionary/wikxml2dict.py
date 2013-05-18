@@ -197,9 +197,11 @@ def wiki2dict(titleContent, textContent, outf, debug=False):
 				isSkip =  False
 			else :
 				pass
-			if not isSkip:
-				outf.write( "%s%s\n" % ('='*(headlevel-1), headname) )
-				outBody.write( "%s%s\n" % ('='*(headlevel-1), headname) )
+			if not isSkip and headlevel > 2:
+				#outf.write( "%s%s\n" % ('='*(headlevel-1), headname) )
+				#outBody.write( "%s%s\n" % ('='*(headlevel-1), headname) )
+				# if headlevel==2, then only 'English' is printed. so no need to print 'English'
+				outBody.write( "=%d %s\n" % (headlevel, headname[:4]) )
 				#print "%s%s" % ('='*(headlevel-1), headname[:3])
 	
 		# content lines in wiki
