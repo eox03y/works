@@ -15,3 +15,5 @@ set tabstop=4
 set shiftwidth=4
 set smartindent
 
+:set listchars=tab:--,trail:~,extends:>,precedes:<
+:set list
