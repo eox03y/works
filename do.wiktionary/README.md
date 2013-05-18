@@ -13,8 +13,9 @@
  ** user    19m52.525s
  ** sys     1m2.170s
 
- * bunzip2 -c enwiktionary-20130415.dict.bz2 |  egrep "^@" > a
- * sort a > b
+ * daeheehan$ bunzip2 -c enwiktionary-20130415.dict.bz2 |  egrep "^@" | sort > b
+ ** bunzip2 -c enwiktionary-20130415.dict.bz2 |  egrep "^@" > a
+ ** sort a > b
  ** -rw-r--r--  1 daeheehan  staff  50977146 May 18 00:17 b
  ** wc -l b --> 3534117
 

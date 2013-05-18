@@ -133,17 +133,38 @@ def prn_langname_code():
 			print '%3s --> %s' % (k, ','.join(v))
 		else:
 			print '%3s --> %s' % (k, v) 
+
 '''
 '''
+def is_notgood(title):
+	for ch  in title:
+		if ord(ch) > 255:
+			return True
+	ch = title[0]
+	if not ch.isalnum() and ch != '-':
+		return True
+	return False
+
+'''
+'''
+from StringIO import StringIO
 def wiki2dict(titleContent, textContent, outf, debug=False):
+	outTitle = StringIO() 
+	outBody = StringIO()
 	'''
 	parse text of 'text element' in 'wiktionary xml file'.
 	'''
+	if is_notgood(titleContent):
+		return None
+
 	for pf in skip_title_prefixes:
 		if titleContent.startswith(pf):
 			if debug: print "##SKIP TITLE", titleContent
 			return None
-	outf.write("@ %s\n" % titleContent.strip())
+	#outf.write("@ %s\n" % titleContent.strip())
+	outTitle.write("@ %s\n" % titleContent.strip())
+
+	isEnglishWord = False
 	isSkip = False
 	headname = ''
 	headlevel = 0
@@ -159,10 +180,13 @@ def wiki2dict(titleContent, textContent, outf, debug=False):
 			#print "##RE", m.group(1), m.group(2)
 			headlevel = len(m.group(1))
 			headname = m.group(2)
-			if headlevel == 2 and headname != 'English':
-				if debug: print "##SKIP NonEnglish", headname
-				isSkip =  True
-				whySkip = (headlevel, headname)
+			if headlevel == 2:
+				if headname == 'English':
+					isEnglishWord = True
+				else:
+					if debug: print "##SKIP NonEnglish", headname
+					isSkip =  True
+					whySkip = (headlevel, headname)
 
 			elif headlevel >= 2 and check_if_skip_head(headname):
 				if debug: print "##SKIP HEAD", headname
@@ -175,6 +199,7 @@ def wiki2dict(titleContent, textContent, outf, debug=False):
 				pass
 			if not isSkip:
 				outf.write( "%s%s\n" % ('='*(headlevel-1), headname) )
+				outBody.write( "%s%s\n" % ('='*(headlevel-1), headname) )
 				#print "%s%s" % ('='*(headlevel-1), headname[:3])
 	
 		# content lines in wiki
@@ -218,8 +243,8 @@ def wiki2dict(titleContent, textContent, outf, debug=False):
 				skip_thisline = True
 
 			if line.startswith('[[Image'):
-				outf.write(line)
-				outf.write('\n')
+				#outf.write(line+'\n')
+				outBody.write(line+'\n')
 			
 			if not isSkip and not skip_thisline:
 				# remove wiki tag '[[ ~~~ ]]'
@@ -229,8 +254,13 @@ def wiki2dict(titleContent, textContent, outf, debug=False):
 				line = re.sub(r"<ref[^/]+/>", "", line, re.M)
 				line = line.strip()
 				if len(line) > 0:
-					outf.write(line)
-					outf.write('\n')
+					#outf.write(line+'\n')
+					outBody.write(line+'\n')
+
+	# after for loop
+	if isEnglishWord:
+		outf.write(outTitle.getvalue())
+		outf.write(outBody.getvalue())
 
 class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
 	def error(self, exception):
