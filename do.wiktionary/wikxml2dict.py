@@ -1,4 +1,4 @@
-#-- coding: utf-8 --
+# -*- coding: utf-8 -*-
 import codecs
 import sys
 
@@ -32,6 +32,9 @@ skip_head_names = [
 	'Related ',
 	'References',
 	'Alternative',
+	'Statistics',
+	'Descendant',
+	'Shorthand',
 	'Usage notes',
 	'thesaurus',
 	'See also',
@@ -96,29 +99,72 @@ def get_audio_filename(line):
 
 '''
 # "* Arabic: {{t-|ar|اختصار|m|tr=ikhtiSaar}}" --> 'Arabic', 'ar'
-srch_langname = re.compile(r'^\*:? (\w+): \{\{t[\-\+]?\|(\w+)\|')
+srch_langname = re.compile(r'^\*:? (\w+): \{\{t[^\|]?\|(\w+)\|')
+# * Chinese:
+# *: Mandarin: {{~~~ 
+srch_langname_multi = re.compile(r'^\* (\w+):$')
 langname_twocharcode_map = {} # 'ar':'Arabic', 'cmn':'Mandarin'
 def parse_langname(line):
+	# check multi-language (ex, Chinese)
+	m = srch_langname_multi.search(line)
+	if m:
+		lang = m.group(1)
+		if lang: return "* %s:" % (lang[:4])
+		else: return line
+
+	# normal case
 	m = srch_langname.search(line)
 	if m and m.group(1) and m.group(2):
-		#print "TRAN", m.group(1), m.group(2)
-		if not langname_twocharcode_map.has_key(m.group(2)):
-			langname_twocharcode_map[m.group(2)] = m.group(1)
+		lang = m.group(1)
+		abbr = m.group(2)
+		short = lang[:4]
+		line = line.replace(lang+':', short+':')
+		#print "TRAN", lang, abbr
+		#print line
+		if not langname_twocharcode_map.has_key(abbr):
+			langname_twocharcode_map[abbr] = [lang]
+		elif not lang in langname_twocharcode_map[abbr]:
+			langname_twocharcode_map[abbr].append(lang)
+	return line
 
 def prn_langname_code():
 	for k,v in langname_twocharcode_map.iteritems():
-		print '%3s --> %s' % (k, v) 
+		if type(v)==list:
+			print '%3s --> %s' % (k, ','.join(v))
+		else:
+			print '%3s --> %s' % (k, v) 
+
 '''
 '''
-def wiki2dict(titleContent, textContent, debug=False):
+def is_notgood(title):
+	for ch  in title:
+		if ord(ch) > 255:
+			return True
+	ch = title[0]
+	if not ch.isalnum() and ch != '-':
+		return True
+	return False
+
+'''
+'''
+from StringIO import StringIO
+def wiki2dict(titleContent, textContent, outf, debug=False):
+	outTitle = StringIO() 
+	outBody = StringIO()
 	'''
 	parse text of 'text element' in 'wiktionary xml file'.
 	'''
+	if is_notgood(titleContent):
+		return None
+
 	for pf in skip_title_prefixes:
 		if titleContent.startswith(pf):
 			if debug: print "##SKIP TITLE", titleContent
 			return None
-	print "=", titleContent
+	#outf.write("@ %s\n" % titleContent.strip())
+	outTitle.write("@ %s\n" % titleContent.strip())
+
+	isEnglishWord = False
 	isSkip = False
 	headname = ''
 	headlevel = 0
@@ -128,17 +174,19 @@ def wiki2dict(titleContent, textContent, debug=False):
 	textContent = filter_wiki_multi(textContent)
 
 	for line in textContent.splitlines():
-		skip_thisline = False
 		m = srch_wik_head1.search(line)
 		# head line
 		if m:
 			#print "##RE", m.group(1), m.group(2)
 			headlevel = len(m.group(1))
 			headname = m.group(2)
-			if headlevel == 2 and headname != 'English':
-				if debug: print "##SKIP NonEnglish", headname
-				isSkip =  True
-				whySkip = (headlevel, headname)
+			if headlevel == 2:
+				if headname == 'English':
+					isEnglishWord = True
+				else:
+					if debug: print "##SKIP NonEnglish", headname
+					isSkip =  True
+					whySkip = (headlevel, headname)
 
 			elif headlevel >= 2 and check_if_skip_head(headname):
 				if debug: print "##SKIP HEAD", headname
@@ -150,11 +198,14 @@ def wiki2dict(titleContent, textContent, debug=False):
 			else :
 				pass
 			if not isSkip:
-				print "%s%s" % ('='*(headlevel-1), headname)
+				outf.write( "%s%s\n" % ('='*(headlevel-1), headname) )
+				outBody.write( "%s%s\n" % ('='*(headlevel-1), headname) )
 				#print "%s%s" % ('='*(headlevel-1), headname[:3])
 	
 		# content lines in wiki
 		else:
+			skip_thisline = False
+			line = line.strip()
 			if srch_wik_category.search(line):
 				isSkip =  True 
 
@@ -170,23 +221,46 @@ def wiki2dict(titleContent, textContent, debug=False):
 					line = get_audio_filename(line)
 
 			if headname.startswith('Translation'):
-				parse_langname(line)
-				pass
+				line = parse_langname(line)
+				if line.startswith('* Old'):
+					skip_thisline = True
+				# skip if not the right format
+				'''
+				* Ossetian:
+					*: Digor: {{tø|os|авдисæр|tr=avdisær|sc=Cyrl}}
+					*: Iron: {{tø|os|къуырисæр|tr=k”uyrisær|sc=Cyrl}}
+				* Sami:
+				*: Inari: vuossargâ
+				*: Lule: mánnodahka
+				'''
+				if len(line) and line[-1] != ':' and line.find('{{')==-1:
+					skip_thisline = True
+					pass
+				elif line.startswith('{{') and not line.startswith('{{trans-top'):
+					skip_thisline = True
+
+			if line[:2]=='[[' and line[2:4] != 'en': 
+				skip_thisline = True
 
 			if line.startswith('[[Image'):
-				print line
-			elif line[:2]=='[[' and line[2:4] != 'en': 
-				skip_thisline = True
+				#outf.write(line+'\n')
+				outBody.write(line+'\n')
 			
 			if not isSkip and not skip_thisline:
 				# remove wiki tag '[[ ~~~ ]]'
 				line = filter_wiki_line(line)
 				# remove '<ref>~~~</ref>'
-				line = re.sub(r"<ref[^<]+</ref>", "", line, re.M)				 
-				line = re.sub(r"<ref[^/]+/>", "", line, re.M)				 
+				line = re.sub(r"<ref[^<]+</ref>", "", line, re.M)
+				line = re.sub(r"<ref[^/]+/>", "", line, re.M)
 				line = line.strip()
 				if len(line) > 0:
-					print line
+					#outf.write(line+'\n')
+					outBody.write(line+'\n')
+
+	# after for loop
+	if isEnglishWord:
+		outf.write(outTitle.getvalue())
+		outf.write(outBody.getvalue())
 
 class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
 	def error(self, exception):
@@ -211,12 +285,13 @@ xml file: <page> <title> ~~~ </title>
 		</page>
 '''
 class WikXmlHandler(xml.sax.handler.ContentHandler):
-	def __init__ (self):
+	def __init__ (self, outf):
 		self.isPageElement = False
 		self.isTitleElement = False
 		self.titleContent = u""
 		self.isTextElement = False
 		self.textContent = u""
+		self.outf = outf
 
 	def startElement(self, name, attrs):
 		if name == 'page':
@@ -235,7 +310,7 @@ class WikXmlHandler(xml.sax.handler.ContentHandler):
 			#print self.titleContent 
 			#print "###TEXT"
 			#print self.textContent
-			wiki2dict(self.titleContent, self.textContent)
+			wiki2dict(self.titleContent, self.textContent, self.outf)
 			self.titleContent = ""
 			self.textContent = ""
 		elif name == 'title':
@@ -250,7 +325,7 @@ class WikXmlHandler(xml.sax.handler.ContentHandler):
 			self.textContent += ch
 
 
-def proc_xmlfile(xmlfile):
+def proc_xmlfile(xmlfile, outfile):
 	## Ways to construct a XMLReader object
 	# simple way: 
 	xmlreader = xml.sax.make_parser()
@@ -262,20 +337,20 @@ def proc_xmlfile(xmlfile):
 	#xmlreader = xml.sax.xmlreader.IncrementalParser()
 
 	# Set UTF-8 stdout in case of the user piping our output
-	#reload(sys)
-	#sys.setdefaultencoding('utf-8')
+	reload(sys)
+	sys.setdefaultencoding('utf-8')
 	import codecs
 
-	xmlreader.setContentHandler(WikXmlHandler())
-	xmlreader.setErrorHandler(WikXmlErrorHandler())
 	# xmlreader process 'byte stream' and assume the byte stream is utf-8.
 	# so, we don't have to use 'codecs'. actually, we must not decode utf-8
-	infd = anyReader.anyReader(xmlfile, encoding='utf-8')
-	#infd = anyReader.anyReader(xmlfile, encoding='ascii')
-	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+	#infd = anyReader.anyReader(xmlfile, encoding='utf-8')
+	infd = anyReader.anyReader(xmlfile, encoding='ascii')
+	outfd = anyReader.anyWriter(outfile, encoding='ascii')
 	# use parse()
 	#xmlreader.parse(infd)
 
+	xmlreader.setContentHandler(WikXmlHandler(outfd))
+	xmlreader.setErrorHandler(WikXmlErrorHandler())
 	# use feed()
 	CHUNK = 100*1024
 
@@ -284,21 +359,25 @@ def proc_xmlfile(xmlfile):
 			#print "UNCOMPRESSED",len(chunk)
 			#print chunk.decode('utf-8')
 			xmlreader.feed(chunk)
-	except:
+	except EOFError:
 		pass
+		#raise
 
 
 
 '''
 '''
-def proc_wikifile(wikifile):
+def proc_wikifile(wikifile, outf):
 	text = open(wikifile).read()
-	wiki2dict('', text)
+	wiki2dict('', text, outf)
 
 if __name__=="__main__":
+	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+
 	infile = sys.argv[1]
 	if infile.find('.xml') != -1:
-		proc_xmlfile(infile)
+		outfile = sys.argv[2]
+		proc_xmlfile(infile, outfile)
 	else:
-		proc_wikifile(infile)
+		proc_wikifile(infile, sys.stdout)
 	prn_langname_code()
