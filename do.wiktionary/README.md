@@ -27,6 +27,7 @@
  ** python wikxml2dict.py abdication.wiki  > abdication.dict
 ## Build index file of dict file
  * python makeidxofdict.py enwiktionary-20130415.dict.bz2 enwiktionary-20130415.index.bz2
+ * python makeidxandsort.py enwiktionary-20130415.dict.bz2 enwiktionary-20130415.dict.sorted.bz2 enwiktionary-20130415.index.bz2
 
 ## image url
 * https://en.wikipedia.org/w/api.php
