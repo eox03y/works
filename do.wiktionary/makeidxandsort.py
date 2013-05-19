@@ -37,10 +37,11 @@ def	save_sorted_dict(sortedfd, idxlist):
 		sortedfd.write(headline)
 		sortedfd.write(r[1][1])
 
-		r[1][0] = offset
-		offset += len(headline)
-		offset += len(r[1][1])
-		r[1][1] = len(r[1][1])
+		leng_of_one = len(headline) + len(r[1][1]) # head + body
+		r[1][0] = offset        
+		r[1][1] = leng_of_one
+
+		offset += leng_of_one
 	sortedfd.close()
 	return headword_sorted
 '''
