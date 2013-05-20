@@ -10,6 +10,8 @@ from google.appengine.ext.webapp import template
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
 import logging
+# our programming
+import wikdict
 
 
 class PageReadBlob(webapp.RequestHandler):
@@ -19,7 +21,9 @@ class PageReadBlob(webapp.RequestHandler):
 	else:
 		blob_key = 'AMIfv963fCb95iLosF2vyEFz6HRVOsCMGlij-t4EzNiRyg6Or7q4N9NeddqWT0wlmmjD2C51PJJD85Tz9NLyUa1OzhSpL7Dg4v-G4rzkF7wzsz-zHhJqZKLYWLeH2URIXn8dfAHbQ12UZ_OqHJnwI9AreQ_8gKhNleHz-WH-ts2fnxw1zSmnazU'
 		blob_reader = blobstore.BlobReader(blob_key)
-		data = blob_reader.read(1000)
+		#data = blob_reader.read(1000)
+		data = wikdict.lookup_dict('happiness')
+		data += wikdict.lookup_dict('satified')
 		html = ''
 		html += '<html><body> user=%s <br/>' % (users.get_current_user().email())
 		html += data.replace('\n', '<br/>')
@@ -127,4 +131,5 @@ def main():
   run_wsgi_app(application)
 
 if __name__ == "__main__":
+  wikdict.prepare()
   main()
