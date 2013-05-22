@@ -9,6 +9,8 @@ from google.appengine.ext.webapp import template
 
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
+from google.appengine.api import memcache
+
 import logging
 # our programming
 import wikdict
@@ -38,7 +40,11 @@ class PageReadBlob(webapp.RequestHandler):
 
 class Dict(webapp.RequestHandler):
  def get(self):
-		data = wikdict.lookup_dict(self.request.get('w'))
+		word = self.request.get('w')
+		data = memcache.get('w')
+		if not data:
+			data = wikdict.lookup_dict(word)
+			memcache.add(word, data)
 		html = '<html><body> <br/>' 
 		html += data.replace('\n', '<br/>')
 		html += '</body></html>'
