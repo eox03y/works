@@ -13,29 +13,50 @@ import logging
 # our programming
 import wikdict
 
+'''
+DB Define
+'''
+class Greeting(db.Model):
+  author = db.UserProperty()
+  content = db.StringProperty(multiline=True)
+  date = db.DateTimeProperty(auto_now_add=True)
+
+class BlobFile(db.Model):
+  blobname = db.StringProperty()
+  blobkey = db.StringProperty()
+  date = db.DateTimeProperty(auto_now_add=True)
 
 class PageReadBlob(webapp.RequestHandler):
  def get(self):
-	if not users.get_current_user():
-		self.redirect('/2')
-	else:
-		blob_key = 'AMIfv963fCb95iLosF2vyEFz6HRVOsCMGlij-t4EzNiRyg6Or7q4N9NeddqWT0wlmmjD2C51PJJD85Tz9NLyUa1OzhSpL7Dg4v-G4rzkF7wzsz-zHhJqZKLYWLeH2URIXn8dfAHbQ12UZ_OqHJnwI9AreQ_8gKhNleHz-WH-ts2fnxw1zSmnazU'
-		blob_reader = blobstore.BlobReader(blob_key)
-		#data = blob_reader.read(1000)
 		data = wikdict.lookup_dict('happiness')
-		data += wikdict.lookup_dict('satified')
+		data += wikdict.lookup_dict('satify')
 		html = ''
-		html += '<html><body> user=%s <br/>' % (users.get_current_user().email())
+		html += '<html><body> <br/>' 
 		html += data.replace('\n', '<br/>')
 		html += '</body></html>'
 		self.response.out.write(html)
 
-class UploadFormHandler(webapp.RequestHandler):
+class Dict(webapp.RequestHandler):
+ def get(self):
+		data = wikdict.lookup_dict(self.request.get('w'))
+		html = '<html><body> <br/>' 
+		html += data.replace('\n', '<br/>')
+		html += '</body></html>'
+		self.response.out.write(html)
+
+class DictForm(webapp.RequestHandler):
+ def get(self):
+		html = ''
+		html += '<html><body>'
+		html += '<form action="/dict" method="GET">'
+		html += """Search: <input type="text" name="w"><br> <input type="submit"
+		name="submit" value="Submit"> </form></body></html>"""
+		self.response.out.write(html)
+
+class UploadForm(webapp.RequestHandler):
  def get(self):
 	if users.get_current_user().nickname() != 'handol':
 		self.redirect('/2')
-		#url = users.create_login_url(self.request.uri)
-		#url_linktext = 'Login'
 	else:
 		upload_url = blobstore.create_upload_url('/upload')
 		html = ''
@@ -54,16 +75,17 @@ class FileUploadHandler(blobstore_handlers.BlobstoreUploadHandler):
               if len(upload_files) > 0:
                  blob_info = upload_files[0]
                  logging.info('Blob stored key=%s ' % (blob_info.key()))
+                 blobfile = BlobFile()
+                 blobfile.blobkey = upload_files[0].key()
+                 blobfile.blobname = upload_files[0].filename
+                 blobfile.put()
+	
                  self.redirect('/new')
 
          except:
               logging.error('Error in prosessing the file')
          self.response.out.write('Error in prosessing the file')
 
-class Greeting(db.Model):
-  author = db.UserProperty()
-  content = db.StringProperty(multiline=True)
-  date = db.DateTimeProperty(auto_now_add=True)
 
 class Page2(webapp.RequestHandler):
   def get(self):
@@ -83,7 +105,7 @@ class Page2(webapp.RequestHandler):
     self.response.out.write(template.render(path, template_values))
 
 
-class Page3(webapp.RequestHandler):
+class Home(webapp.RequestHandler):
   def get(self):
     greetings_query = Greeting.all().order('-date')
     greetings = greetings_query.fetch(10)
@@ -118,9 +140,11 @@ class Guestbook(webapp.RequestHandler):
     self.redirect('/')
 
 application = webapp.WSGIApplication( [
-	('/new', UploadFormHandler),
+	('/dict', Dict),
+	('/dictform', DictForm),
+	('/new', UploadForm),
 	('/upload', FileUploadHandler),
-	('/', Page3),
+	('/', Home),
 	('/2', Page2),
 	('/read', PageReadBlob),
 	('/sign', Guestbook)
