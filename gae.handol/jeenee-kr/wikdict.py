@@ -4,6 +4,7 @@ import sys
 import re
 import anyReader
 import md5
+import logging
 
 from google.appengine.ext import blobstore
 
@@ -20,8 +21,8 @@ def get_sound_div(oggfile):
 	m = md5.new()
 	m.update(oggfile)
 	hexkey = m.hexdigest()
-	folder = '%s/%s' % (hexkey[0], hexkey[:2])
-	snddiv = ''' <div class="mediaContainer" style="position:relative;display:block;width:175px">
+	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
+	snddiv = u''' <div class="mediaContainer" style="position:relative;display:block;width:175px">
 	<audio id="mwe_player_0" style="width:175px;height:23px" poster="//bits.wikimedia.org/static-1.22wmf4/skins/common/images/icons/fileicon-ogg.png" controls="" preload="none" class="kskin" data-durationhint="1.3815873015873" data-startoffset="0" data-mwtitle="%s" data-mwprovider="wikimediacommons">
 	<source src="//upload.wikimedia.org/wikipedia/commons/%s/%s" type="audio/ogg; codecs=&quot;vorbis&quot;" data-title="Original Ogg file (107 kbps)" data-shorttitle="Ogg source" data-width="0" data-height="0" data-bandwidth="107280"></source>
 	''' % (oggfile, folder, oggfile)
@@ -34,36 +35,40 @@ def get_image_div(imgdesc):
 	imgdesc = imgdesc[8:-2]
 	flds = imgdesc.split('|')
 	if len(flds) < 5: 
-		return '<div class="dictimg"></div>'
+		return '<div class="dictimg"></div>\n'
 
 	imgfile = flds[0]
 	desc = flds[4]	
 	m = md5.new()
 	m.update(imgfile)
 	hexkey = m.hexdigest()
-	folder = '%s/%s' % (hexkey[0], hexkey[:2])
-	imgurl = 'http://upload.wikimedia.org/wikipedia/commons/%s/%s' % (folder, imgfile)
+	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
+	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/%s/%s' % (folder, imgfile)
 
-	imgdiv = '''<div class="dictimg"> <img src="%s"> %s </img></div>''' % (imgurl, desc)
+	imgdiv = u'''<div class="dictimg"> <img src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
 
 def	read_dict(dictfd, offset, length):
 	dictfd.seek(offset)
 	content = dictfd.read(length)
+	content = content.decode('utf-8')
+	logging.info("dict:")
+	logging.info(content)
 	return content
 
 def dict2html(content):
-	html = ''
+	html = u''
 	for line in content.splitlines():
+		line = line.strip()
 		if line[0]=='@':
-			hline = '<div class="hword"> %s </div>' % (line[2:])
+			hline = u'<div class="hword"> %s </div>\n' % (line[2:])
 			html += hline
-		elif line[0]=='#:':
-			hline = '<div class="exstc"> %s </div>' % (line[2:])
-			html += line
+		elif line[:2]=='#:':
+			hline = u'<div class="exstc"> %s </div>\n' % (line[2:])
+			html += hline
 		elif line[0]=='#':
-			hline = '<div class="meaning"> %s </div>' % (line[2:])
-			html += line
+			hline = u'<div class="meaning"> %s </div>\n' % (line[2:])
+			html += hline
 
 		elif line.endswith('.ogg'):
 			html += get_sound_div(line)
@@ -73,6 +78,8 @@ def dict2html(content):
 
 		else:
 			pass
+	logging.info("html:")
+	logging.info(html)
 	return html
 			
 	
@@ -98,12 +105,14 @@ def prepare():
 	global idxlist
 	idxlist = load_index(idxfd)
 	idxfd.close()
+	logging.info("prepare() idxlist: size = %d" % (len(idxlist)))
 
 	global dictfd
 	dictfd = blobstore.BlobReader(dictfile_key)
 
 def lookup_dict(word):
 	info = idxlist.get(word, None)
+	logging.info("lookup() idxlist: size = %d, word=%s" % (len(idxlist)), word)
 	if not info: 
 		return 'NO word'
 	else: 

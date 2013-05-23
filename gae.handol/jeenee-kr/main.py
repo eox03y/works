@@ -44,10 +44,13 @@ class Dict(webapp.RequestHandler):
 		data = memcache.get(word)
 		if not data and IS_READY:
 			data = wikdict.lookup_dict(word)
-			memcache.add(word, data, 3600*12)
-
+			if data:
+				memcache.add(word, data, 3600*12)
+		if not data:
+			data = '<div class="nores"> not found </div>'
 		template_values = {}
-		template_values['search_result'] = data.decode('utf-8')
+		#template_values['search_result'] = data.decode('utf-8')
+		template_values['search_result'] = data
 		path = os.path.join(os.path.dirname(__file__), 'home.html')
 		self.response.out.write(template.render(path, template_values))
 		#template = JINJA_ENVIRONMENT.get_template('home.html')
