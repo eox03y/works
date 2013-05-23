@@ -11,18 +11,26 @@ from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
 from google.appengine.api import memcache
 
+#import jinja2
+#import webapp2
+
 import logging
 import datetime
+import threading
+
 # our programming
 import wikdict
 
 '''
+JINJA_ENVIRONMENT = jinja2.Environment(
+	loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+	extensions=['jinja2.ext.autoescape'])
+'''
+
+IS_READY = False
+'''
 DB Define
 '''
-class Greeting(db.Model):
-  author = db.UserProperty()
-  content = db.StringProperty(multiline=True)
-  date = db.DateTimeProperty(auto_now_add=True)
 
 class BlobFile(db.Model):
   blobname = db.StringProperty()
@@ -31,24 +39,19 @@ class BlobFile(db.Model):
 
 class Dict(webapp.RequestHandler):
  def get(self):
+		global IS_READY
 		word = self.request.get('w')
-		data = memcache.get('w')
-		if not data:
+		data = memcache.get(word)
+		if not data and IS_READY:
 			data = wikdict.lookup_dict(word)
-			memcache.add(word, data)
-		html = '<html><body> <br/>' 
-		html += data.replace('\n', '<br/>')
-		html += '</body></html>'
-		self.response.out.write(html)
+			memcache.add(word, data, 3600*12)
 
-class DictForm(webapp.RequestHandler):
- def get(self):
-		html = ''
-		html += '<html><body>'
-		html += '<form action="/dict" method="GET">'
-		html += """Search: <input type="text" name="w"><br> <input type="submit"
-		name="submit" value="Submit"> </form></body></html>"""
-		self.response.out.write(html)
+		template_values = {}
+		template_values['search_result'] = data.decode('utf-8')
+		path = os.path.join(os.path.dirname(__file__), 'home.html')
+		self.response.out.write(template.render(path, template_values))
+		#template = JINJA_ENVIRONMENT.get_template('home.html')
+		#self.response.write(template.render(template_values))
 
 class UploadForm(webapp.RequestHandler):
  def get(self):
@@ -89,11 +92,12 @@ class Home(webapp.RequestHandler):
     template_values = {}
     path = os.path.join(os.path.dirname(__file__), 'home.html')
     self.response.out.write(template.render(path, template_values))
+    #template = JINJA_ENVIRONMENT.get_template('home.html')
+    #self.response.write(template.render(template_values))
     
 
 application = webapp.WSGIApplication( [
 	('/dict', Dict),
-	('/dictform', DictForm),
 	('/new', UploadForm),
 	('/upload', FileUploadHandler),
 	('/', Home)
@@ -103,6 +107,15 @@ application = webapp.WSGIApplication( [
 def main():
   run_wsgi_app(application)
 
-if __name__ == "__main__":
-  wikdict.prepare()
+class LoadIndex(threading.Thread):
+	def run(self):
+		global IS_READY
+		logging.info('Loading index file starts')
+		wikdict.prepare()
+		logging.info('Loading index file finished')
+		IS_READY = True
+
+if __name__ == "__main__":  
+  loadindex = LoadIndex()
+  loadindex.start()
   main()

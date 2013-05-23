@@ -70,6 +70,31 @@
         margin: 20px 0;
       }
 
+	
+      .form-search {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-search .form-search-heading,
+      .form-search .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-search input[type="text"],
+      .form-search input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
     </style>
 	
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -109,38 +134,16 @@
       </div>
     </div>
 
-    <div class="container">
+	<div class="container">
+      <form class="form-search" action="/dict" method="GET">
+        <h2 class="form-search-heading">jeenee.us </h2>
+        <input type="text" name="w" class="input-block-level" placeholder="Enter words">
+		<button class="btn btn-large btn-primary" type="submit">Search</button>
+		</form>
+	</div> <!-- /container -->
 
-	<div class="hero-unit">
-	<h1>A right place for your English</h1>
-	<p>Tagline</p>
-	<p>
-	<a class="btn btn-primary btn-large">
-	Learn more
-	</a>
-	</p>
-	</div>
+	{{search_result}}
 
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-
-	  {% for greeting in greetings %}
-      {% if greeting.author %}
-        <b>{{ greeting.author }}</b> wrote:
-      {% else %}
-        An anonymous person wrote:
-      {% endif %}
-      <blockquote>{{ greeting.content|escape }}</blockquote>
-    {% endfor %}
-
-    <form action="/sign" method="post">
-      <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Sign Guestbook"></div>
-    </form>
-
-	<div>
-    <a href="{{ url }}">{{ url_linktext }}</a>
-	</div>
-	
 	<div class="alert alert-error">
 	  Oh snap!
 	</div>
@@ -149,7 +152,13 @@
 	  Well done!
 	</div>
 	
-    </div> <!-- /container -->
+    <div class="container">
+	<div class="hero-unit">
+	<h1>A right place for your English</h1>
+	<p>Tagline</p>
+	<p> <a class="btn btn-primary btn-large"> Learn more </a> </p>
+	</div>
+
 
 	<div class="pagination pagination-large">
 	<ul>
