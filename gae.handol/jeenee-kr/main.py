@@ -12,6 +12,7 @@ from google.appengine.ext.webapp import blobstore_handlers
 from google.appengine.api import memcache
 
 import logging
+import datetime
 # our programming
 import wikdict
 
@@ -27,16 +28,6 @@ class BlobFile(db.Model):
   blobname = db.StringProperty()
   blobkey = db.StringProperty()
   date = db.DateTimeProperty(auto_now_add=True)
-
-class PageReadBlob(webapp.RequestHandler):
- def get(self):
-		data = wikdict.lookup_dict('happiness')
-		data += wikdict.lookup_dict('satify')
-		html = ''
-		html += '<html><body> <br/>' 
-		html += data.replace('\n', '<br/>')
-		html += '</body></html>'
-		self.response.out.write(html)
 
 class Dict(webapp.RequestHandler):
  def get(self):
@@ -93,67 +84,19 @@ class FileUploadHandler(blobstore_handlers.BlobstoreUploadHandler):
          self.response.out.write('Error in prosessing the file')
 
 
-class Page2(webapp.RequestHandler):
-  def get(self):
-    if users.get_current_user():
-      url = users.create_logout_url(self.request.uri)
-      url_linktext = 'Logout'
-    else:
-      url = users.create_login_url(self.request.uri)
-      url_linktext = 'Login'
-
-    template_values = {
-      'url': url,
-      'url_linktext': url_linktext
-      }
-
-    path = os.path.join(os.path.dirname(__file__), '2.html')
-    self.response.out.write(template.render(path, template_values))
-
-
 class Home(webapp.RequestHandler):
   def get(self):
-    greetings_query = Greeting.all().order('-date')
-    greetings = greetings_query.fetch(10)
-
-    if users.get_current_user():
-      url = users.create_logout_url(self.request.uri)
-      url_linktext = 'Logout'
-    else:
-      url = users.create_login_url(self.request.uri)
-      url_linktext = 'Login'
-
-    template_values = {
-      'greetings': greetings,
-      'url': url,
-      'url_linktext': url_linktext,
-      }
-
-    path = os.path.join(os.path.dirname(__file__), '3.html')
+    template_values = {}
+    path = os.path.join(os.path.dirname(__file__), 'home.html')
     self.response.out.write(template.render(path, template_values))
     
-import datetime
-class Guestbook(webapp.RequestHandler):
-  def post(self):
-    greeting = Greeting()
-
-    if users.get_current_user():
-      greeting.author = users.get_current_user()
-
-    tstr = str( datetime.datetime.now() )
-    greeting.content = tstr + '   ' + self.request.get('content')
-    greeting.put()
-    self.redirect('/')
 
 application = webapp.WSGIApplication( [
 	('/dict', Dict),
 	('/dictform', DictForm),
 	('/new', UploadForm),
 	('/upload', FileUploadHandler),
-	('/', Home),
-	('/2', Page2),
-	('/read', PageReadBlob),
-	('/sign', Guestbook)
+	('/', Home)
 	],
 	debug=True)
 
