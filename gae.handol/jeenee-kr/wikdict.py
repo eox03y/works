@@ -55,7 +55,7 @@ def get_image_div(imgdesc):
 	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
 	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/%spx-%s' % (folder, imgfile, pxsize, imgfile)
 
-	imgdiv = u'''<div class="dictimg"> <img class="dimg" src="%s"> %s </img></div>\n''' % (imgurl, desc)
+	imgdiv = u'''<div class="dictimg"> <img class="img-polaroid" src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
 
 '''
@@ -74,7 +74,7 @@ def dict2html(content):
 	for line in content.splitlines():
 		line = line.strip()
 		if line[0]=='@':
-			hline = u'<div class="hword"> %s </div>\n' % (line[2:])
+			hline = u'<h3 class="hword"> %s </h3>\n' % (line[2:])
 			html += hline
 		elif line[:2]=='#:':
 			hline = u'<div class="exstc"> %s </div>\n' % (line[2:])
