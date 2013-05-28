@@ -41,7 +41,8 @@ class Dict(webapp.RequestHandler):
  def get(self):
 		global IS_READY
 		word = self.request.get('w')
-		data = memcache.get(word)
+		#data = memcache.get(word)
+		data = None
 		if not data and IS_READY:
 			data = wikdict.lookup_dict(word)
 			if data:
@@ -110,15 +111,18 @@ application = webapp.WSGIApplication( [
 def main():
   run_wsgi_app(application)
 
+def loadindex():
+	global IS_READY
+	logging.info('Loading index file starts')
+	wikdict.prepare()
+	logging.info('Loading index file finished')
+	IS_READY = True
+
 class LoadIndex(threading.Thread):
 	def run(self):
-		global IS_READY
-		logging.info('Loading index file starts')
-		wikdict.prepare()
-		logging.info('Loading index file finished')
-		IS_READY = True
-
+		loadindex()
 if __name__ == "__main__":  
-  loadindex = LoadIndex()
-  loadindex.start()
+  #loadindex = LoadIndex()
+  #loadindex.start()
+  loadindex()
   main()

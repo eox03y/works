@@ -19,13 +19,14 @@ idxlist = {}
 
 def get_sound_div(oggfile):
 	m = md5.new()
+	oggfile = oggfile[0].upper() + oggfile[1:]
 	m.update(oggfile)
 	hexkey = m.hexdigest()
 	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
 	snddiv = u''' <div class="mediaContainer" style="position:relative;display:block;width:175px">
 	<audio id="mwe_player_0" style="width:175px;height:23px" poster="//bits.wikimedia.org/static-1.22wmf4/skins/common/images/icons/fileicon-ogg.png" controls="" preload="none" class="kskin" data-durationhint="1.3815873015873" data-startoffset="0" data-mwtitle="%s" data-mwprovider="wikimediacommons">
-	<source src="//upload.wikimedia.org/wikipedia/commons/%s/%s" type="audio/ogg; codecs=&quot;vorbis&quot;" data-title="Original Ogg file (107 kbps)" data-shorttitle="Ogg source" data-width="0" data-height="0" data-bandwidth="107280"></source>
-	''' % (oggfile, folder, oggfile)
+	<source src="http://upload.wikimedia.org/wikipedia/commons/%s/%s" type="audio/ogg; codecs=&quot;vorbis&quot;" data-title="Original Ogg file (107 kbps)" data-shorttitle="Ogg source" data-width="0" data-height="0" data-bandwidth="107280">
+	</source></audio></div> ''' % (oggfile, folder, oggfile)
 	return snddiv
 
 '''
@@ -37,16 +38,29 @@ def get_image_div(imgdesc):
 	if len(flds) < 5: 
 		return '<div class="dictimg"></div>\n'
 
-	imgfile = flds[0]
+	imgfile = flds[0].replace(' ', '_')
+	imgfile = imgfile[0].upper() + imgfile[1:]
 	desc = flds[4]	
 	m = md5.new()
 	m.update(imgfile)
 	hexkey = m.hexdigest()
 	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
-	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/%s/%s' % (folder, imgfile)
+	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/800px-%s' % (folder, imgfile, imgfile)
 
 	imgdiv = u'''<div class="dictimg"> <img src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
+
+'''
+'''
+srch trans_pos = re.compile(r'{{[^}]+}}')
+def get_translation_div(trnsline):
+	line = trnsline[2:]
+	pos = line.find(':')
+	if pos == -1: return ''
+	lang = line[:pos]
+	m = trans_pos.search(line)
+	if not m: return ''
+				
 
 def	read_dict(dictfd, offset, length):
 	dictfd.seek(offset)
@@ -75,6 +89,9 @@ def dict2html(content):
 
 		elif line.startswith('[[Image'):
 			html += get_image_div(line)
+
+		elif line.startswith(''):
+			html += get_translation_div(line)
 
 		else:
 			pass
@@ -112,7 +129,7 @@ def prepare():
 
 def lookup_dict(word):
 	info = idxlist.get(word, None)
-	logging.info("lookup() idxlist: size = %d, word=%s" % (len(idxlist)), word)
+	logging.info("lookup() idxlist: size = %d, word=%s" % (len(idxlist), word))
 	if not info: 
 		return 'NO word'
 	else: 
