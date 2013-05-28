@@ -88,7 +88,7 @@ class TrInfo:
 	def proc_tr_line(self, trnsline):
 		line = trnsline[2:]
 		pos = line.find(':')
-		if pos == -1: return ''
+		if pos == -1: return '',[]
 		lang = line[:pos]
 		line = line[pos+2:]
 		if line.find('{{') != -1:
@@ -96,7 +96,7 @@ class TrInfo:
 		elif line.find('[[') != -1:
 			trList = proc_tr_square(line)
 		else:
-			return ' ',[]
+			return '',[]
 
 		return lang, trList
 

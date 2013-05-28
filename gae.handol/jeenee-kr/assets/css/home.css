@@ -1,0 +1,91 @@
+      /* Sticky footer styles */
+
+      html,
+      body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+        height: 100%; /* The html and body elements cannot have any padding or margin. */
+      }
+
+		div {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-family:"Verdana";
+		}
+		div.hword { font-size: 32px; font-family:"Georgia"; color:#00ff00; }
+		div.meaning { font-size: 26px; }
+		div.exstc { font-size: 22px; font-style:italic; }
+		div.dictimg { font-size: 22px; }
+		div.mediaContainer { font-size: 22px; }
+		div.trmean { font-size: 26px;  }
+		div.trlang { font-size: 22px; font-style:italic;  }
+		div.trword { font-size: 24px; color:rgb(0,200,0); }
+		div.trsnd { font-size: 22px; color:rgb(0,0,200);  }
+
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+	
+      .form-search {
+        max-width: 400px;
+        padding: 19px 39px 39px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-search .form-search-heading,
+      .form-search .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-search input[type="text"],
+      .form-search input[type="password"] {
+        font-size: 20px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
