@@ -37,19 +37,19 @@ def get_sound_div(oggfile):
 def get_image_div(imgdesc):
 	imgdesc = imgdesc[8:-2]
 	flds = imgdesc.split('|')
-	if len(flds) < 5: 
+	if len(flds) < 2: 
 		return '<div class="dictimg"></div>\n'
 
 	imgfile = flds[0].replace(' ', '_')
 	imgfile = imgfile[0].upper() + imgfile[1:]
-	desc = flds[4]	
+	desc = flds[-1]	
 	m = md5.new()
 	m.update(imgfile)
 	hexkey = m.hexdigest()
 	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
 	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/800px-%s' % (folder, imgfile, imgfile)
 
-	imgdiv = u'''<div class="dictimg"> <img src="%s"> %s </img></div>\n''' % (imgurl, desc)
+	imgdiv = u'''<div class="dictimg"> <img class="dimg" src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
 
 '''

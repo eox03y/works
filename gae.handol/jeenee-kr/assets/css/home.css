@@ -7,19 +7,22 @@
       }
 
 		div {
-			padding-top: 5px;
-			padding-bottom: 5px;
+			padding-top: 9px;
+			padding-bottom: 9px;
 			font-family:"Verdana";
+			color:#191919;
 		}
-		div.hword { font-size: 32px; font-family:"Georgia"; color:#00ff00; }
-		div.meaning { font-size: 26px; }
-		div.exstc { font-size: 22px; font-style:italic; }
-		div.dictimg { font-size: 22px; }
-		div.mediaContainer { font-size: 22px; }
-		div.trmean { font-size: 26px;  }
-		div.trlang { font-size: 22px; font-style:italic;  }
-		div.trword { font-size: 24px; color:rgb(0,200,0); }
-		div.trsnd { font-size: 22px; color:rgb(0,0,200);  }
+		.hword h1 { font-size: 32px; font-family:"Georgia"; color:#000000; }
+		.meaning { font-size: 26px; }
+		.exstc { font-size: 22px; font-style:italic; }
+		.dictimg { font-size: 22px;  }
+		.dimg { height:200px; width:auto; border:3px solid gray;
+			padding:3px; border:3px; font-size: 22px; }
+		.mediaContainer { font-size: 22px; }
+		.trmean { font-size: 26px;  }
+		.trlang { font-size: 22px; font-style:italic;  }
+		.trword { font-size: 24px; color:rgb(0,200,0); }
+		.trsnd { font-size: 22px; color:rgb(0,0,200);  }
 
 
       /* Wrapper for page content to push down footer */

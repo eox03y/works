@@ -106,14 +106,14 @@ class TrInfo:
 	def html(self):
 		out = StringIO()
 		for meaning,langlist in self.D.iteritems():
-			out.write('<div class="trmean"> %s \n' % (meaning))
+			out.write('<ul class="trmean"> %s \n' % (meaning))
 			for lang,trlist in langlist.iteritems():
-				out.write('<div class="trlang"> %s \n' % (lang))
+				out.write('\t<li class="trlang"> %s ' % (lang))
 				for tr in trlist:
-					out.write('<div class="trword"> %s </div> ' % (tr[0]))
-					out.write('<div class="trsnd"> %s </div> \n' % (tr[1]))
-				out.write('</div>')
-			out.write('</div>')
+					out.write('<div class="trword"> %s </div>' % (tr[0]))
+					out.write('<div class="trsnd"> %s </div>' % (tr[1]))
+				out.write('</li>\n')
+			out.write('</ul>\n')
 		return out.getvalue()
 
 
