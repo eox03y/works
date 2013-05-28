@@ -2,7 +2,7 @@
 import re
 import json
 import pprint
-
+from StringIO import StringIO
 
 '''
 input: t+|el|αξιόμεμπτος|m|tr=axiómemptos|sc=Grek
@@ -102,6 +102,21 @@ class TrInfo:
 
 	def prn(self):
 		pprint.pprint(self.D)
+
+	def html(self):
+		out = StringIO()
+		for meaning,langlist in self.D.iteritems():
+			out.write('<div class="trmean"> %s \n' % (meaning))
+
+				for lang,trlist in langlist:
+					out.write('<div class="trlang"> %s \n' % (lang))
+					for tr in trlist:
+						out.write('<div class="trword"> %s </div> ' % (tr[0]))
+						out.write('<div class="trsnd"> %s </div> \n' % (tr[1]))
+					out.write('</div>')
+			out.write('</div>')
+		return out.getvalue()
+
 
 
 AAA = '''

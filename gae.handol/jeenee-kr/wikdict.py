@@ -8,6 +8,8 @@ import logging
 
 from google.appengine.ext import blobstore
 
+import trans_test
+
 ''' enwiktionary-20130415.dict.sorted '''
 dictfile_key = 'AMIfv97JpUZdTYhEDUrBhVcaO1HjosFX28DXNOfRLdAIQlfYKJAl7IubkTW_w7KD2bUhQZLM79DUF8_hB7IDiphCZk6xLIFYUtda5IEAJJSD1T6JHVbLIAIgtexhMDvJrql2zXywJ6T8tKcmcNU9KnQbHxcrjIx5Lg'
 dictfd = None
@@ -52,16 +54,6 @@ def get_image_div(imgdesc):
 
 '''
 '''
-srch trans_pos = re.compile(r'{{[^}]+}}')
-def get_translation_div(trnsline):
-	line = trnsline[2:]
-	pos = line.find(':')
-	if pos == -1: return ''
-	lang = line[:pos]
-	m = trans_pos.search(line)
-	if not m: return ''
-				
-
 def	read_dict(dictfd, offset, length):
 	dictfd.seek(offset)
 	content = dictfd.read(length)
@@ -72,6 +64,7 @@ def	read_dict(dictfd, offset, length):
 
 def dict2html(content):
 	html = u''
+	trinfo = trans_test.TrInfo()
 	for line in content.splitlines():
 		line = line.strip()
 		if line[0]=='@':
@@ -90,11 +83,11 @@ def dict2html(content):
 		elif line.startswith('[[Image'):
 			html += get_image_div(line)
 
-		elif line.startswith(''):
-			html += get_translation_div(line)
-
+		elif line.startswith('*'):
+			trinfo.proc(line)
 		else:
 			pass
+	html += trinfo.html()
 	logging.info("html:")
 	logging.info(html)
 	return html
