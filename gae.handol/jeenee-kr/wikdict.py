@@ -40,6 +40,12 @@ def get_image_div(imgdesc):
 	if len(flds) < 2: 
 		return '<div class="dictimg"></div>\n'
 
+	pxsize = '800'
+	for fld in flds:
+		if fld.endswith('px'):
+			pxsize = fld[:-2].strip()
+			break
+
 	imgfile = flds[0].replace(' ', '_')
 	imgfile = imgfile[0].upper() + imgfile[1:]
 	desc = flds[-1]	
@@ -47,7 +53,7 @@ def get_image_div(imgdesc):
 	m.update(imgfile)
 	hexkey = m.hexdigest()
 	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
-	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/800px-%s' % (folder, imgfile, imgfile)
+	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/%spx-%s' % (folder, imgfile, pxsize, imgfile)
 
 	imgdiv = u'''<div class="dictimg"> <img class="dimg" src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
