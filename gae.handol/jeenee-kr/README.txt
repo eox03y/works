@@ -3,3 +3,6 @@
 $ ./google_appengine/appcfg.py  update   jeenee-kr/
 $ ./google_appengine/appcfg.py --email=handol@gmail.com update jeenee-kr/
 
+
+# https://bitbucket.org/mchaput/stemming
+# porter stemmer 2
