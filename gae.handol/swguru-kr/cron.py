@@ -1,9 +1,11 @@
 from google.appengine.ext import webapp
 from google.appengine.ext import db
-import urllib
 from google.appengine.api import urlfetch
+
 import datetime
 import json
+import urllib2
+import urllib
 
 class Mesg(db.Model):
 	mesg = db.StringProperty()
@@ -14,15 +16,21 @@ class StackTags(db.Model):
 	#count = db.IntergerProperty(int)
 	#date = db.DateProperty(datetime.date, auto_now_add=True)
 	count = db.ListProperty(int, default=[])
-	date = db.ListProperty(datetime.date, auto_now_add=True, default=[])
+	date = db.ListProperty(datetime.date, default=[])
 
-def get_stack_tags(i):
+def get_stack_tags(i, gae=True):
 	url = 'http://api.stackoverflow.com/1.1/tags?page=%d&pagesize=100' % (i)
-	result = urlfetch.fetch(url=url,
-		payload=form_data,
-		method=urlfetch.GET,
-		headers={'Content-Type': 'application/x-www-form-urlencoded'})
-	res = json.loads(result)	
+	if gae:
+		result = urlfetch.fetch(url=url,
+			method=urlfetch.GET,
+			headers={'Content-Type': 'application/x-www-form-urlencoded'})
+	else:
+		result = urllib2.urlopen(url)
+		res = result.result()
+		from gzip import GzipFile
+		result = GzipFile('', 'r', 0, StringIO(e)).read()
+		
+	res = json.loads(result)
 	taglist = res['tags']
 	for tag in taglist:
 		name = tag['name']
@@ -41,4 +49,4 @@ class MyCron(webapp.RequestHandler):
 		# do something
 
 if __name__=='__main__':
-	get_stack_tags(0)
+	get_stack_tags(0, gae=False)
