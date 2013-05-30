@@ -55,7 +55,7 @@ def get_image_div(imgdesc):
 	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
 	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/%spx-%s' % (folder, imgfile, pxsize, imgfile)
 
-	imgdiv = u'''<div class="dictimg"> <img class="img-polaroid" src="%s"> %s </img></div>\n''' % (imgurl, desc)
+	imgdiv = u'''<div class="dictimg"> <img class="img-polaroid" height="200px" width=auto src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
 
 '''

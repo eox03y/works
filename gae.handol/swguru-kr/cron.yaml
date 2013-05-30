@@ -1,0 +1,4 @@
+cron:
+- description:  minutes job
+  url: /cron/1
+  schedule: every 5 minutes

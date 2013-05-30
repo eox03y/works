@@ -1,13 +1,16 @@
 application: swguru-kr
-version: 2
+version: 1
 runtime: python27
 api_version: 1
-threadsafe: yes
+threadsafe: no
 
 handlers:
+- url: /cron
+  script: cron.app
+
 - url: .*
   script: swguru_main.app
 
-libraries:
-- name: webapp2
-  version: "2.5.2"
+#libraries:
+#- name: webapp2
+#  version: "2.5.2"

@@ -16,10 +16,14 @@
 #
 import cgi
 import datetime
-import webapp2
 
 from google.appengine.ext import ndb
+from google.appengine.ext import webapp
+from google.appengine.ext.webapp.util import run_wsgi_app
+
 from google.appengine.api import users
+
+import cron
 
 guestbook_key = ndb.Key('Guestbook', 'default_guestbook')
 
@@ -29,7 +33,7 @@ class Greeting(ndb.Model):
   date = ndb.DateTimeProperty(auto_now_add=True)
 
 
-class MainPage(webapp2.RequestHandler):
+class MainPage(webapp.RequestHandler):
   def get(self):
     self.response.out.write('<html><body>')
 
@@ -57,7 +61,7 @@ class MainPage(webapp2.RequestHandler):
       </html>""")
 
 
-class Guestbook(webapp2.RequestHandler):
+class Guestbook(webapp.RequestHandler):
   def post(self):
     greeting = Greeting(parent=guestbook_key)
 
@@ -69,7 +73,11 @@ class Guestbook(webapp2.RequestHandler):
     self.redirect('/')
 
 
-app = webapp2.WSGIApplication([
+app = webapp.WSGIApplication([
   ('/', MainPage),
-  ('/sign', Guestbook)
+  ('/sign', Guestbook),
+  ('/cron/1', cron.MyCron)
 ], debug=True)
+
+if __name__=="__main__":
+	run_wsgi_app(app)
