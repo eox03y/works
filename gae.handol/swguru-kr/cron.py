@@ -26,10 +26,10 @@ def get_stack_tags(i, gae=True):
 			headers={'Content-Type': 'application/x-www-form-urlencoded'})
 	else:
 		result = urllib2.urlopen(url)
-		res = result.result()
+		res = result.read()
 		from gzip import GzipFile
-		result = GzipFile('', 'r', 0, StringIO(e)).read()
-		print result
+		result = GzipFile('', 'r', 0, StringIO(res)).read()
+		#print result
 	res = json.loads(result)
 	taglist = res['tags']
 	for tag in taglist:
