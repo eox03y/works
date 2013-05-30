@@ -29,7 +29,7 @@ def get_stack_tags(i, gae=True):
 		res = result.result()
 		from gzip import GzipFile
 		result = GzipFile('', 'r', 0, StringIO(e)).read()
-		
+		print result
 	res = json.loads(result)
 	taglist = res['tags']
 	for tag in taglist:
