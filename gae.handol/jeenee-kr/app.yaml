@@ -9,7 +9,7 @@ handlers:
   static_dir: assets
 
 - url: /.*
-  script: main.app
+  script: main.py
 
 - url: /_ah/queue/default
-  script: task_def.app
+  script: task_def.py
