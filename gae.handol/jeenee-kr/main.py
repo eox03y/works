@@ -10,6 +10,7 @@ from google.appengine.ext.webapp import template
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
 from google.appengine.api import memcache
+from google.appengine.api import taskqueue
 
 #import jinja2
 #import webapp2
@@ -98,12 +99,19 @@ class Home(webapp.RequestHandler):
     self.response.out.write(template.render(path, template_values))
     #template = JINJA_ENVIRONMENT.get_template('home.html')
     #self.response.write(template.render(template_values))
+
+class EnQueue(webapp.RequestHandler):
+	def get(self):
+		# The default URL path for the default queue is: /_ah/queue/default
+		taskqueue.add(queue_name='default') 
+		self.response.out.write('<html>OK</html>')
     
 
 application = webapp.WSGIApplication( [
 	('/dict', Dict),
 	('/new', UploadForm),
 	('/upload', FileUploadHandler),
+	('/enq', EnQueue),
 	('/', Home)
 	],
 	debug=True)

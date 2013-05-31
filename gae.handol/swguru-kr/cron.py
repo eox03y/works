@@ -52,10 +52,12 @@ class MyCron(webapp.RequestHandler):
 		for i in range(10):
 			get_stack_tags(i)
 			break
+
 		m = Mesg()
 		m.mesg = 'my cron haha'
-		m.put()
-		# do something
+		#m.put()
+
+		self.response.out.write('<html> OK </html>')
 
 if __name__=='__main__':
 	get_stack_tags(0, gae=False)
