@@ -77,11 +77,18 @@ class WikXmlTtHandler:
 Process English Wiktionary
 '''
 class ProcWiktionary:
+	def __init__(self, outf):
+		self.outf = outf
+	''' define my own Title/Text handler '''
+	def tt_handler(self, title, text):
+		self.outf.write('@ %s\n' % (title))	
+		self.outf.write('$ %s\n' % (text))	
+
 	def process(self, xmlfile, outfile):
 		xmlreader = xml.sax.make_parser()
 		# set outout 
-		outfd = anyReader.anyWriter(outfile, encoding='utf-8')
-		mytthandler = WikXmlTtHandler(outfd)
+		self.outf = anyReader.anyWriter(outfile, encoding='utf-8')
+		mytthandler = self
 		xmlreader.setContentHandler(WikXmlHandler(mytthandler))
 		xmlreader.setErrorHandler(WikXmlErrorHandler())
 		# set input
