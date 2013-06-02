@@ -19,7 +19,7 @@ class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
 	def warning(self, exception):
 		print exception.getMessage()
 
-class DefaultWiktionHandler:
+class DefaultWikXmlTtHandler:
 	def tt_handler(self, title, text):
 		print '@', title	
 		print '$', text	
@@ -31,13 +31,13 @@ input: wiktionary xml file, wiktionHandler class
 output: simplified wiki format
 '''
 class WikXmlHandler(xml.sax.handler.ContentHandler):
-	def __init__ (self, wiktionhandler=DefaultWiktionHandler()):
+	def __init__ (self, wikxmltthandler=DefaultWikXmlTtHandler()):
 		self.isPageElement = False
 		self.isTitleElement = False
 		self.titleContent = u""
 		self.isTextElement = False
 		self.textContent = u""
-		self.wiktionhandler = wiktionhandler
+		self.wikxmltthandler = wikxmltthandler
 
 	def startElement(self, name, attrs):
 		if name == 'page':
@@ -52,7 +52,7 @@ class WikXmlHandler(xml.sax.handler.ContentHandler):
 	def endElement(self, name):
 		if name == 'page':
 			self.isPageElement= False
-			self.wiktionhandler.tt_handler(self.titleContent, self.textContent)
+			self.wikxmltthandler.tt_handler(self.titleContent, self.textContent)
 			self.titleContent = ""
 			self.textContent = ""
 		elif name == 'title':
@@ -66,38 +66,43 @@ class WikXmlHandler(xml.sax.handler.ContentHandler):
 		elif self.isTextElement:
 			self.textContent += ch
 
-
-def proc_xmlfile(xmlfile, outfile):
-	## Ways to construct a XMLReader object
-	xmlreader = xml.sax.make_parser()
-	# Set UTF-8 stdout in case of the user piping our output
-	reload(sys)
-	sys.setdefaultencoding('utf-8')
-	import codecs
-
-	# xmlreader process 'byte stream' and assume the byte stream is utf-8.
-	# so, we don't have to use 'codecs'. actually, we must not decode utf-8
-	#infd = anyReader.anyReader(xmlfile, encoding='utf-8')
-	infd = anyReader.anyReader(xmlfile, encoding='ascii')
-	outfd = anyReader.anyWriter(outfile, encoding='ascii')
-
-	xmlreader.setContentHandler(WikXmlHandler())
-	xmlreader.setErrorHandler(WikXmlErrorHandler())
-
-	# use feed()
-	CHUNK = 100*1024
-	for chunk in iter(lambda: infd.read(CHUNK), ''):
-		#print "UNCOMPRESSED",len(chunk)
-		#print chunk.decode('utf-8')
-		try:
-			xmlreader.feed(chunk)
-		except EOFError:
-			pass
-			print exception
-			#raise
+''' define my own Title/Text handler '''
+class WikXmlTtHandler:
+	def __init__(self, outf):
+		self.outf = outf
+	def tt_handler(self, title, text):
+		self.outf.write('@ %s\n' % (title))	
+		self.outf.write('$ %s\n' % (text))	
+'''
+Process English Wiktionary
+'''
+class ProcWiktionary:
+	def process(self, xmlfile, outfile):
+		xmlreader = xml.sax.make_parser()
+		# set outout 
+		outfd = anyReader.anyWriter(outfile, encoding='utf-8')
+		mytthandler = WikXmlTtHandler(outfd)
+		xmlreader.setContentHandler(WikXmlHandler(mytthandler))
+		xmlreader.setErrorHandler(WikXmlErrorHandler())
+		# set input
+		# 	xmlreader process 'byte stream' and assume the byte stream is utf-8.
+		# 	Actually,for XML, we must not set encoding='utf-8', but encoding='ascii' 
+		infd = anyReader.anyReader(xmlfile, encoding='ascii')
+		CHUNK = 100*1024
+		for chunk in iter(lambda: infd.read(CHUNK), ''):
+			#print chunk.decode('utf-8')
+			try:
+				xmlreader.feed(chunk)
+			except EOFError:
+				pass
+				#print exception
+				#raise
 
 if __name__=="__main__":
+	#print sys.getdefaultencoding()
 	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 	infile = sys.argv[1]
 	outfile = sys.argv[2]
-	proc_xmlfile(infile, outfile)
+	procwik = ProcWiktionary()
+	procwik.process(infile, outfile)
+	#proc_xmlfile(infile, outfile)
