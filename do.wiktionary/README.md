@@ -3,8 +3,10 @@
  * wget http://dumps.wikimedia.org/enwiktionary/20130415/enwiktionary-20130415-pages-articles.xml.bz2
 
 ## Partial Download
- * curl --header "Range: bytes=0-500000" -o enwiktionary.500k.xml.bz2 http://dumps.wikimedia.org/enwiktionary/20130313/enwiktionary-20130313-pages-articles.xml.bz2
+ * curl --header "Range: bytes=0-500000" -o enwiktionary.500k.xml.bz2 http://dumps.wikimedia.org/enwiktionary/20130415/enwiktionary-20130415-pages-articles.xml.bz2
 
+##
+ * python gzcat_part.py 100000 enwiktionary-20130415-pages-articles.xml.bz2 enwik.100k.line.xml
 ## Parse & convert wiktionary to simple wiki format
  * time python wikxml2dict.py  enwiktionary-20130415-pages-articles.xml.bz2 enwiktionary-20130415.dict.bz2
  ** -rw-r--r--  1 daeheehan  staff  387292076 Apr 23 01:44 enwiktionary-20130415-pages-articles.xml.bz2
