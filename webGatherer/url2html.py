@@ -88,9 +88,9 @@ if __name__ == "__main__":
 		sys.exit(0)
 
 	html = get1(sys.argv[1])
-	soup = BeautifulSoup.BeautifulSoup(html, fromEncoding="euc-kr")
+	soup = BeautifulSoup.BeautifulSoup(html, fromEncoding="utf-8")
 	print soup.originalEncoding
-	txt = soup.prettify("euc-kr")
+	txt = soup.prettify("utf-8")
 	print type(txt)
 	#mytxt = txt.decode().encode('euc-kr', 'ignore')
 	mytxt =txt
