@@ -72,13 +72,23 @@ def filter_wiki_line(text):
 	#text = re.sub(r"{{[^}]+}}", "", text)
 	return text
 
-
+'''
+* {{audio|en-uk-angel.ogg|Audio (UK)}}
+* {{audio|en-us-angel.ogg|Audio (US)}}
+'''
 def get_audio_filename(line):
 	flds = line.split('|')
 	if len(flds)  > 2:
 		return flds[1]
 	else:
 		return ''
+
+
+'''
+* {{a|UK}} {{IPA|/ˈdɪkʃən(ə)ɹi/}}, {{X-SAMPA|/"dIkS@n(@)ri/}}
+* {{a|North America}} {{enPR|dĭk'shə-nĕr-ē}}, {{IPA|/ˈdɪkʃənɛɹi/}}, {{X-SAMPA|/"dIkS@nEri/}}
+'''
+def get_phonetic_notation(line):
 
 ## Translation
 '''
@@ -207,12 +217,7 @@ def wiki2dict(titleContent, textContent, outf, debug=False):
 
 			if headname=='Pronunciation':
 				if line.find('* {{audio|') == -1:
-					'''
-					skip sound notations
-					* {{a|UK}} {{IPA|/ˈdɪkʃən(ə)ɹi/}}, {{X-SAMPA|/"dIkS@n(@)ri/}}
-					* {{a|North America}} {{enPR|dĭk'shə-nĕr-ē}}, {{IPA|/ˈdɪkʃənɛɹi/}}, {{X-SAMPA|/"dIkS@nEri/}}
-					'''
-					skip_thisline = True
+					get_phonetic_notation(line)
 				else:
 					line = get_audio_filename(line)
 
