@@ -2,6 +2,7 @@
 import codecs
 import sys
 import re
+import unittest
 
 from wikxml2wiki import ProcWiktionary
 
@@ -72,8 +73,7 @@ def filter_wiki_line(text):
 	#text = re.sub(r"{{[^}]+}}", "", text)
 	return text
 
-'''
-* {{audio|en-uk-angel.ogg|Audio (UK)}}
+AUDIO = '''* {{audio|en-uk-angel.ogg|Audio (UK)}}
 * {{audio|en-us-angel.ogg|Audio (US)}}
 '''
 def get_audio_filename(line):
@@ -84,11 +84,30 @@ def get_audio_filename(line):
 		return ''
 
 
-'''
-* {{a|UK}} {{IPA|/ˈdɪkʃən(ə)ɹi/}}, {{X-SAMPA|/"dIkS@n(@)ri/}}
+PHONETIC = '''* {{a|UK}} {{IPA|/ˈdɪkʃən(ə)ɹi/}}, {{X-SAMPA|/"dIkS@n(@)ri/}}
 * {{a|North America}} {{enPR|dĭk'shə-nĕr-ē}}, {{IPA|/ˈdɪkʃənɛɹi/}}, {{X-SAMPA|/"dIkS@nEri/}}
 '''
+curly_re = re.compile(r'\{\{([^\}]+)\}\}')
 def get_phonetic_notation(line):
+	trList = []
+	parts = curly_re.findall(line)
+	nation = None
+	ipa = None
+	xsampa = None
+	for part in parts:
+		flds = part.split('|')
+		if flds[0]=='a':
+			nation =  flds[1]
+		elif flds[0]=='IPA':
+			if flds[1][0]=='/' and flds[1][-1]=='/':
+				ipa = flds[1][1:-1]
+		elif flds[0]=='X-SAMPA':
+			if flds[1][0]=='/' and flds[1][-1]=='/':
+				xsampa = flds[1][1:-1]
+	if nation.find(' ') != -1:
+		flds = nation.split()
+		nation = ''.join([f[0] for f in flds])
+	return nation, ipa, xsampa
 
 ## Translation
 '''
@@ -216,10 +235,10 @@ def wiki2dict(titleContent, textContent, outf, debug=False):
 				isSkip =  True 
 
 			if headname=='Pronunciation':
-				if line.find('* {{audio|') == -1:
-					get_phonetic_notation(line)
-				else:
+				if line.find('* {{audio|') != -1:
 					line = get_audio_filename(line)
+				else:
+					phonetic = get_phonetic_notation(line)
 
 			if headname.startswith('Translation'):
 				line = parse_langname(line)
@@ -270,7 +289,16 @@ class XmlToDict(ProcWiktionary):
 		wiki2dict(title, text, self.outf, debug=False)
 
 
+
 if __name__=="__main__":
+	class MyTest(unittest.TestCase):
+		def test_audiofile(self):
+			self.assertEqual(get_audio_filename(AUDIO.splitlines()[0]), 'en-uk-angel.ogg')
+		def test_phonetic(self):
+			self.assertEqual(get_phonetic_notation(PHONETIC.splitlines()[0]), ('UK', 'ˈdɪkʃən(ə)ɹi', '"dIkS@n(@)ri'))
+			self.assertEqual(get_phonetic_notation(PHONETIC.splitlines()[1]), ('NA', 'ˈdɪkʃənɛɹi', '"dIkS@nEri'))
+
+	unittest.main()
 	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 	infile = sys.argv[1]
 	outfile = sys.argv[2]
