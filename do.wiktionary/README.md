@@ -1,10 +1,14 @@
 # Howto
 ## Get Wikitionary Dump Fully
  * wget http://dumps.wikimedia.org/enwiktionary/20130415/enwiktionary-20130415-pages-articles.xml.bz2
+## Get xml of one wiki item
+ * http://en.wiktionary.org/wiki/Special:Export/take
+ * http://en.wiktionary.org/wiki/Special:Export/lion
 
 ##
  * python wikxml2wiki.py enwik.100k.line.xml enwik.100k.line.wiki
  * python wikxml2dict.py enwik.100k.line.xml enwik.100k.line.dict
+ * python wiki2djson.py enwik.100k.line.xml enwik.100k.line.json
 ## Partial Download
  * curl --header "Range: bytes=0-500000" -o enwiktionary.500k.xml.bz2 http://dumps.wikimedia.org/enwiktionary/20130415/enwiktionary-20130415-pages-articles.xml.bz2
 

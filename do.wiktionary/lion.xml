@@ -1,0 +1,458 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.8/ http://www.mediawiki.org/xml/export-0.8.xsd" version="0.8" xml:lang="en">
+  <siteinfo>
+    <sitename>Wiktionary</sitename>
+    <base>http://en.wiktionary.org/wiki/Wiktionary:Main_Page</base>
+    <generator>MediaWiki 1.22wmf5</generator>
+    <case>case-sensitive</case>
+    <namespaces>
+      <namespace key="-2" case="case-sensitive">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="case-sensitive" />
+      <namespace key="1" case="case-sensitive">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="case-sensitive">Wiktionary</namespace>
+      <namespace key="5" case="case-sensitive">Wiktionary talk</namespace>
+      <namespace key="6" case="case-sensitive">File</namespace>
+      <namespace key="7" case="case-sensitive">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="case-sensitive">Template</namespace>
+      <namespace key="11" case="case-sensitive">Template talk</namespace>
+      <namespace key="12" case="case-sensitive">Help</namespace>
+      <namespace key="13" case="case-sensitive">Help talk</namespace>
+      <namespace key="14" case="case-sensitive">Category</namespace>
+      <namespace key="15" case="case-sensitive">Category talk</namespace>
+      <namespace key="90" case="case-sensitive">Thread</namespace>
+      <namespace key="91" case="case-sensitive">Thread talk</namespace>
+      <namespace key="92" case="case-sensitive">Summary</namespace>
+      <namespace key="93" case="case-sensitive">Summary talk</namespace>
+      <namespace key="100" case="case-sensitive">Appendix</namespace>
+      <namespace key="101" case="case-sensitive">Appendix talk</namespace>
+      <namespace key="102" case="case-sensitive">Concordance</namespace>
+      <namespace key="103" case="case-sensitive">Concordance talk</namespace>
+      <namespace key="104" case="case-sensitive">Index</namespace>
+      <namespace key="105" case="case-sensitive">Index talk</namespace>
+      <namespace key="106" case="case-sensitive">Rhymes</namespace>
+      <namespace key="107" case="case-sensitive">Rhymes talk</namespace>
+      <namespace key="108" case="case-sensitive">Transwiki</namespace>
+      <namespace key="109" case="case-sensitive">Transwiki talk</namespace>
+      <namespace key="110" case="case-sensitive">Wikisaurus</namespace>
+      <namespace key="111" case="case-sensitive">Wikisaurus talk</namespace>
+      <namespace key="114" case="case-sensitive">Citations</namespace>
+      <namespace key="115" case="case-sensitive">Citations talk</namespace>
+      <namespace key="116" case="case-sensitive">Sign gloss</namespace>
+      <namespace key="117" case="case-sensitive">Sign gloss talk</namespace>
+      <namespace key="828" case="case-sensitive">Module</namespace>
+      <namespace key="829" case="case-sensitive">Module talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>lion</title>
+    <ns>0</ns>
+    <id>37245</id>
+    <revision>
+      <id>20825702</id>
+      <parentid>20723251</parentid>
+      <timestamp>2013-06-06T16:54:00Z</timestamp>
+      <contributor>
+        <username>MewBot</username>
+        <id>345682</id>
+      </contributor>
+      <minor/>
+      <comment>Add {{context| to context labels</comment>
+      <text xml:space="preserve" bytes="14896">{{also|líon|Lion}}
+==English==
+[[Image:Lion waiting in Nambia.jpg|thumb|right|250px|A lion.]]
+
+===Etymology===
+From {{etyl|fro|en}} {{term|lion|lang=fro}}, from {{etyl|la|en}} {{term|leo|leō|lang=la}}, ([[genitive]]: {{term|leonis|leōnis}}), from {{etyl|grc|en}} {{term|sc=polytonic|λέων|tr=leōn|lang=grc}}, likely a borrowing from a [[Semitic]] language; compare Proto-Semitic {{recons|labiʾ-|lang=sem-pro}}.
+
+===Pronunciation===
+* {{enPR|lī'ən}}, {{IPA|/ˈlaɪən/}}, {{X-SAMPA|/&quot;laI@n/}}
+* {{audio|en-us-lion.ogg|Audio (US)}}
+* {{rhymes|aɪən}}
+
+===Noun===
+{{en-noun|pl2=lion}}
+
+# A [[big cat]], ''[[Panthera leo]]'', [[native]] to [[Africa]], [[India]] and [[formerly]] to much of [[Europe]]. The term may apply to the [[species]] as a whole, to [[individual]]s, or to [[male]] individuals. It also applies to related species like [[mountain lion]]s.
+#: ''Tigers and '''lions''' share a common ancestor from a few million years ago.''
+# {{context|heraldiccharge}} A [[stylized]] [[representation]] of a large cat, used on a [[coat of arms]].
+#* The [[arms]] of the University of the West Indies are ''Barry wavy of six Argent and Azure an open Book proper bound Gules garnished Or on a Chief of the third a '''Lion passant guardant Erminois'''. Crest: A Pelican proper''. (in other words a spotted lion lying down). See talk page.
+# A [[Chinese]] [[foo dog]].
+# An individual who shows [[strength]] and [[courage]], attributes associated with the lion.
+#* It was said of [Edward Plantaganet] that 'he was a '''lion''' for pride and ferocity but a pard for inconstancy and changeableness, not keeping his word or promise but excusing himself with fair words'. '''2003''' Peter Armstrong &amp; Angus McBride ''Stirling Bridge &amp; Falkirk 1297-98: William Wallace's Rebellion''.
+# A famous person.
+#* '''1919''', [[w:William Somerset Maugham|W. Somerset Maugham]], ''[[w:The Moon and Sixpence|The Moon and Sixpence]]'', [[s:The Moon and Sixpence/Chapter IV|ch. 4]]
+#*: Rose Waterford was a cynic. She looked upon life as an opportunity for writing novels and the public as her raw material. Now and then she invited members of it to her house if they showed an appreciation of her talent and entertained with proper [[lavishness]]. She held their weakness for '''lions''' in [[good-humoured]] contempt, but played to them her part of the distinguished woman of letters with [[decorum]].
+====Coordinate terms====
+* {{sense|Panthera leo}} [[cougar]], [[leopard]], [[panther]], [[puma]], [[tiger]]
+* {{sense|male lion individual}} [[cub]], [[lioness]]
+
+====Holonyms====
+* {{sense|individual Panthera leo}} [[pride]]
+
+====Derived terms====
+{{rel-top3|Terms derived from ''lion''}}
+* [[antlion]], [[ant lion]]
+* [[aphid lion]], [[aphis lion]]
+* [[beard the lion]]
+* [[Cape lion]]
+* [[cave lion]]
+* [[dandelion]]
+* [[golden lion tamarin]]
+* [[Lion of Judah]]
+* [[Lion of St Mark]]
+* [[Lion of Venice]]
+* [[lion's ear]]
+{{rel-mid3}}
+* [[lion's foot]]
+* [[lion's leaf]]
+* [[lion's share]]
+* [[lion's tail]]
+* [[lion's tooth]]
+* [[lion cub]]
+* [[lioness]]
+* [[lionfish]]
+* [[Lionheart]]
+* [[lionhearted]], [[lion-hearted]]
+* [[lionhood]]
+{{rel-mid3}}
+* [[lionise]], [[lionize]]
+* [[lionism]]
+* [[lionlike]]
+* [[lionly]]
+* [[lionship]]
+* [[marsupial lion]]
+* [[mountain lion]]
+* [[Nemean lion]]
+* [[sea lion]]
+* [[Steller's sea lion]]
+* [[twist the lion's tail]]
+{{rel-bottom}}
+
+====Related terms====
+{{rel-top3|Terms etymologically related to ''lion''}}
+* [[leo]]
+* [[Leon]]
+* [[Leonids]]
+{{rel-mid}}
+* [[leonine]]
+* [[Lion's club]]
+* [[Lion's sermon]]
+{{rel-mid}}
+* [[Lyon]]
+{{rel-bottom}}
+
+====Translations====
+{{trans-top|big cat ''Panthera leo''}}
+* Abenaki: {{tø|abe|pitôlo}}
+* Abkhaz: {{t-|ab|алым|tr=alym|sc=Cyrl}}
+* Afrikaans: {{t+|af|leeu}}
+* Akan: [[gyata]] {{n}}
+* Albanian: {{t-|sq|luan|m}}
+* Amharic: {{t-|am|አንበሳ|m|tr=anbäsa|sc=Ethi}}
+* Arabic: {{t+|ar|أسد|m|tr=ʾásad|alt=أسَد|sc=Arab}}, {{t-|ar|ليث|m|tr=layṯ|sc=Arab}}, {{t+|ar|قسورة|m|tr=qaswara|sc=Arab}}, {{t-|ar|سبع|m|tr=sabʿ|sc=Arab}}, {{t+|ar|غضنفر|m|tr=ġaḍanfar|sc=Arab}}
+*: Egyptian Arabic: {{tø|arz|سبع|m|alt=سبع|tr=sabʿ}}, {{tø|arz|اسد|m|alt=أسَد|tr=ʾásad}}
+* Aramaic:
+*: Syriac: [[ܐܪܝܐ]] (’aryā’) {{m}}
+*: Hebrew: [[אריא]] (’aryā’) {{m}}
+* Armenian: {{t+|hy|առյուծ|tr=aṙyuç}}
+*: Old Armenian: {{tø|xcl|առիւծ|tr=aṙiwc|sc=Armn}}
+* Aromanian: {{t-|rup|aslan}}
+* Asturian: {{t-|ast|lleón|m}}, {{t|ast|llión}}
+* Azeri: {{t+|az|aslan}}, {{t+|az|şir}}
+* Bashkir: {{tø|ba|арыҫлан|tr=arïθlan}}
+* Basque: {{t+|eu|lehoi}}
+* Bau Bidayuh: {{tø|sne|singa}}
+* Belarusian: {{t-|be|леў|m|tr=leŭ}}
+* Bengali: {{t+|bn|সিংহ|tr=singha|sc=Beng}}
+* Binisayâ: [[liyón]]
+* Bulgarian: {{t+|bg|лъв|m|tr=lǎv|sc=Cyrl}}
+* Burmese: {{t+|my|ခြင်္သေ့|tr=chindhe.|sc=Mymr}}
+* Catalan: {{t+|ca|lleó|m}}
+* Central Atlas Tamazight: {{tø|tzm|ⵉⵣⵎ|tr=izm}}, {{tø|tzm|ⴰⵢⵔⴰⴷ|tr=ayrad}}
+* Central Melanau: {{tø|mel|singa}}
+* Cherokee: [[ᏝᏓᏥ]] (tladatsi), [[ᎲᏓᏱ]] (hvdayi), {{t-|chr|ᏢᏓᏥ ᎤᏍᏆᎴᏂ|tr=tlvdatsi usqualeni|sc=Cher}}
+* Chinese:
+*: Mandarin: {{t|cmn|獅子|sc=Hani}}, {{t|cmn|狮子|tr=shīzi|sc=Hani}}, {{t|cmn|獅|sc=Hani}}, {{t|cmn|狮|tr=shī|sc=Hani}}
+* Coptic:
+*: Bohairic: {{tø|cop|ⲙⲟⲩⲓ|m|tr=mui}}, {{tø|cop|ⲗⲁⲃⲟ|m|tr=lavo}}, {{tø|cop|ⲃⲉⲗⲑⲱⲛ|m|tr=belthōn}}, {{tø|cop|ⲙⲱⲟⲩⲓ|m-p|tr= mōui}}
+*: Sahidic: {{tø|cop|ⲙⲟⲩⲓ|m|tr= mui}}, {{tø|cop|ⲙⲟⲩⲉⲓ|m|tr=muei}}, {{tø|cop|ⲗⲉⲱⲛ|m|tr=leōn}}
+* Crimean Tatar: [[arslan]]
+* Czech: {{t+|cs|lev|m}}
+* Danish: {{t+|da|løve}}, (løvinde) {{f}}
+* Dutch: {{t+|nl|leeuw|m}}
+* Egyptian: &lt;hiero&gt;U1-G1-M17-E22&lt;/hiero&gt; [[mȝỉ]] {{m}}
+* Esperanto: {{t-|eo|leono}}
+* Estonian: {{t+|et|lõvi}}
+* Ewe: [[dzata]] {{n}}
+* Faroese: {{t-|fo|leyva|f}}, {{t-|fo|ljón|n}}, {{t-|fo|løva|f}}
+* Filipino:
+*: Kapampangan: {{tø|pam|leon}}
+*: Tagalog: {{t-|tl|leon}}, {{t-|tl|liyon}}
+* Finnish: {{t+|fi|leijona}}
+* French: {{t+|fr|lion|m}}, {{t+|fr|lionne|f}}
+* Galician: {{t+|gl|león|m}}
+* Georgian: {{t-|ka|ლომი|tr=lomi|sc=Geor}}
+* German: {{qualifier|♂♀}} {{t+|de|Löwe|m}}, {{qualifier|♂}} {{t-|de|Löwenmännchen|n}}, {{qualifier|♀}} {{t+|de|Löwin|f}}, {{qualifier|♀}} {{t-|de|Löwenweibchen|n}}, {{qualifier|poetic}} {{t+|de|Leu|m}}, {{qualifier|♂♀}} {{t-|de|Löwenjunges|n}}, {{qualifier|♂♀}} {{t-|de|Löwenbaby|n}}, {{qualifier|also dog breed, diminutive ♂♀}} {{t-|de|Löwchen|n}}, {{qualifier|diminutive ♂♀}} {{t-|de|Löwlein|n}}
+*: Middle High German: {{tø|gmh|lewe|m}}, {{tø|gmh|lebe|m}}, {{tø|gmh|löuwe|m}}, {{qualifier|poetic}} {{tø|gmh|leu|m}}, {{tø|gmh|lewinne|f}}, {{tø|gmh|löuwinne|f}}, {{tø|gmh|leuinne|f}}, {{qualifier|diminutive}} {{tø|gmh|lewelîn|n}}, {{qualifier|diminutive}} {{tø|gmh|löuwelîn|n}}
+*: Old High German: {{tø|goh|lewo|m}}, {{tø|goh|leo|m}}
+* Gothic: {{tø|got|𐌻𐌹𐍅𐌰|m|tr=liwa|sc=Goth}}
+* Greek: {{t+|el|λιοντάρι|n|tr=liontári}}
+*: Ancient Greek: {{tø|grs|λέων|m|tr=léon}}
+* Gujarati: {{t+|gu|સિંહ|m|tr=sinha|sc=Gujr}}
+* Hawaiian: [[liona]]
+* Hebrew: {{t+|he|אריה|m|alt=אַרְיֵה|tr=aryé|sc=Hebr}}, {{t-|he|ארי|m|tr=ari|sc=Hebr}}, {{t+|he|לביא|m|tr=lavi|sc=Hebr}}, {{t+|he|כפיר|m|tr=kfir|sc=Hebr}}
+* Hindi: {{t-|hi|सिंह|m|tr=sĩh|sc=Deva}}, {{t-|hi|शेर|m|tr=śer|sc=Deva}}
+* Hungarian: {{t+|hu|oroszlán}}
+* Icelandic: {{t+|is|ljón|n}}
+* Ido: {{qualifier|♂♀}} {{t+|io|leono}}, {{qualifier|♂}} {{t+|io|leonulo}}{{qualifier|♀}} {{t+|io|leonino}}
+* Indonesian: {{t+|id|singa}}
+* Interlingua: {{t-|ia|leon}}
+* Irish: {{t+|ga|leon|m}}
+* Italian: {{t+|it|leone|m}}
+* Japanese: {{t+|ja|ライオン|tr=raion|sc=Jpan}}, {{t+|ja|獅子|tr=[[しし]], shishi|sc=Jpan}}
+* Kannada: {{t+|kn|ಸಿಂಹ|tr=singha|sc=Knda}}
+* Kazakh: {{t|kk|арыстан|tr=arıstan|sc=Cyrl}}
+* Khmer: {{t-|km|សឹង្ហ|tr=seung|sc=Khmr}}, {{t+|km|តោ|tr=dtao|sc=Khmr}}
+* Korean: {{t+|ko|사자|tr=saja|sc=Kore}} ({{t+|ko|獅子|sc=Kore}})
+* Kurdish:
+*: Sorani: {{t+|ku|شێر|sc=ku-Arab}}
+{{trans-mid}}
+* Kyrgyz: {{t-|ky|арстан|tr=arstan|sc=Cyrl}}
+* Lao: {{t+|lo|ສິງ|tr=sing|sc=Laoo}}, {{t-|lo|ສິງໂຕ|tr=sing-too|sc=Laoo}}
+* Latgalian: {{tø|ltg|ļovs|m}}
+* Latin: {{t+|la|leo|m|alt=leō}}
+* Latvian: {{t+|lv|lauva|m}}
+* Lithuanian: {{t+|lt|liūtas|m}}
+* Lojban: [[cinfo]]
+* Luxembourgish: [[Léiw]] {{m}}
+* Macedonian: {{t-|mk|лав|m|tr=lav}}
+* Malagasy: {{t+|mg|liona}}
+* Malay: {{t-|ms|singa}}
+* Malayalam: {{t+|ml|സിംഹം|tr=simham|sc=Mlym}}
+* Maltese: {{t-|mt|iljun|m}}
+* Marathi: {{t+|mr|सिंह|m|tr=siṃha}}
+* Mongolian: {{t-|mn|арслан|tr=arslan|sc=Cyrl}}
+*: Classical Mongolian: {{tø|cmg|ᠠᠷᠰᠯᠠᠩ|tr=arslaŋ}}
+* Nahuatl: {{t-|nah|cuāmiztli}}
+* Nama: {{tø|naq|xami}}
+* Navajo: {{tø|nv|náshdóítsoh bitsiijįʼ daditłʼooígíí}}
+* Nepali: {{t+|ne|सिंह|tr=sinh|sc=Deva}}
+* Nobiin:
+*: Fadicca: {{tø|fia|كو|tr=ko}}
+*: Kenzi: {{tø|fia|ايرجيل|tr=errigeel}}
+* North Frisian: {{tø|frr|lau}}
+* Norwegian: 
+*: Bokmål: {{qualifier|♂♀}}{{t+|no|løve|m}}, {{qualifier|♀}}{{t+|no|løvinne|m}}
+*: Nynorsk: {{qualifier|♂♀}}{{t+|no|løva|f}}, {{qualifier|♀}}{{t-|no|løvinna|f}}
+* Occitan: {{t+|oc|leon|m}}
+* Old Prussian: {{tø|prg|laūws}}
+* Oriya: {{t+|or|ସିଂହ|tr=sinha|sc=Orya}}
+* Ossetian: {{tø|os|домбай|tr=dombaj|sc=Cyrl}}, {{tø|os|лев|tr=lev|sc=Cyrl}}
+* Ottoman Turkish: {{tø|ota|اسد|tr=esed|sc=ota-Arab}}, {{tø|ota|غضنفر|tr=gazanfer|sc=ota-Arab}}, {{tø|ota|شير|tr=şîr|sc=ota-Arab}}, {{tø|ota|ارسلان|tr=arslan|sc=ota-Arab}}
+* Pali: {{t-|pi|sīha|m}}
+* Persian: {{t+|fa|شیر|tr=šir|sc=fa-Arab}}
+* Polish: {{t+|pl|lew|m}}
+* Portuguese: {{t+|pt|leão|m}}
+* Romanian: {{t+|ro|leu|m}}
+* Russian: {{t+|ru|лев|m|tr=lev}}, {{qualifier|♀}} {{t+|ru|львица|f|tr=lʹvíca|sc=Cyrl}}
+* Sanskrit: {{t-|sa|केसरी|m|tr=kesarī}}, {{t+|sa|सिंह|m|tr=siṃha}}
+* Scottish Gaelic: {{t-|gd|leòmhann|m}}
+* Serbo-Croatian:
+*: Cyrillic: {{t-|sh|лав|m|sc=Cyrl}}
+*: Roman: {{t-|sh|lav|m}}
+* Sindhi: {{t-|sd|شِینھُن|m|tr=šeehu~|sc=sd-Arab}}, {{t-|sd|شِینھِڻ|f|tr=šeehinn|sc=sd-Arab}}
+* Sinhalese: {{t-|si|සිංහය|tr=sinnnhaya|sc=Sinh}}
+* Slovak: {{t-|sk|lev|m}}
+* Slovene: {{t+|sl|lev|m}}
+* Somali: [[libaax]]
+* Sorbian:
+*: Lower Sorbian: {{tø|dsb|law|m}}
+*: Upper Sorbian: {{t-|hsb|law|m}}
+* Sotho: {{t+|st|tau}}
+* Spanish: {{t+|es|león}}
+* Swahili: {{t+|sw|simba}}
+* Swedish: {{t+|sv|lejon|n}}
+* Tajik: {{t-|tg|шер|tr=šer|sc=Cyrl}}
+* Tamil: {{t+|ta|சிங்கம்|tr=cingkam|sc=Taml}}
+* Tatar: {{t+|tt|арыслан|tr=arıslan|sc=Cyrl}}
+* Telugu: {{t+|te|సింహము|tr=sinhamu|sc=Telu}}
+* Thai: {{t+|th|สิงโต|tr=sĭng dtoh|sc=Thai}}, {{t-|th|ราชสีห์|tr=râat chá sĕe|sc=Thai}}
+* Tibetan: {{t-|bo|སེངགེ|tr=sen-ge|sc=Tibt}}
+* Tswana: {{t-|tn|tau}} (9/10)
+* Turkish: {{t+|tr|aslan}}
+* Turkmen: {{t+|tk|arslan}}, {{t-|tk|şir}}, {{t-|tk|ýolbars}}
+* Ugaritic: {{tø|uga|𐎍𐎁 𐎜|tr=lbủ|sc=Ugar}}
+* Ukrainian: {{t+|uk|лев|m|tr=lev}}
+* Urdu: {{t-|ur|ببر شیر|m|tr=babar śer|sc=ur-Arab}}, {{t-|ur|سنہ|m|tr=sĩh}}, {{t-|ur|سنگھ|m|tr=sĩgh|sc=ur-Arab}}
+* Uyghur: {{t-|ug|ئارسلان|tr=arslan|sc=ug-Arab}}
+* Uzbek: {{t-|uz|sher}}, {{t-|uz|arslon}}
+* Vietnamese: {{t+|vi|sư tử}} ({{t-|vi|獅子}})
+* Volapük: {{qualifier|♂♀}} {{t+|vo|leon}}, {{qualifier|♂}} {{t+|vo|hileon}}, {{qualifier|♀}} {{t+|vo|jileon}}, {{qualifier|♂♀ offspring, young}} {{t+|vo|leonül}}, {{qualifier|♂ offspring}} {{t+|vo|hileonül}}, {{qualifier|♀ offspring}} {{t+|vo|jileonül}}, {{qualifier|diminutive ♂♀}} {{t-|vo|leonil}}, {{qualifier|augmentative ♂♀}} {{t-|vo|leleon}}, {{qualifier|obsolete}} {{t-|vo|lein}}
+* Welsh: {{t+|cy|llew}}
+* West Frisian: {{t+|fy|liuw|c}}
+* Wolof: {{t+|wo|gaynde|alt=gaynde gi}}
+* Xhosa: [[ingonyama]]
+* Yiddish: {{t-|yi|לייב|m|tr=leyb|sc=Hebr}}
+* Yoruba: [[kìnìún]]
+* Zulu: {{t+|zu|ibhubesi|c5|c6}}, {{t-|zu|imbube|c9|c10}}, {{t-|zu|ingonyama|c9|c10}}
+{{trans-bottom}}
+
+{{trans-top|heraldic charge}}
+* Dutch: {{t+|nl|leeuw|m}}
+* French: {{t+|fr|lion|alt=Lion}}
+{{trans-mid}}
+* Macedonian: {{t-|mk|лав|m|tr=lav}}
+* Norwegian: {{t+|no|løve}}
+{{trans-bottom}}
+
+{{trans-top|Chinese foo dog}}
+{{trans-mid}}
+{{trans-bottom}}
+
+{{trans-top|person with strength and courage}}
+* Dutch: {{t+|nl|leeuw|m}}
+* Macedonian: {{t-|mk|лав|m|tr=lav}}
+{{trans-mid}}
+* Persian: {{t+|fa|شیردل|tr=šīrdel}}
+* Swahili: {{t+|sw|simba}}, {{t+|sw|simba}}
+{{trans-bottom}}
+
+{{trans-top|famous person}}
+* Dutch: {{t-|nl|coryfee|m}}
+{{trans-mid}}
+* Norwegian: {{t+|no|løve|m}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* {{ttbc|sa}}: [[सिण्ह]] {{m}}
+{{trans-bottom}}
+
+===See also===
+* {{pedia}}
+* {{specieslite|Panthera leo}}
+* {{commonslite}}
+* [[Appendix:Animals]]
+* [[Appendix:English collective nouns]]
+
+===Anagrams===
+* [[lino#English|lino]], [[loin#English|loin]], [[noil#English|noil]]
+
+[[Category:en:Panthers]]
+
+----
+
+==French==
+
+===Etymology===
+From {{etyl|fro|fr}}, from {{etyl|la|fr}} {{term|leo|leō|lang=la}}, ''leonis''.
+
+===Pronunciation===
+* {{audio|Fr-lion.ogg|audio}}
+* {{IPA|/ljɔ̃/|lang=fr}}
+* {{rhymes|jɔ̃|lang=fr}}
+
+===Noun===
+{{fr-noun|m|f=lionne}}
+
+# {{l|en|lion}} (animal)
+## {{context|specifically|lang=fr}} male lion
+# {{context|figuratively}} {{l|en|lion}} (brave person)
+#: ''Se défendre comme un '''lion''','' - to defend oneself with great courage
+# {{context|heraldiccharge|lang=fr}} {{l|en|lion}}
+# {{context|figuratively|dated|lang=fr}} {{l|en|lion}} {{gloss|celebrity; famous person}}
+# {{context|dated|lang=fr}} a style of [[elegant]] young man that came after the [[dandy]]
+
+===Anagrams===
+* [[loin#French|loin]]
+
+[[Category:fr:Cats]]
+
+----
+
+==Old French==
+
+===Alternative forms===
+* {{l/fro|leon}}
+
+===Etymology===
+{{etyl|la|fro}} {{term|leo|leō|lang=la}}.
+
+===Noun===
+{{fro-noun|m}}
+
+# [[#English|lion]] {{gloss|animal}}
+
+[[Category:fro:Animals]]
+
+[[af:lion]]
+[[az:lion]]
+[[bn:lion]]
+[[zh-min-nan:lion]]
+[[cs:lion]]
+[[cy:lion]]
+[[da:lion]]
+[[de:lion]]
+[[et:lion]]
+[[el:lion]]
+[[es:lion]]
+[[eo:lion]]
+[[eu:lion]]
+[[fa:lion]]
+[[fr:lion]]
+[[fy:lion]]
+[[ga:lion]]
+[[gl:lion]]
+[[ko:lion]]
+[[hy:lion]]
+[[hr:lion]]
+[[io:lion]]
+[[id:lion]]
+[[zu:lion]]
+[[it:lion]]
+[[kl:lion]]
+[[kn:lion]]
+[[kk:lion]]
+[[kw:lion]]
+[[sw:lion]]
+[[ku:lion]]
+[[lo:lion]]
+[[la:lion]]
+[[lb:lion]]
+[[lt:lion]]
+[[li:lion]]
+[[hu:lion]]
+[[mk:lion]]
+[[mg:lion]]
+[[ml:lion]]
+[[ms:lion]]
+[[my:lion]]
+[[nl:lion]]
+[[ja:lion]]
+[[no:lion]]
+[[oc:lion]]
+[[pl:lion]]
+[[pt:lion]]
+[[ru:lion]]
+[[sq:lion]]
+[[simple:lion]]
+[[sh:lion]]
+[[fi:lion]]
+[[sv:lion]]
+[[ta:lion]]
+[[te:lion]]
+[[th:lion]]
+[[tr:lion]]
+[[uk:lion]]
+[[ur:lion]]
+[[vi:lion]]
+[[zh:lion]]</text>
+      <sha1>swf4gqkmp1am8p3hnk9gmd98forwp2z</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+</mediawiki>

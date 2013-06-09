@@ -77,8 +77,9 @@ class WikXmlTtHandler:
 Process English Wiktionary
 '''
 class ProcWiktionary:
-	def __init__(self, outf):
-		self.outf = outf
+	def __init__(self):
+		pass
+
 	''' define my own Title/Text handler '''
 	def tt_handler(self, title, text):
 		self.outf.write('@ %s\n' % (title))	
@@ -102,6 +103,7 @@ class ProcWiktionary:
 				xmlreader.feed(chunk)
 			except EOFError:
 				pass
+				break
 				#print exception
 				#raise
 
