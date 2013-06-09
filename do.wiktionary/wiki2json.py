@@ -26,7 +26,7 @@ toSkipHeads = [
 ''' '''
 def isToSkipTitle(title):
 	for pf in toSkipTitles:
-		if titleContent.startswith(pf):
+		if title.startswith(pf):
 			return True
 	return False
 
@@ -67,7 +67,7 @@ class WikiData(object):
 
 		indent = '  ' * (self.level-1)
 		for i in self.items:
-			#out.write("%s%s\n" % (indent, i))
+			out.write("%s%s\n" % (indent, i))
 			pass
 
 		
@@ -99,6 +99,9 @@ class Wiki2Json:
 		line = line.strip()
 		if len(line) == 0: 
 			return
+		if line.startswith('----'):
+			return
+
 		m = reWIK_HEAD.search(line)
 		if m: 
 			self.proc_head(m)
@@ -151,17 +154,17 @@ class Wiki2Json:
 '''
 '''
 from StringIO import StringIO
-def wiki2json(titleContent, textContent, outf, debug=False):
-	if isNotEnglish(titleContent):
+def wiki2json(title, text, outf, debug=False):
+	if isNotEnglish(title):
 		return None
-	if isToSkipTitle(titleContent):
+	if isToSkipTitle(title):
 		return None
 
 	# remove html comment
-	textContent = filter_wiki_multi(textContent)
+	text = wp.filter_wiki_multi(text)
 
-	wiki2j = Wiki2Json(titleContent)
-	for line in textContent.splitlines():
+	wiki2j = Wiki2Json(title)
+	for line in text.splitlines():
 		wiki2j.feed(line)
 		
 	wiki2j.prn(outf)
