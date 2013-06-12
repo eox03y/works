@@ -57,3 +57,6 @@
 * http://upload.wikimedia.org/wikipedia/commons/3/3e/En-uk-eschatology.ogg
 
 
+## read one XML directly from wiktionary site
+* python wikxml2wiki.py http://en.wiktionary.org/wiki/Special:Export/lion a
+* python wikxml2dict.py http://en.wiktionary.org/wiki/Special:Export/lion b

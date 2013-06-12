@@ -377,7 +377,7 @@ if __name__=="__main__":
 	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
 	infile = sys.argv[1]
-	if infile.find('.xml') != -1:
+	if infile.startswith('http://') or infile.find('.xml') != -1:
 		outfile = sys.argv[2]
 		proc_xmlfile(infile, outfile)
 	else:
