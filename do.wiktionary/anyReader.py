@@ -13,8 +13,10 @@ class UrlZipReader:
 		try:
 			#self.fp = urllib2.urlopen(self._url)
 			req = urllib2.Request(self._url)
+			req.add_header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.37 Safari/537.36")
+			#req.add_header("User-agent", "Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.8) Gecko/20050609 Firefox/1.0.4")
 			req.add_header("Connection", "Keep-Alive")
-			#req.add_header("Connection", "Keep-Alive")
+			print req.headers
 			self.fp = urllib2.urlopen(req)
 		except urllib2.HTTPError, e:
 			print e.code
@@ -64,7 +66,9 @@ def anyReader(fname, encoding='utf-8'):
 
 		import urllib2 	
 		try:
-			fp = urllib2.urlopen(fname)
+			req = urllib2.Request(fname)
+			req.add_header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.37 Safari/537.36")
+			fp = urllib2.urlopen(req)
 		except urllib2.HTTPError, e:
 			print e.code
 			print e.msg
@@ -119,6 +123,7 @@ if __name__=='__main__':
 	cnt = 0
 	for chunk in iter(lambda: reader.read(CHUNK), ''):
 		print 'READ', len(chunk)
+		#print chunk
 		cnt += len(chunk)
 
 	print 'SUM', cnt
