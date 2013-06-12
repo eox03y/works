@@ -3,6 +3,7 @@ import codecs
 import sys
 import re
 import unittest
+import pprint
 
 from wikxml2wiki import ProcWiktionary
 import wiktionaryparse as wp
@@ -146,14 +147,19 @@ class Wiki2Json:
 	def parse_items(self):
 		D = {}
 		HEAD_FUNC_MAP = {'Pronunciation': 'parsePronunciation'}
-		for data in self.L:
+		for data in self.L[1:]:
 			val = {}
 			if data.name.startswith('Pronunciation'):
 				val = wp.parsePronunciation(data.items)
 			elif data.name.startswith('Translation'):
 				val = wp.parseTranslation(data.items)
-			D[data.name] = val
-		return D
+			if val:
+				D[data.name] = val
+		R = {}
+		items = [i for i in self.L[0].items]
+		items.append(D)
+		R[self.L[0].name] = items
+		return R
 
 '''
 '''
@@ -173,7 +179,7 @@ def wiki2json(title, text, outf, debug=False):
 		
 	#wiki2j.prn(outf)
 	D = wiki2j.parse_items()
-	print D
+	print pprint.pprint (D)
 
 class XmlToDict(ProcWiktionary):
 	''' override '''
