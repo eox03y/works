@@ -3,6 +3,7 @@ import codecs
 import sys
 import re
 import unittest
+import pprint
 
 from wikxml2wiki import ProcWiktionary
 import wiktionaryparse as wp
@@ -17,6 +18,7 @@ toSkipTitles = [ 'User:', 'Help:', 'Talk:', 'Appendix:', 'User talk:',
 toSkipHeads = [
 	'Etymology',
 	'Synonyms', 'Antonyms', 'Hyponyms',
+	'Holonyms', 'Coordinate',
 	'Derived ', 'Related ',
 	'References', 'Alternative', 'Statistics', 'Descendant',
 	'Shorthand', 'Usage notes', 'thesaurus', 'See also',
@@ -143,13 +145,21 @@ class Wiki2Json:
 		self.currdata.addItem(line)
 
 	def parse_items(self):
+		D = {}
 		HEAD_FUNC_MAP = {'Pronunciation': 'parsePronunciation'}
-		for data in self.L:
+		for data in self.L[1:]:
+			val = {}
 			if data.name.startswith('Pronunciation'):
-				wp.parsePronunciation(data.items)
+				val = wp.parsePronunciation(data.items)
 			elif data.name.startswith('Translation'):
-				wp.parseTranslation(data.items)
-
+				val = wp.parseTranslation(data.items)
+			if val:
+				D[data.name] = val
+		R = {}
+		items = [i for i in self.L[0].items]
+		items.append(D)
+		R[self.L[0].name] = items
+		return R
 
 '''
 '''
@@ -167,8 +177,9 @@ def wiki2json(title, text, outf, debug=False):
 	for line in text.splitlines():
 		wiki2j.feed(line)
 		
-	wiki2j.prn(outf)
-
+	#wiki2j.prn(outf)
+	D = wiki2j.parse_items()
+	print pprint.pprint (D)
 
 class XmlToDict(ProcWiktionary):
 	''' override '''

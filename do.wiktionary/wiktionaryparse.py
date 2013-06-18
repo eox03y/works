@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
+# my py files
+import wp_translation
 
 def filter_wiki_multi(lines):
 	return re.sub(r"<!--[^>]*-->", "", lines, re.M)
@@ -60,9 +62,11 @@ def get_phonetic_notation(line):
 def parsePronunciation(lines):
 	for line in lines:
 		if line.find('* {{audio|') != -1:
-			line = get_audio_filename(line)
+			audio = get_audio_filename(line)
+			return {'audio':audio}
 		else:
-			phonetic = get_phonetic_notation(line)
+			nation, ipa, xsampa = get_phonetic_notation(line)
+			return {'nation': nation, "IPA": ipa, "XSAMPA": xsampa}
 
 
 ##### Translation
@@ -117,6 +121,12 @@ def prn_langname_code():
 			print '%3s --> %s' % (k, v) 
 
 def parseTranslation(lines):
+	trinfo = wp_translation.TrInfo()
+
+	for line in lines:
+		trinfo.proc(line)
+	return trinfo.D
+
 	for line in lines:
 		line = parse_langname(line)
 		if line.startswith('* Old'):
