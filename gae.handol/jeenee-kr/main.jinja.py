@@ -10,61 +10,56 @@ from google.appengine.ext.webapp import template
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
 from google.appengine.api import memcache
-from google.appengine.api import taskqueue
 
-#import jinja2
+import jinja2
 #import webapp2
 
 import logging
 import datetime
-import threading
-
 # our programming
 import wikdict
 
-'''
 JINJA_ENVIRONMENT = jinja2.Environment(
 	loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
 	extensions=['jinja2.ext.autoescape'])
-'''
 
 IS_READY = False
 '''
 DB Define
 '''
+class Greeting(db.Model):
+  author = db.UserProperty()
+  content = db.StringProperty(multiline=True)
+  date = db.DateTimeProperty(auto_now_add=True)
 
 class BlobFile(db.Model):
   blobname = db.StringProperty()
   blobkey = db.StringProperty()
   date = db.DateTimeProperty(auto_now_add=True)
 
-import wiktion2json
-class ApiDict(webapp.RequestHandler):
- def get(self):
-		word = self.request.get('w')
-		jsonstr = wiktion2json.get_word2jsonstr(word)
-		self.response.out.write(jsonstr)
-
-
 class Dict(webapp.RequestHandler):
  def get(self):
-		global IS_READY
 		word = self.request.get('w')
-		#data = memcache.get(word)
-		data = None
+		data = memcache.get('w')
 		if not data and IS_READY:
 			data = wikdict.lookup_dict(word)
-			if data:
-				memcache.add(word, data, 3600*12)
-		if not data:
-			data = '<div class="nores"> not found </div>'
+			memcache.add(word, data, 3600*12)
+
 		template_values = {}
-		#template_values['search_result'] = data.decode('utf-8')
-		template_values['search_result'] = data
-		path = os.path.join(os.path.dirname(__file__), 'home.html')
-		self.response.out.write(template.render(path, template_values))
-		#template = JINJA_ENVIRONMENT.get_template('home.html')
-		#self.response.write(template.render(template_values))
+		template_values['search_result'] = data.decode('utf-8')
+		#path = os.path.join(os.path.dirname(__file__), 'home.html')
+		#self.response.out.write(template.render(path, template_values))
+		template = JINJA_ENVIRONMENT.get_template('home.html')
+		self.response.write(template.render(template_values))
+
+class DictForm(webapp.RequestHandler):
+ def get(self):
+		html = ''
+		html += '<html><body>'
+		html += '<form action="/dict" method="GET">'
+		html += """Search: <input type="text" name="w"><br> <input type="submit"
+		name="submit" value="Submit"> </form></body></html>"""
+		self.response.out.write(html)
 
 class UploadForm(webapp.RequestHandler):
  def get(self):
@@ -103,24 +98,17 @@ class FileUploadHandler(blobstore_handlers.BlobstoreUploadHandler):
 class Home(webapp.RequestHandler):
   def get(self):
     template_values = {}
-    path = os.path.join(os.path.dirname(__file__), 'home.html')
-    self.response.out.write(template.render(path, template_values))
-    #template = JINJA_ENVIRONMENT.get_template('home.html')
-    #self.response.write(template.render(template_values))
-
-class EnQueue(webapp.RequestHandler):
-	def get(self):
-		# The default URL path for the default queue is: /_ah/queue/default
-		taskqueue.add(queue_name='default') 
-		self.response.out.write('<html>OK</html>')
+    #path = os.path.join(os.path.dirname(__file__), 'home.html')
+    #self.response.out.write(template.render(path, template_values))
+    template = JINJA_ENVIRONMENT.get_template('home.html')
+    self.response.write(template.render(template_values))
     
 
 application = webapp.WSGIApplication( [
 	('/dict', Dict),
-	('/api/dict', ApiDict),
+	('/dictform', DictForm),
 	('/new', UploadForm),
 	('/upload', FileUploadHandler),
-	('/enq', EnQueue),
 	('/', Home)
 	],
 	debug=True)
@@ -128,16 +116,10 @@ application = webapp.WSGIApplication( [
 def main():
   run_wsgi_app(application)
 
-def loadindex():
-	global IS_READY
-	logging.info('Loading index file starts')
-	wikdict.prepare()
-	logging.info('Loading index file finished')
-	IS_READY = True
-
-class LoadIndex(threading.Thread):
-	def run(self):
-		loadindex()
 if __name__ == "__main__":  
-  #loadindex()
+  global IS_READY
+  logging.info('Loading index file starts')
+  wikdict.prepare()
+  logging.info('Loading index file finished')
+  IS_READY = True
   main()
