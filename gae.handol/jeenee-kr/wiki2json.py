@@ -156,8 +156,34 @@ class Wiki2Json:
 			if val:
 				D[data.name] = val
 		R = {}
-		items = [i for i in self.L[0].items]
-		items.append(D)
+		#items = [i for i in self.L[0].items]
+		items = {}
+		items['audio'] = []
+		items['image'] = []
+		items['exstc'] = []
+		items['meaning'] = []
+		items['hword'] = []
+		
+		for line in self.L[0].items:
+			if line[0]=='@':
+				hline = u'<h3 class="hword"> %s </h3>\n' % (line[2:])
+				items['hword'].append(line[2:])
+
+			elif line[:2]=='#:':
+				hline = u'<div class="exstc"> %s </div>\n' % (line[2:])
+				items['exstc'].append(line[2:])
+
+			elif line[0]=='#':
+				items['meaning'].append(line[2:])
+				hline = u'<div class="meaning"> %s </div>\n' % (line[2:])
+
+			elif line.endswith('.ogg'):
+				items['audio'].append(wp.get_sound_url(line))
+
+			elif line.startswith('[[Image') or line.startswith('[[File'):
+				items['image'].append(wp.get_image_url(line))
+
+		items['ETC'] = D
 		R[self.L[0].name] = items
 		return R
 

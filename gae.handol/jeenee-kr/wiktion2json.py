@@ -5,8 +5,9 @@ import codecs
 import urllib
 import json
 import pprint
-import anyReader
 
+import anyReader
+import wiki2json
 '''
 wiktionary page --> json
 '''
@@ -66,7 +67,6 @@ def get_wikitext(wiktionxml):
 '''
 '''
 def get_wiki2json(title, wikitext):
-	import wiki2json
 	wiki2j = wiki2json.Wiki2Json(title)
 	for line in wikitext.splitlines():
 		wiki2j.feed(line)

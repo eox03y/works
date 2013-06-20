@@ -43,6 +43,7 @@ class ApiDict(webapp.RequestHandler):
  def get(self):
 		word = self.request.get('w')
 		jsonstr = wiktion2json.get_word2jsonstr(word)
+		self.response.headers['Content-Type'] = 'application/json'
 		self.response.out.write(jsonstr)
 
 
