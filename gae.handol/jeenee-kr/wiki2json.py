@@ -177,7 +177,7 @@ class Wiki2Json:
 				items['meaning'].append(line[2:])
 				hline = u'<div class="meaning"> %s </div>\n' % (line[2:])
 
-			elif line.endswith('.ogg'):
+			elif line.startswith('{{audio'):
 				items['audio'].append(wp.get_sound_url(line))
 
 			elif line.startswith('[[Image') or line.startswith('[[File'):
