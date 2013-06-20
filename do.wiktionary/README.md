@@ -8,7 +8,11 @@
 ##
  * python wikxml2wiki.py enwik.100k.line.xml enwik.100k.line.wiki
  * python wikxml2dict.py enwik.100k.line.xml enwik.100k.line.dict
- * python wiki2djson.py enwik.100k.line.xml enwik.100k.line.json
+ * python wiki2json.py enwik.100k.line.xml enwik.100k.line.json
+## 2013/06/20
+ * read xml from URL and parse and then get JSON
+ * python wiktion2json.py lion lion.json
+
 ## Partial Download
  * curl --header "Range: bytes=0-500000" -o enwiktionary.500k.xml.bz2 http://dumps.wikimedia.org/enwiktionary/20130415/enwiktionary-20130415-pages-articles.xml.bz2
 

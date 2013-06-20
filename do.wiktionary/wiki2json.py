@@ -179,7 +179,7 @@ def wiki2json(title, text, outf, debug=False):
 		
 	#wiki2j.prn(outf)
 	D = wiki2j.parse_items()
-	print pprint.pprint (D)
+	#pprint.pprint(D, stream=outf)
 
 class XmlToDict(ProcWiktionary):
 	''' override '''
@@ -187,6 +187,9 @@ class XmlToDict(ProcWiktionary):
 		wiki2json(title, text, self.outf, debug=False)
 
 
+def wikiurl2jsonstr(wikiurl):
+	procwik = XmlToDict()
+	procwik.process(infile, outfile)
 
 if __name__=="__main__":
 	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
