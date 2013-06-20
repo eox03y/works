@@ -53,7 +53,11 @@
 * http://en.wiktionary.org/wiki/File:Lion_waiting_in_Namibia.jpg
 * http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/800px-Lion_waiting_in_Namibia.jpg
 
-
+## wikipedia API: image info
+* http://en.wikipedia.org/w/api.php?action=query&titles=Image:Albert%20Einstein%20Head.jpg&prop=imageinfo
+* http://en.wikipedia.org/w/api.php?action=query&titles=Image:Albert%20Einstein%20Head.jpg&prop=imageinfo&iiprop=size|url|sha1
+* http://en.wikipedia.org/w/api.php?action=query&titles=Albert%20Einstein&prop=images
+* 
 ## audio url
 * {{audio|En-uk-eschatology.ogg|Audio (UK)}}
 * <source src="//upload.wikimedia.org/wikipedia/commons/3/3e/En-uk-eschatology.ogg" type="audio/ogg; codecs=&quot;vorbis&quot;" data-title="Original Ogg file (411 kbps)" data-shorttitle="Ogg source" data-width="0" data-height="0" data-bandwidth="411402"></source>
