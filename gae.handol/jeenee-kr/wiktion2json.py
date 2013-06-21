@@ -72,7 +72,7 @@ def get_wiki2json(title, wikitext):
 		wiki2j.feed(line)
 
 	#wiki2j.prn(outf)
-	D = wiki2j.parse_items()
+	D = wiki2j.get_json()
 	#pprint.pprint(D, stream=outf)
 	return D
 

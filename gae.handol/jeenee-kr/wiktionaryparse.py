@@ -62,14 +62,19 @@ def get_phonetic_notation(line):
 	return nation, ipa, xsampa
 
 def parsePronunciation(lines):
+	D = {}
 	for line in lines:
 		if line.find('* {{audio|') != -1:
 			audio = get_audio_filename(line)
 			audio_url = get_sound_url(audio)
-			return {'audio':audio_url}
+			if D.has_key('audio'):
+				D['audio'].append(audio_url)
+			else:
+				D['audio'] = [audio_url]
 		else:
 			nation, ipa, xsampa = get_phonetic_notation(line)
-			return {'nation': nation, "IPA": ipa, "XSAMPA": xsampa}
+			D['sndsign']= {'nation': nation, "IPA": ipa, "XSAMPA": xsampa}
+	return D
 
 
 ##### Translation
@@ -197,7 +202,8 @@ def get_image_url(imgdesc):
 	m.update(imgfile)
 	hexkey = m.hexdigest()
 	folder = u'%s/%s' % (hexkey[0], hexkey[:2])
-	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/%spx-%s' % (folder, imgfile, pxsize, imgfile)
+	#imgurl = u'http://upload.wikimedia.org/wikipedia/commons/thumb/%s/%s/%spx-%s' % (folder, imgfile, pxsize, imgfile)
+	imgurl = u'http://upload.wikimedia.org/wikipedia/commons/%s/%s' % (folder, imgfile)
 	return imgurl, desc
 
 ##

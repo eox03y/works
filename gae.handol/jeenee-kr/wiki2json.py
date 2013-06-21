@@ -123,6 +123,10 @@ class Wiki2Json:
 
 			if len(self.ladder) > 0:
 				self.parent = self.ladder[-1]
+				self.parent.addChild(newhead)
+		else:
+			if self.parent:
+				self.parent.addChild(newhead)
 
 		self.currhead = newhead
 
@@ -203,16 +207,16 @@ def conv_items(orgitems):
 	
 	for line in orgitems:
 		if line[0]=='@':
-			hline = u'<h3 class="hword"> %s </h3>\n' % (line[2:])
+			hline = '<h3 class="hword"> %s </h3>\n' % (line[2:])
 			items['hword'].append(line[2:])
 
 		elif line[:2]=='#:':
-			hline = u'<div class="exstc"> %s </div>\n' % (line[2:])
+			hline = '<div class="exstc"> %s </div>\n' % (line[2:])
 			items['exstc'].append(line[2:])
 
 		elif line[0]=='#':
 			items['meaning'].append(line[2:])
-			hline = u'<div class="meaning"> %s </div>\n' % (line[2:])
+			hline = '<div class="meaning"> %s </div>\n' % (line[2:])
 
 		elif line.startswith('{{audio'):
 			items['audio'].append(wp.get_sound_url(line))
