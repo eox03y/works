@@ -191,10 +191,7 @@ def conv_head_items(headname, items):
 	else:
 		val = conv_items(items)
 
-	if val:
-		return {headname: val}
-	else:
-		return None
+	return val
 
 def conv_items(orgitems):
 	items = {}
@@ -245,7 +242,7 @@ def wiki2json(title, text, outf, debug=False):
 	for line in text.splitlines():
 		wiki2j.feed(line)
 		
-	#wiki2j.prn(outf)
+	wiki2j.prn(outf)
 	D = wiki2j.get_json()
 	pprint.pprint(D, stream=outf)
 
