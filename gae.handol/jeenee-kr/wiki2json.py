@@ -49,17 +49,20 @@ def isToSkipHead(headname):
 	return False
 
 ##
-class WikiData(object):
+class WikiHeading(object):
 	def __init__(self, name, level, parent):
 		self.name = name
 		self.level = level
 		self.items = []
 		self.parent = parent
-		self.children = []  # list of WikiData
+		self.children = []  # list of WikiHeading
 	def addItem(self, item):
 		self.items.append(item)
+
 	def addChild(self, child):
 		self.children.append(child)
+		child.parent = self
+
 	def prn(self, out):
 		if self.level==0:
 			out.write("\n@ %s\n" % (self.name))
@@ -71,37 +74,66 @@ class WikiData(object):
 		for i in self.items:
 			out.write("%s%s\n" % (indent, i))
 			pass
+		for c in self.children:
+			c.prn(out)
+
+	def conv_to_json(self, D):
+		res = conv_head_items(self.name, self.items)
+		D[self.name] = res
+		for c in self.children:
+			c.conv_to_json(D)
+		
 
 		
 ##
 class Wiki2Json:
 	def __init__(self, word):
-		self.L = [] # list of WikiData object
-		self.currdata = None
-		self.add_data(word, 0)
+		#self.L = [] # list of WikiHeading object
+		self.ladder = [] # ladder of ancestors
+		self.parent = None
+		self.currhead = None
+		self.add_heading(word, 0)
+		self.roothead = self.currhead
+
 		self.skipNonEnglish = False
 		self.skipHead = False
 		self.skipheadname = None
 		self.skipheadlevel = None
-		self.headname = None
-		self.headlevel = None
+		self.finished = False
 
 	def prn(self, out=sys.stdout):
-		for data in self.L:
-			data.prn(out)
+		self.roothead.prn(out)
+		#for data in self.L:
+		#	data.prn(out)
 
-	def add_data(self, headname, headlevel):
-		newdata = WikiData(headname, headlevel, self.currdata)
-		self.headname = headname
-		self.headlevel = headlevel
-		self.L.append(newdata)
-		self.currdata = newdata
+	def add_heading(self, headname, headlevel):
+		newhead = WikiHeading(headname, headlevel, self.parent)
+		if self.currhead and self.currhead.level < headlevel:
+			# if newhead is the first or if newhead is a lower level
+			self.currhead.addChild(newhead)
+			self.ladder.append(self.currhead)
+			self.parent = self.ladder[-1]
+
+		elif self.currhead and self.currhead.level > headlevel:
+			# pop the ladder
+			while True:
+				self.ladder.pop()
+				if  len(self.ladder) == 0: break
+				if self.ladder[-1].level <= headlevel: break
+
+			if len(self.ladder) > 0:
+				self.parent = self.ladder[-1]
+
+		self.currhead = newhead
 
 	def feed(self, line):
+		if self.finished:
+			return
 		line = line.strip()
 		if len(line) == 0: 
 			return
 		if line.startswith('----'):
+			self.finished = True
 			return
 
 		m = reWIK_HEAD.search(line)
@@ -128,7 +160,7 @@ class Wiki2Json:
 		if headlevel > 2:
 			if not isToSkipHead(headname):
 				# new data
-				self.add_data(headname, headlevel)
+				self.add_heading(headname, headlevel)
 				if headlevel <= self.skipheadlevel:
 					# skip ends
 					self.skipHead = False
@@ -142,50 +174,60 @@ class Wiki2Json:
 	def proc_item(self, line):
 		if reCATEGORY.search(line):
 			return False
-		self.currdata.addItem(line)
+		self.currhead.addItem(line)
 
-	def parse_items(self):
-		D = {}
-		HEAD_FUNC_MAP = {'Pronunciation': 'parsePronunciation'}
-		for data in self.L[1:]:
-			val = {}
-			if data.name.startswith('Pronunciation'):
-				val = wp.parsePronunciation(data.items)
-			elif data.name.startswith('Translation'):
-				val = wp.parseTranslation(data.items)
-			if val:
-				D[data.name] = val
-		R = {}
-		#items = [i for i in self.L[0].items]
-		items = {}
-		items['audio'] = []
-		items['image'] = []
-		items['exstc'] = []
-		items['meaning'] = []
-		items['hword'] = []
-		
-		for line in self.L[0].items:
-			if line[0]=='@':
-				hline = u'<h3 class="hword"> %s </h3>\n' % (line[2:])
-				items['hword'].append(line[2:])
+	def get_json(self):
+		D = {}	
+		self.roothead.conv_to_json(D)
+		return D
 
-			elif line[:2]=='#:':
-				hline = u'<div class="exstc"> %s </div>\n' % (line[2:])
-				items['exstc'].append(line[2:])
+##
+def conv_head_items(headname, items):
+	val = None
+	if headname.startswith('Pronunciation'):
+		val = wp.parsePronunciation(items)
+	elif headname.startswith('Translation'):
+		val = wp.parseTranslation(items)
+	else:
+		val = conv_items(items)
 
-			elif line[0]=='#':
-				items['meaning'].append(line[2:])
-				hline = u'<div class="meaning"> %s </div>\n' % (line[2:])
+	if val:
+		return {headname: val}
+	else:
+		return None
 
-			elif line.startswith('{{audio'):
-				items['audio'].append(wp.get_sound_url(line))
+def conv_items(orgitems):
+	items = {}
+	items['audio'] = []
+	items['image'] = []
+	items['exstc'] = []
+	items['meaning'] = []
+	items['hword'] = []
+	
+	for line in orgitems:
+		if line[0]=='@':
+			hline = u'<h3 class="hword"> %s </h3>\n' % (line[2:])
+			items['hword'].append(line[2:])
 
-			elif line.startswith('[[Image') or line.startswith('[[File'):
-				items['image'].append(wp.get_image_url(line))
+		elif line[:2]=='#:':
+			hline = u'<div class="exstc"> %s </div>\n' % (line[2:])
+			items['exstc'].append(line[2:])
 
-		items['ETC'] = D
-		R[self.L[0].name] = items
-		return R
+		elif line[0]=='#':
+			items['meaning'].append(line[2:])
+			hline = u'<div class="meaning"> %s </div>\n' % (line[2:])
+
+		elif line.startswith('{{audio'):
+			items['audio'].append(wp.get_sound_url(line))
+
+		elif line.startswith('[[Image') or line.startswith('[[File'):
+			items['image'].append(wp.get_image_url(line))
+
+	R = {}
+	for k,v  in items.iteritems():
+		if v != []:
+			R[k] = v
+	return R
 
 '''
 '''
@@ -204,8 +246,8 @@ def wiki2json(title, text, outf, debug=False):
 		wiki2j.feed(line)
 		
 	#wiki2j.prn(outf)
-	D = wiki2j.parse_items()
-	#pprint.pprint(D, stream=outf)
+	D = wiki2j.get_json()
+	pprint.pprint(D, stream=outf)
 
 class XmlToDict(ProcWiktionary):
 	''' override '''
@@ -218,6 +260,9 @@ def wikiurl2jsonstr(wikiurl):
 	procwik.process(infile, outfile)
 
 if __name__=="__main__":
+	#a = WikiHeading('root', 1, None)
+	#print isinstance(a, WikiHeading)
+
 	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 	infile = sys.argv[1]
 	outfile = sys.argv[2]

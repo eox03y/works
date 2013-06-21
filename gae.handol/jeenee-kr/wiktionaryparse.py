@@ -65,7 +65,8 @@ def parsePronunciation(lines):
 	for line in lines:
 		if line.find('* {{audio|') != -1:
 			audio = get_audio_filename(line)
-			return {'audio':audio}
+			audio_url = get_sound_url(audio)
+			return {'audio':audio_url}
 		else:
 			nation, ipa, xsampa = get_phonetic_notation(line)
 			return {'nation': nation, "IPA": ipa, "XSAMPA": xsampa}
