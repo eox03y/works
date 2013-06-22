@@ -110,16 +110,14 @@ class Wiki2Json:
 		newhead = WikiHeading(headname, headlevel, self.parent)
 		if self.currhead and self.currhead.level < headlevel:
 			# if newhead is the first or if newhead is a lower level
-			self.currhead.addChild(newhead)
 			self.ladder.append(self.currhead)
 			self.parent = self.ladder[-1]
+			self.parent.addChild(newhead)
 
 		elif self.currhead and self.currhead.level > headlevel:
 			# pop the ladder
-			while True:
+			while len(self.ladder) > 0 and self.ladder[-1].level >= headlevel:
 				self.ladder.pop()
-				if  len(self.ladder) == 0: break
-				if self.ladder[-1].level <= headlevel: break
 
 			if len(self.ladder) > 0:
 				self.parent = self.ladder[-1]
