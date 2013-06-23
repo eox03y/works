@@ -11,6 +11,7 @@ def filter_wiki_multi(lines):
 	return re.sub(r"<!--[^>]*-->", "", lines, re.M)
 
 def filter_wiki_line(text):
+	text = re.sub(r"<!--[^>]*-->", "", text, re.M)
 	text = re.sub("<b>", " ", text)
 	# Get rid of the word, we don't want it in the definition
 	#text = re.sub(r"'''.*'''[ ]*(.*)", r"\1", text)
@@ -329,6 +330,53 @@ def get_image_div(imgdesc):
 	imgurl, desc = get_image_url(imgdesc)
 	imgdiv = u'''<div class="dictimg"> <img class="img-polaroid" height="200px" width=auto src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
+
+#####
+##
+def conv_head_items(headname, items):
+	val = None
+	if headname.startswith('Pronunciation'):
+		val = parsePronunciation(items)
+	elif headname.startswith('Translation'):
+		val = parseTranslation(items)
+	else:
+		val = conv_items(items)
+
+	return val
+
+def conv_items(orgitems):
+	items = {}
+	items['audio'] = []
+	items['image'] = []
+	items['exstc'] = []
+	items['meaning'] = []
+	items['hword'] = []
+	
+	for line in orgitems:
+		if line[0]=='@':
+			hline = '<h3 class="hword"> %s </h3>\n' % (line[2:])
+			items['hword'].append(line[2:])
+
+		elif line[:2]=='#:':
+			hline = '<div class="exstc"> %s </div>\n' % (line[2:])
+			text = filter_wiki_line(line[2:])
+			items['exstc'].append(text)
+
+		elif line[0]=='#':
+			hline = '<div class="meaning"> %s </div>\n' % (line[2:])
+			text = filter_wiki_line(line[2:])
+			items['meaning'].append(text)
+
+		elif line.startswith('[[Image') or line.startswith('[[File'):
+			items['image'].append(get_image_url(line))
+
+	R = {}
+	for k,v  in items.iteritems():
+		if v != []:
+			R[k] = v
+	return R
+
+
 
 #####
 if __name__=="__main__":

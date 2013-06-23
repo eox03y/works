@@ -160,7 +160,7 @@ class WikiHeading(object):
 
 		indent = '  ' * (self.level)
 		for i in self.items:
-			#out.write("%s%s\n" % (indent, i))
+			out.write("%s%s\n" % (indent, i))
 			pass
 		for c in self.children:
 			c.prn(out)
@@ -170,7 +170,7 @@ class WikiHeading(object):
 		L = []
 
 		if len(self.items) > 0:
-			res_items = conv_head_items(self.name, self.items)
+			res_items = wp.conv_head_items(self.name, self.items)
 			if len(res_items) > 0:
 				L.append( res_items )
 
@@ -281,53 +281,7 @@ class WikiStructure:
 		D = self.roothead.conv_to_json()
 		return D
 
-##
-def conv_head_items(headname, items):
-	val = None
-	if headname.startswith('Pronunciation'):
-		val = wp.parsePronunciation(items)
-	elif headname.startswith('Translation'):
-		val = wp.parseTranslation(items)
-	else:
-		val = conv_items(items)
-
-	return val
-
-def conv_items(orgitems):
-	items = {}
-	items['audio'] = []
-	items['image'] = []
-	items['exstc'] = []
-	items['meaning'] = []
-	items['hword'] = []
-	
-	for line in orgitems:
-		if line[0]=='@':
-			hline = '<h3 class="hword"> %s </h3>\n' % (line[2:])
-			items['hword'].append(line[2:])
-
-		elif line[:2]=='#:':
-			hline = '<div class="exstc"> %s </div>\n' % (line[2:])
-			items['exstc'].append(line[2:])
-
-		elif line[0]=='#':
-			items['meaning'].append(line[2:])
-			hline = '<div class="meaning"> %s </div>\n' % (line[2:])
-
-		elif line.startswith('{{audio'):
-			items['audio'].append(wp.get_sound_url(line))
-
-		elif line.startswith('[[Image') or line.startswith('[[File'):
-			items['image'].append(wp.get_image_url(line))
-
-	R = {}
-	for k,v  in items.iteritems():
-		if v != []:
-			R[k] = v
-	return R
-
-
-
+####
 if __name__=="__main__":
 	word = sys.argv[1]
 	outf = anyReader.anyWriter(sys.argv[2])
