@@ -174,11 +174,15 @@ class WikiHeading(object):
 			if len(res_items) > 0:
 				L.append( res_items )
 
+		childD = {}
 		for c in self.children:
 			res_child = c.conv_to_json()
 			if len(res_child) > 0:
-				L.append ( {c.name: res_child} )
+				#L.append ( {c.name: res_child} )
+				childD[c.name] = res_child
 
+		if len(childD) > 0:
+			L.append ( childD )
 		return L
 		
 ##
