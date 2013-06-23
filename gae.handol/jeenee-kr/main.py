@@ -18,9 +18,11 @@ from google.appengine.api import taskqueue
 import logging
 import datetime
 import threading
+import json
 
 # our programming
 import wikdict
+import wiktion2json
 
 '''
 JINJA_ENVIRONMENT = jinja2.Environment(
@@ -38,11 +40,11 @@ class BlobFile(db.Model):
   blobkey = db.StringProperty()
   date = db.DateTimeProperty(auto_now_add=True)
 
-import wiktion2json
 class ApiDict(webapp.RequestHandler):
  def get(self):
 		word = self.request.get('w')
-		jsonstr = wiktion2json.get_word2jsonstr(word)
+		jsondata = wiktion2json.get_word2json(word)
+		jsonstr = json.dumps(jsondata)
 		self.response.headers['Content-Type'] = 'application/json'
 		self.response.out.write(jsonstr)
 
