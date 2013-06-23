@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 import re
 import md5
+import json
+import pprint
+from StringIO import StringIO
 
 # my py files
-import wp_translation
 
 def filter_wiki_multi(lines):
 	return re.sub(r"<!--[^>]*-->", "", lines, re.M)
@@ -128,8 +130,124 @@ def prn_langname_code():
 		else:
 			print '%3s --> %s' % (k, v) 
 
+
+
+
+'''
+input: t+|el|αξιόμεμπτος|m|tr=axiómemptos|sc=Grek
+output: ('αξιόμεμπτος', 'axiómemptos')
+output: ('αξιόμεμπτος', '')
+'''
+def parse_tr_body(trbody):
+	flds = trbody.split('|')
+	if len(flds) < 3: return None
+	trword = flds[2] # translated word
+	snd = '' # sound of the translated word is optional
+	if len(flds) >= 5 and flds[4].startswith('tr='):
+		snd = flds[4][3:] # sound of the translated word
+	return (trword, snd)
+
+
+'''
+input: {{trans-top|deserving of reprehension}}
+output: deserving of reprehension
+'''
+def proc_tr_meaning(mline):
+	mline = mline[2:]
+	if not mline.startswith('trans-'):
+		return None
+	flds = mline.split('|')
+	if  len(flds) < 2: 
+		return None
+	meaning = flds[1][:-2]
+	return meaning
+
+'''
+
+* Arabic: {{Arab|[[ﻢﺜﻟ]]}} {{IPAchar|(máθθala)}}
+* Catalan: {{t+|ca|representar}}
+'''
+#curly_re = re.compile(r'([^\}]+)\}\}')
+curly_re = re.compile(r'\{\{([^\}]+)\}\}')
+def proc_tr_curly(line):
+	trList = []
+	parts = curly_re.findall(line)
+	for part in parts:
+		tr_word_n_snd = parse_tr_body(part)
+		if tr_word_n_snd:
+			trList.append(tr_word_n_snd)
+	return trList
+
+'''
+* Chinese: [[代表]] (dàibiǎo)
+* Japanese: [[代表]]する (daihyō suru)
+'''
+sq_re = re.compile(r'.*\[\[([^\]]+)\]\]([^\s]*)\s+\(([^\)]+)\)')
+def proc_tr_square(line):
+	m = sq_re.search(line)
+	if not m: return []
+	trword = m.group(1)+m.group(2)
+	snd = m.group(3)
+	return [(trword, snd)]
+
+class TrInfo:
+	def __init__(self):
+		self.D = {}
+		self.meaning = ''
+
+	def proc(self, line):
+		line = line.strip()
+		if len(line)==0:
+			return
+
+		if line[0]=='*':
+			lang, trList = self.proc_tr_line(line)
+			if len(lang) and len(trList):
+				langList = self.D.get(self.meaning, None)
+				if not langList: 
+					langList = {}
+					self.D[self.meaning] = langList
+				langList[lang] = trList
+
+		elif line[0]=='{':
+			meaning = proc_tr_meaning(line)
+			if meaning:
+				self.meaning = meaning
+		
+	def proc_tr_line(self, trnsline):
+		line = trnsline[2:]
+		pos = line.find(':')
+		if pos == -1: return '',[]
+		lang = line[:pos]
+		line = line[pos+2:]
+		if line.find('{{') != -1:
+			trList = proc_tr_curly(line)
+		elif line.find('[[') != -1:
+			trList = proc_tr_square(line)
+		else:
+			return '',[]
+
+		return lang, trList
+
+	def prn(self):
+		pprint.pprint(self.D)
+
+	def html(self):
+		out = StringIO()
+		for meaning,langlist in self.D.iteritems():
+			out.write('<ul class="trmean"> %s \n' % (meaning))
+			for lang,trlist in langlist.iteritems():
+				out.write('\t<li class="trlang"> %s ' % (lang))
+				for tr in trlist:
+					out.write('<div class="trword"> %s </div>' % (tr[0]))
+					out.write('<div class="trsnd"> %s </div>' % (tr[1]))
+				out.write('</li>\n')
+			out.write('</ul>\n')
+		return out.getvalue()
+
+
 def parseTranslation(lines):
-	trinfo = wp_translation.TrInfo()
+	trinfo = TrInfo()
 
 	for line in lines:
 		trinfo.proc(line)
@@ -211,85 +329,6 @@ def get_image_div(imgdesc):
 	imgurl, desc = get_image_url(imgdesc)
 	imgdiv = u'''<div class="dictimg"> <img class="img-polaroid" height="200px" width=auto src="%s"> %s </img></div>\n''' % (imgurl, desc)
 	return imgdiv
-
-'''
-'''
-def	read_dict(dictfd, offset, length):
-	dictfd.seek(offset)
-	content = dictfd.read(length)
-	content = content.decode('utf-8')
-	logging.info("dict:")
-	logging.info(content)
-	return content
-
-def dict2html(content):
-	html = u''
-	trinfo = trans_test.TrInfo()
-	for line in content.splitlines():
-		line = line.strip()
-		if line[0]=='@':
-			hline = u'<h3 class="hword"> %s </h3>\n' % (line[2:])
-			html += hline
-		elif line[:2]=='#:':
-			hline = u'<div class="exstc"> %s </div>\n' % (line[2:])
-			html += hline
-		elif line[0]=='#':
-			hline = u'<div class="meaning"> %s </div>\n' % (line[2:])
-			html += hline
-
-		elif line.endswith('.ogg'):
-			html += get_sound_div(line)
-
-		elif line.startswith('[[Image'):
-			html += get_image_div(line)
-
-		elif line.startswith('*'):
-			trinfo.proc(line)
-		else:
-			pass
-	html += trinfo.html()
-	logging.info("html:")
-	logging.info(html)
-	return html
-			
-	
-'''
-'''
-def load_index(idxfd):
-	idxlist = {}
-	for line in idxfd:
-		flds = line.split('\t')
-		headword = flds[2].rstrip()
-		offset = int(flds[0], 16)
-		length = int(flds[1], 16)
-		idxlist[headword] = (offset, length)
-	idxfd.close()
-	return idxlist
-
-
-'''
-'''
-def prepare():
-	# load index file
-	idxfd = blobstore.BlobReader(idxfile_key)
-	global idxlist
-	idxlist = load_index(idxfd)
-	idxfd.close()
-	logging.info("prepare() idxlist: size = %d" % (len(idxlist)))
-
-	global dictfd
-	dictfd = blobstore.BlobReader(dictfile_key)
-
-def lookup_dict(word):
-	info = idxlist.get(word, None)
-	logging.info("lookup() idxlist: size = %d, word=%s" % (len(idxlist), word))
-	if not info: 
-		return 'NO word'
-	else: 
-		dicttxt = read_dict(dictfd, info[0], info[1])
-		html = dict2html(dicttxt)
-		return html
-
 
 #####
 if __name__=="__main__":

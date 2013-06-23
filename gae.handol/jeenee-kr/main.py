@@ -21,8 +21,8 @@ import threading
 import json
 
 # our programming
-import wikdict
-import wiktion2json
+from wiktionary import wikdict
+from wiktionary import wiktion2json
 
 '''
 JINJA_ENVIRONMENT = jinja2.Environment(

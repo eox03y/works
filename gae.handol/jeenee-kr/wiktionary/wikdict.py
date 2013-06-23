@@ -8,7 +8,7 @@ import logging
 
 from google.appengine.ext import blobstore
 
-import trans_test
+import wiktionparse 
 
 ''' enwiktionary-20130415.dict.sorted '''
 dictfile_key = 'AMIfv97JpUZdTYhEDUrBhVcaO1HjosFX28DXNOfRLdAIQlfYKJAl7IubkTW_w7KD2bUhQZLM79DUF8_hB7IDiphCZk6xLIFYUtda5IEAJJSD1T6JHVbLIAIgtexhMDvJrql2zXywJ6T8tKcmcNU9KnQbHxcrjIx5Lg'
@@ -70,7 +70,7 @@ def	read_dict(dictfd, offset, length):
 
 def dict2html(content):
 	html = u''
-	trinfo = trans_test.TrInfo()
+	trinfo = wiktionparse.TrInfo()
 	for line in content.splitlines():
 		line = line.strip()
 		if line[0]=='@':

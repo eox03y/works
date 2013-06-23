@@ -7,7 +7,7 @@ import json
 import pprint
 
 import anyReader
-import wiktionaryparse as wp
+import wiktionparse as wp
 
 '''
 wiktionary page --> json
