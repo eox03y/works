@@ -23,9 +23,26 @@ def filter_wiki_line(text):
 	#text = re.sub(r"{{\(\|(.*)}}", r"", text)
 
 
+	if text.find('{{') != -1:
+		text = proc_curly(text)
 	# Remove all unrecognized wiki tags
 	#text = re.sub(r"{{[^}]+}}", "", text)
 	return text
+
+#
+reCURLY = re.compile(r'\{\{([^\}]+)\}\}')
+def	proc_curly(line):
+	m = reCURLY.search(line)
+	if m:
+		curly = m.group(1)
+		flds = curly.split('|')
+		if len(flds) >= 2: found = flds[1]
+		else: found = flds[0]
+		res = re.sub(reCURLY, '<em>(%s)</em>' % (found), line, 1)
+		return res	
+	else:
+		return line
+
 
 ##### Pronunciation
 AUDIO = '''* {{audio|en-uk-angel.ogg|Audio (UK)}}
@@ -382,6 +399,11 @@ def conv_items(orgitems):
 if __name__=="__main__":
 	import unittest
 	class MyTest(unittest.TestCase):
+		def test_proc_curly(self):
+			self.assertEqual(proc_curly('{{context|obsolete|lang=en}}'), '<em>(obsolete)</em>')
+			self.assertEqual(proc_curly('{{context|obsolete|lang=en}} high ho'), '<em>(obsolete)</em> high ho')
+			self.assertEqual(proc_curly('{{w|Robert Burton}}'), '<em>(Robert Burton)</em>')
+			self.assertEqual(proc_curly('{{defdate|16th-18th c.}}'), '<em>(16th-18th c.)</em>')
 		def test_audiofile(self):
 			self.assertEqual(get_audio_filename(AUDIO.splitlines()[0]), 'en-uk-angel.ogg')
 		def test_phonetic(self):

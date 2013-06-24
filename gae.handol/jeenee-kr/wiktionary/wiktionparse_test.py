@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import wiktionaryparse
+import wiktionparse
 
 
 AAA = '''
@@ -92,7 +92,7 @@ AAA = '''
 
 ### run the test
 if __name__=='__main__':
-	trinfo = TrInfo()
+	trinfo = wiktionparse.TrInfo()
 
 	for line in AAA.splitlines():
 		trinfo.proc(line)
