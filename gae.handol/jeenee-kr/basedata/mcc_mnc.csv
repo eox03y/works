@@ -1,0 +1,1165 @@
+MCC,MNC,ISO,Country,CountryCode,Network,MCC_MNC,Name
+412,40,AF,Afghanistan,93,Areeba ,412-40,areeba-afghanistan
+412,50,AF,Afghanistan,93,Etisalat  ,412-50,etisalat-afghanistan
+412,20,AF,Afghanistan,93,Roshan  ,412-20,roshan-afghanistan
+412,01,AF,Afghanistan,93,Afghan Wireless/AWCC ,412-01,afghan-wireless/awcc-afghanistan
+276,01,AL,Albania,355,AMC Mobil ,276-01,amc-mobil-albania
+276,03,AL,Albania,355,Eagle Mobile ,276-03,eagle-mobile-albania
+276,02,AL,Albania,355,Vodafone  ,276-02,vodafone-albania
+603,01,DZ,Algeria,213,ATM Mobils ,603-01,atm-mobils-algeria
+603,02,DZ,Algeria,213,Orascom / DJEZZY ,603-02,orascom-/-djezzy-algeria
+603,03,DZ,Algeria,213,Wataniya / Nedjma  ,603-03,wataniya-/-nedjma-algeria
+544,11,AS,American Samoa,684,Blue Sky Communications ,544-11,blue-sky-communications-american-samoa
+213,03,AD,Andorra,376,Mobiland ,213-03,mobiland-andorra
+631,02,AO,Angola,244,Unitel ,631-02,unitel-angola
+365,840,AI,Anguilla,1264,Cable and Wireless ,365-840,cable-and-wireless-anguilla
+365,10,AI,Anguilla,1264,Wireless Ventures Ltd  ,365-10,wireless-ventures-ltd-anguilla
+344,30,AG,Antigua and Barbuda,1268,APUA PCS ,344-30,apua-pcs-antigua-and-barbuda
+344,03,AG,Antigua and Barbuda,1268,APUA PCS ,344-03,apua-pcs-antigua-and-barbuda
+344,920,AG,Antigua and Barbuda,1268,C &amp; W ,344-920,c-&amp;-w-antigua-and-barbuda
+344,930,AG,Antigua and Barbuda,1268,Cingular Wirel. ,344-930,cingular-wirel-antigua-and-barbuda
+722,10,AR,Argentina Republic,54,Claro/ CTI/AMX ,722-10,claro/-cti/amx-argentina-republic
+722,330,AR,Argentina Republic,54,Claro/ CTI/AMX ,722-330,claro/-cti/amx-argentina-republic
+722,320,AR,Argentina Republic,54,Claro/ CTI/AMX ,722-320,claro/-cti/amx-argentina-republic
+722,310,AR,Argentina Republic,54,Claro/ CTI/AMX ,722-310,claro/-cti/amx-argentina-republic
+722,02,AR,Argentina Republic,54,Nextel ,722-02,nextel-argentina-republic
+722,20,AR,Argentina Republic,54,Nextel ,722-20,nextel-argentina-republic
+722,34,AR,Argentina Republic,54,Telecom Personal S.A. ,722-34,telecom-personal-sa-argentina-republic
+722,341,AR,Argentina Republic,54,Telecom Personal S.A. ,722-341,telecom-personal-sa-argentina-republic
+722,70,AR,Argentina Republic,54,Movistar/Telefonica ,722-70,movistar/telefonica-argentina-republic
+722,07,AR,Argentina Republic,54,Movistar/Telefonica ,722-07,movistar/telefonica-argentina-republic
+722,01,AR,Argentina Republic,54,Movistar/Telefonica ,722-01,movistar/telefonica-argentina-republic
+283,01,AM,Armenia,374,ArmenTel ,283-01,armentel-armenia
+283,04,AM,Armenia,374,Karabakh Telecom ,283-04,karabakh-telecom-armenia
+283,10,AM,Armenia,374,Orange ,283-10,orange-armenia
+283,05,AM,Armenia,374,Vivacell ,283-05,vivacell-armenia
+363,20,AW,Aruba,297,Digicel ,363-20,digicel-aruba
+363,01,AW,Aruba,297,Setar GSM ,363-01,setar-gsm-aruba
+505,12,AU,Australia,61,H3G Ltd. ,505-12,h3g-ltd-australia
+505,06,AU,Australia,61,H3G Ltd. ,505-06,h3g-ltd-australia
+505,90,AU,Australia,61,Singtel Optus ,505-90,singtel-optus-australia
+505,07,AU,Australia,61,Vodafone ,505-07,vodafone-australia
+505,02,AU,Australia,61,Singtel Optus ,505-02,singtel-optus-australia
+505,71,AU,Australia,61,Telstra Corp. Ltd. ,505-71,telstra-corp-ltd-australia
+505,01,AU,Australia,61,Telstra Corp. Ltd. ,505-01,telstra-corp-ltd-australia
+505,11,AU,Australia,61,Telstra Corp. Ltd. ,505-11,telstra-corp-ltd-australia
+505,72,AU,Australia,61,Telstra Corp. Ltd. ,505-72,telstra-corp-ltd-australia
+505,03,AU,Australia,61,Vodafone ,505-03,vodafone-australia
+232,15,AT,Austria,43,Barablu ,232-15,barablu-austria
+232,11,AT,Austria,43,A1 MobilKom ,232-11,a1-mobilkom-austria
+232,05,AT,Austria,43,Orange/One Connect ,232-05,orange/one-connect-austria
+232,00,AT,Austria,43,Fix Line ,232-00,fix-line-austria
+232,10,AT,Austria,43,H3G ,232-10,h3g-austria
+232,01,AT,Austria,43,A1 MobilKom ,232-01,a1-mobilkom-austria
+232,03,AT,Austria,43,T-Mobile/Telering ,232-03,t-mobile/telering-austria
+232,09,AT,Austria,43,Orange/One Connect ,232-09,orange/one-connect-austria
+232,08,AT,Austria,43,Telefonica ,232-08,telefonica-austria
+232,07,AT,Austria,43,T-Mobile/Telering ,232-07,t-mobile/telering-austria
+232,12,AT,Austria,43,Orange/One Connect ,232-12,orange/one-connect-austria
+400,01,AZ,Azerbaijan,994,Azercell Telekom B.M. ,400-01,azercell-telekom-bm-azerbaijan
+400,04,AZ,Azerbaijan,994,Azerfon. ,400-04,azerfon-azerbaijan
+400,02,AZ,Azerbaijan,994,J.V. Bakcell GSM 2000 ,400-02,jv-bakcell-gsm-2000-azerbaijan
+364,03,BS,Bahamas,1242,Smart Communications ,364-03,smart-communications-bahamas
+364,39,BS,Bahamas,1242,Bahamas Telco. Comp. ,364-39,bahamas-telco-comp-bahamas
+426,01,BH,Bahrain,973,Batelco ,426-01,batelco-bahrain
+426,02,BH,Bahrain,973,MTC Vodafone ,426-02,mtc-vodafone-bahrain
+426,04,BH,Bahrain,973,VIVA ,426-04,viva-bahrain
+470,02,BD,Bangladesh,880,Aktel ,470-02,aktel-bangladesh
+470,01,BD,Bangladesh,880,GrameenPhone ,470-01,grameenphone-bangladesh
+470,03,BD,Bangladesh,880,Orascom ,470-03,orascom-bangladesh
+470,04,BD,Bangladesh,880,TeleTalk ,470-04,teletalk-bangladesh
+470,07,BD,Bangladesh,880,Warid Telecom ,470-07,warid-telecom-bangladesh
+342,600,BB,Barbados,1246,C &amp; W BET Ltd. ,342-600,c-&amp;-w-bet-ltd-barbados
+342,810,BB,Barbados,1246,Cingular Wireless ,342-810,cingular-wireless-barbados
+342,750,BB,Barbados,1246,Digicel ,342-750,digicel-barbados
+342,50,BB,Barbados,1246,Digicel ,342-50,digicel-barbados
+257,04,BY,Belarus,375,BeST ,257-04,best-belarus
+257,01,BY,Belarus,375,Mobile Digital Communications ,257-01,mobile-digital-communications-belarus
+257,02,BY,Belarus,375,MTS ,257-02,mts-belarus
+206,20,BE,Belgium,32,Base/KPN ,206-20,base/kpn-belgium
+206,01,BE,Belgium,32,Belgacom/Proximus ,206-01,belgacom/proximus-belgium
+206,10,BE,Belgium,32,Mobistar/Orange ,206-10,mobistar/orange-belgium
+702,67,BZ,Belize,501,Belize Telco ,702-67,belize-telco-belize
+702,68,BZ,Belize,501,International Telco (INTELCO) ,702-68,international-telco-(intelco)-belize
+616,04,BJ,Benin,229,Bell Benin/BBCOM ,616-04,bell-benin/bbcom-benin
+616,05,BJ,Benin,229,GloMobile ,616-05,glomobile-benin
+616,01,BJ,Benin,229,Libercom ,616-01,libercom-benin
+616,02,BJ,Benin,229,MOOV/Telecel ,616-02,moov/telecel-benin
+616,03,BJ,Benin,229,MTN/Spacetel ,616-03,mtn/spacetel-benin
+350,01,BM,Bermuda,1441,Cingular ,350-01,cingular-bermuda
+350,10,BM,Bermuda,1441,Cingular ,350-10,cingular-bermuda
+350,02,BM,Bermuda,1441,Mobility Limited - GSM 1900 ,350-02,mobility-limited---gsm-1900-bermuda
+402,11,BT,Bhutan,975,B-Mobile ,402-11,b-mobile-bhutan
+402,17,BT,Bhutan,975,B-Mobile ,402-17,b-mobile-bhutan
+736,02,BO,Bolivia,591,Entel Pcs ,736-02,entel-pcs-bolivia
+736,01,BO,Bolivia,591,Nuevatel ,736-01,nuevatel-bolivia
+736,03,BO,Bolivia,591,TELECEL BOLIVIA ,736-03,telecel-bolivia-bolivia
+218,03,BA,Bosnia &amp; Herzegov.,387,Eronet Mobile ,218-03,eronet-mobile-bosnia-&amp;-herzegov
+218,05,BA,Bosnia &amp; Herzegov.,387,M-Tel ,218-05,m-tel-bosnia-&amp;-herzegov
+218,90,BA,Bosnia &amp; Herzegov.,387,BH Mobile ,218-90,bh-mobile-bosnia-&amp;-herzegov
+652,01,BW,Botswana,267,Mascom Wireless (Pty) Ltd. ,652-01,mascom-wireless-(pty)-ltd-botswana
+652,02,BW,Botswana,267,Orange ,652-02,orange-botswana
+724,24,BR,Brazil,55,Amazonia Celular S/A ,724-24,amazonia-celular-s/a-brazil
+724,12,BR,Brazil,55,Claro/Albra/America Movil ,724-12,claro/albra/america-movil-brazil
+724,10,BR,Brazil,55,Vivo S.A./Telemig  ,724-10,vivo-sa/telemig-brazil
+724,16,BR,Brazil,55,Brazil Telcom ,724-16,brazil-telcom-brazil
+724,01,BR,Brazil,55,Vivo S.A./Telemig  ,724-01,vivo-sa/telemig-brazil
+724,15,BR,Brazil,55,CTBC/Triangulo  ,724-15,ctbc/triangulo-brazil
+724,08,BR,Brazil,55,TIM ,724-08,tim-brazil
+724,00,BR,Brazil,55,Nextel (Telet) ,724-00,nextel-(telet)-brazil
+724,07,BR,Brazil,55,CTBC/Triangulo  ,724-07,ctbc/triangulo-brazil
+724,31,BR,Brazil,55,Oi (TNL PCS / Oi) ,724-31,oi-(tnl-pcs-/-oi)-brazil
+724,19,BR,Brazil,55,Vivo S.A./Telemig  ,724-19,vivo-sa/telemig-brazil
+724,11,BR,Brazil,55,Vivo S.A./Telemig  ,724-11,vivo-sa/telemig-brazil
+724,34,BR,Brazil,55,CTBC/Triangulo  ,724-34,ctbc/triangulo-brazil
+724,33,BR,Brazil,55,CTBC/Triangulo  ,724-33,ctbc/triangulo-brazil
+724,05,BR,Brazil,55,Claro/Albra/America Movil ,724-05,claro/albra/america-movil-brazil
+724,23,BR,Brazil,55,Vivo S.A./Telemig  ,724-23,vivo-sa/telemig-brazil
+724,06,BR,Brazil,55,Vivo S.A./Telemig  ,724-06,vivo-sa/telemig-brazil
+724,03,BR,Brazil,55,TIM ,724-03,tim-brazil
+724,02,BR,Brazil,55,TIM ,724-02,tim-brazil
+724,04,BR,Brazil,55,TIM ,724-04,tim-brazil
+348,570,VG,British Virgin Islands,284,Caribbean Cellular ,348-570,caribbean-cellular-british-virgin-islands
+528,02,BN,Brunei Darussalam,673,b-mobile ,528-02,b-mobile-brunei-darussalam
+528,11,BN,Brunei Darussalam,673,Datastream (DTSCom) ,528-11,datastream-(dtscom)-brunei-darussalam
+284,06,BG,Bulgaria,359,BTC Mobile EOOD (vivatel) ,284-06,btc-mobile-eood-(vivatel)-bulgaria
+284,05,BG,Bulgaria,359,Cosmo Mobile EAD ,284-05,cosmo-mobile-ead-bulgaria
+284,01,BG,Bulgaria,359,MobilTel AD ,284-01,mobiltel-ad-bulgaria
+284,03,BG,Bulgaria,359,BTC Mobile EOOD (vivatel) ,284-03,btc-mobile-eood-(vivatel)-bulgaria
+613,02,BF,Burkina Faso,226,ZAIN - CelTel ,613-02,zain---celtel-burkina-faso
+613,03,BF,Burkina Faso,226,TeleCel ,613-03,telecel-burkina-faso
+613,01,BF,Burkina Faso,226,TeleMob-OnaTel ,613-01,telemob-onatel-burkina-faso
+414,01,MM,Burma,95,Myanmar Post and Telecommunication ,414-01,myanmar-post-and-telecommunication-burma
+642,02,BI,Burundi,257,Africel / Safaris ,642-02,africel-/-safaris-burundi
+642,08,BI,Burundi,257,HiTs Telecom  ,642-08,hits-telecom-burundi
+642,03,BI,Burundi,257,Onatel / Telecel  ,642-03,onatel-/-telecel-burundi
+642,07,BI,Burundi,257,Smart Mobile / LACELL  ,642-07,smart-mobile-/-lacell-burundi
+642,01,BI,Burundi,257,Spacetel / Econet  ,642-01,spacetel-/-econet-burundi
+642,82,BI,Burundi,257,U-COM ,642-82,u-com-burundi
+456,18,KH,Cambodia,855,MFone/Camshin ,456-18,mfone/camshin-cambodia
+456,02,KH,Cambodia,855,Hello/Malaysia Telcom ,456-02,hello/malaysia-telcom-cambodia
+456,01,KH,Cambodia,855,Mobitel/Cam GSM ,456-01,mobitel/cam-gsm-cambodia
+456,04,KH,Cambodia,855,QB/Cambodia Adv. Comms. ,456-04,qb/cambodia-adv-comms-cambodia
+456,03,KH,Cambodia,855,QB/Cambodia Adv. Comms. ,456-03,qb/cambodia-adv-comms-cambodia
+456,06,KH,Cambodia,855,Smart Mobile ,456-06,smart-mobile-cambodia
+624,01,CM,Cameroon,237,MTN ,624-01,mtn-cameroon
+624,02,CM,Cameroon,237,Orange ,624-02,orange-cameroon
+302,652,CA,Canada,1,BC Tel Mobility ,302-652,bc-tel-mobility-canada
+302,651,CA,Canada,1,Bell Mobility ,302-651,bell-mobility-canada
+302,361,CA,Canada,1,Clearnet ,302-361,clearnet-canada
+302,360,CA,Canada,1,Clearnet ,302-360,clearnet-canada
+302,720,CA,Canada,1,FIDO (Rogers AT&T;/ Microcell) ,302-720,fido-(rogers-at&t;/-microcell)-canada
+302,710,CA,Canada,1,Globalstar Canada ,302-710,globalstar-canada-canada
+302,370,CA,Canada,1,FIDO (Rogers AT&T;/ Microcell) ,302-370,fido-(rogers-at&t;/-microcell)-canada
+302,370,CA,Canada,1,FIDO (Rogers AT&T;/ Microcell) ,302-370,fido-(rogers-at&t;/-microcell)-canada
+302,702,CA,Canada,1,MT&T; Mobility ,302-702,mt&t;-mobility-canada
+302,655,CA,Canada,1,MTS Mobility ,302-655,mts-mobility-canada
+302,701,CA,Canada,1,NB Tel Mobility ,302-701,nb-tel-mobility-canada
+302,703,CA,Canada,1,New Tel Mobility ,302-703,new-tel-mobility-canada
+302,657,CA,Canada,1,Quebectel Mobility ,302-657,quebectel-mobility-canada
+302,72,CA,Canada,1,Rogers AT&T; Wireless ,302-72,rogers-at&t;-wireless-canada
+302,654,CA,Canada,1,Sask Tel Mobility ,302-654,sask-tel-mobility-canada
+302,656,CA,Canada,1,Tbay Mobility ,302-656,tbay-mobility-canada
+302,653,CA,Canada,1,Telus Mobility ,302-653,telus-mobility-canada
+625,01,CV,Cape Verde,238,CV Movel ,625-01,cv-movel-cape-verde
+625,02,CV,Cape Verde,238,T+ Telecom ,625-02,t+-telecom-cape-verde
+346,140,KY,Cayman Islands,1345,Cable &amp; Wireless ,346-140,cable-&amp;-wireless-cayman-islands
+346,00,KY,Cayman Islands,1345,Cingular ,346-00,cingular-cayman-islands
+346,06,KY,Cayman Islands,1345,Digicel Cayman Ltd. ,346-06,digicel-cayman-ltd-cayman-islands
+623,01,CF,Central African Rep.,236,Centrafr. Telec./A+ ,623-01,centrafr-telec/a+-central-african-rep
+623,03,CF,Central African Rep.,236,Orange/Celca ,623-03,orange/celca-central-african-rep
+623,02,CF,Central African Rep.,236,Telecel Centraf.  ,623-02,telecel-centraf-central-african-rep
+622,04,TD,Chad,235,Salam/Sotel ,622-04,salam/sotel-chad
+622,02,TD,Chad,235,Tchad Mobile ,622-02,tchad-mobile-chad
+622,03,TD,Chad,235,Tigo/Milicom ,622-03,tigo/milicom-chad
+622,01,TD,Chad,235,Zain/Airtel/Celtel ,622-01,zain/airtel/celtel-chad
+730,10,CL,Chile,56,Entel PCS ,730-10,entel-pcs-chile
+730,01,CL,Chile,56,Entel Telefonia Mov ,730-01,entel-telefonia-mov-chile
+730,03,CL,Chile,56,Claro ,730-03,claro-chile
+730,02,CL,Chile,56,TELEFONICA ,730-02,telefonica-chile
+460,03,CN,China,86,China Telecom ,460-03,china-telecom-china
+460,07,CN,China,86,China Mobile GSM ,460-07,china-mobile-gsm-china
+460,00,CN,China,86,China Mobile GSM ,460-00,china-mobile-gsm-china
+460,04,CN,China,86,China Satellite Global Star Network ,460-04,china-satellite-global-star-network-china
+460,05,CN,China,86,China Telecom ,460-05,china-telecom-china
+460,06,CN,China,86,China Unicom ,460-06,china-unicom-china
+460,01,CN,China,86,China Unicom ,460-01,china-unicom-china
+460,02,CN,China,86,China Mobile GSM ,460-02,china-mobile-gsm-china
+732,11,CO,Colombia,57, ,732-11,-colombia
+732,102,CO,Colombia,57,Movistar ,732-102,movistar-colombia
+732,103,CO,Colombia,57,TIGO/Colombia Movil ,732-103,tigo/colombia-movil-colombia
+732,111,CO,Colombia,57,TIGO/Colombia Movil ,732-111,tigo/colombia-movil-colombia
+732,01,CO,Colombia,57,TIGO/Colombia Movil ,732-01,tigo/colombia-movil-colombia
+732,101,CO,Colombia,57,Comcel S.A. Occel S.A./Celcaribe ,732-101,comcel-sa-occel-sa/celcaribe-colombia
+732,02,CO,Colombia,57,Edatel S.A. ,732-02,edatel-sa-colombia
+732,123,CO,Colombia,57,Movistar ,732-123,movistar-colombia
+654,01,KM,Comoros,269,HURI - SNPT ,654-01,huri---snpt-comoros
+630,86,CD,"Congo, Dem. Rep.",243,CCT ,630-86,cct-congo-dem-rep
+630,89,CD,"Congo, Dem. Rep.",243,TIGO/Oasis ,630-89,tigo/oasis-congo-dem-rep
+630,05,CD,"Congo, Dem. Rep.",243,SuperCell ,630-05,supercell-congo-dem-rep
+630,01,CD,"Congo, Dem. Rep.",243,Vodacom ,630-01,vodacom-congo-dem-rep
+630,02,CD,"Congo, Dem. Rep.",243,ZAIN CelTel ,630-02,zain-celtel-congo-dem-rep
+629,02,CG,"Congo, Republic",242,Zain/Celtel ,629-02,zain/celtel-congo-republic
+629,01,CG,"Congo, Republic",242,Zain/Celtel ,629-01,zain/celtel-congo-republic
+629,10,CG,"Congo, Republic",242,MTN/Libertis ,629-10,mtn/libertis-congo-republic
+629,07,CG,"Congo, Republic",242,Warid ,629-07,warid-congo-republic
+548,01,CK,Cook Islands,682,Telecom Cook Islands ,548-01,telecom-cook-islands-cook-islands
+712,02,CR,Costa Rica,506,ICE ,712-02,ice-costa-rica
+712,01,CR,Costa Rica,506,ICE ,712-01,ice-costa-rica
+219,01,HR,Croatia,385,T-Mobile/Cronet ,219-01,t-mobile/cronet-croatia
+219,02,HR,Croatia,385,Tele2 ,219-02,tele2-croatia
+219,10,HR,Croatia,385,VIPnet d.o.o. ,219-10,vipnet-doo-croatia
+368,01,CU,Cuba,53,C-COM ,368-01,c-com-cuba
+280,10,CY,Cyprus,357,Areeba ,280-10,areeba-cyprus
+280,01,CY,Cyprus,357,Vodafone/CyTa ,280-01,vodafone/cyta-cyprus
+230,02,CZ,Czech Rep.,420,O2 ,230-02,o2-czech-rep
+230,01,CZ,Czech Rep.,420,T-Mobile / RadioMobil ,230-01,t-mobile-/-radiomobil-czech-rep
+230,04,CZ,Czech Rep.,420,Ufone ,230-04,ufone-czech-rep
+230,03,CZ,Czech Rep.,420,Vodafone ,230-03,vodafone-czech-rep
+230,99,CZ,Czech Rep.,420,Vodafone ,230-99,vodafone-czech-rep
+238,05,DK,Denmark,45,ApS KBUS ,238-05,aps-kbus-denmark
+238,06,DK,Denmark,45,Hi3G ,238-06,hi3g-denmark
+238,03,DK,Denmark,45,MIGway A/S ,238-03,migway-a/s-denmark
+238,02,DK,Denmark,45,Sonofon ,238-02,sonofon-denmark
+238,01,DK,Denmark,45,TDC Denmark ,238-01,tdc-denmark-denmark
+238,10,DK,Denmark,45,TDC Denmark ,238-10,tdc-denmark-denmark
+238,77,DK,Denmark,45,Sonofon ,238-77,sonofon-denmark
+238,20,DK,Denmark,45,Telia ,238-20,telia-denmark
+238,30,DK,Denmark,45,Telia ,238-30,telia-denmark
+238,04,DK,Denmark,45,TetraStar ,238-04,tetrastar-denmark
+638,01,DJ,Djibouti,253,Djibouti Telecom SA (Evatis) ,638-01,djibouti-telecom-sa-(evatis)-djibouti
+366,110,DM,Dominica,1767,C &amp; W ,366-110,c-&amp;-w-dominica
+366,20,DM,Dominica,1767,Cingular Wireless/Digicel ,366-20,cingular-wireless/digicel-dominica
+370,02,DO,Dominican Republic,1809,Claro ,370-02,claro-dominican-republic
+370,01,DO,Dominican Republic,1809,Orange ,370-01,orange-dominican-republic
+370,03,DO,Dominican Republic,1809,TRIcom ,370-03,tricom-dominican-republic
+370,04,DO,Dominican Republic,1809,Trilogy Dominicana S. A. ,370-04,trilogy-dominicana-s-a-dominican-republic
+740,02,EC,Ecuador,593,Alegro/Telcsa ,740-02,alegro/telcsa-ecuador
+740,00,EC,Ecuador,593,MOVISTAR/OteCel ,740-00,movistar/otecel-ecuador
+740,01,EC,Ecuador,593,Porta/Conecel ,740-01,porta/conecel-ecuador
+602,01,EG,Egypt,20,EMS - Mobinil ,602-01,ems---mobinil-egypt
+602,03,EG,Egypt,20,ETISALAT ,602-03,etisalat-egypt
+602,02,EG,Egypt,20,Vodafone (Misrfone Telecom) ,602-02,vodafone-(misrfone-telecom)-egypt
+706,01,SV,El Salvador,503,CLARO/CTE ,706-01,claro/cte-el-salvador
+706,02,SV,El Salvador,503,Digicel ,706-02,digicel-el-salvador
+706,04,SV,El Salvador,503,Telefonica ,706-04,telefonica-el-salvador
+706,03,SV,El Salvador,503,Telemovil ,706-03,telemovil-el-salvador
+627,01,GQ,Equatorial Guinea,240,ORANGE/GETESA ,627-01,orange/getesa-equatorial-guinea
+657,00,ER,Eritrea,291,EriTel ,657-00,eritel-eritrea
+248,01,EE,Estonia,372,EMT GSM ,248-01,emt-gsm-estonia
+248,02,EE,Estonia,372,Radiolinja Eesti ,248-02,radiolinja-eesti-estonia
+248,03,EE,Estonia,372,Tele2 Eesti AS ,248-03,tele2-eesti-as-estonia
+636,01,ET,Ethiopia,251,ETH/MTN ,636-01,eth/mtn-ethiopia
+288,01,FO,Faroe Islands,298,Faroese Telecom ,288-01,faroese-telecom-faroe-islands
+288,02,FO,Faroe Islands,298,Kall GSM ,288-02,kall-gsm-faroe-islands
+542,02,FJ,Fiji,679,DigiCell ,542-02,digicell-fiji
+542,01,FJ,Fiji,679,Vodafone ,542-01,vodafone-fiji
+244,14,FI,Finland,358,Alands ,244-14,alands-finland
+244,03,FI,Finland,358,DNA/Finnet ,244-03,dna/finnet-finland
+244,12,FI,Finland,358,DNA/Finnet ,244-12,dna/finnet-finland
+244,05,FI,Finland,358,Elisa/Saunalahti ,244-05,elisa/saunalahti-finland
+244,21,FI,Finland,358,Elisa/Saunalahti ,244-21,elisa/saunalahti-finland
+244,09,FI,Finland,358,DNA/Finnet ,244-09,dna/finnet-finland
+244,91,FI,Finland,358,TeliaSonera ,244-91,teliasonera-finland
+208,21,FR,France,33,Bouygues Telecom ,208-21,bouygues-telecom-france
+208,20,FR,France,33,Bouygues Telecom ,208-20,bouygues-telecom-france
+208,02,FR,France,33,Orange ,208-02,orange-france
+208,01,FR,France,33,Orange ,208-01,orange-france
+208,10,FR,France,33,S.F.R. ,208-10,sfr-france
+208,11,FR,France,33,S.F.R. ,208-11,sfr-france
+340,08,FG,French Guiana,594,AMIGO/Dauphin ,340-08,amigo/dauphin-french-guiana
+340,20,FG,French Guiana,594,Bouygues/DigiCel ,340-20,bouygues/digicel-french-guiana
+340,01,FG,French Guiana,594,Orange Caribe ,340-01,orange-caribe-french-guiana
+340,02,FG,French Guiana,594,Outremer Telecom ,340-02,outremer-telecom-french-guiana
+340,03,FG,French Guiana,594,,340-03,-french-guiana
+547,20,PF,French Polynesia,689,Tikiphone ,547-20,tikiphone-french-polynesia
+628,04,GA,Gabon,241,Azur/Usan S.A. ,628-04,azur/usan-sa-gabon
+628,03,GA,Gabon,241,ZAIN/Celtel Gabon S.A. ,628-03,zain/celtel-gabon-sa-gabon
+628,01,GA,Gabon,241,Libertis S.A. ,628-01,libertis-sa-gabon
+628,02,GA,Gabon,241,MOOV/Telecel ,628-02,moov/telecel-gabon
+607,02,GM,Gambia,220,Africel ,607-02,africel-gambia
+607,03,GM,Gambia,220,Comium ,607-03,comium-gambia
+607,01,GM,Gambia,220,Gamcel ,607-01,gamcel-gambia
+607,04,GM,Gambia,220,Q-Cell ,607-04,q-cell-gambia
+282,01,GE,Georgia,995,Geocell Ltd. ,282-01,geocell-ltd-georgia
+282,03,GE,Georgia,995,Iberiatel Ltd. ,282-03,iberiatel-ltd-georgia
+282,02,GE,Georgia,995,Magti GSM Ltd. ,282-02,magti-gsm-ltd-georgia
+282,04,GE,Georgia,995,MobiTel/Beeline ,282-04,mobitel/beeline-georgia
+262,17,DE,Germany,49,E-Plus ,262-17,e-plus-germany
+262,n/a,DE,Germany,49,Debitel ,262-n/a,debitel-germany
+262,05,DE,Germany,49,E-Plus ,262-05,e-plus-germany
+262,03,DE,Germany,49,E-Plus ,262-03,e-plus-germany
+262,06,DE,Germany,49,E-Plus ,262-06,e-plus-germany
+262,999,DE,Germany,49,Fix Line SMS ,262-999,fix-line-sms-germany
+262,14,DE,Germany,49,Group 3G UMTS ,262-14,group-3g-umts-germany
+262,13,DE,Germany,49,Mobilcom ,262-13,mobilcom-germany
+262,07,DE,Germany,49,O2 ,262-07,o2-germany
+262,10,DE,Germany,49,O2 ,262-10,o2-germany
+262,12,DE,Germany,49,O2 ,262-12,o2-germany
+262,08,DE,Germany,49,O2 ,262-08,o2-germany
+262,11,DE,Germany,49,O2 ,262-11,o2-germany
+262,01,DE,Germany,49,Telekom/T-mobile ,262-01,telekom/t-mobile-germany
+262,n/a,DE,Germany,49,Talkine ,262-n/a,talkine-germany
+262,16,DE,Germany,49,ViStream ,262-16,vistream-germany
+262,02,DE,Germany,49,Vodafone D2 ,262-02,vodafone-d2-germany
+262,04,DE,Germany,49,Vodafone D2 ,262-04,vodafone-d2-germany
+262,09,DE,Germany,49,Vodafone D2 ,262-09,vodafone-d2-germany
+620,02,GH,Ghana,233,Vodafone ,620-02,vodafone-ghana
+620,00,GH,Ghana,233,GloMobile ,620-00,glomobile-ghana
+620,03,GH,Ghana,233,Milicom ,620-03,milicom-ghana
+620,01,GH,Ghana,233,MTN ,620-01,mtn-ghana
+620,06,GH,Ghana,233,ZAIN ,620-06,zain-ghana
+266,01,GI,Gibraltar,350,Gibtel GSM ,266-01,gibtel-gsm-gibraltar
+202,01,GR,Greece,30,Cosmote ,202-01,cosmote-greece
+202,09,GR,Greece,30,Tim/Wind ,202-09,tim/wind-greece
+202,05,GR,Greece,30,Vodafone ,202-05,vodafone-greece
+202,10,GR,Greece,30,Tim/Wind ,202-10,tim/wind-greece
+290,01,GL,Greenland,299,Tele Greenland ,290-01,tele-greenland-greenland
+352,110,GD,Grenada,1473,Cable &amp; Wireless ,352-110,cable-&amp;-wireless-grenada
+352,30,GD,Grenada,1473,Digicel ,352-30,digicel-grenada
+310,470,GU,Guam,1671,Docomo ,310-470,docomo-guam
+310,370,GU,Guam,1671,Docomo ,310-370,docomo-guam
+310,140,GU,Guam,1671,GTA Wireless ,310-140,gta-wireless-guam
+310,33,GU,Guam,1671,Guam Teleph. Auth.,310-33,guam-teleph-auth-guam
+310,32,GU,Guam,1671,IT&E; OverSeas ,310-32,it&e;-overseas-guam
+704,02,GT,Guatemala,502,TIGO/COMCEL ,704-02,tigo/comcel-guatemala
+704,01,GT,Guatemala,502,SERCOM ,704-01,sercom-guatemala
+704,03,GT,Guatemala,502,Telefonica ,704-03,telefonica-guatemala
+611,04,GN,Guinea,224,Areeba - MTN ,611-04,areeba---mtn-guinea
+611,05,GN,Guinea,224,Celcom ,611-05,celcom-guinea
+611,03,GN,Guinea,224,Intercel ,611-03,intercel-guinea
+611,02,GN,Guinea,224,SotelGui ,611-02,sotelgui-guinea
+611,01,GN,Guinea,224,Orange/Spacetel ,611-01,orange/spacetel-guinea
+632,02,GW,Guinea-Bissau,245,SpaceTel ,632-02,spacetel-guinea-bissau
+632,00,GW,Guinea-Bissau,245,GuineTel ,632-00,guinetel-guinea-bissau
+632,03,GW,Guinea-Bissau,245,Orange ,632-03,orange-guinea-bissau
+738,01,GY,Guyana,592,DigiCel ,738-01,digicel-guyana
+738,02,GY,Guyana,592,Cellink Plus ,738-02,cellink-plus-guyana
+372,01,HT,Haiti,509,Comcel ,372-01,comcel-haiti
+708,02,HN,Honduras,504,Telefonica/CELTEL ,708-02,telefonica/celtel-honduras
+708,01,HN,Honduras,504,SERCOM/CLARO ,708-01,sercom/claro-honduras
+708,40,HN,Honduras,504,Digicel ,708-40,digicel-honduras
+708,30,HN,Honduras,504,HonduTel ,708-30,hondutel-honduras
+454,12,HK,"Hongkong, China",852,China Mobile/Peoples ,454-12,china-mobile/peoples-hongkong-china
+454,09,HK,"Hongkong, China",852,CSL Ltd. ,454-09,csl-ltd-hongkong-china
+454,07,HK,"Hongkong, China",852,H3G/Hutchinson ,454-07,h3g/hutchinson-hongkong-china
+454,19,HK,"Hongkong, China",852,HKT/PWWC ,454-19,hkt/pwwc-hongkong-china
+454,16,HK,"Hongkong, China",852,HKT/PWWC ,454-16,hkt/pwwc-hongkong-china
+454,18,HK,"Hongkong, China",852,CSL Ltd. ,454-18,csl-ltd-hongkong-china
+454,47,HK,"Hongkong, China",852,shared by private TETRA systems ,454-47,shared-by-private-tetra-systems-hongkong-china
+454,00,HK,"Hongkong, China",852,CSL Ltd. ,454-00,csl-ltd-hongkong-china
+454,03,HK,"Hongkong, China",852,H3G/Hutchinson ,454-03,h3g/hutchinson-hongkong-china
+454,05,HK,"Hongkong, China",852,H3G/Hutchinson ,454-05,h3g/hutchinson-hongkong-china
+454,04,HK,"Hongkong, China",852,H3G/Hutchinson ,454-04,h3g/hutchinson-hongkong-china
+454,10,HK,"Hongkong, China",852,New World PCS Ltd. ,454-10,new-world-pcs-ltd-hongkong-china
+454,40,HK,"Hongkong, China",852,shared by private TETRA systems ,454-40,shared-by-private-tetra-systems-hongkong-china
+454,06,HK,"Hongkong, China",852,Vodafone/SmarTone ,454-06,vodafone/smartone-hongkong-china
+454,15,HK,"Hongkong, China",852,Vodafone/SmarTone ,454-15,vodafone/smartone-hongkong-china
+454,08,HK,"Hongkong, China",852,Trident Telecom Ventures Ltd. ,454-08,trident-telecom-ventures-ltd-hongkong-china
+216,01,HU,Hungary,36,Pannon ,216-01,pannon-hungary
+216,30,HU,Hungary,36,T-mobile ,216-30,t-mobile-hungary
+216,70,HU,Hungary,36,Vodafone ,216-70,vodafone-hungary
+274,04,IS,Iceland,354,IMC Islande ehf ,274-04,imc-islande-ehf-iceland
+274,03,IS,Iceland,354,Vodafone/Tal hf ,274-03,vodafone/tal-hf-iceland
+274,01,IS,Iceland,354,Landssiminn ,274-01,landssiminn-iceland
+274,02,IS,Iceland,354,Vodafone/Tal hf ,274-02,vodafone/tal-hf-iceland
+404,28,IN,India,91,Aircel ,404-28,aircel-india
+404,42,IN,India,91,Aircel ,404-42,aircel-india
+404,25,IN,India,91,Aircel ,404-25,aircel-india
+404,33,IN,India,91,Aircel ,404-33,aircel-india
+404,17,IN,India,91,Aircel ,404-17,aircel-india
+404,29,IN,India,91,Aircel ,404-29,aircel-india
+404,60,IN,India,91,Aircel Digilink India ,404-60,aircel-digilink-india-india
+404,01,IN,India,91,Aircel Digilink India ,404-01,aircel-digilink-india-india
+404,15,IN,India,91,Aircel Digilink India ,404-15,aircel-digilink-india-india
+405,53,IN,India,91,AirTel ,405-53,airtel-india
+405,51,IN,India,91,AirTel ,405-51,airtel-india
+405,55,IN,India,91,AirTel ,405-55,airtel-india
+405,56,IN,India,91,Airtel (Bharati Mobile) - Assam ,405-56,airtel-(bharati-mobile)---assam-india
+404,13,IN,India,91,Barakhamba Sales &amp; Serv. ,404-13,barakhamba-sales-&amp;-serv-india
+404,86,IN,India,91,Barakhamba Sales &amp; Serv. ,404-86,barakhamba-sales-&amp;-serv-india
+404,38,IN,India,91,BSNL ,404-38,bsnl-india
+404,75,IN,India,91,BSNL ,404-75,bsnl-india
+404,71,IN,India,91,BSNL ,404-71,bsnl-india
+404,66,IN,India,91,BSNL ,404-66,bsnl-india
+404,54,IN,India,91,BSNL ,404-54,bsnl-india
+404,34,IN,India,91,BSNL ,404-34,bsnl-india
+404,74,IN,India,91,BSNL ,404-74,bsnl-india
+404,59,IN,India,91,BSNL ,404-59,bsnl-india
+404,81,IN,India,91,BSNL ,404-81,bsnl-india
+404,64,IN,India,91,BSNL ,404-64,bsnl-india
+404,53,IN,India,91,BSNL ,404-53,bsnl-india
+404,77,IN,India,91,BSNL ,404-77,bsnl-india
+404,73,IN,India,91,BSNL ,404-73,bsnl-india
+404,58,IN,India,91,BSNL ,404-58,bsnl-india
+404,80,IN,India,91,BSNL ,404-80,bsnl-india
+404,62,IN,India,91,BSNL ,404-62,bsnl-india
+404,51,IN,India,91,BSNL ,404-51,bsnl-india
+404,76,IN,India,91,BSNL ,404-76,bsnl-india
+404,72,IN,India,91,BSNL ,404-72,bsnl-india
+404,57,IN,India,91,BSNL ,404-57,bsnl-india
+404,55,IN,India,91,BSNL ,404-55,bsnl-india
+405,10,IN,India,91,Bharti Airtel Limited (Delhi) ,405-10,bharti-airtel-limited-(delhi)-india
+404,79,IN,India,91,CellOne A&N; ,404-79,cellone-a&n;-india
+404,89,IN,India,91,Escorts Telecom Ltd. ,404-89,escorts-telecom-ltd-india
+404,88,IN,India,91,Escorts Telecom Ltd. ,404-88,escorts-telecom-ltd-india
+404,87,IN,India,91,Escorts Telecom Ltd. ,404-87,escorts-telecom-ltd-india
+404,82,IN,India,91,Escorts Telecom Ltd. ,404-82,escorts-telecom-ltd-india
+404,12,IN,India,91,Escotel Mobile Communications ,404-12,escotel-mobile-communications-india
+404,19,IN,India,91,Escotel Mobile Communications ,404-19,escotel-mobile-communications-india
+404,56,IN,India,91,Escotel Mobile Communications ,404-56,escotel-mobile-communications-india
+405,05,IN,India,91,Fascel Limited ,405-05,fascel-limited-india
+404,05,IN,India,91,Fascel ,404-05,fascel-india
+404,70,IN,India,91,Hexacom India ,404-70,hexacom-india-india
+404,16,IN,India,91,Hexcom India ,404-16,hexcom-india-india
+404,04,IN,India,91,Idea Cellular Ltd. ,404-04,idea-cellular-ltd-india
+404,24,IN,India,91,Idea Cellular Ltd. ,404-24,idea-cellular-ltd-india
+404,78,IN,India,91,Idea Cellular Ltd. ,404-78,idea-cellular-ltd-india
+404,22,IN,India,91,Idea Cellular Ltd. ,404-22,idea-cellular-ltd-india
+404,07,IN,India,91,Idea Cellular Ltd. ,404-07,idea-cellular-ltd-india
+404,69,IN,India,91,Mahanagar Telephone Nigam ,404-69,mahanagar-telephone-nigam-india
+404,68,IN,India,91,Mahanagar Telephone Nigam ,404-68,mahanagar-telephone-nigam-india
+404,83,IN,India,91,Reliable Internet Services ,404-83,reliable-internet-services-india
+405,09,IN,India,91,RELIANCE TELECOM ,405-09,reliance-telecom-india
+404,67,IN,India,91,Reliance Telecom Private ,404-67,reliance-telecom-private-india
+404,36,IN,India,91,Reliance Telecom Private ,404-36,reliance-telecom-private-india
+404,85,IN,India,91,Reliance Telecom Private ,404-85,reliance-telecom-private-india
+404,52,IN,India,91,Reliance Telecom Private ,404-52,reliance-telecom-private-india
+404,18,IN,India,91,Reliance Telecom Private ,404-18,reliance-telecom-private-india
+404,50,IN,India,91,Reliance Telecom Private ,404-50,reliance-telecom-private-india
+404,09,IN,India,91,Reliance Telecom Private ,404-09,reliance-telecom-private-india
+404,41,IN,India,91,RPG Cellular ,404-41,rpg-cellular-india
+404,44,IN,India,91,Spice ,404-44,spice-india
+404,14,IN,India,91,Spice ,404-14,spice-india
+404,11,IN,India,91,Sterling Cellular Ltd. ,404-11,sterling-cellular-ltd-india
+404,30,IN,India,91,Usha Martin Telecom ,404-30,usha-martin-telecom-india
+510,08,ID,Indonesia,62,Axis/Natrindo ,510-08,axis/natrindo-indonesia
+510,89,ID,Indonesia,62,H3G CP ,510-89,h3g-cp-indonesia
+510,21,ID,Indonesia,62,Indosat/Satelindo/M3 ,510-21,indosat/satelindo/m3-indonesia
+510,28,ID,Indonesia,62,,510-28,-indonesia
+510,00,ID,Indonesia,62,,510-00,-indonesia
+510,11,ID,Indonesia,62,PT. Excelcom ,510-11,pt-excelcom-indonesia
+510,01,ID,Indonesia,62,Indosat/Satelindo/M3 ,510-01,indosat/satelindo/m3-indonesia
+510,10,ID,Indonesia,62,Telkomsel ,510-10,telkomsel-indonesia
+432,35,IR,Iran ,98,MTN/IranCell ,432-35,mtn/irancell-iran
+432,70,IR,Iran ,98,MTCE ,432-70,mtce-iran
+432,19,IR,Iran ,98,MTCE ,432-19,mtce-iran
+432,32,IR,Iran ,98,Taliya ,432-32,taliya-iran
+432,11,IR,Iran ,98,TCI / MCI ,432-11,tci-/-mci-iran
+432,14,IR,Iran ,98,TKC/KFZO ,432-14,tkc/kfzo-iran
+418,05,IQ,Iraq,964,Asia Cell ,418-05,asia-cell-iraq
+418,20,IQ,Iraq,964,ZAIN/Atheer ,418-20,zain/atheer-iraq
+418,,IQ,Iraq,964,Itisaluna and Kalemat ,418-,itisaluna-and-kalemat-iraq
+418,40,IQ,Iraq,964,Korek ,418-40,korek-iraq
+418,,IQ,Iraq,964,Mobitel (Iraq-Kurdistan) and Moutiny ,418-,mobitel-(iraq-kurdistan)-and-moutiny-iraq
+418,30,IQ,Iraq,964,Orascom Telecom ,418-30,orascom-telecom-iraq
+418,08,IQ,Iraq,964,Sanatel ,418-08,sanatel-iraq
+272,04,IE,Ireland,353,Access Telecom Ltd. ,272-04,access-telecom-ltd-ireland
+272,05,IE,Ireland,353,H3G ,272-05,h3g-ireland
+272,03,IE,Ireland,353,Meteor Mobile Ltd. ,272-03,meteor-mobile-ltd-ireland
+272,02,IE,Ireland,353,O2/Digifone ,272-02,o2/digifone-ireland
+272,01,IE,Ireland,353,Vodafone Eircell ,272-01,vodafone-eircell-ireland
+425,02,IL,Israel,972,Cellcom ltd. ,425-02,cellcom-ltd-israel
+425,77,IL,Israel,972,Mirs Comm. Ltd ,425-77,mirs-comm-ltd-israel
+425,01,IL,Israel,972,Orange/Partner Co. Ltd. ,425-01,orange/partner-co-ltd-israel
+425,03,IL,Israel,972,Pelephone ,425-03,pelephone-israel
+425,06,IL,Israel,972,Wataniya Mobile ,425-06,wataniya-mobile-israel
+222,99,IT,Italy,39,Hi3G ,222-99,hi3g-italy
+222,01,IT,Italy,39,TIM ,222-01,tim-italy
+222,10,IT,Italy,39,Vodafone ,222-10,vodafone-italy
+222,88,IT,Italy,39,WIND (Blu) - ,222-88,wind-(blu)---italy
+612,02,CI,Ivory Coast,225,Atlantik Telecom ,612-02,atlantik-telecom-ivory-coast
+612,04,CI,Ivory Coast,225,Comium ,612-04,comium-ivory-coast
+612,01,CI,Ivory Coast,225,Comstar ,612-01,comstar-ivory-coast
+612,05,CI,Ivory Coast,225,MTN ,612-05,mtn-ivory-coast
+612,03,CI,Ivory Coast,225,Orange ,612-03,orange-ivory-coast
+612,06,CI,Ivory Coast,225,OriCell ,612-06,oricell-ivory-coast
+612,00,CI,Ivory Coast,225,Warid ,612-00,warid-ivory-coast
+338,20,JM,Jamaica,1876,Cable &amp; Wireless ,338-20,cable-&amp;-wireless-jamaica
+338,180,JM,Jamaica,1876,Cable &amp; Wireless ,338-180,cable-&amp;-wireless-jamaica
+338,50,JM,Jamaica,1876,DIGICEL/Mossel ,338-50,digicel/mossel-jamaica
+338,05,JM,Jamaica,1876,DIGICEL/Mossel ,338-05,digicel/mossel-jamaica
+440,00,JP,Japan,81,eMobile ,440-00,emobile-japan
+440,70,JP,Japan,81,KDDI Corporation ,440-70,kddi-corporation-japan
+440,56,JP,Japan,81,KDDI Corporation ,440-56,kddi-corporation-japan
+440,52,JP,Japan,81,KDDI Corporation ,440-52,kddi-corporation-japan
+440,77,JP,Japan,81,KDDI Corporation ,440-77,kddi-corporation-japan
+440,73,JP,Japan,81,KDDI Corporation ,440-73,kddi-corporation-japan
+440,89,JP,Japan,81,KDDI Corporation ,440-89,kddi-corporation-japan
+440,55,JP,Japan,81,KDDI Corporation ,440-55,kddi-corporation-japan
+440,51,JP,Japan,81,KDDI Corporation ,440-51,kddi-corporation-japan
+440,76,JP,Japan,81,KDDI Corporation ,440-76,kddi-corporation-japan
+440,72,JP,Japan,81,KDDI Corporation ,440-72,kddi-corporation-japan
+440,08,JP,Japan,81,KDDI Corporation ,440-08,kddi-corporation-japan
+440,88,JP,Japan,81,KDDI Corporation ,440-88,kddi-corporation-japan
+440,54,JP,Japan,81,KDDI Corporation ,440-54,kddi-corporation-japan
+440,50,JP,Japan,81,KDDI Corporation ,440-50,kddi-corporation-japan
+440,75,JP,Japan,81,KDDI Corporation ,440-75,kddi-corporation-japan
+440,71,JP,Japan,81,KDDI Corporation ,440-71,kddi-corporation-japan
+440,07,JP,Japan,81,KDDI Corporation ,440-07,kddi-corporation-japan
+441,70,JP,Japan,81,KDDI Corporation ,441-70,kddi-corporation-japan
+440,53,JP,Japan,81,KDDI Corporation ,440-53,kddi-corporation-japan
+440,79,JP,Japan,81,KDDI Corporation ,440-79,kddi-corporation-japan
+440,74,JP,Japan,81,KDDI Corporation ,440-74,kddi-corporation-japan
+440,24,JP,Japan,81,NTT Docomo ,440-24,ntt-docomo-japan
+441,44,JP,Japan,81,NTT Docomo ,441-44,ntt-docomo-japan
+440,87,JP,Japan,81,NTT Docomo ,440-87,ntt-docomo-japan
+440,61,JP,Japan,81,NTT Docomo ,440-61,ntt-docomo-japan
+440,19,JP,Japan,81,NTT Docomo ,440-19,ntt-docomo-japan
+441,93,JP,Japan,81,NTT Docomo ,441-93,ntt-docomo-japan
+440,25,JP,Japan,81,NTT Docomo ,440-25,ntt-docomo-japan
+440,03,JP,Japan,81,NTT Docomo ,440-03,ntt-docomo-japan
+440,16,JP,Japan,81,NTT Docomo ,440-16,ntt-docomo-japan
+440,36,JP,Japan,81,NTT Docomo ,440-36,ntt-docomo-japan
+440,49,JP,Japan,81,NTT Docomo ,440-49,ntt-docomo-japan
+441,42,JP,Japan,81,NTT Docomo ,441-42,ntt-docomo-japan
+440,69,JP,Japan,81,NTT Docomo ,440-69,ntt-docomo-japan
+440,39,JP,Japan,81,NTT Docomo ,440-39,ntt-docomo-japan
+440,15,JP,Japan,81,NTT Docomo ,440-15,ntt-docomo-japan
+440,32,JP,Japan,81,NTT Docomo ,440-32,ntt-docomo-japan
+440,66,JP,Japan,81,NTT Docomo ,440-66,ntt-docomo-japan
+441,41,JP,Japan,81,NTT Docomo ,441-41,ntt-docomo-japan
+441,92,JP,Japan,81,NTT Docomo ,441-92,ntt-docomo-japan
+440,21,JP,Japan,81,NTT Docomo ,440-21,ntt-docomo-japan
+440,38,JP,Japan,81,NTT Docomo ,440-38,ntt-docomo-japan
+440,01,JP,Japan,81,NTT Docomo ,440-01,ntt-docomo-japan
+440,13,JP,Japan,81,NTT Docomo ,440-13,ntt-docomo-japan
+440,30,JP,Japan,81,NTT Docomo ,440-30,ntt-docomo-japan
+440,64,JP,Japan,81,NTT Docomo ,440-64,ntt-docomo-japan
+441,40,JP,Japan,81,NTT Docomo ,441-40,ntt-docomo-japan
+441,91,JP,Japan,81,NTT Docomo ,441-91,ntt-docomo-japan
+440,17,JP,Japan,81,NTT Docomo ,440-17,ntt-docomo-japan
+440,37,JP,Japan,81,NTT Docomo ,440-37,ntt-docomo-japan
+440,12,JP,Japan,81,NTT Docomo ,440-12,ntt-docomo-japan
+440,29,JP,Japan,81,NTT Docomo ,440-29,ntt-docomo-japan
+440,63,JP,Japan,81,NTT Docomo ,440-63,ntt-docomo-japan
+440,99,JP,Japan,81,NTT Docomo ,440-99,ntt-docomo-japan
+441,90,JP,Japan,81,NTT Docomo ,441-90,ntt-docomo-japan
+440,02,JP,Japan,81,NTT Docomo ,440-02,ntt-docomo-japan
+441,65,JP,Japan,81,NTT Docomo ,441-65,ntt-docomo-japan
+440,35,JP,Japan,81,NTT Docomo ,440-35,ntt-docomo-japan
+441,61,JP,Japan,81,NTT Docomo ,441-61,ntt-docomo-japan
+440,31,JP,Japan,81,NTT Docomo ,440-31,ntt-docomo-japan
+440,10,JP,Japan,81,NTT Docomo ,440-10,ntt-docomo-japan
+441,64,JP,Japan,81,NTT Docomo ,441-64,ntt-docomo-japan
+441,43,JP,Japan,81,NTT Docomo ,441-43,ntt-docomo-japan
+440,09,JP,Japan,81,NTT Docomo ,440-09,ntt-docomo-japan
+441,63,JP,Japan,81,NTT Docomo ,441-63,ntt-docomo-japan
+440,60,JP,Japan,81,NTT Docomo ,440-60,ntt-docomo-japan
+440,22,JP,Japan,81,NTT Docomo ,440-22,ntt-docomo-japan
+441,62,JP,Japan,81,NTT Docomo ,441-62,ntt-docomo-japan
+440,58,JP,Japan,81,NTT Docomo ,440-58,ntt-docomo-japan
+440,34,JP,Japan,81,NTT Docomo ,440-34,ntt-docomo-japan
+440,62,JP,Japan,81,NTT Docomo ,440-62,ntt-docomo-japan
+441,99,JP,Japan,81,NTT Docomo ,441-99,ntt-docomo-japan
+440,68,JP,Japan,81,NTT Docomo ,440-68,ntt-docomo-japan
+441,98,JP,Japan,81,NTT Docomo ,441-98,ntt-docomo-japan
+440,26,JP,Japan,81,NTT Docomo ,440-26,ntt-docomo-japan
+440,28,JP,Japan,81,NTT Docomo ,440-28,ntt-docomo-japan
+441,45,JP,Japan,81,NTT Docomo ,441-45,ntt-docomo-japan
+440,65,JP,Japan,81,NTT Docomo ,440-65,ntt-docomo-japan
+440,14,JP,Japan,81,NTT Docomo ,440-14,ntt-docomo-japan
+440,67,JP,Japan,81,NTT Docomo ,440-67,ntt-docomo-japan
+441,94,JP,Japan,81,NTT Docomo ,441-94,ntt-docomo-japan
+440,11,JP,Japan,81,NTT Docomo ,440-11,ntt-docomo-japan
+440,23,JP,Japan,81,NTT Docomo ,440-23,ntt-docomo-japan
+440,18,JP,Japan,81,NTT Docomo ,440-18,ntt-docomo-japan
+440,33,JP,Japan,81,NTT Docomo ,440-33,ntt-docomo-japan
+440,27,JP,Japan,81,NTT Docomo ,440-27,ntt-docomo-japan
+440,78,JP,Japan,81,Okinawa Cellular Telephone ,440-78,okinawa-cellular-telephone-japan
+440,20,JP,Japan,81,SoftBank Mobile Corp ,440-20,softbank-mobile-corp-japan
+440,46,JP,Japan,81,SoftBank Mobile Corp ,440-46,softbank-mobile-corp-japan
+440,42,JP,Japan,81,SoftBank Mobile Corp ,440-42,softbank-mobile-corp-japan
+440,04,JP,Japan,81,SoftBank Mobile Corp ,440-04,softbank-mobile-corp-japan
+440,95,JP,Japan,81,SoftBank Mobile Corp ,440-95,softbank-mobile-corp-japan
+440,90,JP,Japan,81,SoftBank Mobile Corp ,440-90,softbank-mobile-corp-japan
+440,45,JP,Japan,81,SoftBank Mobile Corp ,440-45,softbank-mobile-corp-japan
+440,41,JP,Japan,81,SoftBank Mobile Corp ,440-41,softbank-mobile-corp-japan
+440,98,JP,Japan,81,SoftBank Mobile Corp ,440-98,softbank-mobile-corp-japan
+440,94,JP,Japan,81,SoftBank Mobile Corp ,440-94,softbank-mobile-corp-japan
+440,48,JP,Japan,81,SoftBank Mobile Corp ,440-48,softbank-mobile-corp-japan
+440,44,JP,Japan,81,SoftBank Mobile Corp ,440-44,softbank-mobile-corp-japan
+440,40,JP,Japan,81,SoftBank Mobile Corp ,440-40,softbank-mobile-corp-japan
+440,97,JP,Japan,81,SoftBank Mobile Corp ,440-97,softbank-mobile-corp-japan
+440,93,JP,Japan,81,SoftBank Mobile Corp ,440-93,softbank-mobile-corp-japan
+440,47,JP,Japan,81,SoftBank Mobile Corp ,440-47,softbank-mobile-corp-japan
+440,43,JP,Japan,81,SoftBank Mobile Corp ,440-43,softbank-mobile-corp-japan
+440,06,JP,Japan,81,SoftBank Mobile Corp ,440-06,softbank-mobile-corp-japan
+440,96,JP,Japan,81,SoftBank Mobile Corp ,440-96,softbank-mobile-corp-japan
+440,92,JP,Japan,81,SoftBank Mobile Corp ,440-92,softbank-mobile-corp-japan
+440,85,JP,Japan,81,KDDI Corporation ,440-85,kddi-corporation-japan
+440,83,JP,Japan,81,KDDI Corporation ,440-83,kddi-corporation-japan
+440,86,JP,Japan,81,KDDI Corporation ,440-86,kddi-corporation-japan
+440,81,JP,Japan,81,KDDI Corporation ,440-81,kddi-corporation-japan
+440,80,JP,Japan,81,KDDI Corporation ,440-80,kddi-corporation-japan
+440,84,JP,Japan,81,KDDI Corporation ,440-84,kddi-corporation-japan
+440,82,JP,Japan,81,KDDI Corporation ,440-82,kddi-corporation-japan
+416,01,JO,Jordan,962,ZAIN /J.M.T.S ,416-01,zain-/jmts-jordan
+416,77,JO,Jordan,962,Orange/Petra ,416-77,orange/petra-jordan
+416,03,JO,Jordan,962,Umniah Mobile Co. ,416-03,umniah-mobile-co-jordan
+416,02,JO,Jordan,962,Xpress ,416-02,xpress-jordan
+401,07,KZ,Kazakhstan,73,Altel ,401-07,altel-kazakhstan
+401,02,KZ,Kazakhstan,73,K-Cell ,401-02,k-cell-kazakhstan
+401,01,KZ,Kazakhstan,73,Beeline/KaR-Tel LLP ,401-01,beeline/kar-tel-llp-kazakhstan
+401,77,KZ,Kazakhstan,73,MTS ,401-77,mts-kazakhstan
+639,03,KE,Kenya,254,Zain/Celtel Ltd. ,639-03,zain/celtel-ltd-kenya
+639,05,KE,Kenya,254,Econet Wireless ,639-05,econet-wireless-kenya
+639,07,KE,Kenya,254,Orange ,639-07,orange-kenya
+639,02,KE,Kenya,254,Safaricom Ltd. ,639-02,safaricom-ltd-kenya
+545,09,KI,Kiribati,686,Kiribati Frigate ,545-09,kiribati-frigate-kiribati
+467,03,KP,"Korea N., Dem. People's Rep.",850,Sun Net ,467-03,sun-net-korea-n-dem-people's-rep
+467,193,KP,"Korea N., Dem. People's Rep.",850,Sun Net ,467-193,sun-net-korea-n-dem-people's-rep
+450,02,KR,"Korea S, Republic of",82,KT Freetel Co. Ltd. ,450-02,kt-freetel-co-ltd-korea-s-republic-of
+450,04,KR,"Korea S, Republic of",82,KT Freetel Co. Ltd. ,450-04,kt-freetel-co-ltd-korea-s-republic-of
+450,08,KR,"Korea S, Republic of",82,KT Freetel Co. Ltd. ,450-08,kt-freetel-co-ltd-korea-s-republic-of
+450,06,KR,"Korea S, Republic of",82,LG Telecom ,450-06,lg-telecom-korea-s-republic-of
+450,03,KR,"Korea S, Republic of",82,SK Telecom ,450-03,sk-telecom-korea-s-republic-of
+450,05,KR,"Korea S, Republic of",82,SK Telecom ,450-05,sk-telecom-korea-s-republic-of
+419,02,KW,Kuwait,965,Zain ,419-02,zain-kuwait
+419,03,KW,Kuwait,965,Wantaniya ,419-03,wantaniya-kuwait
+419,04,KW,Kuwait,965,Viva ,419-04,viva-kuwait
+437,01,KG,Kyrgyzstan,996,Beeline/Bitel ,437-01,beeline/bitel-kyrgyzstan
+437,05,KG,Kyrgyzstan,996,MEGACOM ,437-05,megacom-kyrgyzstan
+437,09,KG,Kyrgyzstan,996,O!/NUR Telecom ,437-09,o!/nur-telecom-kyrgyzstan
+457,02,LA,Laos P.D.R.,856,ETL Mobile ,457-02,etl-mobile-laos-pdr
+457,01,LA,Laos P.D.R.,856,Lao Tel ,457-01,lao-tel-laos-pdr
+457,08,LA,Laos P.D.R.,856,Tigo/Millicom ,457-08,tigo/millicom-laos-pdr
+457,03,LA,Laos P.D.R.,856,UNITEL/LAT ,457-03,unitel/lat-laos-pdr
+247,05,LV,Latvia,371,Bite Latvija ,247-05,bite-latvija-latvia
+247,08,LV,Latvia,371,Bite Latvija ,247-08,bite-latvija-latvia
+247,01,LV,Latvia,371,Latvian Mobile Phone ,247-01,latvian-mobile-phone-latvia
+247,07,LV,Latvia,371,Bite Latvija ,247-07,bite-latvija-latvia
+247,02,LV,Latvia,371,Tele2 ,247-02,tele2-latvia
+247,03,LV,Latvia,371,TRIATEL/Telekom Baltija ,247-03,triatel/telekom-baltija-latvia
+415,33,LB,Lebanon,961,Cellis ,415-33,cellis-lebanon
+415,32,LB,Lebanon,961,Cellis ,415-32,cellis-lebanon
+415,35,LB,Lebanon,961,Cellis ,415-35,cellis-lebanon
+415,34,LB,Lebanon,961,FTML Cellis ,415-34,ftml-cellis-lebanon
+415,37,LB,Lebanon,961,MIC2/LibanCell ,415-37,mic2/libancell-lebanon
+415,39,LB,Lebanon,961,MIC2/LibanCell ,415-39,mic2/libancell-lebanon
+415,38,LB,Lebanon,961,MIC2/LibanCell ,415-38,mic2/libancell-lebanon
+415,01,LB,Lebanon,961,MIC1 (Alfa) ,415-01,mic1-(alfa)-lebanon
+415,03,LB,Lebanon,961,MIC2/LibanCell ,415-03,mic2/libancell-lebanon
+415,36,LB,Lebanon,961,MIC2/LibanCell ,415-36,mic2/libancell-lebanon
+651,02,LS,Lesotho,266,Econet/Ezi-cel ,651-02,econet/ezi-cel-lesotho
+651,01,LS,Lesotho,266,Vodacom Lesotho ,651-01,vodacom-lesotho-lesotho
+618,03,LR,Liberia,231,Celcom ,618-03,celcom-liberia
+618,07,LR,Liberia,231,Celcom ,618-07,celcom-liberia
+618,04,LR,Liberia,231,Comium BVI ,618-04,comium-bvi-liberia
+618,02,LR,Liberia,231,Libercell ,618-02,libercell-liberia
+618,01,LR,Liberia,231,Lonestar ,618-01,lonestar-liberia
+606,02,LY,Libya,218,Al-Madar ,606-02,al-madar-libya
+606,01,LY,Libya,218,Al-Madar ,606-01,al-madar-libya
+606,06,LY,Libya,218,Hatef ,606-06,hatef-libya
+606,03,LY,Libya,218,Libyana ,606-03,libyana-libya
+606,00,LY,Libya,218,Libyana ,606-00,libyana-libya
+295,05,LI,Liechtenstein,423,Mobilkom AG ,295-05,mobilkom-ag-liechtenstein
+295,02,LI,Liechtenstein,423,Orange ,295-02,orange-liechtenstein
+295,01,LI,Liechtenstein,423,Swisscom FL AG ,295-01,swisscom-fl-ag-liechtenstein
+295,77,LI,Liechtenstein,423,Alpmobile/Tele2 ,295-77,alpmobile/tele2-liechtenstein
+246,02,LT,Lithuania,370,Bite ,246-02,bite-lithuania
+246,01,LT,Lithuania,370,Omnitel ,246-01,omnitel-lithuania
+246,03,LT,Lithuania,370,Tele2 ,246-03,tele2-lithuania
+270,77,LU,Luxembourg,352,Millicom Tango GSM ,270-77,millicom-tango-gsm-luxembourg
+270,01,LU,Luxembourg,352,P+T LUXGSM ,270-01,p+t-luxgsm-luxembourg
+270,99,LU,Luxembourg,352,VOXmobile S.A. ,270-99,voxmobile-sa-luxembourg
+455,01,MO,"Macao, China",853,C.T.M. TELEMOVEL+ ,455-01,ctm-telemovel+-macao-china
+455,03,MO,"Macao, China",853,H3G Hutchison ,455-03,h3g-hutchison-macao-china
+455,00,MO,"Macao, China",853,Smartone Mobile ,455-00,smartone-mobile-macao-china
+294,75,MK,Macedonia,389,MTS/Cosmofone ,294-75,mts/cosmofone-macedonia
+294,02,MK,Macedonia,389,MTS/Cosmofone ,294-02,mts/cosmofone-macedonia
+294,01,MK,Macedonia,389,T-Mobile/Mobimak ,294-01,t-mobile/mobimak-macedonia
+294,03,MK,Macedonia,389,VIP Mobile ,294-03,vip-mobile-macedonia
+646,01,MG,Madagascar,261,MADACOM ,646-01,madacom-madagascar
+646,02,MG,Madagascar,261,Soci ,646-02,soci-madagascar
+646,04,MG,Madagascar,261,Telma ,646-04,telma-madagascar
+650,10,MW,Malawi,265,Zain/Celtel ltd. ,650-10,zain/celtel-ltd-malawi
+650,01,MW,Malawi,265,TNM/Telekom Network Ltd. ,650-01,tnm/telekom-network-ltd-malawi
+502,00,MY,Malaysia,60,Art900 ,502-00,art900-malaysia
+502,19,MY,Malaysia,60,CelCom ,502-19,celcom-malaysia
+502,16,MY,Malaysia,60,Digi Telecommunications ,502-16,digi-telecommunications-malaysia
+502,12,MY,Malaysia,60,Maxis ,502-12,maxis-malaysia
+502,11,MY,Malaysia,60,MTX Utara ,502-11,mtx-utara-malaysia
+502,17,MY,Malaysia,60,Maxis ,502-17,maxis-malaysia
+502,13,MY,Malaysia,60,CelCom ,502-13,celcom-malaysia
+502,18,MY,Malaysia,60,U Mobile ,502-18,u-mobile-malaysia
+472,01,MV,Maldives,960,Dhiraagu/C&W; ,472-01,dhiraagu/c&w;-maldives
+472,02,MV,Maldives,960,Wataniya/WMOBILE ,472-02,wataniya/wmobile-maldives
+610,01,ML,Mali,223,Malitel ,610-01,malitel-mali
+610,02,ML,Mali,223,Orange/IKATEL ,610-02,orange/ikatel-mali
+278,77,MT,Malta,356,Melita ,278-77,melita-malta
+278,21,MT,Malta,356,GO/Mobisle ,278-21,go/mobisle-malta
+278,01,MT,Malta,356,Vodafone ,278-01,vodafone-malta
+609,01,MR,Mauritania,222,Mattel ,609-01,mattel-mauritania
+609,10,MR,Mauritania,222,Mauritel ,609-10,mauritel-mauritania
+617,01,MU,Mauritius,230,Orange/Cellplus ,617-01,orange/cellplus-mauritius
+617,10,MU,Mauritius,230,Emtel Ltd ,617-10,emtel-ltd-mauritius
+617,02,MU,Mauritius,230,Emtel Ltd ,617-02,emtel-ltd-mauritius
+334,03,MX,Mexico,52,Movistar/Pegaso ,334-03,movistar/pegaso-mexico
+334,02,MX,Mexico,52,TelCel/America Movil ,334-02,telcel/america-movil-mexico
+334,20,MX,Mexico,52,TelCel/America Movil ,334-20,telcel/america-movil-mexico
+550,01,FM,Micronesia,691,FSM Telecom ,550-01,fsm-telecom-micronesia
+259,04,MD,Moldova,373,Eventis Mobile ,259-04,eventis-mobile-moldova
+259,03,MD,Moldova,373,Unite  ,259-03,unite-moldova
+259,02,MD,Moldova,373,Moldcell ,259-02,moldcell-moldova
+259,01,MD,Moldova,373,Orange/Voxtel ,259-01,orange/voxtel-moldova
+259,05,MD,Moldova,373,Unite  ,259-05,unite-moldova
+212,01,MC,Monaco,377,Monaco Telecom ,212-01,monaco-telecom-monaco
+212,10,MC,Monaco,377,Monaco Telecom ,212-10,monaco-telecom-monaco
+428,99,MN,Mongolia,976,Mobicom ,428-99,mobicom-mongolia
+428,88,MN,Mongolia,976,Unitel ,428-88,unitel-mongolia
+297,02,ME,Montenegro,382,Monet/T-mobile ,297-02,monet/t-mobile-montenegro
+297,03,ME,Montenegro,382,Mtel ,297-03,mtel-montenegro
+297,01,ME,Montenegro,382,Promonte GSM ,297-01,promonte-gsm-montenegro
+354,860,MS,Montserrat,1664,Cable &amp; Wireless  ,354-860,cable-&amp;-wireless-montserrat
+604,02,MA,Morocco,212,INWI/WANA ,604-02,inwi/wana-morocco
+604,01,MA,Morocco,212,IAM/Itissallat ,604-01,iam/itissallat-morocco
+604,00,MA,Morocco,212,Medi Telecom ,604-00,medi-telecom-morocco
+643,01,MZ,Mozambique,258,mCel ,643-01,mcel-mozambique
+643,04,MZ,Mozambique,258,Vodacom Sarl ,643-04,vodacom-sarl-mozambique
+649,03,NA,Namibia,264,Leo / Orascom ,649-03,leo-/-orascom-namibia
+649,01,NA,Namibia,264,MTC ,649-01,mtc-namibia
+649,02,NA,Namibia,264,Switch/Nam. Telec. ,649-02,switch/nam-telec-namibia
+429,02,NP,Nepal,977,Ncell ,429-02,ncell-nepal
+429,01,NP,Nepal,977,NT Mobile / Namaste ,429-01,nt-mobile-/-namaste-nepal
+204,08,NL,Netherlands,31,KPN Telecom B.V. ,204-08,kpn-telecom-bv-netherlands
+204,21,NL,Netherlands,31,NS Railinfrabeheer B.V. ,204-21,ns-railinfrabeheer-bv-netherlands
+204,20,NL,Netherlands,31,Orange/T-mobile ,204-20,orange/t-mobile-netherlands
+204,16,NL,Netherlands,31,T-Mobile B.V. ,204-16,t-mobile-bv-netherlands
+204,15,NL,Netherlands,31,T-Mobile B.V. ,204-15,t-mobile-bv-netherlands
+204,02,NL,Netherlands,31,Tele2 ,204-02,tele2-netherlands
+204,12,NL,Netherlands,31,Telfort ,204-12,telfort-netherlands
+204,04,NL,Netherlands,31,Vodafone Libertel ,204-04,vodafone-libertel-netherlands
+362,630,AN,Netherlands Antilles,599,Cingular Wireless ,362-630,cingular-wireless-netherlands-antilles
+362,69,AN,Netherlands Antilles,599,DigiCell ,362-69,digicell-netherlands-antilles
+362,51,AN,Netherlands Antilles,599,TELCELL GSM ,362-51,telcell-gsm-netherlands-antilles
+362,91,AN,Netherlands Antilles,599,SETEL GSM ,362-91,setel-gsm-netherlands-antilles
+362,951,AN,Netherlands Antilles,599,UTS Wireless ,362-951,uts-wireless-netherlands-antilles
+546,01,NC,New Caledonia,687,OPT Mobilis ,546-01,opt-mobilis-new-caledonia
+530,24,NZ,New Zealand,64,2degrees ,530-24,2degrees-new-zealand
+530,28,NZ,New Zealand,64,2degrees ,530-28,2degrees-new-zealand
+530,02,NZ,New Zealand,64,NZ Telecom CDMA ,530-02,nz-telecom-cdma-new-zealand
+530,04,NZ,New Zealand,64,Telstra ,530-04,telstra-new-zealand
+530,01,NZ,New Zealand,64,Vodafone ,530-01,vodafone-new-zealand
+530,03,NZ,New Zealand,64,Walker Wireless Ltd. ,530-03,walker-wireless-ltd-new-zealand
+710,21,NI,Nicaragua,505,Claro ,710-21,claro-nicaragua
+710,30,NI,Nicaragua,505,Movistar ,710-30,movistar-nicaragua
+710,73,NI,Nicaragua,505,Claro ,710-73,claro-nicaragua
+614,02,NE,Niger,227,Zain/CelTel ,614-02,zain/celtel-niger
+614,01,NE,Niger,227,Orange Sahelc. ,614-01,orange-sahelc-niger
+614,04,NE,Niger,227,Orange Sahelc. ,614-04,orange-sahelc-niger
+614,03,NE,Niger,227,TeleCel ,614-03,telecel-niger
+621,20,NG,Nigeria,234,ZAIN/Econet ,621-20,zain/econet-nigeria
+621,60,NG,Nigeria,234,ETISALAT ,621-60,etisalat-nigeria
+621,50,NG,Nigeria,234,Glo Mobile ,621-50,glo-mobile-nigeria
+621,30,NG,Nigeria,234,MTN ,621-30,mtn-nigeria
+621,00,NG,Nigeria,234,Multilinks ,621-00,multilinks-nigeria
+621,40,NG,Nigeria,234,M-Tel/Nigeria Telecom. Ltd. ,621-40,m-tel/nigeria-telecom-ltd-nigeria
+621,99,NG,Nigeria,234,Starcomms ,621-99,starcomms-nigeria
+621,01,NG,Nigeria,234,Visafone ,621-01,visafone-nigeria
+242,20,NO,Norway,47,Jernbaneverket (GSM-R) ,242-20,jernbaneverket-(gsm-r)-norway
+242,02,NO,Norway,47,Netcom ,242-02,netcom-norway
+242,05,NO,Norway,47,Network Norway ,242-05,network-norway-norway
+242,06,NO,Norway,47,ICE Nordisk Mobiltelefon AS ,242-06,ice-nordisk-mobiltelefon-as-norway
+242,08,NO,Norway,47,TDC Mobil A/S ,242-08,tdc-mobil-a/s-norway
+242,04,NO,Norway,47,Tele2 ,242-04,tele2-norway
+242,01,NO,Norway,47,Telenor ,242-01,telenor-norway
+242,03,NO,Norway,47,Teletopia ,242-03,teletopia-norway
+242,07,NO,Norway,47,Ventelo Norge AS ,242-07,ventelo-norge-as-norway
+422,03,OM,Oman,968,Nawras ,422-03,nawras-oman
+422,02,OM,Oman,968,Oman Mobile/GTO ,422-02,oman-mobile/gto-oman
+410,01,PK,Pakistan,92,Mobilink ,410-01,mobilink-pakistan
+410,03,PK,Pakistan,92,UFONE/PAKTel ,410-03,ufone/paktel-pakistan
+410,06,PK,Pakistan,92,Telenor ,410-06,telenor-pakistan
+410,07,PK,Pakistan,92,Warid Telecom ,410-07,warid-telecom-pakistan
+410,04,PK,Pakistan,92,ZONG/CMPak ,410-04,zong/cmpak-pakistan
+425,05,PS,Palestinian Territory,970,Jawwal ,425-05,jawwal-palestinian-territory
+714,02,PA,Panama,507,Movistar ,714-02,movistar-panama
+714,01,PA,Panama,507,Cable &amp; Wireless S.A. ,714-01,cable-&amp;-wireless-sa-panama
+714,03,PA,Panama,507,Claro ,714-03,claro-panama
+714,04,PA,Panama,507,Digicel ,714-04,digicel-panama
+714,20,PA,Panama,507,Movistar ,714-20,movistar-panama
+537,03,PG,Papua New Guinea,675,Digicel ,537-03,digicel-papua-new-guinea
+537,01,PG,Papua New Guinea,675,Pacific Mobile ,537-01,pacific-mobile-papua-new-guinea
+744,03,PY,Paraguay,595,Compa ,744-03,compa-paraguay
+744,01,PY,Paraguay,595,Hola/VOX ,744-01,hola/vox-paraguay
+744,02,PY,Paraguay,595,Claro/Hutchison ,744-02,claro/hutchison-paraguay
+744,05,PY,Paraguay,595,TIM/Nucleo/Personal ,744-05,tim/nucleo/personal-paraguay
+744,04,PY,Paraguay,595,Tigo/Telecel ,744-04,tigo/telecel-paraguay
+716,10,PE,Peru,51,Claro /Amer.Mov./TIM ,716-10,claro-/amermov/tim-peru
+716,06,PE,Peru,51,Movistar ,716-06,movistar-peru
+716,07,PE,Peru,51,Nextel ,716-07,nextel-peru
+515,05,PH,Philippines,63,SUN/Digitel ,515-05,sun/digitel-philippines
+515,00,PH,Philippines,63,Fix Line ,515-00,fix-line-philippines
+515,02,PH,Philippines,63,Globe Telecom ,515-02,globe-telecom-philippines
+515,01,PH,Philippines,63,Islacom ,515-01,islacom-philippines
+515,88,PH,Philippines,63,Islacom ,515-88,islacom-philippines
+515,18,PH,Philippines,63,RED Mobile/Cure ,515-18,red-mobile/cure-philippines
+515,03,PH,Philippines,63,Smart ,515-03,smart-philippines
+260,02,PL,Poland,48,ERA GSM ,260-02,era-gsm-poland
+260,03,PL,Poland,48,Orange/IDEA/Centertel ,260-03,orange/idea/centertel-poland
+260,07,PL,Poland,48,Play/P4 ,260-07,play/p4-poland
+260,06,PL,Poland,48,Play/P4 ,260-06,play/p4-poland
+260,01,PL,Poland,48,Polkomtel/Plus ,260-01,polkomtel/plus-poland
+260,04,PL,Poland,48,Tele2 ,260-04,tele2-poland
+268,03,PT,Portugal,351,Optimus ,268-03,optimus-portugal
+268,06,PT,Portugal,351,TMN ,268-06,tmn-portugal
+268,01,PT,Portugal,351,Vodafone ,268-01,vodafone-portugal
+427,01,QA,Qatar,974,Qtel ,427-01,qtel-qatar
+427,02,QA,Qatar,974,Vodafone ,427-02,vodafone-qatar
+647,00,RE,Reunion,262,Orange ,647-00,orange-reunion
+647,02,RE,Reunion,262,Outremer Telecom ,647-02,outremer-telecom-reunion
+647,10,RE,Reunion,262,SFR ,647-10,sfr-reunion
+226,03,RO,Romania,40,Cosmote ,226-03,cosmote-romania
+226,01,RO,Romania,40,Vodafone ,226-01,vodafone-romania
+226,10,RO,Romania,40,Orange ,226-10,orange-romania
+226,05,RO,Romania,40,RCS&RDS; Digi Mobile ,226-05,rcs&rds;-digi-mobile-romania
+226,04,RO,Romania,40,Zapp Mobile ,226-04,zapp-mobile-romania
+250,12,RU,Russian Federation,7,Baykal Westcom ,250-12,baykal-westcom-russian-federation
+250,99,RU,Russian Federation,7,Bee Line GSM ,250-99,bee-line-gsm-russian-federation
+250,28,RU,Russian Federation,7,Bee Line GSM ,250-28,bee-line-gsm-russian-federation
+250,07,RU,Russian Federation,7,ZAO SMARTS ,250-07,zao-smarts-russian-federation
+250,10,RU,Russian Federation,7,DTC/Don Telecom ,250-10,dtc/don-telecom-russian-federation
+250,20,RU,Russian Federation,7,Tele2/ECC/Volgogr. ,250-20,tele2/ecc/volgogr-russian-federation
+250,05,RU,Russian Federation,7,Yenisey Telecom ,250-05,yenisey-telecom-russian-federation
+250,17,RU,Russian Federation,7,U-Tel/Ermak RMS ,250-17,u-tel/ermak-rms-russian-federation
+250,13,RU,Russian Federation,7,Kuban GSM ,250-13,kuban-gsm-russian-federation
+250,02,RU,Russian Federation,7,Megafon ,250-02,megafon-russian-federation
+250,01,RU,Russian Federation,7,MTS  ,250-01,mts-russian-federation
+250,16,RU,Russian Federation,7,NTC ,250-16,ntc-russian-federation
+250,03,RU,Russian Federation,7,NCC ,250-03,ncc-russian-federation
+250,11,RU,Russian Federation,7,Orensot ,250-11,orensot-russian-federation
+250,92,RU,Russian Federation,7,Printelefone ,250-92,printelefone-russian-federation
+250,04,RU,Russian Federation,7,Sibchallenge ,250-04,sibchallenge-russian-federation
+250,44,RU,Russian Federation,7,StavTelesot ,250-44,stavtelesot-russian-federation
+250,19,RU,Russian Federation,7,Tele2/ECC/Volgogr. ,250-19,tele2/ecc/volgogr-russian-federation
+250,93,RU,Russian Federation,7,Telecom XXL ,250-93,telecom-xxl-russian-federation
+250,39,RU,Russian Federation,7,UralTel ,250-39,uraltel-russian-federation
+250,15,RU,Russian Federation,7,ZAO SMARTS ,250-15,zao-smarts-russian-federation
+635,10,RW,Rwanda,250,MTN/Rwandacell ,635-10,mtn/rwandacell-rwanda
+635,13,RW,Rwanda,250,TIGO ,635-13,tigo-rwanda
+356,110,KN,Saint Kitts and Nevis,1869,Cable &amp; Wireless ,356-110,cable-&amp;-wireless-saint-kitts-and-nevis
+356,50,KN,Saint Kitts and Nevis,1869,Digicel ,356-50,digicel-saint-kitts-and-nevis
+356,70,KN,Saint Kitts and Nevis,1869,UTS Cariglobe ,356-70,uts-cariglobe-saint-kitts-and-nevis
+358,110,LC,Saint Lucia,1758,Cable &amp; Wireless ,358-110,cable-&amp;-wireless-saint-lucia
+358,30,LC,Saint Lucia,1758,Cingular Wireless ,358-30,cingular-wireless-saint-lucia
+358,50,LC,Saint Lucia,1758,Digicel (St Lucia) Limited ,358-50,digicel-(st-lucia)-limited-saint-lucia
+549,27,WS,Samoa,685,Samoatel Mobile ,549-27,samoatel-mobile-samoa
+549,01,WS,Samoa,685,Telecom Samoa Cellular Ltd. ,549-01,telecom-samoa-cellular-ltd-samoa
+626,01,ST,Sao Tome &amp; Principe,239,CSTmovel ,626-01,cstmovel-sao-tome-&amp;-principe
+901,14,,Satellite Networks,882,AeroMobile ,901-14,aeromobile-satellite-networks
+901,12,,Satellite Networks,882,Maritime Communications Partner AS ,901-12,maritime-communications-partner-as-satellite-networks
+901,05,,Satellite Networks,882,Thuraya Satellite ,901-05,thuraya-satellite-satellite-networks
+420,07,SA,Saudi Arabia,966,Zain ,420-07,zain-saudi-arabia
+420,03,SA,Saudi Arabia,966,Etihad/Etisalat/Mobily ,420-03,etihad/etisalat/mobily-saudi-arabia
+420,01,SA,Saudi Arabia,966,STC/Al Jawal ,420-01,stc/al-jawal-saudi-arabia
+420,04,SA,Saudi Arabia,966,Zain ,420-04,zain-saudi-arabia
+608,03,SN,Senegal,221,Expresso/Sudatel ,608-03,expresso/sudatel-senegal
+608,02,SN,Senegal,221,Sentel GSM ,608-02,sentel-gsm-senegal
+608,01,SN,Senegal,221,Sonatel ,608-01,sonatel-senegal
+220,03,RS,Serbia ,381,MTS/Telekom Srbija ,220-03,mts/telekom-srbija-serbia
+220,01,RS,Serbia ,381,Telenor/Mobtel ,220-01,telenor/mobtel-serbia
+220,05,RS,Serbia ,381,VIP Mobile ,220-05,vip-mobile-serbia
+633,10,SC,Seychelles,248,Airtel ,633-10,airtel-seychelles
+633,01,SC,Seychelles,248,C&W; ,633-01,c&w;-seychelles
+619,05,SL,Sierra Leone,232,Africel ,619-05,africel-sierra-leone
+619,03,SL,Sierra Leone,232,Africel ,619-03,africel-sierra-leone
+619,01,SL,Sierra Leone,232,Zain/Celtel ,619-01,zain/celtel-sierra-leone
+619,04,SL,Sierra Leone,232,Comium ,619-04,comium-sierra-leone
+619,02,SL,Sierra Leone,232,Tigo/Millicom ,619-02,tigo/millicom-sierra-leone
+619,25,SL,Sierra Leone,232,Mobitel ,619-25,mobitel-sierra-leone
+525,12,SG,Singapore,65,Digital Trunked Radio Network ,525-12,digital-trunked-radio-network-singapore
+525,03,SG,Singapore,65,MobileOne Ltd ,525-03,mobileone-ltd-singapore
+525,02,SG,Singapore,65,Singtel ,525-02,singtel-singapore
+525,01,SG,Singapore,65,Singtel ,525-01,singtel-singapore
+525,05,SG,Singapore,65,Starhub ,525-05,starhub-singapore
+231,02,SK,Slovakia,421,T-Mobile ,231-02,t-mobile-slovakia
+231,04,SK,Slovakia,421,T-Mobile ,231-04,t-mobile-slovakia
+231,06,SK,Slovakia,421,O2 ,231-06,o2-slovakia
+231,05,SK,Slovakia,421,Orange ,231-05,orange-slovakia
+231,15,SK,Slovakia,421,Orange ,231-15,orange-slovakia
+231,01,SK,Slovakia,421,Orange ,231-01,orange-slovakia
+293,41,SI,Slovenia,386,Mobitel ,293-41,mobitel-slovenia
+293,40,SI,Slovenia,386,SI.Mobil ,293-40,simobil-slovenia
+293,64,SI,Slovenia,386,Mobitel ,293-64,mobitel-slovenia
+293,70,SI,Slovenia,386,TusMobil ,293-70,tusmobil-slovenia
+540,10,SB,Solomon Islands,677,BREEZE ,540-10,breeze-solomon-islands
+540,01,SB,Solomon Islands,677,BREEZE ,540-01,breeze-solomon-islands
+637,04,SO,Somalia,252,Somafone ,637-04,somafone-somalia
+637,82,SO,Somalia,252,Telcom Mobile Somalia ,637-82,telcom-mobile-somalia-somalia
+637,01,SO,Somalia,252,Telesom  ,637-01,telesom-somalia
+655,21,ZA,South Africa,27,Cape Town Metropolitan ,655-21,cape-town-metropolitan-south-africa
+655,07,ZA,South Africa,27,Cell C ,655-07,cell-c-south-africa
+655,10,ZA,South Africa,27,MTN ,655-10,mtn-south-africa
+655,06,ZA,South Africa,27,Sentech ,655-06,sentech-south-africa
+655,01,ZA,South Africa,27,Vodacom ,655-01,vodacom-south-africa
+214,23,ES,Spain,34,Movistar ,214-23,movistar-spain
+214,22,ES,Spain,34,Movistar ,214-22,movistar-spain
+214,15,ES,Spain,34,Vodafone ,214-15,vodafone-spain
+214,08,ES,Spain,34,Euskaltel ,214-08,euskaltel-spain
+214,07,ES,Spain,34,Movistar ,214-07,movistar-spain
+214,03,ES,Spain,34,Orange ,214-03,orange-spain
+214,05,ES,Spain,34,Movistar ,214-05,movistar-spain
+214,06,ES,Spain,34,Vodafone ,214-06,vodafone-spain
+214,01,ES,Spain,34,Vodafone ,214-01,vodafone-spain
+214,04,ES,Spain,34,Yoigo ,214-04,yoigo-spain
+413,05,LK,Sri Lanka,94,Bharti Airtel ,413-05,bharti-airtel-sri-lanka
+413,03,LK,Sri Lanka,94,Etisalat/Tigo ,413-03,etisalat/tigo-sri-lanka
+413,08,LK,Sri Lanka,94,H3G Hutchison  ,413-08,h3g-hutchison-sri-lanka
+413,01,LK,Sri Lanka,94,Mobitel Ltd. ,413-01,mobitel-ltd-sri-lanka
+413,02,LK,Sri Lanka,94,MTN/Dialog ,413-02,mtn/dialog-sri-lanka
+308,01,PM,St. Pierre &amp; Miquelon,508,Ameris ,308-01,ameris-st-pierre-&amp;-miquelon
+360,110,VC,St. Vincent &amp; Gren.,1784,C &amp; W ,360-110,c-&amp;-w-st-vincent-&amp;-gren
+360,10,VC,St. Vincent &amp; Gren.,1784,Cingular ,360-10,cingular-st-vincent-&amp;-gren
+360,70,VC,St. Vincent &amp; Gren.,1784,Digicel ,360-70,digicel-st-vincent-&amp;-gren
+634,00,SD,Sudan,249,Canar Telecom ,634-00,canar-telecom-sudan
+634,02,SD,Sudan,249,MTN ,634-02,mtn-sudan
+634,07,SD,Sudan,249,Sudani One ,634-07,sudani-one-sudan
+634,05,SD,Sudan,249,Vivacell ,634-05,vivacell-sudan
+634,01,SD,Sudan,249,ZAIN ,634-01,zain-sudan
+746,02,SR,Suriname,597,Telesur ,746-02,telesur-suriname
+746,01,SR,Suriname,597,Telesur ,746-01,telesur-suriname
+653,10,SZ,Swaziland,268,Swazi MTN ,653-10,swazi-mtn-swaziland
+240,02,SE,Sweden,46,H3G Access AB ,240-02,h3g-access-ab-sweden
+240,07,SE,Sweden,46,Tele2 Sverige AB ,240-07,tele2-sverige-ab-sweden
+240,08,SE,Sweden,46,Telenor (Vodafone) ,240-08,telenor-(vodafone)-sweden
+240,01,SE,Sweden,46,Telia Mobile ,240-01,telia-mobile-sweden
+240,06,SE,Sweden,46,Telenor (Vodafone) ,240-06,telenor-(vodafone)-sweden
+228,07,CH,Switzerland,41,In &amp; Phone /Sunrise ,228-07,in-&amp;-phone-/sunrise-switzerland
+228,03,CH,Switzerland,41,Orange ,228-03,orange-switzerland
+228,01,CH,Switzerland,41,Swisscom ,228-01,swisscom-switzerland
+228,02,CH,Switzerland,41,TDC Sunrise ,228-02,tdc-sunrise-switzerland
+228,08,CH,Switzerland,41,Tele2 / Sunrise ,228-08,tele2-/-sunrise-switzerland
+417,02,SY,Syrian Arab Republic,963,MTN/Spacetel ,417-02,mtn/spacetel-syrian-arab-republic
+417,09,SY,Syrian Arab Republic,963,Syriatel Holdings ,417-09,syriatel-holdings-syrian-arab-republic
+417,01,SY,Syrian Arab Republic,963,Syriatel Holdings ,417-01,syriatel-holdings-syrian-arab-republic
+466,68,TW,Taiwan,886,ACeS Taiwan - ACeS Taiwan Telecommunications Co Ltd ,466-68,aces-taiwan---aces-taiwan-telecommunications-co-ltd-taiwan
+466,11,TW,Taiwan,886,Chunghwa Telecom LDM ,466-11,chunghwa-telecom-ldm-taiwan
+466,92,TW,Taiwan,886,Chunghwa Telecom LDM ,466-92,chunghwa-telecom-ldm-taiwan
+466,01,TW,Taiwan,886,Far EasTone ,466-01,far-eastone-taiwan
+466,88,TW,Taiwan,886,KG Telecom ,466-88,kg-telecom-taiwan
+466,93,TW,Taiwan,886,Mobitai ,466-93,mobitai-taiwan
+466,97,TW,Taiwan,886,Taiwan Cellular ,466-97,taiwan-cellular-taiwan
+466,99,TW,Taiwan,886,TransAsia ,466-99,transasia-taiwan
+466,89,TW,Taiwan,886,VIBO ,466-89,vibo-taiwan
+436,02,TK,Tajikistan,992,Tcell/JC Somoncom ,436-02,tcell/jc-somoncom-tajikistan
+436,05,TK,Tajikistan,992,Bee Line ,436-05,bee-line-tajikistan
+436,12,TK,Tajikistan,992,Tcell/JC Somoncom ,436-12,tcell/jc-somoncom-tajikistan
+436,01,TK,Tajikistan,992,Tcell/JC Somoncom ,436-01,tcell/jc-somoncom-tajikistan
+436,04,TK,Tajikistan,992,Babilon-M ,436-04,babilon-m-tajikistan
+436,03,TK,Tajikistan,992,MLT/TT mobile ,436-03,mlt/tt-mobile-tajikistan
+640,05,TZ,Tanzania,255,ZAIN/Celtel ,640-05,zain/celtel-tanzania
+640,02,TZ,Tanzania,255,TIGO/MIC ,640-02,tigo/mic-tanzania
+640,04,TZ,Tanzania,255,Vodacom Ltd ,640-04,vodacom-ltd-tanzania
+640,03,TZ,Tanzania,255,Zantel/Zanzibar Telecom ,640-03,zantel/zanzibar-telecom-tanzania
+520,20,TH,Thailand,66,ACeS Thailand - ACeS Regional Services Co Ltd ,520-20,aces-thailand---aces-regional-services-co-ltd-thailand
+520,15,TH,Thailand,66,ACT Mobile ,520-15,act-mobile-thailand
+520,01,TH,Thailand,66,AIS/Advanced Info Service ,520-01,ais/advanced-info-service-thailand
+520,00,TH,Thailand,66,Hutch/CAT CDMA ,520-00,hutch/cat-cdma-thailand
+520,23,TH,Thailand,66,Digital Phone Co. ,520-23,digital-phone-co-thailand
+520,99,TH,Thailand,66,True Move/Orange ,520-99,true-move/orange-thailand
+520,18,TH,Thailand,66,Total Access (DTAC) ,520-18,total-access-(dtac)-thailand
+514,02,TP,Timor-Leste,670,Timor Telecom ,514-02,timor-telecom-timor-leste
+615,02,TG,Togo,228,Telecel/MOOV ,615-02,telecel/moov-togo
+615,01,TG,Togo,228,Togo Telecom/TogoCELL ,615-01,togo-telecom/togocell-togo
+539,43,TO,Tonga,676,Shoreline Communication ,539-43,shoreline-communication-tonga
+539,01,TO,Tonga,676,Tonga Communications ,539-01,tonga-communications-tonga
+374,130,TT,Trinidad and Tobago,1868,Digicel ,374-130,digicel-trinidad-and-tobago
+374,12,TT,Trinidad and Tobago,1868,Bmobile/TSTT ,374-12,bmobile/tstt-trinidad-and-tobago
+605,01,TN,Tunisia,216,Orange ,605-01,orange-tunisia
+605,03,TN,Tunisia,216,Orascom Telecom ,605-03,orascom-telecom-tunisia
+605,02,TN,Tunisia,216,Tunisie Telecom ,605-02,tunisie-telecom-tunisia
+286,03,TR,Turkey,90,AVEA/Aria ,286-03,avea/aria-turkey
+286,04,TR,Turkey,90,AVEA/Aria ,286-04,avea/aria-turkey
+286,02,TR,Turkey,90,Vodafone-Telsim ,286-02,vodafone-telsim-turkey
+286,01,TR,Turkey,90,Turkcell ,286-01,turkcell-turkey
+438,01,TM,Turkmenistan,993,Barash Communication ,438-01,barash-communication-turkmenistan
+641,01,UG,Uganda,256,Celtel ,641-01,celtel-uganda
+641,10,UG,Uganda,256,MTN Ltd. ,641-10,mtn-ltd-uganda
+641,14,UG,Uganda,256,Orange ,641-14,orange-uganda
+641,11,UG,Uganda,256,Uganda Telecom Ltd. ,641-11,uganda-telecom-ltd-uganda
+641,22,UG,Uganda,256,Warid Telecom ,641-22,warid-telecom-uganda
+255,06,UA,Ukraine,380,Astelit/LIFE ,255-06,astelit/life-ukraine
+255,05,UA,Ukraine,380,Golden Telecom ,255-05,golden-telecom-ukraine
+255,39,UA,Ukraine,380,Golden Telecom ,255-39,golden-telecom-ukraine
+255,67,UA,Ukraine,380,KyivStar ,255-67,kyivstar-ukraine
+255,03,UA,Ukraine,380,KyivStar ,255-03,kyivstar-ukraine
+255,50,UA,Ukraine,380,UMC/MTS ,255-50,umc/mts-ukraine
+255,02,UA,Ukraine,380,Beeline ,255-02,beeline-ukraine
+255,01,UA,Ukraine,380,UMC/MTS ,255-01,umc/mts-ukraine
+255,07,UA,Ukraine,380,Utel ,255-07,utel-ukraine
+255,68,UA,Ukraine,380,Beeline ,255-68,beeline-ukraine
+424,03,AE,United Arab Emirates,971,DU ,424-03,du-united-arab-emirates
+424,02,AE,United Arab Emirates,971,Etisalat ,424-02,etisalat-united-arab-emirates
+234,03,UK,United Kingdom,44,Airtel/Vodafone ,234-03,airtel/vodafone-united-kingdom
+234,18,UK,United Kingdom,44,Cloud9/wire9 Tel. ,234-18,cloud9/wire9-tel-united-kingdom
+234,55,UK,United Kingdom,44,Guernsey Telecoms ,234-55,guernsey-telecoms-united-kingdom
+234,20,UK,United Kingdom,44,Hutchison 3G ,234-20,hutchison-3g-united-kingdom
+234,75,UK,United Kingdom,44,Inquam Telecom Ltd ,234-75,inquam-telecom-ltd-united-kingdom
+234,50,UK,United Kingdom,44,Jersey Telecom ,234-50,jersey-telecom-united-kingdom
+234,26,UK,United Kingdom,44,Lycamobile ,234-26,lycamobile-united-kingdom
+234,58,UK,United Kingdom,44,Manx Telecom ,234-58,manx-telecom-united-kingdom
+234,01,UK,United Kingdom,44,Mapesbury C. Ltd ,234-01,mapesbury-c-ltd-united-kingdom
+234,10,UK,United Kingdom,44,O2 Ltd. ,234-10,o2-ltd-united-kingdom
+234,02,UK,United Kingdom,44,O2 Ltd. ,234-02,o2-ltd-united-kingdom
+234,11,UK,United Kingdom,44,O2 Ltd. ,234-11,o2-ltd-united-kingdom
+234,34,UK,United Kingdom,44,Everyth. Ev.wh./Orange ,234-34,everyth-evwh/orange-united-kingdom
+234,33,UK,United Kingdom,44,Everyth. Ev.wh./Orange ,234-33,everyth-evwh/orange-united-kingdom
+234,19,UK,United Kingdom,44,PMN/Teleware ,234-19,pmn/teleware-united-kingdom
+234,12,UK,United Kingdom,44,Railtrack Plc ,234-12,railtrack-plc-united-kingdom
+234,30,UK,United Kingdom,44,Everyth. Ev.wh./T-Mobile ,234-30,everyth-evwh/t-mobile-united-kingdom
+234,31,UK,United Kingdom,44,Everyth. Ev.wh./T-Mobile ,234-31,everyth-evwh/t-mobile-united-kingdom
+234,32,UK,United Kingdom,44,Everyth. Ev.wh./T-Mobile ,234-32,everyth-evwh/t-mobile-united-kingdom
+234,25,UK,United Kingdom,44,Truphone ,234-25,truphone-united-kingdom
+234,15,UK,United Kingdom,44,Vodafone ,234-15,vodafone-united-kingdom
+234,78,UK,United Kingdom,44,Wave Telecom Ltd ,234-78,wave-telecom-ltd-united-kingdom
+310,880,US,United States,1,Advantage Cell. Sys. Inc. ,310-880,advantage-cell-sys-inc-united-states
+310,31,US,United States,1,AERIAL ,310-31,aerial-united-states
+310,850,US,United States,1,Aeris Comm. Inc. ,310-850,aeris-comm-inc-united-states
+310,640,US,United States,1,Airadigm Comm. ,310-640,airadigm-comm-united-states
+310,510,US,United States,1,Airtel Wireless LLC ,310-510,airtel-wireless-llc-united-states
+310,430,US,United States,1,Unknown ,310-430,unknown-united-states
+310,190,US,United States,1,Unknown ,310-190,unknown-united-states
+310,560,US,United States,1,American Cellular Corp. ,310-560,american-cellular-corp-united-states
+310,710,US,United States,1,Artic Slope Tel. Coop. ,310-710,artic-slope-tel-coop-united-states
+310,980,US,United States,1,AT&T; Wireless Inc. ,310-980,at&t;-wireless-inc-united-states
+310,380,US,United States,1,AT&T; Wireless Inc. ,310-380,at&t;-wireless-inc-united-states
+310,830,US,United States,1,Caprock Cellular Ltd. ,310-830,caprock-cellular-ltd-united-states
+311,130,US,United States,1,Unknown ,311-130,unknown-united-states
+311,190,US,United States,1,Unknown ,311-190,unknown-united-states
+310,30,US,United States,1,Centennial Comm. ,310-30,centennial-comm-united-states
+310,570,US,United States,1,Chinook Wireless ,310-570,chinook-wireless-united-states
+311,120,US,United States,1,Choice Phone LLC ,311-120,choice-phone-llc-united-states
+310,480,US,United States,1,Choice Phone LLC ,310-480,choice-phone-llc-united-states
+310,420,US,United States,1,Cincinnati Bell Wireless LLC ,310-420,cincinnati-bell-wireless-llc-united-states
+310,170,US,United States,1,Cingular Wireless ,310-170,cingular-wireless-united-states
+310,150,US,United States,1,Cingular Wireless ,310-150,cingular-wireless-united-states
+310,410,US,United States,1,Cingular Wireless ,310-410,cingular-wireless-united-states
+310,180,US,United States,1,Cingular Wireless ,310-180,cingular-wireless-united-states
+310,620,US,United States,1,Coleman County Telco /Trans TX ,310-620,coleman-county-telco-/trans-tx-united-states
+310,630,US,United States,1,Comtel PCS Mainstreet LP ,310-630,comtel-pcs-mainstreet-lp-united-states
+310,40,US,United States,1,Concho Cellular Telephone Co. Inc. ,310-40,concho-cellular-telephone-co-inc-united-states
+310,690,US,United States,1,Conestoga Wireless ,310-690,conestoga-wireless-united-states
+310,06,US,United States,1,Consolidated Telcom ,310-06,consolidated-telcom-united-states
+310,60,US,United States,1,Consolidated Telcom ,310-60,consolidated-telcom-united-states
+310,80,US,United States,1,Unknown ,310-80,unknown-united-states
+310,08,US,United States,1,Unknown ,310-08,unknown-united-states
+310,16,US,United States,1,Cricket Communications ,310-16,cricket-communications-united-states
+310,440,US,United States,1,Dobson Cellular Systems ,310-440,dobson-cellular-systems-united-states
+310,990,US,United States,1,E.N.M.R. Telephone Coop. ,310-990,enmr-telephone-coop-united-states
+311,70,US,United States,1,Easterbrooke ,311-70,easterbrooke-united-states
+310,09,US,United States,1,Edge Wireless LLC ,310-09,edge-wireless-llc-united-states
+310,90,US,United States,1,Edge Wireless LLC ,310-90,edge-wireless-llc-united-states
+310,610,US,United States,1,Elkhart TelCo. / Epic Touch Co. ,310-610,elkhart-telco-/-epic-touch-co-united-states
+311,311,US,United States,1,Farmers ,311-311,farmers-united-states
+310,970,US,United States,1,Globalstar USA ,310-970,globalstar-usa-united-states
+310,340,US,United States,1,High Plains MidW. LLC / Wetlink ,310-340,high-plains-midw-llc-/-wetlink-united-states
+311,110,US,United States,1,High Plains Wireless ,311-110,high-plains-wireless-united-states
+310,07,US,United States,1,Unknown ,310-07,unknown-united-states
+310,70,US,United States,1,Unknown ,310-70,unknown-united-states
+311,250,US,United States,1,i CAN_GSM ,311-250,i-can_gsm-united-states
+310,770,US,United States,1,Iowa Wireless Serv. LP ,310-770,iowa-wireless-serv-lp-united-states
+310,32,US,United States,1,IT&E; Overseas Inc. ,310-32,it&e;-overseas-inc-united-states
+310,650,US,United States,1,Jasper ,310-650,jasper-united-states
+310,870,US,United States,1,Kaplan TelCo Inc. ,310-870,kaplan-telco-inc-united-states
+311,310,US,United States,1,Lamar County Cellular ,311-310,lamar-county-cellular-united-states
+311,90,US,United States,1,Long Lines Wireless ,311-90,long-lines-wireless-united-states
+311,140,US,United States,1,MBO Wireless Inc./Cross TelCo ,311-140,mbo-wireless-inc/cross-telco-united-states
+310,10,US,United States,1,MCI ,310-10,mci-united-states
+310,780,US,United States,1,Message Express Co. / Airlink PCS ,310-780,message-express-co-/-airlink-pcs-united-states
+311,00,US,United States,1,Mid-Tex Cellular Ltd. ,311-00,mid-tex-cellular-ltd-united-states
+310,400,US,United States,1,Minnesota South. Wirel. Co. / Hickory ,310-400,minnesota-south-wirel-co-/-hickory-united-states
+310,13,US,United States,1,Mobile Tel Inc. ,310-13,mobile-tel-inc-united-states
+310,34,US,United States,1,Nevada Wireless LLC ,310-34,nevada-wireless-llc-united-states
+310,100,US,United States,1,New Mexico RSA 4 East ,310-100,new-mexico-rsa-4-east-united-states
+310,10,US,United States,1,Nextel Comm. ,310-10,nextel-comm-united-states
+310,450,US,United States,1,North East Cell. ,310-450,north-east-cell-united-states
+310,670,US,United States,1,Northstar ,310-670,northstar-united-states
+310,680,US,United States,1,Noverr Publishing Inc./ NPI Wireless ,310-680,noverr-publishing-inc/-npi-wireless-united-states
+310,540,US,United States,1,Oklahoma Western TelCo. ,310-540,oklahoma-western-telco-united-states
+310,470,US,United States,1,Omnipoint ,310-470,omnipoint-united-states
+310,760,US,United States,1,Panhandle Telco. Sys Inc. ,310-760,panhandle-telco-sys-inc-united-states
+310,580,US,United States,1,PCS ONE ,310-580,pcs-one-united-states
+311,170,US,United States,1,PetroCom ,311-170,petrocom-united-states
+311,80,US,United States,1,Pine Cellular ,311-80,pine-cellular-united-states
+310,790,US,United States,1,PinPoint Comm.Inc. ,310-790,pinpoint-comminc-united-states
+310,940,US,United States,1,Poka Lambro Telco Ltd. ,310-940,poka-lambro-telco-ltd-united-states
+310,500,US,United States,1,Public Service Cellular Inc. ,310-500,public-service-cellular-inc-united-states
+310,890,US,United States,1,Rural Cellular Corporation ,310-890,rural-cellular-corporation-united-states
+310,46,US,United States,1,SIMMETRY ,310-46,simmetry-united-states
+311,260,US,United States,1,SLO Cellular Inc / Cellular One of San Luis ,311-260,slo-cellular-inc-/-cellular-one-of-san-luis-united-states
+310,15,US,United States,1,Unknown ,310-15,unknown-united-states
+310,11,US,United States,1,Southern Comm. Inc. ,310-11,southern-comm-inc-united-states
+310,910,US,United States,1,Unknown ,310-910,unknown-united-states
+310,05,US,United States,1,Sprint ,310-05,sprint-united-states
+310,02,US,United States,1,Sprint Spectrum ,310-02,sprint-spectrum-united-states
+310,04,US,United States,1,T-Mobile ,310-04,t-mobile-united-states
+310,800,US,United States,1,T-Mobile ,310-800,t-mobile-united-states
+310,210,US,United States,1,T-Mobile ,310-210,t-mobile-united-states
+310,300,US,United States,1,T-Mobile ,310-300,t-mobile-united-states
+310,330,US,United States,1,T-Mobile ,310-330,t-mobile-united-states
+310,290,US,United States,1,T-Mobile ,310-290,t-mobile-united-states
+310,320,US,United States,1,T-Mobile ,310-320,t-mobile-united-states
+310,280,US,United States,1,T-Mobile ,310-280,t-mobile-united-states
+310,160,US,United States,1,T-Mobile ,310-160,t-mobile-united-states
+310,250,US,United States,1,T-Mobile ,310-250,t-mobile-united-states
+310,310,US,United States,1,T-Mobile ,310-310,t-mobile-united-states
+310,200,US,United States,1,T-Mobile ,310-200,t-mobile-united-states
+310,240,US,United States,1,T-Mobile ,310-240,t-mobile-united-states
+310,270,US,United States,1,T-Mobile ,310-270,t-mobile-united-states
+310,230,US,United States,1,T-Mobile ,310-230,t-mobile-united-states
+310,660,US,United States,1,T-Mobile ,310-660,t-mobile-united-states
+310,260,US,United States,1,T-Mobile ,310-260,t-mobile-united-states
+310,220,US,United States,1,T-Mobile ,310-220,t-mobile-united-states
+310,900,US,United States,1,Taylor Telco. ,310-900,taylor-telco-united-states
+310,740,US,United States,1,Telemetrix Technologies ,310-740,telemetrix-technologies-united-states
+310,14,US,United States,1,Testing ,310-14,testing-united-states
+310,950,US,United States,1,Unknown ,310-950,unknown-united-states
+310,960,US,United States,1,Unknown ,310-960,unknown-united-states
+310,460,US,United States,1,TMP Corporation ,310-460,tmp-corporation-united-states
+310,490,US,United States,1,Triton PCS ,310-490,triton-pcs-united-states
+310,20,US,United States,1,Union Telephone Company ,310-20,union-telephone-company-united-states
+310,38,US,United States,1,USA 3650 AT&T; ,310-38,usa-3650-at&t;-united-states
+310,520,US,United States,1,VeriSign ,310-520,verisign-united-states
+310,03,US,United States,1,Unknown ,310-03,unknown-united-states
+310,12,US,United States,1,Unknown ,310-12,unknown-united-states
+310,23,US,United States,1,Unknown ,310-23,unknown-united-states
+310,24,US,United States,1,Unknown ,310-24,unknown-united-states
+310,25,US,United States,1,Unknown ,310-25,unknown-united-states
+310,530,US,United States,1,West Virginia Wireless ,310-530,west-virginia-wireless-united-states
+310,590,US,United States,1,Unknown ,310-590,unknown-united-states
+310,26,US,United States,1,Unknown ,310-26,unknown-united-states
+310,390,US,United States,1,Yorkville Telephone Cooperative ,310-390,yorkville-telephone-cooperative-united-states
+0,00,,Unknown Country,0,,0-00,-unknown-country
+748,10,UY,Uruguay,598,Claro/AM Wireless ,748-10,claro/am-wireless-uruguay
+748,01,UY,Uruguay,598,Ancel/Antel ,748-01,ancel/antel-uruguay
+748,07,UY,Uruguay,598,MOVISTAR ,748-07,movistar-uruguay
+434,04,ZU,Uzbekistan,998,Bee Line/Unitel ,434-04,bee-line/unitel-uzbekistan
+434,01,ZU,Uzbekistan,998,Buztel ,434-01,buztel-uzbekistan
+434,05,ZU,Uzbekistan,998,Ucell/Coscom ,434-05,ucell/coscom-uzbekistan
+434,07,ZU,Uzbekistan,998,MTS/Uzdunrobita ,434-07,mts/uzdunrobita-uzbekistan
+434,02,ZU,Uzbekistan,998,Uzmacom ,434-02,uzmacom-uzbekistan
+541,00,VU,Vanuatu,678,DigiCel ,541-00,digicel-vanuatu
+541,01,VU,Vanuatu,678,SMILE ,541-01,smile-vanuatu
+734,02,VE,Venezuela,58,DigiTel C.A. ,734-02,digitel-ca-venezuela
+734,03,VE,Venezuela,58,DigiTel C.A. ,734-03,digitel-ca-venezuela
+734,01,VE,Venezuela,58,DigiTel C.A. ,734-01,digitel-ca-venezuela
+734,06,VE,Venezuela,58,Movilnet C.A.  ,734-06,movilnet-ca-venezuela
+734,04,VE,Venezuela,58,Movistar/TelCel ,734-04,movistar/telcel-venezuela
+452,07,VN,Viet Nam,84,Beeline ,452-07,beeline-viet-nam
+452,08,VN,Viet Nam,84,EVN Telecom ,452-08,evn-telecom-viet-nam
+452,01,VN,Viet Nam,84,Mobifone ,452-01,mobifone-viet-nam
+452,04,VN,Viet Nam,84,Viettel Mobile ,452-04,viettel-mobile-viet-nam
+452,05,VN,Viet Nam,84,VietnaMobile ,452-05,vietnamobile-viet-nam
+452,02,VN,Viet Nam,84,Vinaphone ,452-02,vinaphone-viet-nam
+376,350,VI,"Virgin Islands, U.S.",1340,Cable &amp; Wireless (Turks &amp; Caicos) ,376-350,cable-&amp;-wireless-(turks-&amp;-caicos)-virgin-islands-us
+421,01,YE,Yemen,967,Sabaph./Yemen Mobile ,421-01,sabaph/yemen-mobile-yemen
+421,02,YE,Yemen,967,MTN/Spacetel ,421-02,mtn/spacetel-yemen
+421,04,YE,Yemen,967,HITS/Y Unitel ,421-04,hits/y-unitel-yemen
+421,03,YE,Yemen,967,Sabaph./Yemen Mobile ,421-03,sabaph/yemen-mobile-yemen
+645,01,ZM,Zambia,260,Zain/Celtel ,645-01,zain/celtel-zambia
+645,02,ZM,Zambia,260,MTN/Telecel ,645-02,mtn/telecel-zambia
+645,03,ZM,Zambia,260,Cell Z/MTS ,645-03,cell-z/mts-zambia
+648,04,ZW,Zimbabwe,263,Econet ,648-04,econet-zimbabwe
+648,01,ZW,Zimbabwe,263,Net One ,648-01,net-one-zimbabwe
+648,03,ZW,Zimbabwe,263,Telecel ,648-03,telecel-zimbabwe
