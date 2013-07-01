@@ -166,24 +166,28 @@ class WikiHeading(object):
 			c.prn(out)
 
 	# recursive conversion to json
+	# return a dict {name: list}
 	def conv_to_json(self):
 		L = []
 
 		if len(self.items) > 0:
 			res_items = wp.conv_head_items(self.name, self.items)
 			if len(res_items) > 0:
-				L.append( res_items )
+				if type(res_items)==list:
+					L.extend( res_items )
+				else:
+					L.append( res_items )
 
 		childD = {}
 		for c in self.children:
 			res_child = c.conv_to_json()
 			if len(res_child) > 0:
-				#L.append ( {c.name: res_child} )
-				childD[c.name] = res_child
+				L.append ( res_child )
+				#childD[c.name] = res_child
 
 		if len(childD) > 0:
 			L.append ( childD )
-		return L
+		return { self.name: L }
 		
 ##
 class WikiStructure:
@@ -284,6 +288,12 @@ class WikiStructure:
 ####
 if __name__=="__main__":
 	word = sys.argv[1]
+	get_word2json(word)
+	jsondata = get_word2json(word)
+	pprint.pprint(jsondata)
+	jsonstr = json.dumps(jsondata)
+
+	'''
 	outf = anyReader.anyWriter(sys.argv[2])
 
 	title,wikitext = get_xml2wikitext( get_wiktion_xml(word) )
@@ -298,5 +308,4 @@ if __name__=="__main__":
 	jsonstr = json.dumps(jsondata)
 	pprint.pprint(jsondata, stream=outf)
 	#outf.write(jsonstr)
-
-		
+	'''	

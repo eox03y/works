@@ -201,6 +201,16 @@ def proc_tr_curly(line):
 * Japanese: [[代表]]する (daihyō suru)
 '''
 sq_re = re.compile(r'.*\[\[([^\]]+)\]\]([^\s]*)\s+\(([^\)]+)\)')
+LANG_LIST = [ 'Korean', 'Chinese', 'Mandarin', 'Japanese', 'German', 'French', 'Spanish', 'Arabic'
+
+		]
+
+def lang_filter(lang):
+	for l in LANG_LIST:
+		if lang.startswith(l):
+			return True
+	return False
+
 def proc_tr_square(line):
 	m = sq_re.search(line)
 	if not m: return []
@@ -220,7 +230,8 @@ class TrInfo:
 
 		if line[0]=='*':
 			lang, trList = self.proc_tr_line(line)
-			if len(lang) and len(trList):
+			# filter language (TODO)
+			if lang_filter(lang) and len(lang) and len(trList):
 				langList = self.D.get(self.meaning, None)
 				if not langList: 
 					langList = {}
@@ -362,36 +373,24 @@ def conv_head_items(headname, items):
 	return val
 
 def conv_items(orgitems):
-	items = {}
-	items['audio'] = []
-	items['image'] = []
-	items['exstc'] = []
-	items['meaning'] = []
-	items['hword'] = []
+	items = [] 
 	
 	for line in orgitems:
-		if line[0]=='@':
-			hline = '<h3 class="hword"> %s </h3>\n' % (line[2:])
-			items['hword'].append(line[2:])
-
-		elif line[:2]=='#:':
+		if line[:2]=='#:':
 			hline = '<div class="exstc"> %s </div>\n' % (line[2:])
 			text = filter_wiki_line(line[2:])
-			items['exstc'].append(text)
+			items.append( {'EX':text} )
 
 		elif line[0]=='#':
 			hline = '<div class="meaning"> %s </div>\n' % (line[2:])
 			text = filter_wiki_line(line[2:])
-			items['meaning'].append(text)
+			items.append( {'DESC':text} )
 
 		elif line.startswith('[[Image') or line.startswith('[[File'):
-			items['image'].append(get_image_url(line))
+			text = get_image_url(line)
+			items.append( {'IMG':text} )
 
-	R = {}
-	for k,v  in items.iteritems():
-		if v != []:
-			R[k] = v
-	return R
+	return items
 
 
 
