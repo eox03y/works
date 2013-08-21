@@ -68,3 +68,6 @@
 ## read one XML directly from wiktionary site
 * python wikxml2wiki.py http://en.wiktionary.org/wiki/Special:Export/lion a
 * python wikxml2dict.py http://en.wiktionary.org/wiki/Special:Export/lion b
+
+python2.6 wikxml2imglist.py /home/ktmtdata/wikipedia/enwiktionary-20130814-pages-articles.xml.bz2 /home/ktmtdata/wikipedia/wiktion_img.txt &
+

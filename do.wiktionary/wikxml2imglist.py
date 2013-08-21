@@ -74,7 +74,7 @@ class ProcWiktionary:
 		xmlreader = xml.sax.make_parser()
 		# set outout 
 		self.outf = anyReader.anyWriter(outfile, encoding='utf-8')
-		xmlreader.setContentHandler(self.outf)
+		xmlreader.setContentHandler(WikXmlHandler(self.outf))
 		xmlreader.setErrorHandler(WikXmlErrorHandler())
 		infd = anyReader.anyReader(xmlfile, encoding='ascii')
 		CHUNK = 100*1024
