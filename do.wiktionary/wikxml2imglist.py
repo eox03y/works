@@ -20,8 +20,15 @@ class WikXmlErrorHandler(xml.sax.handler.ErrorHandler):
 		print exception.getMessage()
 
 
-reIMG = re.compile(r'\[\[Image:([^\]]+)\]\]')
-reFILE = re.compile(r'\[\[File:([^\]]+)\]\]')
+#reIMG = re.compile(r'\[\[Image:([^\]]+)\]\]')
+#reFILE = re.compile(r'\[\[File:([^\]]+)\]\]')
+sample_lines = '''
+[[File:Heterochromia.jpg|thumb|An example of ''heterochromia iridis'']]
+[[File:June odd-eyed-cat.jpg|thumb|An [[w:odd-eyed cat|odd-eyed cat]], the result of heterochromia]]
+'''
+
+reIMG = re.compile(r'\[\[Image:([^\n]+)\n')
+reFILE = re.compile(r'\[\[File:([^\n]+)\n')
 def get_img_files(text):
 	res = []
 	res += [img for img in reIMG.findall(text)]
@@ -89,6 +96,7 @@ class ProcWiktionary:
 				#raise
 
 if __name__=="__main__":
+	print get_img_files(sample_lines)	
 	sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 	infile = sys.argv[1]
 	outfile = sys.argv[2]
